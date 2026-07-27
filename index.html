@@ -102,7 +102,7 @@
     opacity: 0.9;
   }
 
-  /* Map Layer Theming via CSS Filters */
+  /* Map Layer Theming via CSS Filters (Base map only) */
   .leaflet-tile-pane {
     transition: filter 0.3s ease;
   }
@@ -377,10 +377,14 @@ function iconMarkup(type){
 
 /* ================= INITIALIZE LEAFLET MAP ================= */
 const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
+
+// 1. Base Map Tile Layer (This receives the CSS color filters)
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
   maxZoom: 12, subdomains: 'abcd'
 }).addTo(map);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', {
+
+// 2. Dynamic Labels Tile Layer (Isolated above filters, URL swapped via JavaScript)
+const labelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', {
   maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' 
 }).addTo(map);
 
@@ -493,9 +497,21 @@ const themeDarkBtn = document.getElementById("themeDarkBtn");
 const themeCamoBtn = document.getElementById("themeCamoBtn");
 
 function updateThemeButtons(theme){
+  // 1. Toggle Button UI states
   themeLightBtn.classList.toggle("active-theme", theme === "light");
   themeDarkBtn.classList.toggle("active-theme", theme === "dark");
   themeCamoBtn.classList.toggle("active-theme", theme === "desert-camo");
+  
+  // 2. Dynamically Swap Map Label Tiles for True Contrast
+  const lightLabelsUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png';
+  const darkLabelsUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png';
+  
+  if (theme === 'light') {
+    labelsLayer.setUrl(lightLabelsUrl);
+  } else {
+    // Both 'dark' and 'desert-camo' modes require the inverted label contrast 
+    labelsLayer.setUrl(darkLabelsUrl);
+  }
 }
 
 themeLightBtn.addEventListener("click", () => {
