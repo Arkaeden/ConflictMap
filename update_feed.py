@@ -4,10 +4,10 @@ import json
 import re
 from datetime import datetime, timezone
 
-# Multi-wire international security and defense feeds
+# Multi-source international security and regional reporting feeds
 FEED_URLS = [
     "https://news.google.com/rss/search?q=Iran+OR+Israel+Middle+East+military+strike+defense&hl=en-US&gl=US&ceid=US:en",
-    "https://www.realcleardefense.com/rss/current_rss.xml"
+    "https://www.al-monitor.com/rss"
 ]
 
 CITIES = [
@@ -79,7 +79,7 @@ def fetch_and_update():
                     link = link_elem.text if link_elem is not None else "#"
                     
                     clean_title = title.split(' - ')[0] if ' - ' in title else title
-                    source = title.split(' - ')[-1] if ' - ' in title else "Defense Wire"
+                    source = title.split(' - ')[-1] if ' - ' in title else ("Al-Monitor" if "al-monitor" in url else "News Wire")
                     
                     actor, event_type, location = categorize_event(title)
                     
@@ -97,7 +97,6 @@ def fetch_and_update():
         except Exception as e:
             print(f"Error reading feed {url}: {e}")
             
-    # Keep top 12 most recent unique entries
     feed_data = {
         "lastUpdated": datetime.now(timezone.utc).isoformat(),
         "incidents": incidents[:12],
