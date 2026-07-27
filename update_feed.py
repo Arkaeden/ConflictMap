@@ -13,28 +13,43 @@ CITIES = ["Tehran", "Natanz", "Fordow", "Isfahan", "Bushehr", "Bandar Abbas", "T
 def categorize_event(text):
     text_lower = text.lower()
     
-    # Determine Actor
+    # 1. Determine Actor
     actor = "host"
     if any(x in text_lower for x in ["iran", "irgc", "tehran"]): actor = "iran"
     elif any(x in text_lower for x in ["israel", "idf", "tel aviv"]): actor = "israel"
-    elif any(x in text_lower for x in ["us ", "u.s.", "american"]): actor = "usa"
+    elif any(x in text_lower for x in ["us ", "u.s.", "american", "usnt"]): actor = "usa"
     elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "proxy"]): actor = "proxy"
     
-    # Determine Type
+    # 2. Determine Type
     event_type = "diplomatic"
     if any(x in text_lower for x in ["airstrike", "bombed", "strike"]): event_type = "airstrike"
     elif any(x in text_lower for x in ["missile", "rocket", "intercepted"]): event_type = "missile"
     elif any(x in text_lower for x in ["drone", "uav"]): event_type = "drone"
-    elif any(x in text_lower for x in ["ship", "naval", "red sea"]): event_type = "naval"
+    elif any(x in text_lower for x in ["ship", "naval", "red sea", "gulf"]): event_type = "naval"
     elif any(x in text_lower for x in ["troops", "ground", "raid"]): event_type = "ground"
     elif any(x in text_lower for x in ["hack", "cyber", "ddos"]): event_type = "cyber"
     
-    # Determine Location
-    location = "Eastern Med" # Fallback
+    # 3. Determine Location (Improved Logic)
+    location = None
+    
+    # A. First, try to find an exact city match
     for city in CITIES:
         if city.lower() in text_lower:
             location = city
             break
+            
+    # B. If no exact city is mentioned, use regional fallbacks based on keywords
+    if not location:
+        if any(x in text_lower for x in ["lebanon", "hezbollah"]): location = "Beirut"
+        elif any(x in text_lower for x in ["yemen", "houthi"]): location = "Sanaa"
+        elif any(x in text_lower for x in ["syria"]): location = "Damascus"
+        elif any(x in text_lower for x in ["gaza", "hamas"]): location = "Gaza City"
+        elif any(x in text_lower for x in ["iraq"]): location = "Baghdad"
+        elif any(x in text_lower for x in ["red sea"]): location = "Bab-el-Mandeb"
+        elif any(x in text_lower for x in ["iran"]): location = "Tehran"
+        elif any(x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
+        else:
+            location = "Eastern Med" # The final fallback if completely unrecognizable
             
     return actor, event_type, location
 
