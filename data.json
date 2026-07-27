@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T23:36:12.026293+00:00",
+  "lastUpdated": "2026-07-27T23:40:43.329433+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -50,7 +50,7 @@
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Trump says Iran seeks talks after strikes halted ",
+      "title": "Trump says Iran seeks talks after strikes halted",
       "blurb": "Verified regional telemetry tracking AIRSTRIKE indicators.",
       "time": "2026-07-27T13:42:24-0400",
       "source": "Al-Monitor",
