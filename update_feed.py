@@ -48,7 +48,7 @@ def categorize_event(text):
         elif any(x in text_lower for x in ["iraq"]): location = "Baghdad"
         elif any(x in text_lower for x in ["red sea", "gulf"]): location = "Strait of Hormuz"
         elif any(x in text_lower for x in ["iran"]): location = "Tehran"
-        elif x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
+        elif any(x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
         else: location = "Eastern Med"
             
     return actor, event_type, location
