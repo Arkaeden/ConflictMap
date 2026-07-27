@@ -1,118 +1,95 @@
+import urllib.request
+import xml.etree.ElementTree as ET
 import json
+import re
 from datetime import datetime, timezone
 
-def generate_feed():
-    now = datetime.now(timezone.utc)
+# 1. The Live Data Source (Google News RSS for Middle East Conflict)
+RSS_URL = "https://news.google.com/rss/search?q=Iran+OR+Israel+OR+Lebanon+OR+Syria+OR+Yemen+strike+OR+missile&hl=en-US&gl=US&ceid=US:en"
+
+# 2. Matching dictionaries based on your HTML map
+CITIES = ["Tehran", "Natanz", "Fordow", "Isfahan", "Bushehr", "Bandar Abbas", "Tel Aviv", "Jerusalem", "Haifa", "Eilat", "Gaza City", "Rafah", "Golan Heights", "Beirut", "Tyre", "Damascus", "Baghdad", "Erbil", "Amman", "Riyadh", "Sanaa", "Hodeidah", "Aden"]
+
+def categorize_event(text):
+    text_lower = text.lower()
     
-    data = {
-        "lastUpdated": now.isoformat(),
-        "incidents": [
-            {
-                "id": "op1",
-                "location": "Strait of Hormuz",
-                "title": "Commercial Tanker Interception",
-                "blurb": "IRGC naval elements intercepted and briefly detained a commercial container vessel near central lanes.",
-                "actor": "iran",
-                "type": "naval",
-                "severity": 4,
-                "time": now.strftime("Today, %H:%M UTC"),
-                "source": "OSINT Maritime"
-            },
-            {
-                "id": "op2",
-                "location": "Tel Aviv",
-                "title": "Air Defense Intercepts",
-                "blurb": "Ballistic trajectories detected from eastern vectors; Arrow defense engaged over central districts.",
-                "actor": "israel",
-                "type": "missile",
-                "severity": 4,
-                "time": "Today, 02:15 UTC",
-                "source": "IDF Spokesperson"
-            },
-            {
-                "id": "op3",
-                "location": "Beirut",
-                "title": "Precision Strike on Infrastructure",
-                "blurb": "Targeted strike reported against command infrastructure facilities in southern capital sectors.",
-                "actor": "israel",
-                "type": "airstrike",
-                "severity": 4,
-                "time": "Yesterday, 22:40 UTC",
-                "source": "Regional Monitor"
-            },
-            {
-                "id": "op4",
-                "location": "Hodeidah",
-                "title": "Port Facility Strikes",
-                "blurb": "Airstrikes hit storage installations following sustained anti-ship missile activity in Red Sea corridor.",
-                "actor": "proxy",
-                "type": "airstrike",
-                "severity": 3,
-                "time": "Yesterday, 18:10 UTC",
-                "source": "CENTCOM"
-            },
-            {
-                "id": "op5",
-                "location": "Baghdad",
-                "title": "De-escalation Talks Convened",
-                "blurb": "Bilateral meetings in Green Zone addressing cross-border security frameworks.",
-                "actor": "host",
-                "type": "diplomatic",
-                "severity": 1,
-                "time": "2 days ago",
-                "source": "INA News"
-            },
-            {
-                "id": "op6",
-                "location": "Natanz",
-                "title": "Enhanced Air Defense Alert",
-                "blurb": "Surface-to-air batteries on maximum readiness following aerial reconnaissance signatures.",
-                "actor": "iran",
-                "type": "ground",
-                "severity": 3,
-                "time": "2 days ago",
-                "source": "Defense Intel"
-            },
-            {
-                "id": "op7",
-                "location": "Persian Gulf",
-                "title": "Carrier Strike Group Patrol",
-                "blurb": "USN carrier group maintaining defensive posture in international operating boxes.",
-                "actor": "usa",
-                "type": "naval",
-                "severity": 2,
-                "time": "3 days ago",
-                "source": "US 5th Fleet"
-            }
-        ],
-        "movements": [
-            {
-                "id": "m1",
-                "actor": "usa",
-                "unitType": "carrier",
-                "label": "CSG Patrol Vector",
-                "from": "Arabian Sea",
-                "to": "Persian Gulf",
-                "blurb": "Routine maritime security patrol moving into central operating boxes.",
-                "time": "Active",
-                "source": "USNT"
-            },
-            {
-                "id": "m2",
-                "actor": "israel",
-                "unitType": "aircraft",
-                "label": "Northern Air Sortie",
-                "from": "Haifa",
-                "to": "Eastern Med",
-                "blurb": "Combat air patrol maintaining continuous overwatch along maritime borders.",
-                "time": "Active",
-                "source": "IAF"
-            }
-        ]
-    }
+    # Determine Actor
+    actor = "host"
+    if any(x in text_lower for x in ["iran", "irgc", "tehran"]): actor = "iran"
+    elif any(x in text_lower for x in ["israel", "idf", "tel aviv"]): actor = "israel"
+    elif any(x in text_lower for x in ["us ", "u.s.", "american"]): actor = "usa"
+    elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "proxy"]): actor = "proxy"
     
-    with open("data.json", "w") as f:
-        json.dump(data, f, indent=2)
+    # Determine Type
+    event_type = "diplomatic"
+    if any(x in text_lower for x in ["airstrike", "bombed", "strike"]): event_type = "airstrike"
+    elif any(x in text_lower for x in ["missile", "rocket", "intercepted"]): event_type = "missile"
+    elif any(x in text_lower for x in ["drone", "uav"]): event_type = "drone"
+    elif any(x in text_lower for x in ["ship", "naval", "red sea"]): event_type = "naval"
+    elif any(x in text_lower for x in ["troops", "ground", "raid"]): event_type = "ground"
+    elif any(x in text_lower for x in ["hack", "cyber", "ddos"]): event_type = "cyber"
+    
+    # Determine Location
+    location = "Eastern Med" # Fallback
+    for city in CITIES:
+        if city.lower() in text_lower:
+            location = city
+            break
+            
+    return actor, event_type, location
+
+def fetch_and_update():
+    try:
+        # Fetch RSS data
+        req = urllib.request.Request(RSS_URL, headers={'User-Agent': 'Mozilla/5.0'})
+        with urllib.request.urlopen(req) as response:
+            xml_data = response.read()
+            
+        root = ET.fromstring(xml_data)
+        items = root.findall('.//item')
+        
+        incidents = []
+        
+        # Process the 10 most recent news items
+        for i, item in enumerate(items[:10]):
+            title = item.find('title').text
+            pub_date = item.find('pubDate').text
+            link = item.find('link').text
+            
+            # Clean up Google News title formatting
+            clean_title = title.split(' - ')[0] if ' - ' in title else title
+            source = title.split(' - ')[-1] if ' - ' in title else "News Source"
+            
+            actor, event_type, location = categorize_event(title)
+            
+            incident = {
+                "id": f"inc_{i}",
+                "type": event_type,
+                "actor": actor,
+                "location": location,
+                "title": clean_title[:60] + "..." if len(clean_title) > 60 else clean_title,
+                "blurb": f"Reported activity involving {actor.upper()} forces.",
+                "time": pub_date,
+                "source": source,
+                "url": link
+            }
+            incidents.append(incident)
+            
+        # Structure exactly as your HTML expects
+        feed_data = {
+            "lastUpdated": datetime.now(timezone.utc).isoformat(),
+            "incidents": incidents,
+            "movements": [] # Optional: Can add logic for this later
+        }
+        
+        # Write to data.json
+        with open('data.json', 'w', encoding='utf-8') as f:
+            json.dump(feed_data, f, indent=2)
+            
+        print("Successfully updated data.json")
+        
+    except Exception as e:
+        print(f"Error fetching data: {e}")
 
 if __name__ == "__main__":
-    generate_feed()
+    fetch_and_update()
