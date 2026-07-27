@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-27T22:28:48.410547+00:00",
+  "lastUpdated": "2026-07-27T23:04:35.586253+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -14,17 +14,6 @@
     },
     {
       "id": "inc_1",
-      "type": "airstrike",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Pause in US strikes on Iran raises questions about missile stockp...",
-      "blurb": "Reported AIRSTRIKE activity involving IRAN forces.",
-      "time": "Mon, 27 Jul 2026 21:38:18 GMT",
-      "source": "WBFF",
-      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQTW1LZ0ZTcjN3T0Q0TjZ2QVFkb283WFh3ZjkyNWlISk1rR2dpcTVtdS0xZE9SVlVlWHVNQVd6c3hoQWw3ZWgwbFR2NTVVRHpxLWdxd0dTSWEwVkdaUEdYUGluZFlJXzQwUDVOSlJocldnZ2xMSXA2NEtVN1IyZVpERmFSbjBBSVhHMWl6blozTXpabXhlWjV1aHA5SXBmRUlHdTRPMjNtLVV1MWFONkZpZEtTWVg0ZGZDSzVNRWxxUnA0Tl92UUxXd1ROSTJVZUthSlotUEVIcmRqMEx2dmZRc1Q0U2dEMDZsOHlDSE5KMDNPRjh4X29RaTZDQmNkZ3JLS0RtdkQyejR2Y1VGd2RqbjM5RUtudFJwZUQwRGlmNUhUNElOUkpoRWlHYnhmR2NVRWdEOUFuY0RsUmlMb2c?oc=5"
-    },
-    {
-      "id": "inc_2",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -35,7 +24,7 @@
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVkNYSC04dTFHUnFwS1YzR3dTbFdVVHlMekF1Qi05RnhGTUFoVzE1QXF4MlN0ODR2LU5lc2RIUlB3Q0Jnemp3ZmhIX1M2MjhoVUcwTHhCNXQ5RmQ3NjJ2bzZET01BM3hnbWJxN0N0dnh5TDlOdFlrb05JTVVhLTlXRklyT2pXaU1XSVZrcVRtMHdRc0VDX2JBN0N1R1ZaY2YtSVRGNEpabnJEal9oSEExODJKdlVZRFk?oc=5"
     },
     {
-      "id": "inc_3",
+      "id": "inc_2",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
@@ -46,7 +35,7 @@
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1UNWx3Zi0xRUJxR2hGLUNGNG9LbkE4a1dFZzh2b0VCRWF4VzJzZXJpckxLbkhhbnRYQ0lrQm1rQUtvN0JhSmNVTG1pTG0?oc=5"
     },
     {
-      "id": "inc_4",
+      "id": "inc_3",
       "type": "naval",
       "actor": "iran",
       "location": "Tehran",
@@ -55,6 +44,17 @@
       "time": "Mon, 27 Jul 2026 12:03:38 GMT",
       "source": "Anadolu Ajans\u0131",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQ2RPQ3JMcmZ4TXVqY0hUYW1WN2xJbHlPZ29qeS1zZzcxN0xXRlFrUVJGMXBFVEUyQl9RRHNDNGJ5ZlVOM1VROS0wbnFIV2dBQlNWSTJoU3VheGVYV0FURmVQd0JJb1A2ZktMdEZmSlRJT0w4Q3pLVmJRT2k0dGF4ZFVZRURpVF9NMTFSS3JSdUp5aDd1M0ZXMnpjTlpmRHF3Q0V3Rzk5dWEwVXhQMkJjZUZUVTJ6TkgwSkhoZXNScG9DRWt2NktPc3U3ZWoyVGpEd0xV?oc=5"
+    },
+    {
+      "id": "inc_4",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Ban on Palestinian workers in Israeli West Bank communities lifte...",
+      "blurb": "Reported DIPLOMATIC activity involving ISRAEL forces.",
+      "time": "Mon, 27 Jul 2026 19:46:00 GMT",
+      "source": "The Jerusalem Post",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE95cTdlRG9MY1lHcmZpRkNWM3pwNzRhUkgxS3ZxdWRQdFIwLUxnSFZCREd1RjNCNlEzRkRHSFVZaVl5d1E5VnZLa1lKamh0OGNjZmVDc2M4OTlVT09N?oc=5"
     },
     {
       "id": "inc_5",
@@ -70,6 +70,17 @@
     {
       "id": "inc_6",
       "type": "airstrike",
+      "actor": "proxy",
+      "location": "Sanaa",
+      "title": "Yemen's Houthi Rebels Claim Strike on Saudi Pipeline Infrastructu...",
+      "blurb": "Reported AIRSTRIKE activity involving PROXY forces.",
+      "time": "Mon, 27 Jul 2026 20:25:57 GMT",
+      "source": "The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVUxXOWNxUGRDNWp5MHR5UGIwa0w0SVRfbnZhWjltbS1rTDdCUlk2TW1xOG1BNTZQZlNTdEhmYjJVb09ObHk1Q01RaVRqX1ZJYkt4eFlkU1pqRTMwdTdTRDQ2ZEloWHNia2N0ZVlvRTJ4TjFhMzBhLUtyRFcxY3RXSHRJdkdETS1WR0d4TWpyRUNVMlc3cS0xb2s1c0Jfd1NxVmpKaTREbldpZw?oc=5"
+    },
+    {
+      "id": "inc_7",
+      "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
       "title": "CENTCOM Chief Urged Iran Strike Halt",
@@ -79,7 +90,7 @@
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQczRQWXZER1MwNWZUalYxTFJBQ2x2LXdTbm4yNy1RNlB1TjVrREh2Q2dYTXNKX0dLbFl2MXlhS0xBVVVNNGlWWWhEWWE1TEhtOUE5SG1lOWJqT2hOdVplOXN0VlVrbGtfVjJzZVBST1lwV3NxaWpGNXJPZ0pRcWx5cmZ6N3Z2SzcwVjlyU2JvaGNxeWZPVGc?oc=5"
     },
     {
-      "id": "inc_7",
+      "id": "inc_8",
       "type": "missile",
       "actor": "iran",
       "location": "Sanaa",
@@ -90,7 +101,7 @@
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONGtzUUVWZzk5bHlYMW50bFg3QW94RFZwbXN6ZEY4eVVTVG5pdlRjd2F1V3gySEd3NVZVbHpFbVExQ2ZjMVBVcS1WMUduM3lSNWkxRzVJWGt3Q0huTW51SmdYQTYtY3RJYXVLUnpKUkZLb3c0aHpYQk9SSUNVLXhzQnY4TTFYOE1vbVQwS0h3clplUkpKenY0WVJpUkU?oc=5"
     },
     {
-      "id": "inc_8",
+      "id": "inc_9",
       "type": "naval",
       "actor": "iran",
       "location": "Tehran",
@@ -101,37 +112,26 @@
       "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPd2hpcHBweUJoaVE1VWdoTU1XZklnaXBPcGVpR2czR1lYSk5LMjJCazFhTEFHS2FDU3VlZHlCTXFjaXZTSnpRTnRfTHJwMWZLZ2dqNVJNcDlOSHQ3Yld0YXNSSWZoNk53N2xhRFpPRGRSTUZaOEtGNnhZd2Zvd1NGaERCd25pVEltTTltS1VwV0ZnNnE3UjNkMjJhTWwwdHQxa2RNTk14M19vblVjTUpBYjd1dzlOU093eGN3c2h3MUhQTlZCRzgxU2lWMUhWVGJha0RMd3ZOZ0dib2JQa3c?oc=5"
     },
     {
-      "id": "inc_9",
+      "id": "inc_10",
       "type": "diplomatic",
       "actor": "israel",
       "location": "Jerusalem",
-      "title": "Ban on Palestinian workers in Israeli West Bank communities lifte...",
+      "title": "4 months after attack, rabbi & early childhood director take us i...",
       "blurb": "Reported DIPLOMATIC activity involving ISRAEL forces.",
-      "time": "Mon, 27 Jul 2026 19:46:00 GMT",
-      "source": "The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE95cTdlRG9MY1lHcmZpRkNWM3pwNzRhUkgxS3ZxdWRQdFIwLUxnSFZCREd1RjNCNlEzRkRHSFVZaVl5d1E5VnZLa1lKamh0OGNjZmVDc2M4OTlVT09N?oc=5"
-    },
-    {
-      "id": "inc_10",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "U.S. and Iran pause fighting, Trump dismisses concerns of dwindli...",
-      "blurb": "Reported DIPLOMATIC activity involving IRAN forces.",
-      "time": "Mon, 27 Jul 2026 07:56:15 GMT",
-      "source": "CNBC",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51SzJtbzRPcjctRkx3Z0x3aGJUdm5zaEtkNExTLXYwczlGNUNxZ2V3VTZ4Wm9BOG1JUHdpM3licHFJVWU3d1RGRlE2bFlMN1NNSEFIQ3pPaS00TmpPcVdrODNaSFlWVDBSWTRqZTRn0gFzQVVfeXFMUDNxZFJCcW1MQVBXb3JrWWxhSFVLTVBOQlhFOVl3Nm9PT2xtLURudDkydFdsaUM5RmZUWUx3S1JpUjNCZkNTLU9EVWw0MWxCRlhvNWpQRGJscFE2bmZnNVRVUUJMOFIwRnJtX25RN2EtcWJMSQ?oc=5"
+      "time": "Mon, 27 Jul 2026 13:49:54 GMT",
+      "source": "WXYZ Channel 7",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOYmdvV1ZoWEdyYktZN0QtMFNkYXYxNG1VOTBaYmxQRTh6eFJ0NndGdkh3dHhwZWlQVGd5LXlLN3lpd3p3UEdJQUVUNldGMTZIeGs1SkhwWFlJWUUwZmNpcjBqcFc0WUhtUW9oaXdPaXFiaGtwRFotM2xkNHVDQ1NiczBDejM2UXF4Q1hJSFo5M0NiR1Zrbm91enp1NFZ3WG92TzFLNGdXVE11MlE?oc=5"
     },
     {
       "id": "inc_11",
-      "type": "drone",
+      "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Wife of \u2018angel\u2019 soldier killed by Iran drone honors his legacy: \u2018...",
-      "blurb": "Reported DRONE activity involving IRAN forces.",
-      "time": "Mon, 27 Jul 2026 18:09:00 GMT",
-      "source": "New York Post",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMXlZYkRDVTB6SUY1TEhoNDdJajZ1SmhVSnRBQW02XzZ1UVlyenVFcTFPTlBFcEhQdGVTbVpWaDhIOElVN1U0a0VUbllCeUdoNWJmcFpFR3F2VGFzc3lPSXJBRzFIN2pPYi1VUjY5cVJWb1JQRVRWcEc1SUtUeG1BNUJxT0dYQ3ZrQlhacUV5eDRKWWIzUi1kSTlDUUM1cUptVzVTa2s1dmN1OEVzTUpMQmlXSkRjOGplempwNXd0NU1iRUNiWjNobw?oc=5"
+      "title": "Pause in US strikes on Iran raises questions about missile stockp...",
+      "blurb": "Reported AIRSTRIKE activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 21:41:50 GMT",
+      "source": "WJAC",
+      "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxPTTdwM0VoZ1prOWJpZFczRmQ2Rmc3RUNJa29OZmxWRlM5eHdHX2RQWE1DU3BZREhWUExCdFFUSlVFdU53akh6OWoydUVvd3hheUNISG1jZklhR0ZsZ2hhY0tyelg5aW04b2ZrRElOUHhSc0t2bnNlMngzWkRvb3A3WXdrbDlVMmpuVXd6NEM3MG9IamdGQk16YWdaS1F2ZldCSTFuSDFqQ2ZHRF94emk3Z3ZaemphVGpYTFNrQkRwU1lTTkdXUmwzeWtLcHRHWkNsbG8xVVlpdm9jVkVhQUk2dTROVHlnVGhqU3pOcE5QZmN1dk5BQkFJNlFpa0ZCcUotMHZJbU5iUjI4YS0zZHlzZjhoMlBLQXNlOW5peDNOX000SkJCSVhsWUdlMDFVOHZiR0VNQUtR?oc=5"
     }
   ],
   "movements": []
