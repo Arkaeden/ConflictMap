@@ -5,40 +5,77 @@ import re
 from datetime import datetime, timezone
 
 # 1. The Live Data Source (Google News RSS for Middle East Conflict)
-RSS_URL = "https://news.google.com/rss/search?q=Iran+OR+Israel+OR+Lebanon+OR+Syria+OR+Yemen+strike+OR+missile&hl=en-US&gl=US&ceid=US:en"
+RSS_URL = "https://news.google.com/rss/search?q=Iran+OR+Israel+OR+Lebanon+OR+Syria+OR+Yemen+strike+OR+missile+OR+drone+OR+attack&hl=en-US&gl=US&ceid=US:en"
 
-# 2. Matching dictionaries based on your HTML map
-CITIES = ["Tehran", "Natanz", "Fordow", "Isfahan", "Bushehr", "Bandar Abbas", "Tel Aviv", "Jerusalem", "Haifa", "Eilat", "Gaza City", "Rafah", "Golan Heights", "Beirut", "Tyre", "Damascus", "Baghdad", "Erbil", "Amman", "Riyadh", "Sanaa", "Hodeidah", "Aden"]
+# 2. Map Hub Cities
+CITIES = [
+    "Tehran", "Natanz", "Fordow", "Isfahan", "Bushehr", "Bandar Abbas", 
+    "Tel Aviv", "Jerusalem", "Haifa", "Eilat", "Gaza City", "Rafah", 
+    "Golan Heights", "Beirut", "Tyre", "Damascus", "Baghdad", "Erbil", 
+    "Amman", "Riyadh", "Sanaa", "Hodeidah", "Aden"
+]
 
 def categorize_event(text):
     text_lower = text.lower()
     
-    # 1. Determine Actor
+    # --- 1. DETERMINE ACTOR ---
     actor = "host"
-    if any(x in text_lower for x in ["iran", "irgc", "tehran"]): actor = "iran"
-    elif any(x in text_lower for x in ["israel", "idf", "tel aviv"]): actor = "israel"
-    elif any(x in text_lower for x in ["us ", "u.s.", "american", "usnt"]): actor = "usa"
-    elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "proxy"]): actor = "proxy"
+    if any(x in text_lower for x in ["iran", "irgc", "tehran"]): 
+        actor = "iran"
+    elif any(x in text_lower for x in ["israel", "idf", "tel aviv"]): 
+        actor = "israel"
+    elif any(x in text_lower for x in ["us ", "u.s.", "american", "usnt", "pentagon"]): 
+        actor = "usa"
+    elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "proxy", "militia"]): 
+        actor = "proxy"
     
-    # 2. Determine Type
-    event_type = "diplomatic"
-    if any(x in text_lower for x in ["airstrike", "bombed", "strike"]): event_type = "airstrike"
-    elif any(x in text_lower for x in ["missile", "rocket", "intercepted"]): event_type = "missile"
-    elif any(x in text_lower for x in ["drone", "uav"]): event_type = "drone"
-    elif any(x in text_lower for x in ["ship", "naval", "red sea", "gulf"]): event_type = "naval"
-    elif any(x in text_lower for x in ["troops", "ground", "raid"]): event_type = "ground"
-    elif any(x in text_lower for x in ["hack", "cyber", "ddos"]): event_type = "cyber"
+    # --- 2. DETERMINE EVENT TYPE & MAP ICON ---
+    # Expanded vocabulary to ensure all 7 icons trigger correctly
+    if any(x in text_lower for x in [
+        "airstrike", "air strike", "bombed", "bombing", "strike", "jets", 
+        "f-16", "f-35", "warplane", "fighter jet", "air raid", "blast"
+    ]): 
+        event_type = "airstrike"
+        
+    elif any(x in text_lower for x in [
+        "missile", "rocket", "intercepted", "iron dome", "ballistic", 
+        "artillery", "shelling", "barrage", "fired at", "launched"
+    ]): 
+        event_type = "missile"
+        
+    elif any(x in text_lower for x in [
+        "drone", "uav", "unmanned", "quadcopter", "kamikaze", "loitering"
+    ]): 
+        event_type = "drone"
+        
+    elif any(x in text_lower for x in [
+        "ship", "naval", "red sea", "gulf", "tanker", "vessel", "maritime", 
+        "boat", "destroyer", "frigate", "cargo", "seized", "strait"
+    ]): 
+        event_type = "naval"
+        
+    elif any(x in text_lower for x in [
+        "troops", "ground", "raid", "soldiers", "infantry", "border clash", 
+        "forces", "army", "special forces", "commandos", "gunfire"
+    ]): 
+        event_type = "ground"
+        
+    elif any(x in text_lower for x in [
+        "hack", "cyber", "ddos", "malware", "outage", "network", "disrupted"
+    ]): 
+        event_type = "cyber"
+        
+    else:
+        # Defaults to diplomatic / political updates
+        event_type = "diplomatic"
     
-    # 3. Determine Location (Improved Logic)
+    # --- 3. DETERMINE LOCATION ---
     location = None
-    
-    # A. First, try to find an exact city match
     for city in CITIES:
         if city.lower() in text_lower:
             location = city
             break
             
-    # B. If no exact city is mentioned, use regional fallbacks based on keywords
     if not location:
         if any(x in text_lower for x in ["lebanon", "hezbollah"]): location = "Beirut"
         elif any(x in text_lower for x in ["yemen", "houthi"]): location = "Sanaa"
@@ -49,13 +86,12 @@ def categorize_event(text):
         elif any(x in text_lower for x in ["iran"]): location = "Tehran"
         elif any(x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
         else:
-            location = "Eastern Med" # The final fallback if completely unrecognizable
+            location = "Eastern Med"
             
     return actor, event_type, location
 
 def fetch_and_update():
     try:
-        # Fetch RSS data
         req = urllib.request.Request(RSS_URL, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req) as response:
             xml_data = response.read()
@@ -65,13 +101,11 @@ def fetch_and_update():
         
         incidents = []
         
-        # Process the 10 most recent news items
-        for i, item in enumerate(items[:10]):
+        for i, item in enumerate(items[:12]):  # Pull up to 12 items
             title = item.find('title').text
             pub_date = item.find('pubDate').text
             link = item.find('link').text
             
-            # Clean up Google News title formatting
             clean_title = title.split(' - ')[0] if ' - ' in title else title
             source = title.split(' - ')[-1] if ' - ' in title else "News Source"
             
@@ -82,26 +116,24 @@ def fetch_and_update():
                 "type": event_type,
                 "actor": actor,
                 "location": location,
-                "title": clean_title[:60] + "..." if len(clean_title) > 60 else clean_title,
-                "blurb": f"Reported activity involving {actor.upper()} forces.",
+                "title": clean_title[:65] + "..." if len(clean_title) > 65 else clean_title,
+                "blurb": f"Reported {event_type.upper()} activity involving {actor.upper()} forces.",
                 "time": pub_date,
                 "source": source,
                 "url": link
             }
             incidents.append(incident)
             
-        # Structure exactly as your HTML expects
         feed_data = {
             "lastUpdated": datetime.now(timezone.utc).isoformat(),
             "incidents": incidents,
-            "movements": [] # Optional: Can add logic for this later
+            "movements": []
         }
         
-        # Write to data.json
         with open('data.json', 'w', encoding='utf-8') as f:
             json.dump(feed_data, f, indent=2)
             
-        print("Successfully updated data.json")
+        print("Successfully updated data.json with distinct event types.")
         
     except Exception as e:
         print(f"Error fetching data: {e}")
