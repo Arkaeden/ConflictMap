@@ -1,363 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regional Situation Map — Iran Conflict Tracker</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-<style>
-  :root {
-    --bg: #F4F1EA;
-    --bg-header: #EAE6DD;
-    --bg-panel: #FAF8F4;
-    --bg-panel-2: #EFECE4;
-    --bg-elevated: #E4E0D6;
-    --line: rgba(26, 26, 26, 0.08);
-    --line-strong: rgba(26, 26, 26, 0.15);
-    --text: #1A1A1A;
-    --text-dim: #555555;
-    --text-faint: #777777;
-    --accent: #FF3300;
-    --accent-dim: rgba(255, 51, 0, 0.1);
-    --iran: #008855;
-    --israel: #0055FF;
-    --usa: #1A1A1A;
-    --proxy: #FF6600;
-    --host: #555555;
-    --danger: #FF3300;
-    --radar: #0055FF;
-    --land-host: rgba(0, 0, 0, 0.03);
-    --land-iran: rgba(0, 136, 85, 0.12);
-    --land-israel: rgba(0, 85, 255, 0.12);
-    --land-proxy: rgba(255, 102, 0, 0.12);
-    --shadow-color: rgba(26,26,26,0.1);
-  }
-
-  [data-theme="dark"] {
-    --bg: #07090D;
-    --bg-header: #0D1117;
-    --bg-panel: #101620;
-    --bg-panel-2: #161F2E;
-    --bg-elevated: #1D283C;
-    --line: rgba(240, 243, 249, 0.06);
-    --line-strong: rgba(240, 243, 249, 0.12);
-    --text: #F0F3F9;
-    --text-dim: #8B9BB4;
-    --text-faint: #4E5D75;
-    --accent: #FF3300;
-    --accent-dim: rgba(255, 51, 0, 0.2);
-    --iran: #4CD994;
-    --israel: #4DA6FF;
-    --usa: #F6C945;
-    --proxy: #E67E42;
-    --host: #8B9BB4;
-    --danger: #FF5533;
-    --radar: #4FC3E0;
-    --land-host: rgba(139, 155, 180, 0.08);
-    --land-iran: rgba(76, 217, 148, 0.12);
-    --land-israel: rgba(77, 166, 255, 0.12);
-    --land-proxy: rgba(230, 126, 66, 0.12);
-    --shadow-color: rgba(0,0,0,0.4);
-  }
-
-  [data-theme="desert-camo"] {
-    --bg: #362E23;
-    --bg-header: #2F271D;
-    --bg-panel: #3D3529;
-    --bg-panel-2: #473E31;
-    --bg-elevated: #54493B;
-    --line: rgba(222, 201, 163, 0.15);
-    --line-strong: rgba(222, 201, 163, 0.3);
-    --text: #F7F3EC;
-    --text-dim: #D1C4AF;
-    --text-faint: #9E917C;
-    --accent: #E07A38;
-    --accent-dim: rgba(224, 122, 56, 0.25);
-    --iran: #739E7B;
-    --israel: #5286D4;
-    --usa: #E5C365;
-    --proxy: #D97741;
-    --host: #A89B85;
-    --danger: #D94627;
-    --radar: #5286D4;
-    --land-host: rgba(222, 201, 163, 0.06);
-    --land-iran: rgba(115, 158, 123, 0.18);
-    --land-israel: rgba(82, 134, 212, 0.18);
-    --land-proxy: rgba(217, 119, 65, 0.18);
-    --shadow-color: rgba(0,0,0,0.6);
-  }
-
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; overflow: hidden; transition: background 0.2s, color 0.2s; }
-  body { display: flex; flex-direction: column; min-height: 100vh; }
-
-  /* Swiss Poster Grid Lines - ultra subtle */
-  body::before {
-    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
-    background-image: 
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 80px 80px;
-    opacity: 0.6;
-  }
-
-  /* Authentic Desert Camouflage Subtle Pattern Overlay */
-  body.camo-active::before {
-    background-image: 
-      radial-gradient(ellipse at 20% 30%, rgba(79, 62, 45, 0.35) 0%, transparent 40%),
-      radial-gradient(ellipse at 75% 65%, rgba(45, 37, 26, 0.45) 0%, transparent 50%),
-      radial-gradient(ellipse at 50% 85%, rgba(94, 80, 61, 0.25) 0%, transparent 45%),
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 320px 320px, 450px 450px, 380px 380px, 80px 80px, 80px 80px;
-    opacity: 0.9;
-  }
-
-  /* Müller-Brockmann Header */
-  header.topbar {
-    position: relative; z-index: 2;
-    display: flex; align-items: flex-end; justify-content: space-between;
-    padding: 24px 32px;
-    border-bottom: 1px solid var(--line-strong);
-    background: var(--bg-header);
-    flex-wrap: wrap; gap: 16px;
-  }
-
-  .brand-group {
-    display: flex; align-items: center; gap: 20px;
-  }
-  .brand-logo {
-    width: 46px; height: 46px; object-fit: contain;
-    filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(7493%) hue-rotate(3deg) brightness(102%) contrast(105%);
-  }
-  [data-theme="desert-camo"] .brand-logo {
-    filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(90%);
-  }
-
-  .title-block .eyebrow {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-size: 11px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; color: var(--accent);
-    margin-bottom: 6px;
-  }
-  .title-block h1 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-    font-weight: 900; font-size: 32px; letter-spacing: -1px;
-    margin: 0; color: var(--text);
-    text-transform: uppercase;
-    line-height: 1;
-  }
-
-  .status-block { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-  
-  /* Theme Toggle Buttons Container */
-  .theme-controls { display: flex; gap: 6px; align-items: center; }
-
-  button.icon-btn {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;
-    width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center;
-    transition: all 0.15s ease; padding: 0; position: relative;
-  }
-  button.icon-btn:hover { background: var(--text); color: var(--bg); }
-  button.icon-btn svg { width: 16px; height: 16px; fill: currentColor; }
-  
-  button.icon-btn.active-theme {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 1px var(--accent);
-  }
-
-  .mode-badge {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px;
-    padding: 10px 12px; border-radius: 0;
-    text-transform: uppercase; color: var(--bg); background: var(--iran);
-  }
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Regional Situation Map — Iran Conflict Tracker</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script><style>  :root {    --bg: #F4F1EA;    --bg-header: #EAE6DD;    --bg-panel: #FAF8F4;    --bg-panel-2: #EFECE4;    --bg-elevated: #E4E0D6;    --line: rgba(26, 26, 26, 0.08);    --line-strong: rgba(26, 26, 26, 0.15);    --text: #1A1A1A;    --text-dim: #555555;    --text-faint: #777777;    --accent: #FF3300;    --accent-dim: rgba(255, 51, 0, 0.1);    --iran: #008855;    --israel: #0055FF;    --usa: #1A1A1A;    --proxy: #FF6600;    --host: #555555;    --danger: #FF3300;    --radar: #0055FF;    --land-host: rgba(0, 0, 0, 0.03);    --land-iran: rgba(0, 136, 85, 0.12);    --land-israel: rgba(0, 85, 255, 0.12);    --land-proxy: rgba(255, 102, 0, 0.12);    --shadow-color: rgba(26,26,26,0.1);  }
+  [data-theme="dark"] {    --bg: #07090D;    --bg-header: #0D1117;    --bg-panel: #101620;    --bg-panel-2: #161F2E;    --bg-elevated: #1D283C;    --line: rgba(240, 243, 249, 0.06);    --line-strong: rgba(240, 243, 249, 0.12);    --text: #F0F3F9;    --text-dim: #8B9BB4;    --text-faint: #4E5D75;    --accent: #FF3300;    --accent-dim: rgba(255, 51, 0, 0.2);    --iran: #4CD994;    --israel: #4DA6FF;    --usa: #F6C945;    --proxy: #E67E42;    --host: #8B9BB4;    --danger: #FF5533;    --radar: #4FC3E0;    --land-host: rgba(139, 155, 180, 0.08);    --land-iran: rgba(76, 217, 148, 0.12);    --land-israel: rgba(77, 166, 255, 0.12);    --land-proxy: rgba(230, 126, 66, 0.12);    --shadow-color: rgba(0,0,0,0.4);  }
+  [data-theme="desert-camo"] {    --bg: #362E23;    --bg-header: #2F271D;    --bg-panel: #3D3529;    --bg-panel-2: #473E31;    --bg-elevated: #54493B;    --line: rgba(222, 201, 163, 0.15);    --line-strong: rgba(222, 201, 163, 0.3);    --text: #F7F3EC;    --text-dim: #D1C4AF;    --text-faint: #9E917C;    --accent: #E07A38;    --accent-dim: rgba(224, 122, 56, 0.25);    --iran: #739E7B;    --israel: #5286D4;    --usa: #E5C365;    --proxy: #D97741;    --host: #A89B85;    --danger: #D94627;    --radar: #5286D4;    --land-host: rgba(222, 201, 163, 0.06);    --land-iran: rgba(115, 158, 123, 0.18);    --land-israel: rgba(82, 134, 212, 0.18);    --land-proxy: rgba(217, 119, 65, 0.18);    --shadow-color: rgba(0,0,0,0.6);  }
+  * { box-sizing: border-box; }  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; overflow: hidden; transition: background 0.2s, color 0.2s; }  body { display: flex; flex-direction: column; min-height: 100vh; }
+  /* Swiss Poster Grid Lines - ultra subtle */  body::before {    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;    background-image:       linear-gradient(var(--line) 1px, transparent 1px),      linear-gradient(90deg, var(--line) 1px, transparent 1px);    background-size: 80px 80px;    opacity: 0.6;  }
+  /* Authentic Desert Camouflage Subtle Pattern Overlay */  body.camo-active::before {    background-image:       radial-gradient(ellipse at 20% 30%, rgba(79, 62, 45, 0.35) 0%, transparent 40%),      radial-gradient(ellipse at 75% 65%, rgba(45, 37, 26, 0.45) 0%, transparent 50%),      radial-gradient(ellipse at 50% 85%, rgba(94, 80, 61, 0.25) 0%, transparent 45%),      linear-gradient(var(--line) 1px, transparent 1px),      linear-gradient(90deg, var(--line) 1px, transparent 1px);    background-size: 320px 320px, 450px 450px, 380px 380px, 80px 80px, 80px 80px;    opacity: 0.9;  }
+  /* Müller-Brockmann Header */  header.topbar {    position: relative; z-index: 2;    display: flex; align-items: flex-end; justify-content: space-between;    padding: 24px 32px;    border-bottom: 1px solid var(--line-strong);    background: var(--bg-header);    flex-wrap: wrap; gap: 16px;  }
+  .brand-group {    display: flex; align-items: center; gap: 20px;  }  .brand-logo {    width: 46px; height: 46px; object-fit: contain;    filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(7493%) hue-rotate(3deg) brightness(102%) contrast(105%);  }  [data-theme="desert-camo"] .brand-logo {    filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(90%);  }
+  .title-block .eyebrow {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    font-size: 11px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; color: var(--accent);    margin-bottom: 6px;  }
+  .title-block h1 {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;     font-weight: 900; font-size: 32px; letter-spacing: -1px;    margin: 0; color: var(--text);    text-transform: uppercase;    line-height: 1;  }
+  .status-block { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }    /* Theme Toggle Buttons Container */  .theme-controls { display: flex; gap: 6px; align-items: center; }
+  button.icon-btn {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;    width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center;    transition: all 0.15s ease; padding: 0; position: relative;  }  button.icon-btn:hover { background: var(--text); color: var(--bg); }  button.icon-btn svg { width: 16px; height: 16px; fill: currentColor; }    button.icon-btn.active-theme {    border-color: var(--accent);    box-shadow: 0 0 0 1px var(--accent);  }
+  .mode-badge {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px;    padding: 10px 12px; border-radius: 0;    text-transform: uppercase; color: var(--bg); background: var(--iran);  }
   .updated-text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 700; color: var(--text-dim); }
-
-  button.control-btn {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; letter-spacing: 2px; font-size: 11px;
-    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;
-    padding: 10px 16px; cursor: pointer; text-transform: uppercase;
-    display: flex; align-items: center; gap: 8px; transition: all 0.15s ease;
-  }
-  button.control-btn:hover { background: var(--text); color: var(--bg); }
-  button.control-btn:active { filter: brightness(0.9); }
-
-  button.refresh-btn {
-    background: var(--accent); color: #FFF; border-color: transparent;
-  }
-  button.refresh-btn:hover { filter: brightness(1.15); color: #FFF; }
-  button.refresh-btn:disabled { opacity: 0.5; cursor: wait; }
-  
-  .spinner {
-    width: 10px; height: 10px; border: 2px solid #FFF; border-top-color: transparent;
-    border-radius: 50%; animation: spin 0.6s linear infinite; display: none;
-  }
-  .refresh-btn.loading .spinner { display: inline-block; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  /* Main Layout */
-  main.layout {
-    position: relative; z-index: 1;
-    flex: 1; display: grid; grid-template-columns: 1fr 400px; gap: 0; min-height: 0;
-  }
-
-  .mapwrap {
-    position: relative; overflow: hidden; background: var(--bg);
-  }
-  #map { width: 100%; height: 100%; display: block; }
-
-  /* Map Styling - Clean Swiss Vectors */
-  .country-shape { stroke-width: 1; stroke: var(--line-strong); stroke-linejoin: round; cursor: default; transition: fill 0.2s; }
-  .country-shape.host { fill: var(--land-host); }
-  .country-shape.iran { fill: var(--land-iran); stroke: var(--iran); }
-  .country-shape.israel { fill: var(--land-israel); stroke: var(--israel); }
-  .country-shape.proxy { fill: var(--land-proxy); stroke: var(--proxy); }
-
-  .country-label {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 12px; letter-spacing: 2px;
-    fill: var(--text-dim); text-transform: uppercase; pointer-events: none;
-  }
-  .sea-label {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px;
-    fill: var(--text-faint); text-transform: uppercase; pointer-events: none;
-  }
-  .geo-note {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; fill: var(--text-faint);
-  }
-
-  /* Micro-Animation Classes for Categories */
-  .marker { cursor: pointer; }
-  .marker .halo { fill: none; stroke-width: 1.5; opacity: 0; transform-origin: center; transform-box: fill-box; }
-  
-  /* 1. Airstrike: Shockwave expanding rings */
-  .marker.animating-airstrike .ring-a { animation: strikeShockwave 1.2s ease-out 3; }
-  @keyframes strikeShockwave {
-    0% { opacity: 0.9; transform: scale(0.2); stroke-width: 3px; }
-    100% { opacity: 0; transform: scale(2.2); stroke-width: 0.5px; }
-  }
-
-  /* 2. Missile fire: Trajectory pulse / oscillation */
-  .marker.animating-missile .icon-core { animation: missileFlicker 0.4s ease-in-out infinite alternate; }
-  @keyframes missileFlicker {
-    0% { transform: scale(1) translateY(0); }
-    100% { transform: scale(1.3) translateY(-3px); }
-  }
-
-  /* 3. Drone activity: Radar sweep / propeller spin effect */
-  .marker.animating-drone .drone-prop { animation: droneSpin 0.3s linear infinite; transform-origin: center; transform-box: fill-box; }
-  @keyframes droneSpin {
-    to { transform: rotate(360deg); }
-  }
-
-  /* 4. Naval activity: Water ripple oscillation */
-  .marker.animating-naval .naval-ripple { animation: navalRippleAnim 1s ease-out 6; transform-origin: center; transform-box: fill-box; }
-  @keyframes navalRippleAnim {
-    0% { transform: scale(0.4); opacity: 1; }
-    100% { transform: scale(2.0); opacity: 0; }
-  }
-
-  /* 5. Ground forces: Tactical border flash / shield pulse */
-  .marker.animating-ground .ground-shield { animation: groundPulse 0.8s ease-in-out 4; transform-origin: center; transform-box: fill-box; }
-  @keyframes groundPulse {
-    0%, 100% { transform: scale(1); opacity: 1; }
-    50% { transform: scale(1.4); opacity: 0.4; fill: var(--accent); }
-  }
-
-  /* 6. Cyber activity: Digital glitch / strobe effect */
-  .marker.animating-cyber .cyber-glitch { animation: cyberStrobe 0.2s steps(2, end) 15; }
-  @keyframes cyberStrobe {
-    0% { opacity: 1; transform: translate(0, 0); }
-    50% { opacity: 0.2; transform: translate(-2px, 1px); }
-    100% { opacity: 1; transform: translate(1px, -1px); }
-  }
-
-  /* 7. Diplomatic / other: Gentle beacon pulse */
-  .marker.animating-diplomatic .diplo-beacon { animation: diploBeaconAnim 1.5s ease-in-out 4; transform-origin: center; transform-box: fill-box; }
-  @keyframes diploBeaconAnim {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.6); opacity: 0.2; }
-  }
-
-  .marker .icon-bg { transition: transform 0.15s ease; transform-origin: center; transform-box: fill-box; }
-  .marker:hover .icon-bg { transform: scale(1.3); }
-
-  .mv-line { stroke-dasharray: 4 4; stroke-width: 1.5; opacity: 0.5; }
-  .mv-dot { filter: drop-shadow(0 0 2px currentColor); }
-
-  /* Swiss Technical Tooltip */
-  .tooltip {
-    position: absolute; max-width: 300px; z-index: 5;
-    background: var(--bg-panel); border: 1px solid var(--line-strong);
-    padding: 16px 20px; box-shadow: 0 12px 32px var(--shadow-color);
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.4; display: none; pointer-events: none;
-  }
-  .tooltip.pinned { pointer-events: auto; }
-  .tooltip .tt-eyebrow {
-    font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
-    display: flex; gap: 8px; align-items: center; color: var(--accent);
-  }
-  .tooltip .tt-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 16px; letter-spacing: -0.5px; margin-bottom: 8px; color: var(--text); text-transform: uppercase; }
-  .tooltip .tt-blurb { color: var(--text-dim); margin-bottom: 12px; font-size: 13px; }
-  .tooltip .tt-meta { font-size: 10px; font-weight: 700; color: var(--text-faint); display: flex; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding-top: 8px; text-transform: uppercase; }
-  .tooltip .tt-close {
-    position: absolute; top: 10px; right: 12px; background: none; border: none; color: var(--text-dim);
-    cursor: pointer; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 14px; display: none;
-  }
-  .tooltip.pinned .tt-close { display: block; }
-  .tooltip .tt-link { color: var(--accent); text-decoration: none; font-size: 10px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; display: inline-block; margin-top: 8px; }
-
-  /* Sidebar - Swiss Clean Panel */
-  aside.sidebar {
-    background: var(--bg-panel);
-    display: flex; flex-direction: column; min-height: 0;
-    overflow-y: auto;
-  }
-  .sidebar-section { padding: 20px 24px; border-bottom: 1px solid var(--line); }
-  .sidebar-title {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 12px; letter-spacing: 3px;
-    text-transform: uppercase; color: var(--text-dim); margin: 0 0 14px 0;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .sidebar-title::after { content: "—"; color: var(--text-faint); font-weight: 900; }
-
-  .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); }
-  .legend-row { display: flex; align-items: center; gap: 8px; }
-  .swatch { width: 8px; height: 8px; flex: none; }
-  .legend-icons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
-  .legend-icon-item { display: flex; align-items: center; gap: 6px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; }
-  .legend-icon-item svg { width: 14px; height: 14px; background: transparent !important; }
-
-  .feed { flex: 1; overflow-y: auto; padding: 16px 20px; min-height: 120px; }
-  .feed::-webkit-scrollbar { width: 4px; }
-  .feed::-webkit-scrollbar-thumb { background: var(--line-strong); }
-  
-  .feed-item {
-    padding: 12px 14px; margin-bottom: 8px; cursor: pointer;
-    background: var(--bg); border: 1px solid var(--line); transition: all 0.15s ease;
-  }
-  .feed-item:hover { background: var(--bg-panel-2); }
-  .feed-item.active { background: var(--bg-elevated); border-left: 3px solid var(--accent); }
-  .feed-item .fi-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
-  .feed-item .fi-dot { width: 6px; height: 6px; flex: none; }
-  .feed-item .fi-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 14px; letter-spacing: -0.2px; color: var(--text); text-transform: uppercase; }
-  .feed-item .fi-meta { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; color: var(--text-faint); margin-left: 14px; text-transform: uppercase; }
-  .feed-empty { color: var(--text-faint); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; font-style: italic; }
-
-  .disclaimer {
-    padding: 16px 24px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint);
-    background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px;
-  }
-  .disclaimer strong { color: var(--text-dim); }
-
-  .error-banner {
-    display: none; margin: 0 32px; padding: 10px 14px;
-    background: rgba(255,51,0,0.1); color: var(--danger); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 900; position: relative; z-index: 2; border: 1px solid var(--danger);
-  }
-
-  /* Mobile Responsive Adjustments */
-  @media (max-width: 900px) {
+  button.control-btn {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; letter-spacing: 2px; font-size: 11px;    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;    padding: 10px 16px; cursor: pointer; text-transform: uppercase;    display: flex; align-items: center; gap: 8px; transition: all 0.15s ease;  }  button.control-btn:hover { background: var(--text); color: var(--bg); }  button.control-btn:active { filter: brightness(0.9); }
+  button.refresh-btn {    background: var(--accent); color: #FFF; border-color: transparent;  }  button.refresh-btn:hover { filter: brightness(1.15); color: #FFF; }  button.refresh-btn:disabled { opacity: 0.5; cursor: wait; }    .spinner {    width: 10px; height: 10px; border: 2px solid #FFF; border-top-color: transparent;    border-radius: 50%; animation: spin 0.6s linear infinite; display: none;  }  .refresh-btn.loading .spinner { display: inline-block; }  @keyframes spin { to { transform: rotate(360deg); } }
+  /* Main Layout */  main.layout {    position: relative; z-index: 1;    flex: 1; display: grid; grid-template-columns: 1fr 400px; gap: 0; min-height: 0;  }
+  .mapwrap {    position: relative; overflow: hidden; background: var(--bg);  }  #map { width: 100%; height: 100%; display: block; }
+  /* Map Styling - Clean Swiss Vectors */  .country-shape { stroke-width: 1; stroke: var(--line-strong); stroke-linejoin: round; cursor: default; transition: fill 0.2s; }  .country-shape.host { fill: var(--land-host); }  .country-shape.iran { fill: var(--land-iran); stroke: var(--iran); }  .country-shape.israel { fill: var(--land-israel); stroke: var(--israel); }  .country-shape.proxy { fill: var(--land-proxy); stroke: var(--proxy); }
+  .country-label {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 12px; letter-spacing: 2px;    fill: var(--text-dim); text-transform: uppercase; pointer-events: none;  }  .sea-label {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px;    fill: var(--text-faint); text-transform: uppercase; pointer-events: none;  }
+  .geo-note {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; fill: var(--text-faint);  }
+  /* Micro-Animation Classes for Categories */  .marker { cursor: pointer; }  .marker .halo { fill: none; stroke-width: 1.5; opacity: 0; transform-origin: center; transform-box: fill-box; }    /* 1. Airstrike: Shockwave expanding rings */  .marker.animating-airstrike .ring-a { animation: strikeShockwave 1.2s ease-out 3; }  @keyframes strikeShockwave {    0% { opacity: 0.9; transform: scale(0.2); stroke-width: 3px; }    100% { opacity: 0; transform: scale(2.2); stroke-width: 0.5px; }  }
+  /* 2. Missile fire: Trajectory pulse / oscillation */  .marker.animating-missile .icon-core { animation: missileFlicker 0.4s ease-in-out infinite alternate; }  @keyframes missileFlicker {    0% { transform: scale(1) translateY(0); }    100% { transform: scale(1.3) translateY(-3px); }  }
+  /* 3. Drone activity: Radar sweep / propeller spin effect */  .marker.animating-drone .drone-prop { animation: droneSpin 0.3s linear infinite; transform-origin: center; transform-box: fill-box; }  @keyframes droneSpin {    to { transform: rotate(360deg); }  }
+  /* 4. Naval activity: Water ripple oscillation */  .marker.animating-naval .naval-ripple { animation: navalRippleAnim 1s ease-out 6; transform-origin: center; transform-box: fill-box; }  @keyframes navalRippleAnim {    0% { transform: scale(0.4); opacity: 1; }    100% { transform: scale(2.0); opacity: 0; }  }
+  /* 5. Ground forces: Tactical border flash / shield pulse */  .marker.animating-ground .ground-shield { animation: groundPulse 0.8s ease-in-out 4; transform-origin: center; transform-box: fill-box; }  @keyframes groundPulse {    0%, 100% { transform: scale(1); opacity: 1; }    50% { transform: scale(1.4); opacity: 0.4; fill: var(--accent); }  }
+  /* 6. Cyber activity: Digital glitch / strobe effect */  .marker.animating-cyber .cyber-glitch { animation: cyberStrobe 0.2s steps(2, end) 15; }  @keyframes cyberStrobe {    0% { opacity: 1; transform: translate(0, 0); }    50% { opacity: 0.2; transform: translate(-2px, 1px); }    100% { opacity: 1; transform: translate(1px, -1px); }  }
+  /* 7. Diplomatic / other: Gentle beacon pulse */  .marker.animating-diplomatic .diplo-beacon { animation: diploBeaconAnim 1.5s ease-in-out 4; transform-origin: center; transform-box: fill-box; }  @keyframes diploBeaconAnim {    0%, 100% { transform: scale(1); opacity: 0.8; }    50% { transform: scale(1.6); opacity: 0.2; }  }
+  .marker .icon-bg { transition: transform 0.15s ease; transform-origin: center; transform-box: fill-box; }  .marker:hover .icon-bg { transform: scale(1.3); }
+  .mv-line { stroke-dasharray: 4 4; stroke-width: 1.5; opacity: 0.5; }  .mv-dot { filter: drop-shadow(0 0 2px currentColor); }
+  /* Swiss Technical Tooltip */  .tooltip {    position: absolute; max-width: 300px; z-index: 5;    background: var(--bg-panel); border: 1px solid var(--line-strong);    padding: 16px 20px; box-shadow: 0 12px 32px var(--shadow-color);    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.4; display: none; pointer-events: none;  }  .tooltip.pinned { pointer-events: auto; }  .tooltip .tt-eyebrow {    font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;    display: flex; gap: 8px; align-items: center; color: var(--accent);  }  .tooltip .tt-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 16px; letter-spacing: -0.5px; margin-bottom: 8px; color: var(--text); text-transform: uppercase; }  .tooltip .tt-blurb { color: var(--text-dim); margin-bottom: 12px; font-size: 13px; }  .tooltip .tt-meta { font-size: 10px; font-weight: 700; color: var(--text-faint); display: flex; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding-top: 8px; text-transform: uppercase; }  .tooltip .tt-close {    position: absolute; top: 10px; right: 12px; background: none; border: none; color: var(--text-dim);    cursor: pointer; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 14px; display: none;  }  .tooltip.pinned .tt-close { display: block; }  .tooltip .tt-link { color: var(--accent); text-decoration: none; font-size: 10px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; display: inline-block; margin-top: 8px; }
+  /* Sidebar - Swiss Clean Panel */  aside.sidebar {    background: var(--bg-panel);    display: flex; flex-direction: column; min-height: 0;    overflow-y: auto;  }  .sidebar-section { padding: 20px 24px; border-bottom: 1px solid var(--line); }  .sidebar-title {    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 12px; letter-spacing: 3px;    text-transform: uppercase; color: var(--text-dim); margin: 0 0 14px 0;    display: flex; justify-content: space-between; align-items: center;  }  .sidebar-title::after { content: "—"; color: var(--text-faint); font-weight: 900; }
+  .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); }  .legend-row { display: flex; align-items: center; gap: 8px; }  .swatch { width: 8px; height: 8px; flex: none; }  .legend-icons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }  .legend-icon-item { display: flex; align-items: center; gap: 6px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; }  .legend-icon-item svg { width: 14px; height: 14px; background: transparent !important; }
+  .feed { flex: 1; overflow-y: auto; padding: 16px 20px; min-height: 120px; }  .feed::-webkit-scrollbar { width: 4px; }  .feed::-webkit-scrollbar-thumb { background: var(--line-strong); }    .feed-item {    padding: 12px 14px; margin-bottom: 8px; cursor: pointer;    background: var(--bg); border: 1px solid var(--line); transition: all 0.15s ease;  }  .feed-item:hover { background: var(--bg-panel-2); }  .feed-item.active { background: var(--bg-elevated); border-left: 3px solid var(--accent); }  .feed-item .fi-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }  .feed-item .fi-dot { width: 6px; height: 6px; flex: none; }  .feed-item .fi-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 14px; letter-spacing: -0.2px; color: var(--text); text-transform: uppercase; }  .feed-item .fi-meta { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; color: var(--text-faint); margin-left: 14px; text-transform: uppercase; }  .feed-empty { color: var(--text-faint); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; font-style: italic; }
+  .disclaimer {    padding: 16px 24px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint);    background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px;  }  .disclaimer strong { color: var(--text-dim); }
+  .error-banner {    display: none; margin: 0 32px; padding: 10px 14px;    background: rgba(255,51,0,0.1); color: var(--danger); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 900; position: relative; z-index: 2; border: 1px solid var(--danger);  }
+  /* Mobile Responsive Adjustments */  @media (max-width: 900px) {
     html, body {
       height: auto;
       overflow: auto;
@@ -400,59 +77,13 @@
 </head>
 <body>
 
-<header class="topbar">
-  <div class="brand-group">
-    <img src="https://www.matmejia.com/images/MM_logo.svg" alt="MM Logo" class="brand-logo">
-    <div class="title-block">
-      <div class="eyebrow">Regional Situation Map</div>
-      <h1>Iran Conflict Tracker</h1>
-    </div>
-  </div>
-  <div class="status-block">
-    <span class="updated-text" id="updatedText">SYNC: ACTIVE</span>
-    <div class="theme-controls">
-      <button class="icon-btn" id="themeLightBtn" title="Light Mode">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-      <button class="icon-btn" id="themeDarkBtn" title="Dark Mode">
-        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <button class="icon-btn" id="themeCamoBtn" title="Desert Camouflage Theme">
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-      </button>
-    </div>
-    <span class="mode-badge" id="modeBadge">Verified Feed</span>
-    <button class="control-btn refresh-btn" id="refreshBtn">
-      <span class="spinner"></span>
-      <span class="btn-label">Refresh Live Data</span>
-    </button>
-  </div>
-</header>
+<header class="topbar">  <div class="brand-group">    <img src="https://www.matmejia.com/images/MM_logo.svg" alt="MM Logo" class="brand-logo">    <div class="title-block">      <div class="eyebrow">Regional Situation Map</div>      <h1>Iran Conflict Tracker</h1>    </div>  </div>  <div class="status-block">    <span class="updated-text" id="updatedText">SYNC: ACTIVE</span>    <div class="theme-controls">      <button class="icon-btn" id="themeLightBtn" title="Light Mode">        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>      </button>      <button class="icon-btn" id="themeDarkBtn" title="Dark Mode">        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>      </button>      <button class="icon-btn" id="themeCamoBtn" title="Desert Camouflage Theme">        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>      </button>    </div>    <span class="mode-badge" id="modeBadge">Verified Feed</span>    <button class="control-btn refresh-btn" id="refreshBtn">      <span class="spinner"></span>      <span class="btn-label">Refresh Live Data</span>    </button>  </div></header>
 
 <div class="error-banner" id="errorBanner"></div>
 
-<main class="layout">
-  <div class="mapwrap" id="mapwrap">
-    <svg id="map" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet"></svg>
-    <div class="tooltip" id="tooltip">
-      <button class="tt-close" id="ttClose">[✕]</button>
-      <div class="tt-eyebrow"><span id="ttEyebrowDot" style="width:6px;height:6px;display:inline-block;"></span><span id="ttEyebrow"></span></div>
-      <div class="tt-title" id="ttTitle"></div>
-      <div class="tt-blurb" id="ttBlurb"></div>
-      <div class="tt-meta"><span id="ttTime"></span><span id="ttSource"></span></div>
-      <div id="ttLinkWrap"></div>
-    </div>
-  </div>
+<main class="layout">  <div class="mapwrap" id="mapwrap">    <svg id="map" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet"></svg>    <div class="tooltip" id="tooltip">      <button class="tt-close" id="ttClose">[✕]</button>      <div class="tt-eyebrow"><span id="ttEyebrowDot" style="width:6px;height:6px;display:inline-block;"></span><span id="ttEyebrow"></span></div>      <div class="tt-title" id="ttTitle"></div>      <div class="tt-blurb" id="ttBlurb"></div>      <div class="tt-meta"><span id="ttTime"></span><span id="ttSource"></span></div>      <div id="ttLinkWrap"></div>    </div>  </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-section">
-      <div class="sidebar-title">Index / Legend</div>
-      <div class="legend-grid">
-        <div class="legend-row"><span class="swatch" style="background:var(--iran)"></span>Iran</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--israel)"></span>Israel</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--usa)"></span>United States</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--proxy)"></span>Proxies</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--host)"></span>States</div>
+  <aside class="sidebar">    <div class="sidebar-section">      <div class="sidebar-title">Index / Legend</div>      <div class="legend-grid">        <div class="legend-row"><span class="swatch" style="background:var(--iran)"></span>Iran</div>        <div class="legend-row"><span class="swatch" style="background:var(--israel)"></span>Israel</div>        <div class="legend-row"><span class="swatch" style="background:var(--usa)"></span>United States</div>        <div class="legend-row"><span class="swatch" style="background:var(--proxy)"></span>Proxies</div>        <div class="legend-row"><span class="swatch" style="background:var(--host)"></span>States</div>
       </div>
       <div class="legend-icons" id="legendIcons"></div>
     </div>
@@ -460,11 +91,7 @@
     <div class="sidebar-title" style="padding:16px 24px 0 24px;">Telemetry Feed</div>
     <div class="feed" id="feed"></div>
 
-    <div class="disclaimer" id="disclaimerText">
-      <strong>Operational DB.</strong> Curated telemetry mapping active regional flashpoints and asset vectors without external API dependencies.
-    </div>
-  </aside>
-</main>
+    <div class="disclaimer" id="disclaimerText">      <strong>Operational DB.</strong> Curated telemetry mapping active regional flashpoints and asset vectors without external API dependencies.    </div>  </aside></main>
 
 <script>
 (function(){
@@ -590,20 +217,9 @@ function iconMarkup(type){
 
 /* ================= Operational Intelligence Dataset ================= */
 let state = {
-  incidents: [
-    {id: "op1", location: "Strait of Hormuz", title: "Commercial Tanker Interception", blurb: "IRGC naval elements intercepted and briefly detained a commercial container vessel near central lanes.", actor: "iran", type: "naval", severity: 4, time: "Today, 04:30 UTC", source: "OSINT Maritime"},
-    {id: "op2", location: "Tel Aviv", title: "Air Defense Intercepts", blurb: "Ballistic trajectories detected from eastern vectors; Arrow defense engaged over central districts.", actor: "israel", type: "missile", severity: 4, time: "Today, 02:15 UTC", source: "IDF Spokesperson"},
-    {id: "op3", location: "Beirut", title: "Precision Strike on Infrastructure", blurb: "Targeted strike reported against command infrastructure facilities in southern capital sectors.", actor: "israel", type: "airstrike", severity: 4, time: "Yesterday, 22:40 UTC", source: "Regional Monitor"},
-    {id: "op4", location: "Hodeidah", title: "Port Facility Strikes", blurb: "Airstrikes hit storage installations following sustained anti-ship missile activity in Red Sea corridor.", actor: "proxy", type: "airstrike", severity: 3, time: "Yesterday, 18:10 UTC", source: "CENTCOM"},
-    {id: "op5", location: "Baghdad", title: "De-escalation Talks Convened", blurb: "Bilateral meetings in Green Zone addressing cross-border security frameworks.", actor: "host", type: "diplomatic", severity: 1, time: "2 days ago", source: "INA News"},
-    {id: "op6", location: "Natanz", title: "Enhanced Air Defense Alert", blurb: "Surface-to-air batteries on maximum readiness following aerial reconnaissance signatures.", actor: "iran", type: "ground", severity: 3, time: "2 days ago", source: "Defense Intel"},
-    {id: "op7", location: "Persian Gulf", title: "Carrier Strike Group Patrol", blurb: "USN carrier group maintaining defensive posture in international operating boxes.", actor: "usa", type: "naval", severity: 2, time: "3 days ago", source: "US 5th Fleet"}
-  ],
-  movements: [
-    {id: "m1", actor: "usa", unitType: "carrier", label: "CSG Patrol Vector", from: "Arabian Sea", to: "Persian Gulf", blurb: "Routine maritime security patrol moving into central operating boxes.", time: "Active", source: "USNT"},
-    {id: "m2", actor: "israel", unitType: "aircraft", label: "Northern Air Sortie", from: "Haifa", to: "Eastern Med", blurb: "Combat air patrol maintaining continuous overwatch along maritime borders.", time: "Active", source: "IAF"}
-  ],
-  lastUpdated: new Date().toLocaleTimeString(),
+  incidents: [],
+  movements: [],
+  lastUpdated: "",
   live: true
 };
 
@@ -719,9 +335,26 @@ async function loadRealBorders(){
     projection = null;
     drawFallbackMap();
   }
-  renderAll();
-  triggerInitialAnimations();
-  selectLatestStory();
+}
+
+async function fetchTelemetryData() {
+  try {
+    const response = await fetch('./data.json?t=' + Date.now());
+    if (!response.ok) throw new Error("Failed to load telemetry feed");
+    const data = await response.json();
+    
+    state.incidents = data.incidents;
+    state.movements = data.movements;
+    state.lastUpdated = new Date(data.lastUpdated).toLocaleTimeString();
+    
+    renderAll();
+    triggerInitialAnimations();
+    selectLatestStory();
+  } catch (err) {
+    console.warn("Using fallback local telemetry:", err);
+    document.getElementById("errorBanner").style.display = "block";
+    document.getElementById("errorBanner").textContent = "SYNC ERROR: UNABLE TO FETCH LIVE TELEMETRY.";
+  }
 }
 
 const tooltip = document.getElementById("tooltip");
@@ -782,9 +415,7 @@ function playMarkerAnimation(id, type){
   );
 
   void marker.offsetWidth;
-
   marker.classList.add(`animating-${type}`);
-
   setTimeout(() => {
     marker.classList.remove(`animating-${type}`);
   }, 6000);
@@ -917,7 +548,9 @@ function selectLatestStory(){
   }
 }
 
-loadRealBorders();
+loadRealBorders().then(() => {
+  fetchTelemetryData();
+});
 
 const refreshBtn = document.getElementById("refreshBtn");
 const themeLightBtn = document.getElementById("themeLightBtn");
@@ -956,14 +589,10 @@ refreshBtn.addEventListener("click", () => {
   refreshBtn.disabled = true;
   errorBanner.style.display = "none";
   
-  setTimeout(() => {
-    state.lastUpdated = new Date().toLocaleTimeString();
-    renderAll();
-    triggerInitialAnimations();
-    selectLatestStory();
+  fetchTelemetryData().finally(() => {
     refreshBtn.classList.remove("loading");
     refreshBtn.disabled = false;
-  }, 400);
+  });
 });
 
 })();
