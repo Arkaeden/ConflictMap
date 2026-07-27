@@ -1,24 +1,24 @@
 {
-  "lastUpdated": "2026-07-27T22:06:34.364702+00:00",
+  "lastUpdated": "2026-07-27T22:10:21.713974+00:00",
   "incidents": [
     {
       "id": "inc_0",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Iran warns Ukraine of retaliation after deadly Caspian Sea s...",
-      "blurb": "Reported activity involving IRAN forces.",
-      "time": "Mon, 27 Jul 2026 06:23:43 GMT",
+      "title": "Saudi Arabia defends against drone strikes from \u2018Iran-backed\u2019 gro...",
+      "blurb": "Reported AIRSTRIKE activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 21:30:22 GMT",
       "source": "Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSWtRS1NlVHUzQ3ctOXhDNDNxSFNiMi1VYWxubFF1YkJPZ2pkd1pLVnlkTlhCbkNPV3FmVTNNX0V0eGZnQVViQTk0TGY2azh4b3E5cEdJQmRrbXp3aHJXLUlnV0tFYy1jWWlrWTRlZ3Q2YUxfMGJSX25GYWg2ekY3eGVWOGIzRVE1WVdRV0M2RlVFQy10bDJOY05HTW43SVMwRFUzdDVreVJud9IBrwFBVV95cUxNMVA3NloweW5UQ3NVNmxJRHMyVlpIOVJhSEVneXJ0ZkswSXE5YkN5VExOX044RXdOdmd1djJ0Q09QclFILVJrNXJtVEtNaEw5LWdMOEhwcS1pc3kzaVEtdnVYNm1WYkQxSWVIc1F6Z25vc1dVNDlCMkRHTmx2S3JZdmMyVU9zQ0pGUnpDUGlpUURlbFk1cGU4a2VsVlRoVzVEZUZtODUxSjhfRm5sZy1j?oc=5"
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSXZGTnZ2RnhBekJ0YlhrVldXbTZWU3JBekE2MENuWWdUcVNwWS1QM3pKSGM4WEp0WXQwLWRBQWJpYThMY0gtSjR5aW5TSmtrR3poLW82SWpSN2FDYXFlbnZaNXB4WUNmV3ZXYnRDQlNOSlJjSWg0SnFvQzg3WmxPZzlHN2Zkb0xsOGJjMGNfa182SHhVdVd1dEJVTHBKOU95c1dnWHc4LS1GaG_SAbABQVVfeXFMTU15aEJwbVpFVThTVTZMQ3pCU2pxMG04anJ4M3BnRnN5cmVFWnh4ZEpnSGZFTnAzNHd6U3pMSndEZzJEZ1VWOGZ2U2NxNnRzczJMSWNSNVBGRkVPWW51Tjd5a0Z3N0J5WDdUakVhRS03TVFGSHJ4aFRpUkI1WlZPVS1OMGQwRVJKQjJabjJxOWFiN2dJMWhNLUhUNTMzUm51WndDWkpnd3FQXzV0R3FDRW8?oc=5"
     },
     {
       "id": "inc_1",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Pause in US strikes on Iran raises questions about missile s...",
-      "blurb": "Reported activity involving IRAN forces.",
+      "title": "Pause in US strikes on Iran raises questions about missile stockp...",
+      "blurb": "Reported AIRSTRIKE activity involving IRAN forces.",
       "time": "Mon, 27 Jul 2026 21:38:18 GMT",
       "source": "WBFF",
       "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQTW1LZ0ZTcjN3T0Q0TjZ2QVFkb283WFh3ZjkyNWlISk1rR2dpcTVtdS0xZE9SVlVlWHVNQVd6c3hoQWw3ZWgwbFR2NTVVRHpxLWdxd0dTSWEwVkdaUEdYUGluZFlJXzQwUDVOSlJocldnZ2xMSXA2NEtVN1IyZVpERmFSbjBBSVhHMWl6blozTXpabXhlWjV1aHA5SXBmRUlHdTRPMjNtLVV1MWFONkZpZEtTWVg0ZGZDSzVNRWxxUnA0Tl92UUxXd1ROSTJVZUthSlotUEVIcmRqMEx2dmZRc1Q0U2dEMDZsOHlDSE5KMDNPRjh4X29RaTZDQmNkZ3JLS0RtdkQyejR2Y1VGd2RqbjM5RUtudFJwZUQwRGlmNUhUNElOUkpoRWlHYnhmR2NVRWdEOUFuY0RsUmlMb2c?oc=5"
@@ -28,88 +28,110 @@
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Iran Warns Ukraine Caspian Sea Strike \u2018Will Not Go Unanswere...",
-      "blurb": "Reported activity involving IRAN forces.",
-      "time": "Mon, 27 Jul 2026 08:58:35 GMT",
-      "source": "IranWire",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaGpTY21XdDVXUXJfaEhzdm1HdjJVLTd5aEp5a3NEcl9CcHZveHB3MXVZQmNIRkJuamQ2blVFRFJ5WFFDOXN5c3JTRVU2akw5bEtIY2R0V3hwWGNiLV9Maml0LW9HOEpIUDBxMEJDeV8xQnFtQ0sxVC1OUmFaLWdKQ2NLYU56UGNtR056YU5NOGtsd28zWnJIdE4tQXgwQQ?oc=5"
+      "title": "Video Trump puts off major Iran strike, weighs diplomacy",
+      "blurb": "Reported AIRSTRIKE activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 19:09:59 GMT",
+      "source": "Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1UNWx3Zi0xRUJxR2hGLUNGNG9LbkE4a1dFZzh2b0VCRWF4VzJzZXJpckxLbkhhbnRYQ0lrQm1rQUtvN0JhSmNVTG1pTG0?oc=5"
     },
     {
       "id": "inc_3",
-      "type": "missile",
+      "type": "naval",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Cheap, Accurate and Lethal: Iran\u2019s Best Missile Is Getting M...",
-      "blurb": "Reported activity involving IRAN forces.",
-      "time": "Sat, 25 Jul 2026 09:30:00 GMT",
-      "source": "WSJ",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByZTQ5emFoUm9DTHZ3bXNMb0hEUDFfTWMxNm9hRGt1eTAtMW1pLW52RVZiZ0lwRkozYmdUT2pFN09RM09sbjlUamVPUzA2RG8tVW5UeVJZbUgzVE9GTmNaQk42anF2QTQ3Nk1QcGgxQmpxRjhEQlFEN3BJYXdxZUU?oc=5"
+      "title": "Ukraine calls Iran\u2019s accusations following Caspian Sea vessel att...",
+      "blurb": "Reported NAVAL activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 12:03:38 GMT",
+      "source": "Anadolu Ajans\u0131",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOQ2RPQ3JMcmZ4TXVqY0hUYW1WN2xJbHlPZ29qeS1zZzcxN0xXRlFrUVJGMXBFVEUyQl9RRHNDNGJ5ZlVOM1VROS0wbnFIV2dBQlNWSTJoU3VheGVYV0FURmVQd0JJb1A2ZktMdEZmSlRJT0w4Q3pLVmJRT2k0dGF4ZFVZRURpVF9NMTFSS3JSdUp5aDd1M0ZXMnpjTlpmRHF3Q0V3Rzk5dWEwVXhQMkJjZUZUVTJ6TkgwSkhoZXNScG9DRWt2NktPc3U3ZWoyVGpEd0xV?oc=5"
     },
     {
       "id": "inc_4",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Video Trump puts off major Iran strike, weighs diplomacy",
-      "blurb": "Reported activity involving IRAN forces.",
-      "time": "Mon, 27 Jul 2026 19:09:59 GMT",
-      "source": "Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1UNWx3Zi0xRUJxR2hGLUNGNG9LbkE4a1dFZzh2b0VCRWF4VzJzZXJpckxLbkhhbnRYQ0lrQm1rQUtvN0JhSmNVTG1pTG0?oc=5"
-    },
-    {
-      "id": "inc_5",
-      "type": "airstrike",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Yemen\u2019s Houthi Rebels Strike Saudi Oil Sites on the Red Sea ...",
-      "blurb": "Reported activity involving PROXY forces.",
-      "time": "Mon, 27 Jul 2026 15:21:39 GMT",
-      "source": "Democracy Now!",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb0ZPMjlnS1kyalFDTF82Tk1ncThNb3d6ZF9ranBpSnI3Wlg2SFFlNnhnc0lDSDNxS3hVcXJqc09SWXNiQUNUYkZvOW5iY055cXY1a2dDTzIwek5DZm5qNjNhVXZ3b1hYMDNMWFpaLUU3TWN1eVoyeFFyWWdQMnRwQ0w0TXR3blFVbmFyOGk4eU9uSjByM3JEeWt3MzBvbEdlSW5EYmtXWFZnUE5zUE9WLVZSbw?oc=5"
-    },
-    {
-      "id": "inc_6",
-      "type": "airstrike",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran: Hunger Strike of 1,500 Death-Row Prisoners in Ghezel H...",
-      "blurb": "Reported activity involving IRAN forces.",
-      "time": "Mon, 27 Jul 2026 14:21:34 GMT",
-      "source": "NCRI",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOVWsteVRuRTAxSUd5WE96ZnVremMyc2o0M0Z6elVENkxaYkZwVVlCdDlaRlY5cW42YnBydXpHMDEyNnY1TEVxWUxCMndMZGJRS0RJalA0bUZlWlpmUEctTTVKbG53OGxtZDVvdjlNeDZaWTBBb1lnX3ZuUkF1OS1HZUZoS0dyWUlTclFqZ1ZUVHpPODQwaVFFMV9DWUZrZXpqRVZ3Ynllc0FHd0tmc3VrR1hFc3ZKQXFzNWlwMG9YV0N4U1g2TnFadkh2ZzZuMWlRRnJXeXhjSUxoVmFFYW5TNlhn?oc=5"
-    },
-    {
-      "id": "inc_7",
-      "type": "missile",
-      "actor": "iran",
-      "location": "Sanaa",
-      "title": "EXCLUSIVE: Iran flew IRGC commanders, missile gear to Yemen'...",
-      "blurb": "Reported activity involving IRAN forces.",
-      "time": "Thu, 23 Jul 2026 23:03:23 GMT",
-      "source": "Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX0VBOVcxX1BiZmZ6M1VfVkNSVmg1bGREUzRDNWdjYWFQeXR3TXUyVm1aQURfb3ZpNlpuVVd2LXk0YTFhV3AtTW1HZzBoYjFFMGhpY0J5X1JUM3MtTmJaYmI5cExla1VOSTAzdi1CZVdGb0RXckdQU2hDSlVCMXd4eVZPalltOGQzQnE2M0w0SVYzdUNmYy0xRzFUNWRUSXZHeF9rWkY1UzI1LVpsN0NBUjdDZlJRT3oyWnpB?oc=5"
-    },
-    {
-      "id": "inc_8",
-      "type": "airstrike",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Katy Perry criticizes White House use of 'Firework' in Iran ...",
-      "blurb": "Reported activity involving IRAN forces.",
+      "title": "Katy Perry criticizes White House use of 'Firework' in Iran strik...",
+      "blurb": "Reported AIRSTRIKE activity involving IRAN forces.",
       "time": "Mon, 27 Jul 2026 17:08:00 GMT",
       "source": "cbs19.tv",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT0FoaGN4cU1xODJtNTBvaGsyU0J4bDhyWlREdE50UFBRR3R1aDRCUVEwWlZ0WHJBN21iOS1ibkgwMzBzV05JSFZwRmhvem92LTJscjMtWVhhaGZWTkNqX0FWN0JjSzZDOWUtdDFqMXZDdGJNaFIxaktfT0R6OUwtWktOT2VTWlpvcWI2TTN0SllnU2VYN2JPQThJQ2p5V3pFQlAtRTNYRnlnbTNtVkhDODF2SWlyc0U5UHNheFNORlBHVVRZRkRPdzQ5WXdoR3pYcV9kektVSVBINHVNeW1IVzcyMA?oc=5"
     },
     {
-      "id": "inc_9",
+      "id": "inc_5",
       "type": "airstrike",
-      "actor": "proxy",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "CENTCOM Chief Urged Iran Strike Halt",
+      "blurb": "Reported AIRSTRIKE activity involving IRAN forces.",
+      "time": "Sun, 26 Jul 2026 21:32:25 GMT",
+      "source": "Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQczRQWXZER1MwNWZUalYxTFJBQ2x2LXdTbm4yNy1RNlB1TjVrREh2Q2dYTXNKX0dLbFl2MXlhS0xBVVVNNGlWWWhEWWE1TEhtOUE5SG1lOWJqT2hOdVplOXN0VlVrbGtfVjJzZVBST1lwV3NxaWpGNXJPZ0pRcWx5cmZ6N3Z2SzcwVjlyU2JvaGNxeWZPVGc?oc=5"
+    },
+    {
+      "id": "inc_6",
+      "type": "missile",
+      "actor": "iran",
       "location": "Sanaa",
-      "title": "Yemen's Houthi Rebels Claim Strike on Saudi Pipeline Infrast...",
-      "blurb": "Reported activity involving PROXY forces.",
-      "time": "Mon, 27 Jul 2026 20:25:57 GMT",
-      "source": "The Maritime Executive",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVUxXOWNxUGRDNWp5MHR5UGIwa0w0SVRfbnZhWjltbS1rTDdCUlk2TW1xOG1BNTZQZlNTdEhmYjJVb09ObHk1Q01RaVRqX1ZJYkt4eFlkU1pqRTMwdTdTRDQ2ZEloWHNia2N0ZVlvRTJ4TjFhMzBhLUtyRFcxY3RXSHRJdkdETS1WR0d4TWpyRUNVMlc3cS0xb2s1c0Jfd1NxVmpKaTREbldpZw?oc=5"
+      "title": "Iran-backed Houthis claim missile attack on Saudi Arabia as regio...",
+      "blurb": "Reported MISSILE activity involving IRAN forces.",
+      "time": "Sat, 25 Jul 2026 12:28:00 GMT",
+      "source": "The Guardian",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxONGtzUUVWZzk5bHlYMW50bFg3QW94RFZwbXN6ZEY4eVVTVG5pdlRjd2F1V3gySEd3NVZVbHpFbVExQ2ZjMVBVcS1WMUduM3lSNWkxRzVJWGt3Q0huTW51SmdYQTYtY3RJYXVLUnpKUkZLb3c0aHpYQk9SSUNVLXhzQnY4TTFYOE1vbVQwS0h3clplUkpKenY0WVJpUkU?oc=5"
+    },
+    {
+      "id": "inc_7",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran threatens 'unforeseen' consequences after Ukrainian attack o...",
+      "blurb": "Reported NAVAL activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 09:34:24 GMT",
+      "source": "Le Monde.fr",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPd2hpcHBweUJoaVE1VWdoTU1XZklnaXBPcGVpR2czR1lYSk5LMjJCazFhTEFHS2FDU3VlZHlCTXFjaXZTSnpRTnRfTHJwMWZLZ2dqNVJNcDlOSHQ3Yld0YXNSSWZoNk53N2xhRFpPRGRSTUZaOEtGNnhZd2Zvd1NGaERCd25pVEltTTltS1VwV0ZnNnE3UjNkMjJhTWwwdHQxa2RNTk14M19vblVjTUpBYjd1dzlOU093eGN3c2h3MUhQTlZCRzgxU2lWMUhWVGJha0RMd3ZOZ0dib2JQa3c?oc=5"
+    },
+    {
+      "id": "inc_8",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "U.S. and Iran pause fighting, Trump dismisses concerns of dwindli...",
+      "blurb": "Reported DIPLOMATIC activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 07:56:15 GMT",
+      "source": "CNBC",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51SzJtbzRPcjctRkx3Z0x3aGJUdm5zaEtkNExTLXYwczlGNUNxZ2V3VTZ4Wm9BOG1JUHdpM3licHFJVWU3d1RGRlE2bFlMN1NNSEFIQ3pPaS00TmpPcVdrODNaSFlWVDBSWTRqZTRn?oc=5"
+    },
+    {
+      "id": "inc_9",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Ban on Palestinian workers in Israeli West Bank communities lifte...",
+      "blurb": "Reported DIPLOMATIC activity involving ISRAEL forces.",
+      "time": "Mon, 27 Jul 2026 19:46:00 GMT",
+      "source": "The Jerusalem Post",
+      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE95cTdlRG9MY1lHcmZpRkNWM3pwNzRhUkgxS3ZxdWRQdFIwLUxnSFZCREd1RjNCNlEzRkRHSFVZaVl5d1E5VnZLa1lKamh0OGNjZmVDc2M4OTlVT09N?oc=5"
+    },
+    {
+      "id": "inc_10",
+      "type": "drone",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Wife of \u2018angel\u2019 soldier killed by Iran drone honors his legacy: \u2018...",
+      "blurb": "Reported DRONE activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 18:09:00 GMT",
+      "source": "New York Post",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQMXlZYkRDVTB6SUY1TEhoNDdJajZ1SmhVSnRBQW02XzZ1UVlyenVFcTFPTlBFcEhQdGVTbVpWaDhIOElVN1U0a0VUbllCeUdoNWJmcFpFR3F2VGFzc3lPSXJBRzFIN2pPYi1VUjY5cVJWb1JQRVRWcEc1SUtUeG1BNUJxT0dYQ3ZrQlhacUV5eDRKWWIzUi1kSTlDUUM1cUptVzVTa2s1dmN1OEVzTUpMQmlXSkRjOGplempwNXd0NU1iRUNiWjNobw?oc=5"
+    },
+    {
+      "id": "inc_11",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Sanaa",
+      "title": "Houthis claim attack on Saudi oil refinery as Iran war widens to ...",
+      "blurb": "Reported NAVAL activity involving IRAN forces.",
+      "time": "Sun, 26 Jul 2026 03:14:19 GMT",
+      "source": "The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOOVpNZ2psN29sT085Yy0tT0xweWpLcTBRbUxaVlRGS1hJVFRHc3R0QjdlSWEybjlnNmtKYXM4WjQxaG9neGFqZkNrUEthVHJsQ2VEM0VEX2hJc2tIcHNZT0tEV3JQRUtrbk9YT0dGOGo0T0VVbUVkOVZaS29hWHRBcUw0QkJ4VjlSc2h6czhXWGRkT2xiMkJJUlBkcENSX0VjQndrSjJlT25vS2FFSVA4WE5B?oc=5"
     }
   ],
   "movements": []
