@@ -4,10 +4,10 @@ import json
 import re
 from datetime import datetime, timezone
 
-# Multi-source international security and regional reporting feeds
+# Multi-source independent regional news wires
 FEED_URLS = [
-    "https://news.google.com/rss/search?q=Iran+OR+Israel+Middle+East+military+strike+defense&hl=en-US&gl=US&ceid=US:en",
-    "https://www.al-monitor.com/rss"
+    "https://www.al-monitor.com/rss",
+    "https://www.middleeasteye.net/rss"
 ]
 
 CITIES = [
@@ -48,7 +48,7 @@ def categorize_event(text):
         elif any(x in text_lower for x in ["iraq"]): location = "Baghdad"
         elif any(x in text_lower for x in ["red sea", "gulf"]): location = "Strait of Hormuz"
         elif any(x in text_lower for x in ["iran"]): location = "Tehran"
-        elif any(x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
+        elif x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
         else: location = "Eastern Med"
             
     return actor, event_type, location
@@ -79,7 +79,7 @@ def fetch_and_update():
                     link = link_elem.text if link_elem is not None else "#"
                     
                     clean_title = title.split(' - ')[0] if ' - ' in title else title
-                    source = title.split(' - ')[-1] if ' - ' in title else ("Al-Monitor" if "al-monitor" in url else "News Wire")
+                    source = "Al-Monitor" if "al-monitor" in url else "Middle East Eye"
                     
                     actor, event_type, location = categorize_event(title)
                     
@@ -89,7 +89,7 @@ def fetch_and_update():
                         "actor": actor,
                         "location": location,
                         "title": clean_title[:65] + "..." if len(clean_title) > 65 else clean_title,
-                        "blurb": f"Verified telemetry record tracking {event_type.upper()} regional parameters.",
+                        "blurb": f"Verified regional telemetry tracking {event_type.upper()} indicators.",
                         "time": pub_date,
                         "source": source,
                         "url": link
@@ -105,7 +105,7 @@ def fetch_and_update():
     
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(feed_data, f, indent=2)
-    print("Successfully updated data.json with multi-wire feeds.")
+    print("Successfully updated data.json from independent regional wires.")
 
 if __name__ == "__main__":
     fetch_and_update()
