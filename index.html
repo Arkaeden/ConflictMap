@@ -80,86 +80,37 @@
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; overflow: hidden; transition: background 0.2s, color 0.2s; }
   body { display: flex; flex-direction: column; min-height: 100vh; }
   
-  /* Swiss Poster Grid Lines - ultra subtle */
   body::before {
     content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
-    background-image: 
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 80px 80px;
-    opacity: 0.6;
+    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 80px 80px; opacity: 0.6;
   }
-  
-  /* Authentic Desert Camouflage Subtle Pattern Overlay */
   body.camo-active::before {
-    background-image: 
-      radial-gradient(ellipse at 20% 30%, rgba(79, 62, 45, 0.35) 0%, transparent 40%),
-      radial-gradient(ellipse at 75% 65%, rgba(45, 37, 26, 0.45) 0%, transparent 50%),
-      radial-gradient(ellipse at 50% 85%, rgba(94, 80, 61, 0.25) 0%, transparent 45%),
-      linear-gradient(var(--line) 1px, transparent 1px),
-      linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 320px 320px, 450px 450px, 380px 380px, 80px 80px, 80px 80px;
-    opacity: 0.9;
+    background-image: radial-gradient(ellipse at 20% 30%, rgba(79, 62, 45, 0.35) 0%, transparent 40%), radial-gradient(ellipse at 75% 65%, rgba(45, 37, 26, 0.45) 0%, transparent 50%), linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 320px 320px, 450px 450px, 80px 80px, 80px 80px; opacity: 0.9;
   }
 
-  /* Map Layer Theming via CSS Filters (Base map only) */
-  .leaflet-tile-pane {
-    transition: filter 0.3s ease;
-  }
-  [data-theme="dark"] .leaflet-tile-pane {
-    filter: invert(100%) hue-rotate(180deg) brightness(85%) contrast(110%) sepia(20%);
-  }
-  [data-theme="desert-camo"] .leaflet-tile-pane {
-    filter: sepia(70%) hue-rotate(350deg) saturate(120%) brightness(65%) contrast(110%);
-  }
-  .leaflet-container {
-    background: var(--bg);
-    font-family: inherit;
-  }
+  /* True Themed Map Styling */
+  .leaflet-tile-pane { transition: filter 0.3s ease; }
+  [data-theme="dark"] .leaflet-tile-pane { filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(110%) sepia(20%); }
+  [data-theme="desert-camo"] .leaflet-tile-pane { filter: sepia(70%) hue-rotate(350deg) saturate(120%) brightness(65%) contrast(110%); }
+  .leaflet-container { background: var(--bg); font-family: inherit; }
   
-  /* Leaflet Popup Reskin */
   .leaflet-popup-content-wrapper {
-    background: var(--bg-panel);
-    border: 1px solid var(--line-strong);
-    border-radius: 0;
-    box-shadow: 0 12px 32px var(--shadow-color);
-    color: var(--text);
+    background: var(--bg-panel); border: 1px solid var(--line-strong); border-radius: 0;
+    box-shadow: 0 12px 32px var(--shadow-color); color: var(--text);
   }
-  .leaflet-popup-tip {
-    background: var(--bg-panel);
-    border: 1px solid var(--line-strong);
-  }
-  .leaflet-popup-content {
-    margin: 16px 20px;
-    line-height: 1.4;
-  }
-  .leaflet-container a.leaflet-popup-close-button {
-    color: var(--text-dim);
-    font-weight: 900;
-    padding: 8px;
-  }
+  .leaflet-popup-tip { background: var(--bg-panel); border: 1px solid var(--line-strong); }
+  .leaflet-popup-content { margin: 16px 20px; line-height: 1.4; }
+  .leaflet-container a.leaflet-popup-close-button { color: var(--text-dim); font-weight: 900; padding: 8px; }
   
-  /* Custom Marker Styling */
-  .custom-leaflet-marker {
-    background: transparent;
-    border: none;
-  }
-  .marker-icon-bg {
-    transition: transform 0.2s ease;
-    transform-origin: center;
-  }
-  .custom-leaflet-marker:hover .marker-icon-bg {
-    transform: scale(1.25);
-  }
+  .custom-leaflet-marker { background: transparent; border: none; }
+  .marker-icon-bg { transition: transform 0.2s ease; transform-origin: center; }
+  .custom-leaflet-marker:hover .marker-icon-bg { transform: scale(1.25); }
   
-  /* Müller-Brockmann Header */
   header.topbar {
-    position: relative; z-index: 1000;
-    display: flex; align-items: flex-end; justify-content: space-between;
-    padding: 24px 32px;
-    border-bottom: 1px solid var(--line-strong);
-    background: var(--bg-header);
-    flex-wrap: wrap; gap: 16px;
+    position: relative; z-index: 1000; display: flex; align-items: flex-end; justify-content: space-between;
+    padding: 24px 32px; border-bottom: 1px solid var(--line-strong); background: var(--bg-header); flex-wrap: wrap; gap: 16px;
   }
   .brand-group { display: flex; align-items: center; gap: 20px; }
   .brand-logo {
@@ -169,40 +120,24 @@
   [data-theme="desert-camo"] .brand-logo {
     filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(90%);
   }
-  .title-block .eyebrow {
-    font-size: 11px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; color: var(--accent);
-    margin-bottom: 6px;
-  }
-  .title-block h1 {
-    font-weight: 900; font-size: 32px; letter-spacing: -1px;
-    margin: 0; color: var(--text); text-transform: uppercase; line-height: 1;
-  }
+  .title-block .eyebrow { font-size: 11px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  .title-block h1 { font-weight: 900; font-size: 32px; letter-spacing: -1px; margin: 0; color: var(--text); text-transform: uppercase; line-height: 1; }
   .status-block { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
   
-  /* Theme Toggle Buttons */
   .theme-controls { display: flex; gap: 6px; align-items: center; }
   button.icon-btn {
     background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;
-    width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center;
-    transition: all 0.15s ease; padding: 0;
+    width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s ease; padding: 0;
   }
   button.icon-btn:hover { background: var(--text); color: var(--bg); }
   button.icon-btn svg { width: 16px; height: 16px; fill: currentColor; }
-  button.icon-btn.active-theme {
-    border-color: var(--accent);
-    box-shadow: 0 0 0 1px var(--accent);
-  }
+  button.icon-btn.active-theme { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
   
-  .mode-badge {
-    font-size: 11px; font-weight: 700; letter-spacing: 2px;
-    padding: 10px 12px; border-radius: 0;
-    text-transform: uppercase; color: var(--bg); background: var(--iran);
-  }
+  .mode-badge { font-size: 11px; font-weight: 700; letter-spacing: 2px; padding: 10px 12px; border-radius: 0; text-transform: uppercase; color: var(--bg); background: var(--iran); }
   .updated-text { font-size: 12px; font-weight: 700; color: var(--text-dim); }
   button.control-btn {
-    font-weight: 900; letter-spacing: 2px; font-size: 11px;
-    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;
-    padding: 10px 16px; cursor: pointer; text-transform: uppercase;
+    font-weight: 900; letter-spacing: 2px; font-size: 11px; background: var(--bg-panel-2); color: var(--text);
+    border: 1px solid var(--line-strong); border-radius: 0; padding: 10px 16px; cursor: pointer; text-transform: uppercase;
     display: flex; align-items: center; gap: 8px; transition: all 0.15s ease;
   }
   button.control-btn:hover { background: var(--text); color: var(--bg); }
@@ -210,30 +145,18 @@
   button.refresh-btn:hover { filter: brightness(1.15); color: #FFF; }
   button.refresh-btn:disabled { opacity: 0.5; cursor: wait; }
   
-  .spinner {
-    width: 10px; height: 10px; border: 2px solid #FFF; border-top-color: transparent;
-    border-radius: 50%; animation: spin 0.6s linear infinite; display: none;
-  }
+  .spinner { width: 10px; height: 10px; border: 2px solid #FFF; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; display: none; }
   .refresh-btn.loading .spinner { display: inline-block; }
   @keyframes spin { to { transform: rotate(360deg); } }
   
-  /* Main Layout */
-  main.layout {
-    position: relative; z-index: 1;
-    flex: 1; display: grid; grid-template-columns: 1fr 400px; gap: 0; min-height: 0;
-  }
+  main.layout { position: relative; z-index: 1; flex: 1; display: grid; grid-template-columns: 1fr 400px; gap: 0; min-height: 0; }
   .mapwrap { position: relative; overflow: hidden; background: var(--bg); }
   #map { width: 100%; height: 100%; display: block; z-index: 1; }
   
-  /* Sidebar - Swiss Clean Panel */
-  aside.sidebar {
-    background: var(--bg-panel); border-left: 1px solid var(--line-strong);
-    display: flex; flex-direction: column; min-height: 0; z-index: 2;
-  }
+  aside.sidebar { background: var(--bg-panel); border-left: 1px solid var(--line-strong); display: flex; flex-direction: column; min-height: 0; z-index: 2; }
   .sidebar-section { padding: 20px 24px; border-bottom: 1px solid var(--line); }
   .sidebar-title {
-    font-weight: 900; font-size: 12px; letter-spacing: 3px;
-    text-transform: uppercase; color: var(--text-dim); margin: 0 0 14px 0;
+    font-weight: 900; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin: 0 0 14px 0;
     display: flex; justify-content: space-between; align-items: center;
   }
   .sidebar-title::after { content: "—"; color: var(--text-faint); font-weight: 900; }
@@ -248,28 +171,18 @@
   .feed::-webkit-scrollbar { width: 4px; }
   .feed::-webkit-scrollbar-thumb { background: var(--line-strong); }
   
-  .feed-item {
-    padding: 12px 14px; margin-bottom: 8px; cursor: pointer;
-    background: var(--bg); border: 1px solid var(--line); transition: all 0.15s ease;
-  }
+  .feed-item { padding: 12px 14px; margin-bottom: 8px; cursor: pointer; background: var(--bg); border: 1px solid var(--line); transition: all 0.15s ease; }
   .feed-item:hover { background: var(--bg-panel-2); }
   .feed-item.active { background: var(--bg-elevated); border-left: 3px solid var(--accent); }
   .feed-item .fi-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
   .feed-item .fi-dot { width: 6px; height: 6px; flex: none; }
-  .feed-item .fi-title { font-weight: 900; font-size: 13px; letter-spacing: -0.2px; color: var(--text); text-transform: uppercase; line-height: 1.3;}
+  .feed-item .fi-title { font-weight: 900; font-size: 13px; letter-spacing: -0.2px; color: var(--text); text-transform: uppercase; line-height: 1.3; }
   .feed-item .fi-meta { font-size: 10px; font-weight: 700; color: var(--text-faint); margin-left: 14px; text-transform: uppercase; }
   .feed-empty { color: var(--text-faint); font-size: 11px; font-weight: 700; font-style: italic; }
   
-  .disclaimer {
-    padding: 16px 24px; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint);
-    background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px;
-  }
+  .disclaimer { padding: 16px 24px; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint); background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px; }
   .disclaimer strong { color: var(--text-dim); }
-  
-  .error-banner {
-    display: none; margin: 0 32px; padding: 10px 14px;
-    background: rgba(255,51,0,0.1); color: var(--danger); font-size: 11px; font-weight: 900; position: relative; z-index: 2; border: 1px solid var(--danger); border-top: none;
-  }
+  .error-banner { display: none; margin: 0 32px; padding: 10px 14px; background: rgba(255,51,0,0.1); color: var(--danger); font-size: 11px; font-weight: 900; position: relative; z-index: 2; border: 1px solid var(--danger); border-top: none; }
   
   @media (max-width: 900px) {
     html, body { height: auto; overflow: auto; }
@@ -345,7 +258,6 @@
 
 <script>
 (function(){
-/* ================= GEOGRAPHY COORDS (Leaflet uses [Lat, Lng]) ================= */
 const CITY = {
   "Tehran": [35.6892, 51.3890], "Natanz": [33.5128, 51.9192], "Fordow": [34.8847, 50.9908],
   "Isfahan": [32.6539, 51.6660], "Bushehr": [28.9684, 50.8385], "Bandar Abbas": [27.1865, 56.2808],
@@ -375,24 +287,13 @@ function iconMarkup(type){
   }
 }
 
-/* ================= INITIALIZE LEAFLET MAP ================= */
 const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
-
-// 1. Base Map Tile Layer (This receives the CSS color filters)
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', {
-  maxZoom: 12, subdomains: 'abcd'
-}).addTo(map);
-
-// 2. Dynamic Labels Tile Layer (Isolated above filters, URL swapped via JavaScript)
-const labelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', {
-  maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' 
-}).addTo(map);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' }).addTo(map);
+const labelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' }).addTo(map);
 
 let state = { incidents: [], lastUpdated: "" };
 let activeMarkers = [];
-let markerMap = {};
 
-/* ================= RENDER DATA ================= */
 async function fetchTelemetryData() {
   try {
     const response = await fetch('./data.json?t=' + Date.now());
@@ -411,7 +312,6 @@ function renderAll() {
   document.getElementById("updatedText").textContent = "SYNC: " + state.lastUpdated;
   activeMarkers.forEach(m => map.removeLayer(m));
   activeMarkers = [];
-  markerMap = {};
   
   const feedEl = document.getElementById("feed");
   feedEl.innerHTML = "";
@@ -426,7 +326,6 @@ function renderAll() {
     const color = ACTOR_HEX[inc.actor] || "var(--text)";
     const eventType = inc.type || "diplomatic";
     
-    // Create Custom Icon using original SVGs
     const customIcon = L.divIcon({
       className: 'custom-leaflet-marker',
       html: `<svg viewBox="-15 -15 30 30" style="width: 32px; height: 32px; overflow: visible;">
@@ -437,7 +336,6 @@ function renderAll() {
       iconAnchor: [16, 16]
     });
 
-    // Create Tooltip HTML
     const popupHtml = `
       <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
         <div style="color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">
@@ -457,9 +355,7 @@ function renderAll() {
     const marker = L.marker(coords, { icon: customIcon }).bindPopup(popupHtml);
     marker.addTo(map);
     activeMarkers.push(marker);
-    markerMap[inc.id] = marker;
 
-    // Sidebar Feed Item
     const row = document.createElement("div");
     row.className = "feed-item";
     row.dataset.id = inc.id;
@@ -481,7 +377,6 @@ function renderAll() {
   });
 }
 
-// Populate Static Legend Icons
 const legendIcons = document.getElementById("legendIcons");
 Object.keys(TYPE_LABEL).forEach(t => {
   const wrap = document.createElement("div");
@@ -490,28 +385,20 @@ Object.keys(TYPE_LABEL).forEach(t => {
   legendIcons.appendChild(wrap);
 });
 
-/* ================= THEME & CONTROLS ================= */
 const refreshBtn = document.getElementById("refreshBtn");
 const themeLightBtn = document.getElementById("themeLightBtn");
 const themeDarkBtn = document.getElementById("themeDarkBtn");
 const themeCamoBtn = document.getElementById("themeCamoBtn");
 
 function updateThemeButtons(theme){
-  // 1. Toggle Button UI states
   themeLightBtn.classList.toggle("active-theme", theme === "light");
   themeDarkBtn.classList.toggle("active-theme", theme === "dark");
   themeCamoBtn.classList.toggle("active-theme", theme === "desert-camo");
   
-  // 2. Dynamically Swap Map Label Tiles for True Contrast
-  const lightLabelsUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png';
-  const darkLabelsUrl = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png';
+  const lightLabels = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png';
+  const darkLabels = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png';
   
-  if (theme === 'light') {
-    labelsLayer.setUrl(lightLabelsUrl);
-  } else {
-    // Both 'dark' and 'desert-camo' modes require the inverted label contrast 
-    labelsLayer.setUrl(darkLabelsUrl);
-  }
+  labelsLayer.setUrl(theme === 'light' ? lightLabels : darkLabels);
 }
 
 themeLightBtn.addEventListener("click", () => {
@@ -540,10 +427,8 @@ refreshBtn.addEventListener("click", () => {
   });
 });
 
-// Init
 updateThemeButtons("light");
 fetchTelemetryData();
-
 })();
 </script>
 </body>
