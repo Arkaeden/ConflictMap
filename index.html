@@ -55,19 +55,19 @@
   }
   
   [data-theme="desert-camo"] {
-    --bg: #362E23;
-    --bg-header: #2F271D;
-    --bg-panel: #3D3529;
-    --bg-panel-2: #473E31;
-    --bg-elevated: #54493B;
-    --line: rgba(222, 201, 163, 0.15);
-    --line-strong: rgba(222, 201, 163, 0.3);
-    --text: #F7F3EC;
-    --text-dim: #D1C4AF;
-    --text-faint: #9E917C;
-    --accent: #E07A38;
-    --accent-dim: rgba(224, 122, 56, 0.25);
-    --iran: #739E7B;
+    --bg: #2B241B;
+    --bg-header: #221C14;
+    --bg-panel: #332B20;
+    --bg-panel-2: #3E3427;
+    --bg-elevated: #4A3E30;
+    --line: rgba(212, 184, 135, 0.12);
+    --line-strong: rgba(212, 184, 135, 0.25);
+    --text: #F4EEDB;
+    --text-dim: #C2B39B;
+    --text-faint: #8F816B;
+    --accent: #D96B2B;
+    --accent-dim: rgba(217, 107, 43, 0.25);
+    --iran: #6BA879;
     --israel: #5286D4;
     --usa: #E5C365;
     --proxy: #D97741;
@@ -86,13 +86,11 @@
     background-size: 80px 80px; opacity: 0.6;
   }
   body.camo-active::before {
-    background-image: radial-gradient(ellipse at 20% 30%, rgba(79, 62, 45, 0.35) 0%, transparent 40%), radial-gradient(ellipse at 75% 65%, rgba(45, 37, 26, 0.45) 0%, transparent 50%), linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 320px 320px, 450px 450px, 80px 80px, 80px 80px; opacity: 0.9;
+    background-image: radial-gradient(ellipse at 20% 30%, rgba(59, 46, 32, 0.4) 0%, transparent 40%), radial-gradient(ellipse at 75% 65%, rgba(33, 27, 19, 0.5) 0%, transparent 50%), linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 320px 320px, 450px 450px, 80px 80px, 80px 80px; opacity: 0.95;
   }
 
-  .leaflet-tile-pane { transition: filter 0.3s ease; }
-  [data-theme="dark"] .leaflet-tile-pane { filter: invert(100%) hue-rotate(180deg) brightness(80%) contrast(110%) sepia(20%); }
-  [data-theme="desert-camo"] .leaflet-tile-pane { filter: sepia(70%) hue-rotate(350deg) saturate(120%) brightness(65%) contrast(110%); }
+  /* Native Tile Rendering without Ugly Color Filters */
   .leaflet-container { background: var(--bg); font-family: inherit; }
   
   .leaflet-popup-content-wrapper {
@@ -287,8 +285,16 @@ function iconMarkup(type){
 }
 
 const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' }).addTo(map);
-const labelsLayer = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' }).addTo(map);
+
+// Base layers for switching themes natively without ugly filters
+const baseLayerVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
+const baseLayerDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
+
+const labelsVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
+const labelsDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
+
+let currentBaseLayer = baseLayerVoyager.addTo(map);
+let currentLabelsLayer = labelsVoyager.addTo(map);
 
 let state = { incidents: [], lastUpdated: "" };
 let activeMarkers = [];
@@ -394,10 +400,18 @@ function updateThemeButtons(theme){
   themeDarkBtn.classList.toggle("active-theme", theme === "dark");
   themeCamoBtn.classList.toggle("active-theme", theme === "desert-camo");
   
-  const lightLabels = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png';
-  const darkLabels = 'https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png';
+  // Swap native tiles cleanly without ugly CSS filters
+  map.removeLayer(currentBaseLayer);
+  map.removeLayer(currentLabelsLayer);
   
-  labelsLayer.setUrl(theme === 'light' ? lightLabels : darkLabels);
+  if (theme === "light") {
+    currentBaseLayer = baseLayerVoyager.addTo(map);
+    currentLabelsLayer = labelsVoyager.addTo(map);
+  } else {
+    // Dark & Desert Camo both utilize the gorgeous Dark Matter base tiles
+    currentBaseLayer = baseLayerDark.addTo(map);
+    currentLabelsLayer = labelsDark.addTo(map);
+  }
 }
 
 themeLightBtn.addEventListener("click", () => {
