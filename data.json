@@ -1,106 +1,116 @@
 {
-  "lastUpdated": "2026-07-26T22:00:00Z",
+  "lastUpdated": "2026-07-27T22:00:23.521775+00:00",
   "incidents": [
     {
-      "id": "op1",
-      "location": "Strait of Hormuz",
-      "title": "Commercial Tanker Interception",
-      "blurb": "IRGC naval elements intercepted and briefly detained a commercial container vessel near central lanes.",
+      "id": "inc_0",
+      "type": "airstrike",
       "actor": "iran",
-      "type": "naval",
-      "severity": 4,
-      "time": "Today, 04:30 UTC",
-      "source": "OSINT Maritime"
+      "location": "Eastern Med",
+      "title": "Iran warns Ukraine of retaliation after deadly Caspian Sea s...",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 06:23:43 GMT",
+      "source": "Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSWtRS1NlVHUzQ3ctOXhDNDNxSFNiMi1VYWxubFF1YkJPZ2pkd1pLVnlkTlhCbkNPV3FmVTNNX0V0eGZnQVViQTk0TGY2azh4b3E5cEdJQmRrbXp3aHJXLUlnV0tFYy1jWWlrWTRlZ3Q2YUxfMGJSX25GYWg2ekY3eGVWOGIzRVE1WVdRV0M2RlVFQy10bDJOY05HTW43SVMwRFUzdDVreVJud9IBrwFBVV95cUxNMVA3NloweW5UQ3NVNmxJRHMyVlpIOVJhSEVneXJ0ZkswSXE5YkN5VExOX044RXdOdmd1djJ0Q09QclFILVJrNXJtVEtNaEw5LWdMOEhwcS1pc3kzaVEtdnVYNm1WYkQxSWVIc1F6Z25vc1dVNDlCMkRHTmx2S3JZdmMyVU9zQ0pGUnpDUGlpUURlbFk1cGU4a2VsVlRoVzVEZUZtODUxSjhfRm5sZy1j?oc=5"
     },
     {
-      "id": "op2",
-      "location": "Tel Aviv",
-      "title": "Air Defense Intercepts",
-      "blurb": "Ballistic trajectories detected from eastern vectors; Arrow defense engaged over central districts.",
-      "actor": "israel",
+      "id": "inc_1",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Eastern Med",
+      "title": "Pause in US strikes on Iran raises questions about missile s...",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 21:38:18 GMT",
+      "source": "WBFF",
+      "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxQTW1LZ0ZTcjN3T0Q0TjZ2QVFkb283WFh3ZjkyNWlISk1rR2dpcTVtdS0xZE9SVlVlWHVNQVd6c3hoQWw3ZWgwbFR2NTVVRHpxLWdxd0dTSWEwVkdaUEdYUGluZFlJXzQwUDVOSlJocldnZ2xMSXA2NEtVN1IyZVpERmFSbjBBSVhHMWl6blozTXpabXhlWjV1aHA5SXBmRUlHdTRPMjNtLVV1MWFONkZpZEtTWVg0ZGZDSzVNRWxxUnA0Tl92UUxXd1ROSTJVZUthSlotUEVIcmRqMEx2dmZRc1Q0U2dEMDZsOHlDSE5KMDNPRjh4X29RaTZDQmNkZ3JLS0RtdkQyejR2Y1VGd2RqbjM5RUtudFJwZUQwRGlmNUhUNElOUkpoRWlHYnhmR2NVRWdEOUFuY0RsUmlMb2c?oc=5"
+    },
+    {
+      "id": "inc_2",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Eastern Med",
+      "title": "Iran Warns Ukraine Caspian Sea Strike \u2018Will Not Go Unanswere...",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 08:58:35 GMT",
+      "source": "IranWire",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNaGpTY21XdDVXUXJfaEhzdm1HdjJVLTd5aEp5a3NEcl9CcHZveHB3MXVZQmNIRkJuamQ2blVFRFJ5WFFDOXN5c3JTRVU2akw5bEtIY2R0V3hwWGNiLV9Maml0LW9HOEpIUDBxMEJDeV8xQnFtQ0sxVC1OUmFaLWdKQ2NLYU56UGNtR056YU5NOGtsd28zWnJIdE4tQXgwQQ?oc=5"
+    },
+    {
+      "id": "inc_3",
       "type": "missile",
-      "severity": 4,
-      "time": "Today, 02:15 UTC",
-      "source": "IDF Spokesperson"
-    },
-    {
-      "id": "op3",
-      "location": "Beirut",
-      "title": "Precision Strike on Infrastructure",
-      "blurb": "Targeted strike reported against command infrastructure facilities in southern capital sectors.",
-      "actor": "israel",
-      "type": "airstrike",
-      "severity": 4,
-      "time": "Yesterday, 22:40 UTC",
-      "source": "Regional Monitor"
-    },
-    {
-      "id": "op4",
-      "location": "Hodeidah",
-      "title": "Port Facility Strikes",
-      "blurb": "Airstrikes hit storage installations following sustained anti-ship missile activity in Red Sea corridor.",
-      "actor": "proxy",
-      "type": "airstrike",
-      "severity": 3,
-      "time": "Yesterday, 18:10 UTC",
-      "source": "CENTCOM"
-    },
-    {
-      "id": "op5",
-      "location": "Baghdad",
-      "title": "De-escalation Talks Convened",
-      "blurb": "Bilateral meetings in Green Zone addressing cross-border security frameworks.",
-      "actor": "host",
-      "type": "diplomatic",
-      "severity": 1,
-      "time": "2 days ago",
-      "source": "INA News"
-    },
-    {
-      "id": "op6",
-      "location": "Natanz",
-      "title": "Enhanced Air Defense Alert",
-      "blurb": "Surface-to-air batteries on maximum readiness following aerial reconnaissance signatures.",
       "actor": "iran",
-      "type": "ground",
-      "severity": 3,
-      "time": "2 days ago",
-      "source": "Defense Intel"
+      "location": "Eastern Med",
+      "title": "Cheap, Accurate and Lethal: Iran\u2019s Best Missile Is Getting M...",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Sat, 25 Jul 2026 09:30:00 GMT",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFByZTQ5emFoUm9DTHZ3bXNMb0hEUDFfTWMxNm9hRGt1eTAtMW1pLW52RVZiZ0lwRkozYmdUT2pFN09RM09sbjlUamVPUzA2RG8tVW5UeVJZbUgzVE9GTmNaQk42anF2QTQ3Nk1QcGgxQmpxRjhEQlFEN3BJYXdxZUU?oc=5"
     },
     {
-      "id": "op7",
-      "location": "Persian Gulf",
-      "title": "Carrier Strike Group Patrol",
-      "blurb": "USN carrier group maintaining defensive posture in international operating boxes.",
-      "actor": "usa",
-      "type": "naval",
-      "severity": 2,
-      "time": "3 days ago",
-      "source": "US 5th Fleet"
+      "id": "inc_4",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Eastern Med",
+      "title": "Video Trump puts off major Iran strike, weighs diplomacy",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 19:09:59 GMT",
+      "source": "Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1UNWx3Zi0xRUJxR2hGLUNGNG9LbkE4a1dFZzh2b0VCRWF4VzJzZXJpckxLbkhhbnRYQ0lrQm1rQUtvN0JhSmNVTG1pTG0?oc=5"
+    },
+    {
+      "id": "inc_5",
+      "type": "airstrike",
+      "actor": "proxy",
+      "location": "Eastern Med",
+      "title": "Yemen\u2019s Houthi Rebels Strike Saudi Oil Sites on the Red Sea ...",
+      "blurb": "Reported activity involving PROXY forces.",
+      "time": "Mon, 27 Jul 2026 15:21:39 GMT",
+      "source": "Democracy Now!",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb0ZPMjlnS1kyalFDTF82Tk1ncThNb3d6ZF9ranBpSnI3Wlg2SFFlNnhnc0lDSDNxS3hVcXJqc09SWXNiQUNUYkZvOW5iY055cXY1a2dDTzIwek5DZm5qNjNhVXZ3b1hYMDNMWFpaLUU3TWN1eVoyeFFyWWdQMnRwQ0w0TXR3blFVbmFyOGk4eU9uSjByM3JEeWt3MzBvbEdlSW5EYmtXWFZnUE5zUE9WLVZSbw?oc=5"
+    },
+    {
+      "id": "inc_6",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Eastern Med",
+      "title": "Iran: Hunger Strike of 1,500 Death-Row Prisoners in Ghezel H...",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 14:21:34 GMT",
+      "source": "NCRI",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOVWsteVRuRTAxSUd5WE96ZnVremMyc2o0M0Z6elVENkxaYkZwVVlCdDlaRlY5cW42YnBydXpHMDEyNnY1TEVxWUxCMndMZGJRS0RJalA0bUZlWlpmUEctTTVKbG53OGxtZDVvdjlNeDZaWTBBb1lnX3ZuUkF1OS1HZUZoS0dyWUlTclFqZ1ZUVHpPODQwaVFFMV9DWUZrZXpqRVZ3Ynllc0FHd0tmc3VrR1hFc3ZKQXFzNWlwMG9YV0N4U1g2TnFadkh2ZzZuMWlRRnJXeXhjSUxoVmFFYW5TNlhn?oc=5"
+    },
+    {
+      "id": "inc_7",
+      "type": "missile",
+      "actor": "iran",
+      "location": "Eastern Med",
+      "title": "EXCLUSIVE: Iran flew IRGC commanders, missile gear to Yemen'...",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Thu, 23 Jul 2026 23:03:23 GMT",
+      "source": "Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNX0VBOVcxX1BiZmZ6M1VfVkNSVmg1bGREUzRDNWdjYWFQeXR3TXUyVm1aQURfb3ZpNlpuVVd2LXk0YTFhV3AtTW1HZzBoYjFFMGhpY0J5X1JUM3MtTmJaYmI5cExla1VOSTAzdi1CZVdGb0RXckdQU2hDSlVCMXd4eVZPalltOGQzQnE2M0w0SVYzdUNmYy0xRzFUNWRUSXZHeF9rWkY1UzI1LVpsN0NBUjdDZlJRT3oyWnpB?oc=5"
+    },
+    {
+      "id": "inc_8",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Eastern Med",
+      "title": "Katy Perry criticizes White House use of 'Firework' in Iran ...",
+      "blurb": "Reported activity involving IRAN forces.",
+      "time": "Mon, 27 Jul 2026 17:08:00 GMT",
+      "source": "cbs19.tv",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOT0FoaGN4cU1xODJtNTBvaGsyU0J4bDhyWlREdE50UFBRR3R1aDRCUVEwWlZ0WHJBN21iOS1ibkgwMzBzV05JSFZwRmhvem92LTJscjMtWVhhaGZWTkNqX0FWN0JjSzZDOWUtdDFqMXZDdGJNaFIxaktfT0R6OUwtWktOT2VTWlpvcWI2TTN0SllnU2VYN2JPQThJQ2p5V3pFQlAtRTNYRnlnbTNtVkhDODF2SWlyc0U5UHNheFNORlBHVVRZRkRPdzQ5WXdoR3pYcV9kektVSVBINHVNeW1IVzcyMA?oc=5"
+    },
+    {
+      "id": "inc_9",
+      "type": "airstrike",
+      "actor": "proxy",
+      "location": "Eastern Med",
+      "title": "Yemen's Houthi Rebels Claim Strike on Saudi Pipeline Infrast...",
+      "blurb": "Reported activity involving PROXY forces.",
+      "time": "Mon, 27 Jul 2026 20:25:57 GMT",
+      "source": "The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVUxXOWNxUGRDNWp5MHR5UGIwa0w0SVRfbnZhWjltbS1rTDdCUlk2TW1xOG1BNTZQZlNTdEhmYjJVb09ObHk1Q01RaVRqX1ZJYkt4eFlkU1pqRTMwdTdTRDQ2ZEloWHNia2N0ZVlvRTJ4TjFhMzBhLUtyRFcxY3RXSHRJdkdETS1WR0d4TWpyRUNVMlc3cS0xb2s1c0Jfd1NxVmpKaTREbldpZw?oc=5"
     }
   ],
-  "movements": [
-    {
-      "id": "m1",
-      "actor": "usa",
-      "unitType": "carrier",
-      "label": "CSG Patrol Vector",
-      "from": "Arabian Sea",
-      "to": "Persian Gulf",
-      "blurb": "Routine maritime security patrol moving into central operating boxes.",
-      "time": "Active",
-      "source": "USNT"
-    },
-    {
-      "id": "m2",
-      "actor": "israel",
-      "unitType": "aircraft",
-      "label": "Northern Air Sortie",
-      "from": "Haifa",
-      "to": "Eastern Med",
-      "blurb": "Combat air patrol maintaining continuous overwatch along maritime borders.",
-      "time": "Active",
-      "source": "IAF"
-    }
-  ]
+  "movements": []
 }
