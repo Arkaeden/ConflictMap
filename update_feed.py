@@ -4,15 +4,14 @@ import json
 import re
 from datetime import datetime, timezone
 
-# 1. The Live Data Source (Google News RSS for Middle East Conflict)
+# 1. Live Data Source (Google News RSS for Middle East Conflict)
 RSS_URL = "https://news.google.com/rss/search?q=Iran+OR+Israel+OR+Lebanon+OR+Syria+OR+Yemen+strike+OR+missile+OR+drone+OR+attack&hl=en-US&gl=US&ceid=US:en"
 
-# 2. Map Hub Cities
 CITIES = [
     "Tehran", "Natanz", "Fordow", "Isfahan", "Bushehr", "Bandar Abbas", 
     "Tel Aviv", "Jerusalem", "Haifa", "Eilat", "Gaza City", "Rafah", 
     "Golan Heights", "Beirut", "Tyre", "Damascus", "Baghdad", "Erbil", 
-    "Amman", "Riyadh", "Sanaa", "Hodeidah", "Aden"
+    "Amman", "Riyadh", "Sanaa", "Hodeidah", "Aden", "Strait of Hormuz"
 ]
 
 def categorize_event(text):
@@ -29,44 +28,20 @@ def categorize_event(text):
     elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "proxy", "militia"]): 
         actor = "proxy"
     
-    # --- 2. DETERMINE EVENT TYPE & MAP ICON ---
-    # Expanded vocabulary to ensure all 7 icons trigger correctly
-    if any(x in text_lower for x in [
-        "airstrike", "air strike", "bombed", "bombing", "strike", "jets", 
-        "f-16", "f-35", "warplane", "fighter jet", "air raid", "blast"
-    ]): 
+    # --- 2. DETERMINE EVENT TYPE (Precise Matching to avoid Drone lock) ---
+    if any(x in text_lower for x in ["airstrike", "air strike", "bombed", "bombing", "strike", "jets", "warplane", "fighter jet", "air raid", "blast"]): 
         event_type = "airstrike"
-        
-    elif any(x in text_lower for x in [
-        "missile", "rocket", "intercepted", "iron dome", "ballistic", 
-        "artillery", "shelling", "barrage", "fired at", "launched"
-    ]): 
-        event_type = "missile"
-        
-    elif any(x in text_lower for x in [
-        "drone", "uav", "unmanned", "quadcopter", "kamikaze", "loitering"
-    ]): 
+    elif any(x in text_lower for x in ["drone", "uav", "unmanned", "quadcopter", "kamikaze", "loitering"]): 
         event_type = "drone"
-        
-    elif any(x in text_lower for x in [
-        "ship", "naval", "red sea", "gulf", "tanker", "vessel", "maritime", 
-        "boat", "destroyer", "frigate", "cargo", "seized", "strait"
-    ]): 
+    elif any(x in text_lower for x in ["missile", "rocket", "iron dome", "ballistic", "artillery", "shelling", "barrage"]): 
+        event_type = "missile"
+    elif any(x in text_lower for x in ["ship", "naval", "red sea", "gulf", "tanker", "vessel", "maritime", "boat", "destroyer", "frigate", "strait"]): 
         event_type = "naval"
-        
-    elif any(x in text_lower for x in [
-        "troops", "ground", "raid", "soldiers", "infantry", "border clash", 
-        "forces", "army", "special forces", "commandos", "gunfire"
-    ]): 
+    elif any(x in text_lower for x in ["troops", "ground", "raid", "soldiers", "infantry", "border clash", "forces", "army", "commandos"]): 
         event_type = "ground"
-        
-    elif any(x in text_lower for x in [
-        "hack", "cyber", "ddos", "malware", "outage", "network", "disrupted"
-    ]): 
+    elif any(x in text_lower for x in ["hack", "cyber", "ddos", "malware", "outage", "network", "disrupted"]): 
         event_type = "cyber"
-        
     else:
-        # Defaults to diplomatic / political updates
         event_type = "diplomatic"
     
     # --- 3. DETERMINE LOCATION ---
@@ -82,7 +57,7 @@ def categorize_event(text):
         elif any(x in text_lower for x in ["syria"]): location = "Damascus"
         elif any(x in text_lower for x in ["gaza", "hamas"]): location = "Gaza City"
         elif any(x in text_lower for x in ["iraq"]): location = "Baghdad"
-        elif any(x in text_lower for x in ["red sea"]): location = "Bab-el-Mandeb"
+        elif any(x in text_lower for x in ["red sea", "gulf"]): location = "Strait of Hormuz"
         elif any(x in text_lower for x in ["iran"]): location = "Tehran"
         elif any(x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
         else:
@@ -98,10 +73,9 @@ def fetch_and_update():
             
         root = ET.fromstring(xml_data)
         items = root.findall('.//item')
-        
         incidents = []
         
-        for i, item in enumerate(items[:12]):  # Pull up to 12 items
+        for i, item in enumerate(items[:12]):
             title = item.find('title').text
             pub_date = item.find('pubDate').text
             link = item.find('link').text
@@ -133,8 +107,7 @@ def fetch_and_update():
         with open('data.json', 'w', encoding='utf-8') as f:
             json.dump(feed_data, f, indent=2)
             
-        print("Successfully updated data.json with distinct event types.")
-        
+        print("Successfully updated data.json")
     except Exception as e:
         print(f"Error fetching data: {e}")
 
