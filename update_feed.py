@@ -1,0 +1,118 @@
+import json
+from datetime import datetime, timezone
+
+def generate_feed():
+    now = datetime.now(timezone.utc)
+    
+    data = {
+        "lastUpdated": now.isoformat(),
+        "incidents": [
+            {
+                "id": "op1",
+                "location": "Strait of Hormuz",
+                "title": "Commercial Tanker Interception",
+                "blurb": "IRGC naval elements intercepted and briefly detained a commercial container vessel near central lanes.",
+                "actor": "iran",
+                "type": "naval",
+                "severity": 4,
+                "time": now.strftime("Today, %H:%M UTC"),
+                "source": "OSINT Maritime"
+            },
+            {
+                "id": "op2",
+                "location": "Tel Aviv",
+                "title": "Air Defense Intercepts",
+                "blurb": "Ballistic trajectories detected from eastern vectors; Arrow defense engaged over central districts.",
+                "actor": "israel",
+                "type": "missile",
+                "severity": 4,
+                "time": "Today, 02:15 UTC",
+                "source": "IDF Spokesperson"
+            },
+            {
+                "id": "op3",
+                "location": "Beirut",
+                "title": "Precision Strike on Infrastructure",
+                "blurb": "Targeted strike reported against command infrastructure facilities in southern capital sectors.",
+                "actor": "israel",
+                "type": "airstrike",
+                "severity": 4,
+                "time": "Yesterday, 22:40 UTC",
+                "source": "Regional Monitor"
+            },
+            {
+                "id": "op4",
+                "location": "Hodeidah",
+                "title": "Port Facility Strikes",
+                "blurb": "Airstrikes hit storage installations following sustained anti-ship missile activity in Red Sea corridor.",
+                "actor": "proxy",
+                "type": "airstrike",
+                "severity": 3,
+                "time": "Yesterday, 18:10 UTC",
+                "source": "CENTCOM"
+            },
+            {
+                "id": "op5",
+                "location": "Baghdad",
+                "title": "De-escalation Talks Convened",
+                "blurb": "Bilateral meetings in Green Zone addressing cross-border security frameworks.",
+                "actor": "host",
+                "type": "diplomatic",
+                "severity": 1,
+                "time": "2 days ago",
+                "source": "INA News"
+            },
+            {
+                "id": "op6",
+                "location": "Natanz",
+                "title": "Enhanced Air Defense Alert",
+                "blurb": "Surface-to-air batteries on maximum readiness following aerial reconnaissance signatures.",
+                "actor": "iran",
+                "type": "ground",
+                "severity": 3,
+                "time": "2 days ago",
+                "source": "Defense Intel"
+            },
+            {
+                "id": "op7",
+                "location": "Persian Gulf",
+                "title": "Carrier Strike Group Patrol",
+                "blurb": "USN carrier group maintaining defensive posture in international operating boxes.",
+                "actor": "usa",
+                "type": "naval",
+                "severity": 2,
+                "time": "3 days ago",
+                "source": "US 5th Fleet"
+            }
+        ],
+        "movements": [
+            {
+                "id": "m1",
+                "actor": "usa",
+                "unitType": "carrier",
+                "label": "CSG Patrol Vector",
+                "from": "Arabian Sea",
+                "to": "Persian Gulf",
+                "blurb": "Routine maritime security patrol moving into central operating boxes.",
+                "time": "Active",
+                "source": "USNT"
+            },
+            {
+                "id": "m2",
+                "actor": "israel",
+                "unitType": "aircraft",
+                "label": "Northern Air Sortie",
+                "from": "Haifa",
+                "to": "Eastern Med",
+                "blurb": "Combat air patrol maintaining continuous overwatch along maritime borders.",
+                "time": "Active",
+                "source": "IAF"
+            }
+        ]
+    }
+    
+    with open("data.json", "w") as f:
+        json.dump(data, f, indent=2)
+
+if __name__ == "__main__":
+    generate_feed()
