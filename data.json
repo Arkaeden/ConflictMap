@@ -1,71 +1,137 @@
 {
-  "lastUpdated": "2026-07-27T23:25:54.332557+00:00",
+  "lastUpdated": "2026-07-27T23:30:16.835085+00:00",
   "incidents": [
     {
-      "id": "inst_0",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran says Ukrainian attack on vessel in Caspian Sea killed sailor",
-      "blurb": "Verified institutional telemetry reporting NAVAL parameters.",
-      "time": "Sun, 26 Jul 2026 13:20:08 GMT",
-      "source": "Defense News",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQYW1ILTRXclFEZUVXVklvam9RUFBFbXlPQlRIVnJiNUE4aHJsbUp2elQ4di1ybVZaaE1reEJIWGpvY2RMYjZZTTVvOEtJVDdwMFFpV0JiUmd6UURGTW1uVkphYlhoQzBYN3h3dVh5RE1OTXNISzBfcDYtVWlqT001d0N0MUtLdTh3TXhqMElhZWVhTnJZN0JKeEsyaDdHV3V6UzhpcFJFM2REZ01DLVpkN0NSdFZ1VFc5d1NhR0VFVm81OVhxX1E?oc=5"
-    },
-    {
-      "id": "inst_1",
-      "type": "airstrike",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "New British prime minister gains early defense win with Canada fi...",
-      "blurb": "Verified institutional telemetry reporting AIRSTRIKE parameters.",
-      "time": "Tue, 21 Jul 2026 16:45:09 GMT",
-      "source": "Defense News",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbTFOdHRCY3BRRExlYTJ3YVVnTVVURnl4bFpvMElWaDRJUThMVWJOWjQ2U3BUdl85RVBoM29FUnJ5emF2UlJRVUVySGVxY3RmZEF0RVg3Zl81VkZCcDdCS0JoYXNFVkRQcWY0cUpaVzRLY2MxLXlNb1Z6RWF4Q3psR2p5UmtZaHFmY2lMcVRtaUwteV9FeEtmS1huZ0E0cUxJUjlrcVFrdmprSWxYOHBYQ2NNempGdVFjd3ZrS19vOWRKOVc0NDVFZlNDVnhyTFls?oc=5"
-    },
-    {
-      "id": "inst_2",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "With no Iran war end in sight, Germany pulls back two navy ships ...",
-      "blurb": "Verified institutional telemetry reporting NAVAL parameters.",
-      "time": "Fri, 24 Jul 2026 18:49:10 GMT",
-      "source": "Defense News",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxONHB0Ui1KNjlNb2pZeTVjSlFydGllZEpMV0xsdk5mOFNKSjlZbGtFSjhOdHJWRG1oMDN4MG9ZdnpsWEJhUm0zckdSTVpfNDhOWWM1VThnNDNFazl1SmllTmFVQTVLS0FfbHNyUnRkUEJ4T3ZWdUtudzIyVDB2RlBYNS1BRlBKYW8wbWU0WEVOUWVFZWZGdTlFS2M2VGtmeThFUVJMWUFnbXYwNXM4WUVfUHpSamdiOS0wLVhZTXpwUDRQV19zbmhkRVBrX0FYWWVxSXdyRm40dXI?oc=5"
-    },
-    {
-      "id": "inst_3",
-      "type": "airstrike",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "\u2018Incredible work\u2019: Ukrainian F-16 downs Russian fighter jet for f...",
-      "blurb": "Verified institutional telemetry reporting AIRSTRIKE parameters.",
-      "time": "Thu, 23 Jul 2026 20:07:36 GMT",
-      "source": "Defense News",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeUVvSmgwMkxqLVdBdVY4TTIxSUxRQUR6NU1UTXQzcmhxcjJCeU1yX3RYMFlRY0htSGdhVEt2NjBmd2w0NkNXemI4Z2VneXhZaGNmdjhoakdtLWNCNXVzd3NWdHhpVmVUbk96clgwWFB2LXhBX3Q2YVExbldZQXpCaVlqRWh3OW01aDRXdlhmRDdtR0ZyZDA4OGZoMXJ0QWFtWlFCMFRkMEx5dFRCcVhQUm0tSVRubnhLLXIxWUc0UjV0TGM?oc=5"
-    },
-    {
-      "id": "inst_4",
+      "id": "inc_0",
       "type": "diplomatic",
-      "actor": "israel",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Trump Holds Off on Major War Escalation Against Iran as Advisers ...",
+      "blurb": "Verified telemetry record tracking DIPLOMATIC regional parameters.",
+      "time": "Sat, 25 Jul 2026 22:19:07 GMT",
+      "source": "The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFA4ZDFwek83TzF4YkIzeWJRVUo0Umg0QkpkVHZWSEVkOC1QTHNqLThmdHlPdDhEVjEza2xQVW9LeFktSFZ6N2Jza2xPSEdhUXVGSEJ1VUtGNUEtRmFvdk9FQ3gyYlFBbnVZckpxY2VtUkFTNUo4dDNNMVN4WQ?oc=5"
+    },
+    {
+      "id": "inc_1",
+      "type": "drone",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran-Backed Drones Keep Middle East on Edge Despite US-Iran Lull",
+      "blurb": "Verified telemetry record tracking DRONE regional parameters.",
+      "time": "Mon, 27 Jul 2026 20:40:04 GMT",
+      "source": "The Media Line",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTFNfLTVmMTN3NVU3U3d1MGlaS1FwN2Y0X3RaUEQ3dE04NlpiT3Y4N1I5QVBTWnhWZHRHQzB1MGVzRXFsYVJVRU9GOC1EZlJFdmNhOU9RaElOX0RCbFE2Z3N1ekE3cXl5XzBvNjhqdXU3Y2w1TTJCU0thZGVKU2pDX1RlZzA3RVMzZUdRN3Vybm0zU1RHS0RKWWVSek1ZbkN5dkE?oc=5"
+    },
+    {
+      "id": "inc_2",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "2026 Iran war | Deal, Explained, United States, Israel, Strait of...",
+      "blurb": "Verified telemetry record tracking NAVAL regional parameters.",
+      "time": "Sun, 26 Jul 2026 05:00:00 GMT",
+      "source": "Encyclopedia Britannica",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5nTzlhOGZTS180cWNtVG91c2VWRVJFYlk0cW5Ba1RHUEFOSEtldU15QktQT0EzRVY1ZVdZZ0VTRHVWTVhyN1IzeU1wbmlDMUhrQ3Roc1YxcmdMUQ?oc=5"
+    },
+    {
+      "id": "inc_3",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Trump Pauses Iran Strikes as Officials Weigh Dwindling Air Defens...",
+      "blurb": "Verified telemetry record tracking AIRSTRIKE regional parameters.",
+      "time": "Sun, 26 Jul 2026 19:30:00 GMT",
+      "source": "WSJ",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPUndVUTk2Y0dZSFZtT3ljNFF2cEJ4dUt6RHFUVHNyMEkwYnc0NlhZT0JUZTlGTE5lUmFzXzJwUGVwVXdMUlNrOFZBdm5QOXBnU0JjMExvU1R1dDZYZy1fMWh1WnZOYmVMc1IwY3ZlNzhGZkVYUXlCLXZUczVQMGFvOVJQem5zQzNSY1AtLXZCdFFGeEMxVjNuTWpvMmp3ZmxFQ1UzR1VILXEwXzN3NGM1V0I0V0ttdmU0c2pZWA?oc=5"
+    },
+    {
+      "id": "inc_4",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "U.S. pauses Iran strikes for second straight night as talks move ...",
+      "blurb": "Verified telemetry record tracking AIRSTRIKE regional parameters.",
+      "time": "Fri, 24 Jul 2026 10:42:00 GMT",
+      "source": "CBS News",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPX3lNZnhiOVFueGNzd0dnbGM3V0d5emVUZTZhaXRRNmVpXzhVaVNRcVlWQ29XcGZDUnkwM0hhN1BYRmhnWEZhQlhFU1ItX0x6R3k3enA3VC00LVpKQi1xMWJPeXJ3VmQ5WDRhbzIzLWZ3MUgwS25ScHZOOXRnWmxWMzFacTlvRWNC?oc=5"
+    },
+    {
+      "id": "inc_5",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Centcom Completes Latest Strikes Against Iran",
+      "blurb": "Verified telemetry record tracking AIRSTRIKE regional parameters.",
+      "time": "Thu, 23 Jul 2026 14:44:14 GMT",
+      "source": "U.S. Department of War (.gov)",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRWMzYm1VTmVIeHJDS2J6Y290aHRCMzJRUzdMQi00T2tEZk5ucFBlaVFIS2xTOTdlelVpWWo1dUtMZGpLMGUtb2lsMWdDTGg4WkVZX2hLQ3Brc1I2MjJnWktKRFFNbnNVcXgtRUd0U2VTVkpFb0RiY1dZMm9xX3U0TzFnU3QzbFRKbUtqR3NjWnMwRV9McTlXbTdfUzlkWlU1SnpkZ24teEFsSS1l?oc=5"
+    },
+    {
+      "id": "inc_6",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "As signals of a \u2018massive\u2019 US attack mount, experts skeptical it w...",
+      "blurb": "Verified telemetry record tracking DIPLOMATIC regional parameters.",
+      "time": "Sat, 25 Jul 2026 10:00:00 GMT",
+      "source": "The Hill",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQQmFEVVRRbFlBSkNONm9ja2FDZ25rdmdBNHVJNVJLa0NKVFBVZGNsRzZaVFRCMVFrNk5uSkYwMndXeHk4aWpJbS1XTlJYNXRxbmFRVjB5dmxaUnBtUXJLY3VGaGY0dzFNOGp2R2RYb1RyOWxCa0k2R0tCR0cxM2d4MHVzaTJBVXp3RHRfZC01ZDZUWllM0gGaAUFVX3lxTE9lblI0OVA5eUt6T0w3UkpaUW1CSEpEcTJmellub1hJQVlNbklNX1lYLVdtMGZWRlR1aXNnRm5icm9uS2M1VHFLeUhEWlhhcjZIcGZYOUZCQUFKVi0zaGs4LVhXSk9QaHJUSl9QSHg5YkVIMzREcVduQzZaS2VHbGdMbGd6WXo1V0dUYm9DWTRrWkhfX0o4Vmx5anc?oc=5"
+    },
+    {
+      "id": "inc_7",
+      "type": "diplomatic",
+      "actor": "iran",
       "location": "Jerusalem",
-      "title": "Greece to buy $4 billion air defense system from Israel",
-      "blurb": "Verified institutional telemetry reporting DIPLOMATIC parameters.",
-      "time": "Thu, 23 Jul 2026 13:41:41 GMT",
-      "source": "Defense News",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOS0duUk1KbG5oUHZmSEl4Y1Ytb3h2RzlIbVNGOTdVeFAtY245Q3B0a0pLQ2o3RHhSalF2RzJMR0hQUlVNaGU5ZDA1b0xCMHN0QS02bUUyYXNQTWphZ01fdWktM01aS3lSSF9LcU82enNqYnNNM0RmN3dWMXIwaE11aDYxWTBkUmRvZnJZcWJVaEVBbXlJREJlS3Y2VEtNRlRjbkRqN2gzaFV2SUNi?oc=5"
+      "title": "Live Updates: Latest from Israel, Iran, and Middle East",
+      "blurb": "Verified telemetry record tracking DIPLOMATIC regional parameters.",
+      "time": "Sat, 25 Jul 2026 18:43:27 GMT",
+      "source": "The Jerusalem Post",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE11NEc4UDJVdE9jS3p6YzdxVk5zc0ZQNVNUUWUzTW1FUUpXZWpNQWNlSmNRSmVzR05vQkRGa1dfMUVyMzE3WTVmXzM3dVRoQ3lQeTNjcnRpTkJmVjRsaVpGZmdEOENSUWxuLTVOV0dvcVB1Q2g4WVMtQzV6eXRSUTQ?oc=5"
     },
     {
-      "id": "inst_5",
+      "id": "inc_8",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Unfazed by Iran\u2019s threats, Bulgaria moves to aid U.S. military op...",
-      "blurb": "Verified institutional telemetry reporting DIPLOMATIC parameters.",
-      "time": "Wed, 22 Jul 2026 11:21:27 GMT",
-      "source": "Defense News",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbkNPclo5ZFRBSXdpY3FoeWN6QkR1amFQeG9vVHBwWEF1ZmpkZWl4WGVHVUZTY1VTWE9zOTNYMGNZaWxMbEZncU1Mc1pWOXd1aVRLWVIxdEw4WktlZFFvWW1CTko1bzBKYXgtak5hNmg0LWJNMktlUmR5a0pFV0ZOd3lGVFVqY2dqcmYxVmtwTmFiTnc3V1hZMy15TDllUmFCU0hLXzlrNHdKOFB3TkkxMzVzVUVacllnc3dNQWRxVUs?oc=5"
+      "title": "Why the U.S. military is letting some Iranian projectiles through...",
+      "blurb": "Verified telemetry record tracking DIPLOMATIC regional parameters.",
+      "time": "Fri, 24 Jul 2026 21:23:22 GMT",
+      "source": "NBC News",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWm1iQ1FScFBpLWF5UDFvZG5XVGVQQmNwbTlhTS05bUZWZS0wbnE5LUdEQU5vdEsxekxlZkdNYXZlel9OWHFYN3U2elJERW5OWklVWjhCNDFBSnQtT0FaUDZXeFUwVzB4NmczZGtSdXZqVURDdXBjM2d1M2NfT08xUzAwbFY1U2hwQl8xbkxqX08zY1BfVHlqZ0Ixb0F4cmpiS28teW82eE56R0VEb080?oc=5"
+    },
+    {
+      "id": "inc_9",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "US Insists Iran 'Does Not Control' Strait Of Hormuz",
+      "blurb": "Verified telemetry record tracking NAVAL regional parameters.",
+      "time": "Wed, 22 Jul 2026 13:45:12 GMT",
+      "source": "Radio Free Europe/Radio Liberty",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWnhyaS1tS3NVV19VeVRlS1RUeUhFblVCTkRCWmg2Z2YwTW1uR051ZFctc3F2eEcyN29hbkJkLUY3THpPVzVaYVRlcTRybGlrTGVsX3ZvTFJyQmRELVNHckg3Nk9uOUw3V2RyN2lZY0dIMW1jLWVQSUVTdXBTZGpuVE55cDBQcG01?oc=5"
+    },
+    {
+      "id": "inc_10",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "U.S. Successfully Completes New Strikes in Iran",
+      "blurb": "Verified telemetry record tracking AIRSTRIKE regional parameters.",
+      "time": "Thu, 16 Jul 2026 07:00:00 GMT",
+      "source": "centcom.mil",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNRXUxa25oLWJQdEsxYmVsa1hKaWFUMURTdXpqMjh2RzhqRWhmdUZQdXEtWlpKcWdzZnFabE9VWUh2UWJMc3NfZmdRZ280TnNyb2dscXJ3ejFOcUdPazJZUmNoc0VvdHI3NG9WcTRwNmdhaEttaVFZU2w1c1ZxcDcxWWl6SndwNGpFY1ctSEpZRGYyekJ5eDZaV1ppdlllWEVjWkxoWkd6YXkwaEtl?oc=5"
+    },
+    {
+      "id": "inc_11",
+      "type": "airstrike",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "US Military Completes 12th Consecutive Night Of Strikes On Iran |...",
+      "blurb": "Verified telemetry record tracking AIRSTRIKE regional parameters.",
+      "time": "Thu, 23 Jul 2026 03:15:00 GMT",
+      "source": "i24NEWS",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMEFTN2UtcHhoU1ZVVGlBS1VTZERNYVlyeUxKdTZKbENRVl9ZWklSUXVPWmlEaHROZUdxSFN2OWIwYUVNbHFGUmpvbTk3Y0tWQm1WWF9va1NnX1VnMXFobzdfSGI5bkJIZlRnc0lfUmdISVlCektsOWhMbDAzMGFrTjZ2WWR1b01hVXE3bmRQRmN0dldYWGpxODU0NjlRaHNlM2hHMWxPRktKMm9CYkc3MWtWZzlTNEMwT0V5SmJR?oc=5"
     }
   ],
   "movements": []
