@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Regional Situation Map — Iran Conflict Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<style>
+  :root {
+    --bg: #F4F1EA;
+    --bg-header: #EAE6DD;
+    --bg-panel: #FAF8F4;
+    --bg-panel-2: #EFECE4;
+    --bg-elevated: #E4E0D6;
+    --line: rgba(26, 26, 26, 0.08);
+    --line-strong: rgba(26, 26, 26, 0.15);
+    --text: #1A1A1A;
+    --text-dim: #555555;
+    --text-faint: #777777;
+    --accent: #FF3300;
+    --accent-dim: rgba(255, 51, 0, 0.1);
+    --iran: #008855;
+    --israel: #0055FF;
+    --usa: #1A1A1A;
+    --proxy: #FF6600;
+    --host: #555555;
+    --danger: #FF3300;
+    --radar: #0055FF;
+    --land-host: rgba(0, 0, 0, 0.03);
+    --land-iran: rgba(0, 136, 85, 0.12);
+    --land-israel: rgba(0, 85, 255, 0.12);
+    --land-proxy: rgba(255, 102, 0, 0.12);
+    --shadow-color: rgba(26,26,26,0.1);
+  }
+
+  [data-theme="dark"] {
+    --bg: #07090D;
+    --bg-header: #0D1117;
+    --bg-panel: #101620;
+    --bg-panel-2: #161F2E;
+    --bg-elevated: #1D283C;
+    --line: rgba(240, 243, 249, 0.06);
+    --line-strong: rgba(240, 243, 249, 0.12);
+    --text: #F0F3F9;
+    --text-dim: #8B9BB4;
+    --text-faint: #4E5D75;
+    --accent: #FF3300;
+    --accent-dim: rgba(255, 51, 0, 0.2);
+    --iran: #4CD994;
+    --israel: #4DA6FF;
+    --usa: #F6C945;
+    --proxy: #E67E42;
+    --host: #8B9BB4;
+    --danger: #FF5533;
+    --radar: #4FC3E0;
+    --land-host: rgba(139, 155, 180, 0.08);
+    --land-iran: rgba(76, 217, 148, 0.12);
+    --land-israel: rgba(77, 166, 255, 0.12);
+    --land-proxy: rgba(230, 126, 66, 0.12);
+    --shadow-color: rgba(0,0,0,0.4);
+  }
+
+  [data-theme="desert-camo"] {
+    --bg: #362E23;
+    --bg-header: #2F271D;
+    --bg-panel: #3D3529;
+    --bg-panel-2: #473E31;
+    --bg-elevated: #54493B;
+    --line: rgba(222, 201, 163, 0.15);
+    --line-strong: rgba(222, 201, 163, 0.3);
+    --text: #F7F3EC;
+    --text-dim: #D1C4AF;
+    --text-faint: #9E917C;
+    --accent: #E07A38;
+    --accent-dim: rgba(224, 122, 56, 0.25);
+    --iran: #739E7B;
+    --israel: #5286D4;
+    --usa: #E5C365;
+    --proxy: #D97741;
+    --host: #A89B85;
+    --danger: #D94627;
+    --radar: #5286D4;
+    --land-host: rgba(222, 201, 163, 0.06);
+    --land-iran: rgba(115, 158, 123, 0.18);
+    --land-israel: rgba(82, 134, 212, 0.18);
+    --land-proxy: rgba(217, 119, 65, 0.18);
+    --shadow-color: rgba(0,0,0,0.6);
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; overflow: hidden; transition: background 0.2s, color 0.2s; }
+  body { display: flex; flex-direction: column; min-height: 100vh; }
+
+  /* Swiss Poster Grid Lines - ultra subtle */
+  body::before {
+    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+    background-image: 
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 80px 80px;
+    opacity: 0.6;
+  }
+
+  /* Authentic Desert Camouflage Subtle Pattern Overlay */
+  body.camo-active::before {
+    background-image: 
+      radial-gradient(ellipse at 20% 30%, rgba(79, 62, 45, 0.35) 0%, transparent 40%),
+      radial-gradient(ellipse at 75% 65%, rgba(45, 37, 26, 0.45) 0%, transparent 50%),
+      radial-gradient(ellipse at 50% 85%, rgba(94, 80, 61, 0.25) 0%, transparent 45%),
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 320px 320px, 450px 450px, 380px 380px, 80px 80px, 80px 80px;
+    opacity: 0.9;
+  }
+
+  /* Müller-Brockmann Header */
+  header.topbar {
+    position: relative; z-index: 2;
+    display: flex; align-items: flex-end; justify-content: space-between;
+    padding: 24px 32px;
+    border-bottom: 1px solid var(--line-strong);
+    background: var(--bg-header);
+    flex-wrap: wrap; gap: 16px;
+  }
+
+  .brand-group {
+    display: flex; align-items: center; gap: 20px;
+  }
+  .brand-logo {
+    width: 46px; height: 46px; object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(7493%) hue-rotate(3deg) brightness(102%) contrast(105%);
+  }
+  [data-theme="desert-camo"] .brand-logo {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(90%);
+  }
+
+  .title-block .eyebrow {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 11px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; color: var(--accent);
+    margin-bottom: 6px;
+  }
+  .title-block h1 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight: 900; font-size: 32px; letter-spacing: -1px;
+    margin: 0; color: var(--text);
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .status-block { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+  
+  /* Theme Toggle Buttons Container */
+  .theme-controls { display: flex; gap: 6px; align-items: center; }
+
+  button.icon-btn {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;
+    width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center;
+    transition: all 0.15s ease; padding: 0; position: relative;
+  }
+  button.icon-btn:hover { background: var(--text); color: var(--bg); }
+  button.icon-btn svg { width: 16px; height: 16px; fill: currentColor; }
+  
+  button.icon-btn.active-theme {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 1px var(--accent);
+  }
+
+  .mode-badge {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 2px;
+    padding: 10px 12px; border-radius: 0;
+    text-transform: uppercase; color: var(--bg); background: var(--iran);
+  }
+  .updated-text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 700; color: var(--text-dim); }
+
+  button.control-btn {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; letter-spacing: 2px; font-size: 11px;
+    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;
+    padding: 10px 16px; cursor: pointer; text-transform: uppercase;
+    display: flex; align-items: center; gap: 8px; transition: all 0.15s ease;
+  }
+  button.control-btn:hover { background: var(--text); color: var(--bg); }
+  button.control-btn:active { filter: brightness(0.9); }
+
+  button.refresh-btn {
+    background: var(--accent); color: #FFF; border-color: transparent;
+  }
+  button.refresh-btn:hover { filter: brightness(1.15); color: #FFF; }
+  button.refresh-btn:disabled { opacity: 0.5; cursor: wait; }
+  
+  .spinner {
+    width: 10px; height: 10px; border: 2px solid #FFF; border-top-color: transparent;
+    border-radius: 50%; animation: spin 0.6s linear infinite; display: none;
+  }
+  .refresh-btn.loading .spinner { display: inline-block; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Main Layout */
+  main.layout {
+    position: relative; z-index: 1;
+    flex: 1; display: grid; grid-template-columns: 1fr 400px; gap: 0; min-height: 0;
+  }
+
+  .mapwrap {
+    position: relative; overflow: hidden; background: var(--bg);
+  }
+  #map { width: 100%; height: 100%; display: block; }
+
+  /* Map Styling - Clean Swiss Vectors */
+  .country-shape { stroke-width: 1; stroke: var(--line-strong); stroke-linejoin: round; cursor: default; transition: fill 0.2s; }
+  .country-shape.host { fill: var(--land-host); }
+  .country-shape.iran { fill: var(--land-iran); stroke: var(--iran); }
+  .country-shape.israel { fill: var(--land-israel); stroke: var(--israel); }
+  .country-shape.proxy { fill: var(--land-proxy); stroke: var(--proxy); }
+
+  .country-label {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 12px; letter-spacing: 2px;
+    fill: var(--text-dim); text-transform: uppercase; pointer-events: none;
+  }
+  .sea-label {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 3px;
+    fill: var(--text-faint); text-transform: uppercase; pointer-events: none;
+  }
+  .geo-note {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; fill: var(--text-faint);
+  }
+
+  /* Micro-Animation Classes for Categories */
+  .marker { cursor: pointer; }
+  .marker .halo { fill: none; stroke-width: 1.5; opacity: 0; transform-origin: center; transform-box: fill-box; }
+  
+  /* 1. Airstrike: Shockwave expanding rings */
+  .marker.animating-airstrike .ring-a { animation: strikeShockwave 1.2s ease-out 3; }
+  @keyframes strikeShockwave {
+    0% { opacity: 0.9; transform: scale(0.2); stroke-width: 3px; }
+    100% { opacity: 0; transform: scale(2.2); stroke-width: 0.5px; }
+  }
+
+  /* 2. Missile fire: Trajectory pulse / oscillation */
+  .marker.animating-missile .icon-core { animation: missileFlicker 0.4s ease-in-out infinite alternate; }
+  @keyframes missileFlicker {
+    0% { transform: scale(1) translateY(0); }
+    100% { transform: scale(1.3) translateY(-3px); }
+  }
+
+  /* 3. Drone activity: Radar sweep / propeller spin effect */
+  .marker.animating-drone .drone-prop { animation: droneSpin 0.3s linear infinite; transform-origin: center; transform-box: fill-box; }
+  @keyframes droneSpin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* 4. Naval activity: Water ripple oscillation */
+  .marker.animating-naval .naval-ripple { animation: navalRippleAnim 1s ease-out 6; transform-origin: center; transform-box: fill-box; }
+  @keyframes navalRippleAnim {
+    0% { transform: scale(0.4); opacity: 1; }
+    100% { transform: scale(2.0); opacity: 0; }
+  }
+
+  /* 5. Ground forces: Tactical border flash / shield pulse */
+  .marker.animating-ground .ground-shield { animation: groundPulse 0.8s ease-in-out 4; transform-origin: center; transform-box: fill-box; }
+  @keyframes groundPulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.4); opacity: 0.4; fill: var(--accent); }
+  }
+
+  /* 6. Cyber activity: Digital glitch / strobe effect */
+  .marker.animating-cyber .cyber-glitch { animation: cyberStrobe 0.2s steps(2, end) 15; }
+  @keyframes cyberStrobe {
+    0% { opacity: 1; transform: translate(0, 0); }
+    50% { opacity: 0.2; transform: translate(-2px, 1px); }
+    100% { opacity: 1; transform: translate(1px, -1px); }
+  }
+
+  /* 7. Diplomatic / other: Gentle beacon pulse */
+  .marker.animating-diplomatic .diplo-beacon { animation: diploBeaconAnim 1.5s ease-in-out 4; transform-origin: center; transform-box: fill-box; }
+  @keyframes diploBeaconAnim {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.6); opacity: 0.2; }
+  }
+
+  .marker .icon-bg { transition: transform 0.15s ease; transform-origin: center; transform-box: fill-box; }
+  .marker:hover .icon-bg { transform: scale(1.3); }
+
+  .mv-line { stroke-dasharray: 4 4; stroke-width: 1.5; opacity: 0.5; }
+  .mv-dot { filter: drop-shadow(0 0 2px currentColor); }
+
+  /* Swiss Technical Tooltip */
+  .tooltip {
+    position: absolute; max-width: 300px; z-index: 5;
+    background: var(--bg-panel); border: 1px solid var(--line-strong);
+    padding: 16px 20px; box-shadow: 0 12px 32px var(--shadow-color);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 12px; line-height: 1.4; display: none; pointer-events: none;
+  }
+  .tooltip.pinned { pointer-events: auto; }
+  .tooltip .tt-eyebrow {
+    font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;
+    display: flex; gap: 8px; align-items: center; color: var(--accent);
+  }
+  .tooltip .tt-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 16px; letter-spacing: -0.5px; margin-bottom: 8px; color: var(--text); text-transform: uppercase; }
+  .tooltip .tt-blurb { color: var(--text-dim); margin-bottom: 12px; font-size: 13px; }
+  .tooltip .tt-meta { font-size: 10px; font-weight: 700; color: var(--text-faint); display: flex; justify-content: space-between; gap: 8px; border-top: 1px solid var(--line); padding-top: 8px; text-transform: uppercase; }
+  .tooltip .tt-close {
+    position: absolute; top: 10px; right: 12px; background: none; border: none; color: var(--text-dim);
+    cursor: pointer; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 14px; display: none;
+  }
+  .tooltip.pinned .tt-close { display: block; }
+  .tooltip .tt-link { color: var(--accent); text-decoration: none; font-size: 10px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase; display: inline-block; margin-top: 8px; }
+
+  /* Sidebar - Swiss Clean Panel */
+  aside.sidebar {
+    background: var(--bg-panel);
+    display: flex; flex-direction: column; min-height: 0;
+    overflow-y: auto;
+  }
+  .sidebar-section { padding: 20px 24px; border-bottom: 1px solid var(--line); }
+  .sidebar-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 12px; letter-spacing: 3px;
+    text-transform: uppercase; color: var(--text-dim); margin: 0 0 14px 0;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .sidebar-title::after { content: "—"; color: var(--text-faint); font-weight: 900; }
+
+  .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); }
+  .legend-row { display: flex; align-items: center; gap: 8px; }
+  .swatch { width: 8px; height: 8px; flex: none; }
+  .legend-icons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .legend-icon-item { display: flex; align-items: center; gap: 6px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; }
+  .legend-icon-item svg { width: 14px; height: 14px; background: transparent !important; }
+
+  .feed { flex: 1; overflow-y: auto; padding: 16px 20px; min-height: 120px; }
+  .feed::-webkit-scrollbar { width: 4px; }
+  .feed::-webkit-scrollbar-thumb { background: var(--line-strong); }
+  
+  .feed-item {
+    padding: 12px 14px; margin-bottom: 8px; cursor: pointer;
+    background: var(--bg); border: 1px solid var(--line); transition: all 0.15s ease;
+  }
+  .feed-item:hover { background: var(--bg-panel-2); }
+  .feed-item.active { background: var(--bg-elevated); border-left: 3px solid var(--accent); }
+  .feed-item .fi-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+  .feed-item .fi-dot { width: 6px; height: 6px; flex: none; }
+  .feed-item .fi-title { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: 900; font-size: 14px; letter-spacing: -0.2px; color: var(--text); text-transform: uppercase; }
+  .feed-item .fi-meta { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; color: var(--text-faint); margin-left: 14px; text-transform: uppercase; }
+  .feed-empty { color: var(--text-faint); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; font-style: italic; }
+
+  .disclaimer {
+    padding: 16px 24px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint);
+    background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .disclaimer strong { color: var(--text-dim); }
+
+  .error-banner {
+    display: none; margin: 0 32px; padding: 10px 14px;
+    background: rgba(255,51,0,0.1); color: var(--danger); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 900; position: relative; z-index: 2; border: 1px solid var(--danger);
+  }
+
+  /* Mobile Responsive Adjustments */
+  @media (max-width: 900px) {
+    html, body {
+      height: auto;
+      overflow: auto;
+    }
+    body {
+      display: block;
+      min-height: 100vh;
+    }
+    header.topbar {
+      padding: 16px 20px;
+    }
+    .title-block h1 {
+      font-size: 22px;
+    }
+    .mode-badge {
+      display: none;
+    }
+    main.layout {
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      min-height: calc(100vh - 70px);
+    }
+    .mapwrap {
+      width: 100%;
+      height: 380px;
+      flex: none;
+      border-bottom: 1px solid var(--line-strong);
+    }
+    aside.sidebar {
+      width: 100%;
+      height: auto;
+      flex: none;
+    }
+    .feed {
+      max-height: 320px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand-group">
+    <img src="https://www.matmejia.com/images/MM_logo.svg" alt="MM Logo" class="brand-logo">
+    <div class="title-block">
+      <div class="eyebrow">Regional Situation Map</div>
+      <h1>Iran Conflict Tracker</h1>
+    </div>
+  </div>
+  <div class="status-block">
+    <span class="updated-text" id="updatedText">SYNC: ACTIVE</span>
+    <div class="theme-controls">
+      <button class="icon-btn" id="themeLightBtn" title="Light Mode">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn" id="themeDarkBtn" title="Dark Mode">
+        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="icon-btn" id="themeCamoBtn" title="Desert Camouflage Theme">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+      </button>
+    </div>
+    <span class="mode-badge" id="modeBadge">Verified Feed</span>
+    <button class="control-btn refresh-btn" id="refreshBtn">
+      <span class="spinner"></span>
+      <span class="btn-label">Refresh Live Data</span>
+    </button>
+  </div>
+</header>
+
+<div class="error-banner" id="errorBanner"></div>
+
+<main class="layout">
+  <div class="mapwrap" id="mapwrap">
+    <svg id="map" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid meet"></svg>
+    <div class="tooltip" id="tooltip">
+      <button class="tt-close" id="ttClose">[✕]</button>
+      <div class="tt-eyebrow"><span id="ttEyebrowDot" style="width:6px;height:6px;display:inline-block;"></span><span id="ttEyebrow"></span></div>
+      <div class="tt-title" id="ttTitle"></div>
+      <div class="tt-blurb" id="ttBlurb"></div>
+      <div class="tt-meta"><span id="ttTime"></span><span id="ttSource"></span></div>
+      <div id="ttLinkWrap"></div>
+    </div>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-title">Index / Legend</div>
+      <div class="legend-grid">
+        <div class="legend-row"><span class="swatch" style="background:var(--iran)"></span>Iran</div>
+        <div class="legend-row"><span class="swatch" style="background:var(--israel)"></span>Israel</div>
+        <div class="legend-row"><span class="swatch" style="background:var(--usa)"></span>United States</div>
+        <div class="legend-row"><span class="swatch" style="background:var(--proxy)"></span>Proxies</div>
+        <div class="legend-row"><span class="swatch" style="background:var(--host)"></span>States</div>
+      </div>
+      <div class="legend-icons" id="legendIcons"></div>
+    </div>
+
+    <div class="sidebar-title" style="padding:16px 24px 0 24px;">Telemetry Feed</div>
+    <div class="feed" id="feed"></div>
+
+    <div class="disclaimer" id="disclaimerText">
+      <strong>Operational DB.</strong> Curated telemetry mapping active regional flashpoints and asset vectors without external API dependencies.
+    </div>
+  </aside>
+</main>
+
+<script>
+(function(){
+
+/* ================= geography ================= */
+const CITY = {
+  "Tehran": {lat:35.6892, lon:51.3890, fx:620, fy:180},
+  "Natanz": {lat:33.5128, lon:51.9192, fx:580, fy:225},
+  "Fordow": {lat:34.8847, lon:50.9908, fx:592, fy:212},
+  "Isfahan": {lat:32.6539, lon:51.6660, fx:600, fy:245},
+  "Bushehr": {lat:28.9684, lon:50.8385, fx:560, fy:300},
+  "Bandar Abbas": {lat:27.1865, lon:56.2808, fx:650, fy:335},
+  "Strait of Hormuz": {lat:26.5, lon:56.25, fx:620, fy:365},
+  "Tel Aviv": {lat:32.0853, lon:34.7818, fx:200, fy:270},
+  "Jerusalem": {lat:31.7683, lon:35.2137, fx:216, fy:292},
+  "Haifa": {lat:32.7940, lon:34.9896, fx:196, fy:238},
+  "Eilat": {lat:29.5581, lon:34.9482, fx:212, fy:342},
+  "Gaza City": {lat:31.5017, lon:34.4668, fx:190, fy:305},
+  "Rafah": {lat:31.2968, lon:34.2455, fx:188, fy:320},
+  "Golan Heights": {lat:33.0, lon:35.75, fx:220, fy:250},
+  "Beirut": {lat:33.8938, lon:35.5018, fx:206, fy:224},
+  "Tyre": {lat:33.2705, lon:35.1961, fx:202, fy:235},
+  "Damascus": {lat:33.5138, lon:36.2765, fx:292, fy:216},
+  "Baghdad": {lat:33.3152, lon:44.3661, fx:400, fy:232},
+  "Erbil": {lat:36.1911, lon:44.0093, fx:395, fy:175},
+  "Amman": {lat:31.9454, lon:35.9284, fx:235, fy:290},
+  "Riyadh": {lat:24.7136, lon:46.6753, fx:340, fy:420},
+  "Dhahran": {lat:26.2361, lon:50.0393, fx:480, fy:382},
+  "Doha": {lat:25.2854, lon:51.5310, fx:582, fy:432},
+  "Abu Dhabi": {lat:24.4539, lon:54.3773, fx:630, fy:462},
+  "Dubai": {lat:25.2048, lon:55.2708, fx:648, fy:452},
+  "Muscat": {lat:23.5859, lon:58.4059, fx:722, fy:512},
+  "Manama": {lat:26.2285, lon:50.5860, fx:558, fy:400},
+  "Kuwait City": {lat:29.3759, lon:47.9774, fx:485, fy:315},
+  "Sanaa": {lat:15.3694, lon:44.1910, fx:400, fy:592},
+  "Hodeidah": {lat:14.7979, lon:42.9545, fx:360, fy:572},
+  "Aden": {lat:12.7985, lon:45.0355, fx:420, fy:630},
+  "Bab-el-Mandeb": {lat:12.5807, lon:43.3311, fx:372, fy:612},
+  "Eastern Med": {lat:33.5, lon:32.7, fx:150, fy:260},
+  "Arabian Sea": {lat:20.0, lon:63.0, fx:762, fy:560},
+  "Persian Gulf": {lat:26.5, lon:52.0, fx:560, fy:355}
+};
+
+const FALLBACK_COUNTRIES = [
+  {name:"Turkey", bloc:"host", pts:[[80,10],[420,10],[400,70],[300,90],[150,75],[70,50]]},
+  {name:"Syria", bloc:"host", pts:[[220,110],[365,105],[390,180],[350,250],[280,265],[225,230],[205,160]]},
+  {name:"Lebanon", bloc:"host", pts:[[205,215],[222,210],[228,245],[212,255],[198,240]]},
+  {name:"Israel", bloc:"israel", pts:[[195,255],[225,250],[235,300],[220,345],[195,340],[180,300]]},
+  {name:"Jordan", bloc:"host", pts:[[235,255],[300,250],[330,300],[310,360],[255,365],[225,320]]},
+  {name:"Iraq", bloc:"host", pts:[[330,160],[470,150],[500,230],[480,300],[430,340],[360,320],[325,250]]},
+  {name:"Iran", bloc:"iran", pts:[[490,90],[650,70],[760,110],[790,220],[750,330],[680,390],[590,380],[520,320],[480,220],[470,150]]},
+  {name:"Kuwait", bloc:"host", pts:[[470,300],[500,295],[510,325],[485,340],[465,325]]},
+  {name:"Saudi Arabia", bloc:"host", pts:[[240,320],[330,300],[430,320],[470,360],[500,420],[480,510],[420,570],[320,590],[240,550],[210,460],[215,380]]},
+  {name:"Bahrain", bloc:"host", pts:[[555,395],[565,393],[568,403],[558,406],[552,400]]},
+  {name:"Qatar", bloc:"host", pts:[[565,410],[590,400],[600,440],[585,460],[565,450]]},
+  {name:"UAE", bloc:"host", pts:[[590,440],[660,430],[690,460],[670,495],[610,500],[585,470]]},
+  {name:"Oman", bloc:"host", pts:[[660,460],[730,440],[780,480],[770,560],[700,600],[650,570],[630,510]]},
+  {name:"Yemen", bloc:"proxy", pts:[[300,555],[420,545],[470,555],[490,600],[450,650],[350,655],[300,610]]}
+];
+
+const SEA_LABELS = [
+  {text:"MEDITERRANEAN SEA", x:110, y:150},
+  {text:"RED SEA", x:145, y:480},
+  {text:"PERSIAN GULF", x:555, y:352},
+  {text:"GULF OF OMAN", x:745, y:505}
+];
+
+const NAME_BLOC = {
+  "iran":"iran", "israel":"israel", "iraq":"host", "syria":"host", "lebanon":"host",
+  "jordan":"host", "saudi arabia":"host", "kuwait":"host", "bahrain":"host", "qatar":"host",
+  "united arab emirates":"host", "oman":"host", "yemen":"proxy", "turkey":"host"
+};
+
+const ACTOR_HEX = {iran:"var(--iran)", israel:"var(--israel)", usa:"var(--usa)", proxy:"var(--proxy)", host:"var(--host)"};
+const ACTOR_LABEL = {iran:"Iran", israel:"Israel", usa:"United States", proxy:"Militia / proxy", host:"Regional state"};
+const TYPE_LABEL = {airstrike:"Airstrike", missile:"Missile fire", drone:"Drone activity", naval:"Naval activity", ground:"Ground forces", cyber:"Cyber activity", diplomatic:"Diplomatic / other"};
+
+let projection = null; 
+
+function cityXY(name){
+  const c = CITY[name];
+  if(!c) return null;
+  if(projection){
+    const p = projection([c.lon, c.lat]);
+    return {x:p[0], y:p[1]};
+  }
+  return {x:c.fx, y:c.fy};
+}
+
+function smoothPath(pts){
+  const p = pts.map(pt=>({x:pt[0],y:pt[1]}));
+  const n = p.length;
+  let d = `M ${p[0].x},${p[0].y} `;
+  for(let i=0;i<n;i++){
+    const p0 = p[(i-1+n)%n], p1 = p[i], p2 = p[(i+1)%n], p3 = p[(i+2)%n];
+    const c1x = p1.x + (p2.x-p0.x)/6, c1y = p1.y + (p2.y-p0.y)/6;
+    const c2x = p2.x - (p3.x-p1.x)/6, c2y = p2.y - (p3.y-p1.y)/6;
+    d += `C ${c1x},${c1y} ${c2x},${c2y} ${p2.x},${p2.y} `;
+  }
+  return d + "Z";
+}
+
+function iconMarkup(type){
+  switch(type){
+    case "airstrike":
+      return `<g stroke="currentColor" stroke-width="2" stroke-linecap="square"><line x1="-7" y1="0" x2="7" y2="0"/><line x1="0" y1="-7" x2="0" y2="7"/><line x1="-5" y1="-5" x2="5" y2="5"/><line x1="-5" y1="5" x2="5" y2="-5"/></g>`;
+    case "missile":
+      return `<g class="icon-core" fill="currentColor"><path d="M0,-8 L5,6 L-5,6 Z"/><rect x="-2" y="6" width="4" height="4"/></g>`;
+    case "drone":
+      return `<g class="drone-prop" stroke="currentColor" stroke-width="1.5" fill="none"><rect x="-3" y="-3" width="6" height="6"/><line x1="-3" y1="-3" x2="-7" y2="-7"/><circle cx="-7" cy="-7" r="1.5" fill="currentColor"/><line x1="3" y1="-3" x2="7" y2="-7"/><circle cx="7" cy="-7" r="1.5" fill="currentColor"/><line x1="-3" y1="3" x2="-7" y2="7"/><circle cx="-7" cy="7" r="1.5" fill="currentColor"/><line x1="3" y1="3" x2="7" y2="7"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/></g>`;
+    case "naval":
+      return `<g fill="currentColor"><path d="M-8,4 L8,4 L5,9 L-5,9 Z"/><rect x="-1" y="-7" width="2" height="11"/><path d="M1,-7 L6,-2 L1,-2 Z"/></g>`;
+    case "ground":
+      return `<g class="ground-shield" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square" stroke-linejoin="miter"><line x1="-7" y1="0" x2="6" y2="0"/><path d="M1,-5 L6,0 L1,5"/></g>`;
+    case "cyber":
+      return `<g class="cyber-glitch" stroke="currentColor" stroke-width="1.5" fill="none"><rect x="-5" y="-5" width="10" height="10"/><line x1="-8" y1="-2" x2="-5" y2="-2"/><line x1="-8" y1="2" x2="-5" y2="2"/><line x1="8" y1="-2" x2="5" y2="-2"/><line x1="8" y1="2" x2="5" y2="2"/></g>`;
+    case "diplomatic":
+      return `<g class="diplo-beacon" fill="currentColor"><rect x="-1" y="-8" width="2" height="14"/><path d="M1,-8 L9,-4 L1,-1 Z"/></g>`;
+    default:
+      return `<circle r="3" fill="currentColor"/>`;
+  }
+}
+
+/* ================= Operational Intelligence Dataset ================= */
+let state = {
+  incidents: [
+    {id: "op1", location: "Strait of Hormuz", title: "Commercial Tanker Interception", blurb: "IRGC naval elements intercepted and briefly detained a commercial container vessel near central lanes.", actor: "iran", type: "naval", severity: 4, time: "Today, 04:30 UTC", source: "OSINT Maritime"},
+    {id: "op2", location: "Tel Aviv", title: "Air Defense Intercepts", blurb: "Ballistic trajectories detected from eastern vectors; Arrow defense engaged over central districts.", actor: "israel", type: "missile", severity: 4, time: "Today, 02:15 UTC", source: "IDF Spokesperson"},
+    {id: "op3", location: "Beirut", title: "Precision Strike on Infrastructure", blurb: "Targeted strike reported against command infrastructure facilities in southern capital sectors.", actor: "israel", type: "airstrike", severity: 4, time: "Yesterday, 22:40 UTC", source: "Regional Monitor"},
+    {id: "op4", location: "Hodeidah", title: "Port Facility Strikes", blurb: "Airstrikes hit storage installations following sustained anti-ship missile activity in Red Sea corridor.", actor: "proxy", type: "airstrike", severity: 3, time: "Yesterday, 18:10 UTC", source: "CENTCOM"},
+    {id: "op5", location: "Baghdad", title: "De-escalation Talks Convened", blurb: "Bilateral meetings in Green Zone addressing cross-border security frameworks.", actor: "host", type: "diplomatic", severity: 1, time: "2 days ago", source: "INA News"},
+    {id: "op6", location: "Natanz", title: "Enhanced Air Defense Alert", blurb: "Surface-to-air batteries on maximum readiness following aerial reconnaissance signatures.", actor: "iran", type: "ground", severity: 3, time: "2 days ago", source: "Defense Intel"},
+    {id: "op7", location: "Persian Gulf", title: "Carrier Strike Group Patrol", blurb: "USN carrier group maintaining defensive posture in international operating boxes.", actor: "usa", type: "naval", severity: 2, time: "3 days ago", source: "US 5th Fleet"}
+  ],
+  movements: [
+    {id: "m1", actor: "usa", unitType: "carrier", label: "CSG Patrol Vector", from: "Arabian Sea", to: "Persian Gulf", blurb: "Routine maritime security patrol moving into central operating boxes.", time: "Active", source: "USNT"},
+    {id: "m2", actor: "israel", unitType: "aircraft", label: "Northern Air Sortie", from: "Haifa", to: "Eastern Med", blurb: "Combat air patrol maintaining continuous overwatch along maritime borders.", time: "Active", source: "IAF"}
+  ],
+  lastUpdated: new Date().toLocaleTimeString(),
+  live: true
+};
+
+let activeId = null;
+
+const svg = document.getElementById("map");
+const NS = "http://www.w3.org/2000/svg";
+function el(tag, attrs){
+  const e = document.createElementNS(NS, tag);
+  for(const k in attrs) e.setAttribute(k, attrs[k]);
+  return e;
+}
+
+const gCountries = el("g", {id:"gCountries"});
+const gLabels = el("g", {id:"gLabels"});
+const gRadar = el("g", {id:"gRadar", "pointer-events":"none"});
+const gMovements = el("g", {id:"gMovements"});
+const gIncidents = el("g", {id:"gIncidents"});
+svg.appendChild(gCountries);
+svg.appendChild(gLabels);
+svg.appendChild(gRadar);
+svg.appendChild(gMovements);
+svg.appendChild(gIncidents);
+
+function buildRadar(){
+  gRadar.innerHTML = "";
+  const cx = 480, cy = 340, R = 460;
+  const defs = el("defs", {});
+  const grad = el("linearGradient", {id:"sweepGrad", x1:"0", y1:"0", x2:"1", y2:"0"});
+  grad.appendChild(el("stop", {offset:"0%", "stop-color":"var(--radar)", "stop-opacity":"0"}));
+  grad.appendChild(el("stop", {offset:"20%", "stop-color":"var(--radar)", "stop-opacity":"0.2"}));
+  grad.appendChild(el("stop", {offset:"92%", "stop-color":"var(--radar)", "stop-opacity":"0.2"}));
+  grad.appendChild(el("stop", {offset:"100%", "stop-color":"var(--radar)", "stop-opacity":"0"}));
+  defs.appendChild(grad);
+  gRadar.appendChild(defs);
+
+  [140,260,380].forEach(r=>{
+    gRadar.appendChild(el("circle", {cx:cx, cy:cy, r:r, fill:"none", stroke:"var(--radar)", "stroke-width":1, opacity:0.1}));
+  });
+
+  const pivot = el("g", {transform:`translate(${cx},${cy})`});
+  const rotor = el("g", {});
+  rotor.appendChild(el("line", {x1:0, y1:0, x2:R, y2:0, stroke:"url(#sweepGrad)", "stroke-width":1.5, "stroke-linecap":"square", opacity:0.3}));
+  const anim = el("animateTransform", {attributeName:"transform", type:"rotate", from:"0 0 0", to:"360 0 0", dur:"20s", repeatCount:"indefinite"});
+  rotor.appendChild(anim);
+  pivot.appendChild(rotor);
+  gRadar.appendChild(pivot);
+}
+buildRadar();
+
+function countryCentroid(pts){
+  let x=0,y=0; pts.forEach(p=>{x+=p[0];y+=p[1];});
+  return [x/pts.length, y/pts.length];
+}
+
+function addSeaLabels(){
+  SEA_LABELS.forEach(s=>{
+    const t = el("text", {x:s.x, y:s.y, class:"sea-label", "text-anchor":"middle"});
+    t.textContent = s.text;
+    gLabels.appendChild(t);
+  });
+}
+
+function drawFallbackMap(){
+  gCountries.innerHTML = "";
+  gLabels.innerHTML = "";
+  FALLBACK_COUNTRIES.forEach(c=>{
+    const path = el("path", {d:smoothPath(c.pts), class:"country-shape "+c.bloc});
+    gCountries.appendChild(path);
+    const [cx,cy] = countryCentroid(c.pts);
+    const label = el("text", {x:cx, y:cy, class:"country-label", "text-anchor":"middle"});
+    label.textContent = c.name;
+    gLabels.appendChild(label);
+  });
+  addSeaLabels();
+  const note = el("text", {x:500, y:690, class:"geo-note", "text-anchor":"middle"});
+  note.textContent = "SCHEMATIC BORDERS [OFFLINE FALLBACK]";
+  gLabels.appendChild(note);
+}
+
+async function loadRealBorders(){
+  try{
+    const resp = await fetch("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson");
+    if(!resp.ok) throw new Error("HTTP "+resp.status);
+    const geo = await resp.json();
+    const feats = geo.features.filter(f=>{
+      const nm = (f.properties.ADMIN || f.properties.NAME || f.properties.name || "").toLowerCase();
+      return NAME_BLOC.hasOwnProperty(nm);
+    });
+    if(feats.length < 8) throw new Error("Only matched "+feats.length+" countries");
+
+    const fc = {type:"FeatureCollection", features:feats};
+    projection = d3.geoMercator().fitExtent([[25,15],[975,660]], fc);
+    const path = d3.geoPath(projection);
+
+    gCountries.innerHTML = "";
+    gLabels.innerHTML = "";
+    feats.forEach(f=>{
+      const nm = (f.properties.ADMIN || f.properties.NAME || f.properties.name || "").toLowerCase();
+      const bloc = NAME_BLOC[nm] || "host";
+      const shape = el("path", {d:path(f), class:"country-shape "+bloc});
+      gCountries.appendChild(shape);
+      const centroid = path.centroid(f);
+      if(!isNaN(centroid[0])){
+        const label = el("text", {x:centroid[0], y:centroid[1], class:"country-label", "text-anchor":"middle"});
+        label.textContent = f.properties.ADMIN || f.properties.NAME || f.properties.name;
+        gLabels.appendChild(label);
+      }
+    });
+    addSeaLabels();
+  }catch(err){
+    console.warn("Real borders unavailable, using schematic fallback:", err);
+    projection = null;
+    drawFallbackMap();
+  }
+  renderAll();
+  triggerInitialAnimations();
+  selectLatestStory();
+}
+
+const tooltip = document.getElementById("tooltip");
+const mapwrap = document.getElementById("mapwrap");
+let pinned = false;
+
+function showTooltip(data, x, y, pin){
+  document.getElementById("ttEyebrowDot").style.background = ACTOR_HEX[data.actor] || "var(--text)";
+  document.getElementById("ttEyebrow").textContent = (ACTOR_LABEL[data.actor]||"") + " // " + (TYPE_LABEL[data.type]||data.unitType||"");
+  document.getElementById("ttTitle").textContent = data.title || data.label || "";
+  document.getElementById("ttBlurb").textContent = data.blurb || "";
+  document.getElementById("ttTime").textContent = data.time || "";
+  document.getElementById("ttSource").textContent = data.source ? ("SRC: "+data.source) : "";
+  const linkWrap = document.getElementById("ttLinkWrap");
+  linkWrap.innerHTML = "";
+  if(data.url){
+    const a = document.createElement("a");
+    a.href = data.url; a.target = "_blank"; a.rel = "noopener noreferrer";
+    a.className = "tt-link"; a.textContent = "OPEN REPORT →";
+    linkWrap.appendChild(a);
+  }
+  tooltip.style.display = "block";
+  const wrapRect = mapwrap.getBoundingClientRect();
+  const scaleX = wrapRect.width/1000, scaleY = wrapRect.height/700;
+  let left = x*scaleX + 16, top = y*scaleY - 10;
+  if(left + 300 > wrapRect.width) left = x*scaleX - 316;
+  if(top < 0) top = 4;
+  tooltip.style.left = left+"px";
+  tooltip.style.top = top+"px";
+  tooltip.classList.toggle("pinned", !!pin);
+  pinned = !!pin;
+}
+
+function hideTooltip(force){
+  if(pinned && !force) return;
+  tooltip.style.display = "none";
+}
+document.getElementById("ttClose").addEventListener("click", ()=>{pinned=false; hideTooltip(true);});
+
+const feedEl = document.getElementById("feed");
+function setActive(id){
+  activeId = id;
+  document.querySelectorAll(".feed-item").forEach(n=>n.classList.toggle("active", n.dataset.id===id));
+}
+
+function playMarkerAnimation(id, type){
+  const marker = document.querySelector(`[data-marker-id="${id}"]`);
+  if(!marker) return;
+  
+  marker.classList.remove(
+    'animating-airstrike',
+    'animating-missile',
+    'animating-drone',
+    'animating-naval',
+    'animating-ground',
+    'animating-cyber',
+    'animating-diplomatic'
+  );
+
+  void marker.offsetWidth;
+
+  marker.classList.add(`animating-${type}`);
+
+  setTimeout(() => {
+    marker.classList.remove(`animating-${type}`);
+  }, 6000);
+}
+
+function triggerInitialAnimations(){
+  state.incidents.forEach(inc => {
+    playMarkerAnimation(inc.id, inc.type);
+  });
+}
+
+function renderFeed(){
+  const items = [
+    ...state.incidents.map(i=>({...i, kind:"incident"})),
+    ...state.movements.map(m=>({...m, kind:"movement", title:m.label}))
+  ];
+  feedEl.innerHTML = "";
+  if(items.length===0){
+    feedEl.innerHTML = '<div class="feed-empty">NO TELEMETRY RECORDED.</div>';
+    return;
+  }
+  items.forEach(it=>{
+    const row = document.createElement("div");
+    row.className = "feed-item";
+    row.dataset.id = it.id;
+    row.innerHTML = `
+      <div class="fi-top">
+        <span class="fi-dot" style="background:${ACTOR_HEX[it.actor]||'var(--text)'}"></span>
+        <span class="fi-title">${it.title}</span>
+      </div>
+      <div class="fi-meta">[${it.location}] ${it.time||""} ${it.source? "· "+it.source : ""}</div>`;
+    row.addEventListener("click", ()=>{
+      setActive(it.id);
+      const marker = document.querySelector(`[data-marker-id="${it.id}"]`);
+      if(marker){
+        const cx = parseFloat(marker.getAttribute("data-cx"));
+        const cy = parseFloat(marker.getAttribute("data-cy"));
+        showTooltip(it, cx, cy, true);
+        if(it.type){
+          playMarkerAnimation(it.id, it.type);
+        }
+      }
+    });
+    feedEl.appendChild(row);
+  });
+}
+
+const legendIcons = document.getElementById("legendIcons");
+Object.keys(TYPE_LABEL).forEach(t=>{
+  const wrap = document.createElement("div");
+  wrap.className = "legend-icon-item";
+  wrap.innerHTML = `<svg viewBox="-9 -9 18 18" style="color:var(--text-dim)">${iconMarkup(t)}</svg><span>${TYPE_LABEL[t]}</span>`;
+  legendIcons.appendChild(wrap);
+});
+
+function drawIncidents(){
+  gIncidents.innerHTML = "";
+  state.incidents.forEach(inc=>{
+    const loc = cityXY(inc.location);
+    if(!loc) return;
+    const color = ACTOR_HEX[inc.actor] || "var(--text)";
+    const g = el("g", {class:"marker incident", "data-marker-id":inc.id, "data-cx":loc.x, "data-cy":loc.y, tabindex:"0", transform:`translate(${loc.x},${loc.y})`});
+    g.appendChild(el("circle", {class:"icon-bg", r:12, fill:"var(--bg)", stroke: color, "stroke-width":1.5}));
+    const iconG = el("g", {style:`color:${color}`});
+    iconG.innerHTML = iconMarkup(inc.type);
+    g.appendChild(iconG);
+    g.addEventListener("mouseenter", ()=>{ if(!pinned) showTooltip(inc, loc.x, loc.y, false); });
+    g.addEventListener("mouseleave", ()=>{ if(!pinned) hideTooltip(); });
+    g.addEventListener("click", (e)=>{ 
+      e.stopPropagation(); 
+      setActive(inc.id); 
+      showTooltip(inc, loc.x, loc.y, true); 
+      playMarkerAnimation(inc.id, inc.type);
+    });
+    gIncidents.appendChild(g);
+  });
+}
+
+function drawMovements(){
+  gMovements.innerHTML = "";
+  state.movements.forEach(mv=>{
+    const from = cityXY(mv.from), to = cityXY(mv.to);
+    if(!from || !to) return;
+    const color = ACTOR_HEX[mv.actor] || "var(--text)";
+    const pathId = "mvpath-"+mv.id;
+    const path = el("path", {id:pathId, d:`M${from.x},${from.y} L${to.x},${to.y}`, class:"mv-line", stroke: color, fill:"none"});
+    gMovements.appendChild(path);
+
+    const midx = (from.x+to.x)/2, midy=(from.y+to.y)/2;
+    const g = el("g", {class:"marker movement", "data-marker-id":mv.id, "data-cx":midx, "data-cy":midy, tabindex:"0"});
+    const dot = el("circle", {class:"mv-dot", r:5, fill: color, stroke:"var(--bg)", "stroke-width":1.5});
+    const anim = el("animateMotion", {dur:"7s", repeatCount:"indefinite", keyPoints:"0;1;0", keyTimes:"0;0.5;1", calcMode:"linear"});
+    const mpath = el("mpath");
+    mpath.setAttributeNS("http://www.w3.org/1999/xlink", "href", "#"+pathId);
+    anim.appendChild(mpath);
+    dot.appendChild(anim);
+    g.appendChild(dot);
+
+    const iconG = el("g", {transform:`translate(${midx},${midy})`, style:`color:${color}`});
+    iconG.innerHTML = iconMarkup(mv.unitType==="carrier"||mv.unitType==="submarine" ? "naval" : (mv.unitType==="aircraft"?"drone":"ground"));
+    g.appendChild(iconG);
+
+    g.addEventListener("mouseenter", ()=>{ if(!pinned) showTooltip({...mv, title:mv.label}, midx, midy, false); });
+    g.addEventListener("mouseleave", ()=>{ if(!pinned) hideTooltip(); });
+    g.addEventListener("click", (e)=>{ e.stopPropagation(); setActive(mv.id); showTooltip({...mv, title:mv.label}, midx, midy, true); });
+    gMovements.appendChild(g);
+  });
+}
+
+mapwrap.addEventListener("click", (e)=>{
+  if(e.target===svg || e.target===mapwrap){ pinned=false; hideTooltip(true); setActive(null); }
+});
+
+function renderAll(){
+  drawIncidents();
+  drawMovements();
+  renderFeed();
+  document.getElementById("modeBadge").textContent = "VERIFIED FEED";
+  document.getElementById("updatedText").textContent = "SYNC: " + state.lastUpdated;
+}
+
+function selectLatestStory(){
+  if(state.incidents.length > 0){
+    const latest = state.incidents[0];
+    setActive(latest.id);
+    const loc = cityXY(latest.location);
+    if(loc){
+      showTooltip(latest, loc.x, loc.y, true);
+    }
+  }
+}
+
+loadRealBorders();
+
+const refreshBtn = document.getElementById("refreshBtn");
+const themeLightBtn = document.getElementById("themeLightBtn");
+const themeDarkBtn = document.getElementById("themeDarkBtn");
+const themeCamoBtn = document.getElementById("themeCamoBtn");
+const errorBanner = document.getElementById("errorBanner");
+
+function updateThemeButtons(theme){
+  themeLightBtn.classList.toggle("active-theme", theme === "light");
+  themeDarkBtn.classList.toggle("active-theme", theme === "dark");
+  themeCamoBtn.classList.toggle("active-theme", theme === "desert-camo");
+}
+
+themeLightBtn.addEventListener("click", () => {
+  document.documentElement.removeAttribute("data-theme");
+  document.body.classList.remove("camo-active");
+  updateThemeButtons("light");
+});
+
+themeDarkBtn.addEventListener("click", () => {
+  document.documentElement.setAttribute("data-theme", "dark");
+  document.body.classList.remove("camo-active");
+  updateThemeButtons("dark");
+});
+
+themeCamoBtn.addEventListener("click", () => {
+  document.documentElement.setAttribute("data-theme", "desert-camo");
+  document.body.classList.add("camo-active");
+  updateThemeButtons("desert-camo");
+});
+
+updateThemeButtons("light");
+
+refreshBtn.addEventListener("click", () => {
+  refreshBtn.classList.add("loading");
+  refreshBtn.disabled = true;
+  errorBanner.style.display = "none";
+  
+  setTimeout(() => {
+    state.lastUpdated = new Date().toLocaleTimeString();
+    renderAll();
+    triggerInitialAnimations();
+    selectLatestStory();
+    refreshBtn.classList.remove("loading");
+    refreshBtn.disabled = false;
+  }, 400);
+});
+
+})();
+</script>
+</body>
+</html>

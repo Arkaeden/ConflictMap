@@ -1,0 +1,29 @@
+{
+  "lastUpdated": "2026-07-26T22:00:00Z",
+  "incidents": [
+    {
+      "id": "op1",
+      "location": "Strait of Hormuz",
+      "title": "Commercial Tanker Interception",
+      "blurb": "IRGC naval elements intercepted and briefly detained a commercial container vessel near central lanes.",
+      "actor": "iran",
+      "type": "naval",
+      "severity": 4,
+      "time": "Today, 04:30 UTC",
+      "source": "OSINT Maritime"
+    }
+  ],
+  "movements": [
+    {
+      "id": "m1",
+      "actor": "usa",
+      "unitType": "carrier",
+      "label": "CSG Patrol Vector",
+      "from": "Arabian Sea",
+      "to": "Persian Gulf",
+      "blurb": "Routine maritime security patrol moving into central operating boxes.",
+      "time": "Active",
+      "source": "USNT"
+    }
+  ]
+}
