@@ -1,448 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Regional Situation Map — Iran Conflict Tracker</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-<!-- Leaflet CSS -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regional Conflict Tracker</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <style>
+        :root {
+            --bg-color: #111827;
+            --panel-bg: #1F2937;
+            --text-main: #F3F4F6;
+            --text-muted: #9CA3AF;
+            --border-color: #374151;
+            --accent: #3B82F6;
+        }
 
-<style>
-  :root {
-    --bg: #F4F1EA;
-    --bg-header: #EAE6DD;
-    --bg-panel: #FAF8F4;
-    --bg-panel-2: #EFECE4;
-    --bg-elevated: #E4E0D6;
-    --line: rgba(26, 26, 26, 0.08);
-    --line-strong: rgba(26, 26, 26, 0.15);
-    --text: #1A1A1A;
-    --text-dim: #555555;
-    --text-faint: #777777;
-    --accent: #FF3300;
-    --accent-dim: rgba(255, 51, 0, 0.1);
-    --iran: #008855;
-    --israel: #0055FF;
-    --usa: #1A1A1A;
-    --proxy: #FF6600;
-    --host: #555555;
-    --danger: #FF3300;
-    --shadow-color: rgba(26,26,26,0.1);
-  }
-  
-  [data-theme="dark"] {
-    --bg: #07090D;
-    --bg-header: #0D1117;
-    --bg-panel: #101620;
-    --bg-panel-2: #161F2E;
-    --bg-elevated: #1D283C;
-    --line: rgba(240, 243, 249, 0.06);
-    --line-strong: rgba(240, 243, 249, 0.12);
-    --text: #F0F3F9;
-    --text-dim: #8B9BB4;
-    --text-faint: #4E5D75;
-    --accent: #FF3300;
-    --accent-dim: rgba(255, 51, 0, 0.2);
-    --iran: #4CD994;
-    --israel: #4DA6FF;
-    --usa: #F6C945;
-    --proxy: #E67E42;
-    --host: #8B9BB4;
-    --danger: #FF5533;
-    --shadow-color: rgba(0,0,0,0.4);
-  }
-  
-  [data-theme="desert-camo"] {
-    --bg: #2B241B;
-    --bg-header: #221C14;
-    --bg-panel: #332B20;
-    --bg-panel-2: #3E3427;
-    --bg-elevated: #4A3E30;
-    --line: rgba(212, 184, 135, 0.12);
-    --line-strong: rgba(212, 184, 135, 0.25);
-    --text: #F4EEDB;
-    --text-dim: #C2B39B;
-    --text-faint: #8F816B;
-    --accent: #D96B2B;
-    --accent-dim: rgba(217, 107, 43, 0.25);
-    --iran: #6BA879;
-    --israel: #5286D4;
-    --usa: #E5C365;
-    --proxy: #D97741;
-    --host: #A89B85;
-    --danger: #D94627;
-    --shadow-color: rgba(0,0,0,0.6);
-  }
-  
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; overflow: hidden; transition: background 0.2s, color 0.2s; }
-  body { display: flex; flex-direction: column; min-height: 100vh; }
-  
-  body::before {
-    content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
-    background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 80px 80px; opacity: 0.6;
-  }
-  body.camo-active::before {
-    background-image: radial-gradient(ellipse at 20% 30%, rgba(59, 46, 32, 0.4) 0%, transparent 40%), radial-gradient(ellipse at 75% 65%, rgba(33, 27, 19, 0.5) 0%, transparent 50%), linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
-    background-size: 320px 320px, 450px 450px, 80px 80px, 80px 80px; opacity: 0.95;
-  }
+        body[data-theme="light"] {
+            --bg-color: #F3F4F6;
+            --panel-bg: #FFFFFF;
+            --text-main: #111827;
+            --text-muted: #6B7280;
+            --border-color: #E5E7EB;
+            --accent: #2563EB;
+        }
 
-  /* Native Tile Rendering without Ugly Color Filters */
-  .leaflet-container { background: var(--bg); font-family: inherit; }
-  
-  .leaflet-popup-content-wrapper {
-    background: var(--bg-panel); border: 1px solid var(--line-strong); border-radius: 0;
-    box-shadow: 0 12px 32px var(--shadow-color); color: var(--text);
-  }
-  .leaflet-popup-tip { background: var(--bg-panel); border: 1px solid var(--line-strong); }
-  .leaflet-popup-content { margin: 16px 20px; line-height: 1.4; }
-  .leaflet-container a.leaflet-popup-close-button { color: var(--text-dim); font-weight: 900; padding: 8px; }
-  
-  .custom-leaflet-marker { background: transparent; border: none; }
-  .marker-icon-bg { transition: transform 0.2s ease; transform-origin: center; }
-  .custom-leaflet-marker:hover .marker-icon-bg { transform: scale(1.25); }
-  
-  header.topbar {
-    position: relative; z-index: 1000; display: flex; align-items: flex-end; justify-content: space-between;
-    padding: 24px 32px; border-bottom: 1px solid var(--line-strong); background: var(--bg-header); flex-wrap: wrap; gap: 16px;
-  }
-  .brand-group { display: flex; align-items: center; gap: 20px; }
-  .brand-logo {
-    width: 46px; height: 46px; object-fit: contain;
-    filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(7493%) hue-rotate(3deg) brightness(102%) contrast(105%);
-  }
-  [data-theme="desert-camo"] .brand-logo {
-    filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(90%);
-  }
-  .title-block .eyebrow { font-size: 11px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
-  .title-block h1 { font-weight: 900; font-size: 32px; letter-spacing: -1px; margin: 0; color: var(--text); text-transform: uppercase; line-height: 1; }
-  .status-block { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-  
-  .theme-controls { display: flex; gap: 6px; align-items: center; }
-  button.icon-btn {
-    background: var(--bg-panel-2); color: var(--text); border: 1px solid var(--line-strong); border-radius: 0;
-    width: 36px; height: 36px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.15s ease; padding: 0;
-  }
-  button.icon-btn:hover { background: var(--text); color: var(--bg); }
-  button.icon-btn svg { width: 16px; height: 16px; fill: currentColor; }
-  button.icon-btn.active-theme { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
-  
-  .mode-badge { font-size: 11px; font-weight: 700; letter-spacing: 2px; padding: 10px 12px; border-radius: 0; text-transform: uppercase; color: var(--bg); background: var(--iran); }
-  .updated-text { font-size: 12px; font-weight: 700; color: var(--text-dim); }
-  button.control-btn {
-    font-weight: 900; letter-spacing: 2px; font-size: 11px; background: var(--bg-panel-2); color: var(--text);
-    border: 1px solid var(--line-strong); border-radius: 0; padding: 10px 16px; cursor: pointer; text-transform: uppercase;
-    display: flex; align-items: center; gap: 8px; transition: all 0.15s ease;
-  }
-  button.control-btn:hover { background: var(--text); color: var(--bg); }
-  button.refresh-btn { background: var(--accent); color: #FFF; border-color: transparent; }
-  button.refresh-btn:hover { filter: brightness(1.15); color: #FFF; }
-  button.refresh-btn:disabled { opacity: 0.5; cursor: wait; }
-  
-  .spinner { width: 10px; height: 10px; border: 2px solid #FFF; border-top-color: transparent; border-radius: 50%; animation: spin 0.6s linear infinite; display: none; }
-  .refresh-btn.loading .spinner { display: inline-block; }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  
-  main.layout { position: relative; z-index: 1; flex: 1; display: grid; grid-template-columns: 1fr 400px; gap: 0; min-height: 0; }
-  .mapwrap { position: relative; overflow: hidden; background: var(--bg); }
-  #map { width: 100%; height: 100%; display: block; z-index: 1; }
-  
-  aside.sidebar { background: var(--bg-panel); border-left: 1px solid var(--line-strong); display: flex; flex-direction: column; min-height: 0; z-index: 2; }
-  .sidebar-section { padding: 20px 24px; border-bottom: 1px solid var(--line); }
-  .sidebar-title {
-    font-weight: 900; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin: 0 0 14px 0;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .sidebar-title::after { content: "—"; color: var(--text-faint); font-weight: 900; }
-  .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); }
-  .legend-row { display: flex; align-items: center; gap: 8px; }
-  .swatch { width: 8px; height: 8px; flex: none; }
-  .legend-icons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
-  .legend-icon-item { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; }
-  .legend-icon-item svg { width: 14px; height: 14px; background: transparent !important; }
-  
-  .feed { flex: 1; overflow-y: auto; padding: 16px 20px; min-height: 120px; }
-  .feed::-webkit-scrollbar { width: 4px; }
-  .feed::-webkit-scrollbar-thumb { background: var(--line-strong); }
-  
-  .feed-item { padding: 12px 14px; margin-bottom: 8px; cursor: pointer; background: var(--bg); border: 1px solid var(--line); transition: all 0.15s ease; }
-  .feed-item:hover { background: var(--bg-panel-2); }
-  .feed-item.active { background: var(--bg-elevated); border-left: 3px solid var(--accent); }
-  .feed-item .fi-top { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
-  .feed-item .fi-dot { width: 6px; height: 6px; flex: none; }
-  .feed-item .fi-title { font-weight: 900; font-size: 13px; letter-spacing: -0.2px; color: var(--text); text-transform: uppercase; line-height: 1.3; }
-  .feed-item .fi-meta { font-size: 10px; font-weight: 700; color: var(--text-faint); margin-left: 14px; text-transform: uppercase; }
-  .feed-empty { color: var(--text-faint); font-size: 11px; font-weight: 700; font-style: italic; }
-  
-  .disclaimer { padding: 16px 24px; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint); background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px; }
-  .disclaimer strong { color: var(--text-dim); }
-  .error-banner { display: none; margin: 0 32px; padding: 10px 14px; background: rgba(255,51,0,0.1); color: var(--danger); font-size: 11px; font-weight: 900; position: relative; z-index: 2; border: 1px solid var(--danger); border-top: none; }
-  
-  @media (max-width: 900px) {
-    html, body { height: auto; overflow: auto; }
-    body { display: block; min-height: 100vh; }
-    header.topbar { padding: 16px 20px; }
-    .title-block h1 { font-size: 22px; }
-    .mode-badge { display: none; }
-    main.layout { display: flex; flex-direction: column; height: auto; min-height: calc(100vh - 70px); }
-    .mapwrap { width: 100%; height: 380px; flex: none; border-bottom: 1px solid var(--line-strong); }
-    aside.sidebar { width: 100%; height: auto; flex: none; }
-  }
-</style>
+        body[data-theme="camo"] {
+            --bg-color: #C2B280;
+            --panel-bg: #8B7355;
+            --text-main: #F5F5DC;
+            --text-muted: #D2C29D;
+            --border-color: #65533D;
+            --accent: #4A5D23;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Layout */
+        #map-container {
+            flex-grow: 1;
+            height: 100%;
+            position: relative;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-color);
+        }
+
+        #sidebar {
+            width: 380px;
+            background-color: var(--panel-bg);
+            border-left: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            z-index: 1000;
+        }
+
+        /* Header & Controls */
+        .header {
+            padding: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .header h1 {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+        }
+
+        .theme-controls {
+            display: flex;
+            gap: 8px;
+        }
+
+        .theme-btn {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 6px 12px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .theme-btn:hover {
+            border-color: var(--accent);
+        }
+
+        /* Telemetry Feed */
+        .feed-header {
+            padding: 12px 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+            text-transform: uppercase;
+            background: rgba(0,0,0,0.1);
+        }
+
+        #incident-feed {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 0;
+        }
+
+        .feed-item {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-color);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .feed-item:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .feed-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .feed-title {
+            font-size: 0.9rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+        
+        .feed-source {
+            font-size: 0.7rem;
+            color: var(--accent);
+        }
+
+        /* Leaflet Popup Overrides for Dynamic Growth */
+        .leaflet-popup-content-wrapper {
+            width: auto !important;
+            max-width: 320px !important;
+            background: var(--panel-bg);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 4px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .leaflet-popup-tip {
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+        }
+
+        .leaflet-popup-content {
+            margin: 12px 14px !important;
+            line-height: 1.4;
+        }
+
+        /* Dynamic Hover Card Content */
+        .hover-card-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            white-space: normal !important;
+            overflow: visible !important;
+            text-overflow: clip !important;
+        }
+
+        .hover-card-blurb {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+            margin-top: 6px;
+            white-space: normal;
+        }
+    </style>
 </head>
 <body>
 
-<header class="topbar">
-  <div class="brand-group">
-    <img src="https://www.matmejia.com/images/MM_logo.svg" alt="MM Logo" class="brand-logo">
-    <div class="title-block">
-      <div class="eyebrow">Regional Situation Map</div>
-      <h1>Iran Conflict Tracker</h1>
+    <div id="map-container">
+        <div id="map"></div>
     </div>
-  </div>
-  <div class="status-block">
-    <span class="updated-text" id="updatedText">SYNC: ACTIVE</span>
-    <div class="theme-controls">
-      <button class="icon-btn" id="themeLightBtn" title="Light Mode">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-      </button>
-      <button class="icon-btn" id="themeDarkBtn" title="Dark Mode">
-        <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      </button>
-      <button class="icon-btn" id="themeCamoBtn" title="Desert Camouflage Theme">
-        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
-      </button>
-    </div>
-    <span class="mode-badge" id="modeBadge">Verified Feed</span>
-    <button class="control-btn refresh-btn" id="refreshBtn">
-      <span class="spinner"></span>
-      <span class="btn-label">Refresh Live Data</span>
-    </button>
-  </div>
-</header>
-<div class="error-banner" id="errorBanner"></div>
 
-<main class="layout">
-  <div class="mapwrap" id="mapwrap">
-    <div id="map"></div>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-section">
-      <div class="sidebar-title">Index / Legend</div>
-      <div class="legend-grid">
-        <div class="legend-row"><span class="swatch" style="background:var(--iran)"></span>Iran</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--israel)"></span>Israel</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--usa)"></span>United States</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--proxy)"></span>Proxies</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--host)"></span>States</div>
-      </div>
-      <div class="legend-icons" id="legendIcons"></div>
-    </div>
-    <div class="sidebar-title" style="padding:16px 24px 0 24px;">Telemetry Feed</div>
-    <div class="feed" id="feed"></div>
-    <div class="disclaimer" id="disclaimerText">
-      <strong>Operational DB.</strong> Curated telemetry mapping active regional flashpoints and asset vectors via live JSON feed.
-    </div>
-  </aside>
-</main>
-
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-<script>
-(function(){
-const CITY = {
-  "Tehran": [35.6892, 51.3890], "Natanz": [33.5128, 51.9192], "Fordow": [34.8847, 50.9908],
-  "Isfahan": [32.6539, 51.6660], "Bushehr": [28.9684, 50.8385], "Bandar Abbas": [27.1865, 56.2808],
-  "Strait of Hormuz": [26.5, 56.25], "Tel Aviv": [32.0853, 34.7818], "Jerusalem": [31.7683, 35.2137],
-  "Haifa": [32.7940, 34.9896], "Eilat": [29.5581, 34.9482], "Gaza City": [31.5017, 34.4668],
-  "Rafah": [31.2968, 34.2455], "Golan Heights": [33.0, 35.75], "Beirut": [33.8938, 35.5018],
-  "Tyre": [33.2705, 35.1961], "Damascus": [33.5138, 36.2765], "Baghdad": [33.3152, 44.3661],
-  "Erbil": [36.1911, 44.0093], "Amman": [31.9454, 35.9284], "Riyadh": [24.7136, 46.6753],
-  "Sanaa": [15.3694, 44.1910], "Hodeidah": [14.7979, 42.9545], "Aden": [12.7985, 45.0355],
-  "Bab-el-Mandeb": [12.5807, 43.3311], "Eastern Med": [34.5000, 33.0000]
-};
-
-const ACTOR_HEX = {iran:"var(--iran)", israel:"var(--israel)", usa:"var(--usa)", proxy:"var(--proxy)", host:"var(--host)"};
-const ACTOR_LABEL = {iran:"Iran", israel:"Israel", usa:"United States", proxy:"Militia / proxy", host:"Regional state"};
-const TYPE_LABEL = {airstrike:"Airstrike", missile:"Missile fire", drone:"Drone activity", naval:"Naval activity", ground:"Ground forces", cyber:"Cyber activity", diplomatic:"Diplomatic / other"};
-
-function iconMarkup(type){
-  switch(type){
-    case "airstrike": return `<g stroke="currentColor" stroke-width="2" stroke-linecap="square"><line x1="-7" y1="0" x2="7" y2="0"/><line x1="0" y1="-7" x2="0" y2="7"/><line x1="-5" y1="-5" x2="5" y2="5"/><line x1="-5" y1="5" x2="5" y2="-5"/></g>`;
-    case "missile": return `<g fill="currentColor"><path d="M0,-8 L5,6 L-5,6 Z"/><rect x="-2" y="6" width="4" height="4"/></g>`;
-    case "drone": return `<g stroke="currentColor" stroke-width="1.5" fill="none"><rect x="-3" y="-3" width="6" height="6"/><line x1="-3" y1="-3" x2="-7" y2="-7"/><circle cx="-7" cy="-7" r="1.5" fill="currentColor"/><line x1="3" y1="-3" x2="7" y2="-7"/><circle cx="7" cy="-7" r="1.5" fill="currentColor"/><line x1="-3" y1="3" x2="-7" y2="7"/><circle cx="-7" cy="7" r="1.5" fill="currentColor"/><line x1="3" y1="3" x2="7" y2="7"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/></g>`;
-    case "naval": return `<g fill="currentColor"><path d="M-8,4 L8,4 L5,9 L-5,9 Z"/><rect x="-1" y="-7" width="2" height="11"/><path d="M1,-7 L6,-2 L1,-2 Z"/></g>`;
-    case "ground": return `<g stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="square" stroke-linejoin="miter"><line x1="-7" y1="0" x2="6" y2="0"/><path d="M1,-5 L6,0 L1,5"/></g>`;
-    case "cyber": return `<g stroke="currentColor" stroke-width="1.5" fill="none"><rect x="-5" y="-5" width="10" height="10"/><line x1="-8" y1="-2" x2="-5" y2="-2"/><line x1="-8" y1="2" x2="-5" y2="2"/><line x1="8" y1="-2" x2="5" y2="-2"/><line x1="8" y1="2" x2="5" y2="2"/></g>`;
-    case "diplomatic": return `<g fill="currentColor"><rect x="-1" y="-8" width="2" height="14"/><path d="M1,-8 L9,-4 L1,-1 Z"/></g>`;
-    default: return `<circle r="3" fill="currentColor"/>`;
-  }
-}
-
-const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
-
-// Base layers for switching themes natively without ugly filters
-const baseLayerVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
-const baseLayerDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
-
-const labelsVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
-const labelsDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
-
-let currentBaseLayer = baseLayerVoyager.addTo(map);
-let currentLabelsLayer = labelsVoyager.addTo(map);
-
-let state = { incidents: [], lastUpdated: "" };
-let activeMarkers = [];
-
-async function fetchTelemetryData() {
-  try {
-    const response = await fetch('./data.json?t=' + Date.now());
-    if (!response.ok) throw new Error("Failed to load telemetry");
-    const data = await response.json();
-    state.incidents = data.incidents || [];
-    state.lastUpdated = new Date(data.lastUpdated).toLocaleTimeString();
-    renderAll();
-  } catch (err) {
-    document.getElementById("errorBanner").style.display = "block";
-    document.getElementById("errorBanner").textContent = "SYNC ERROR: UNABLE TO FETCH LIVE TELEMETRY.";
-  }
-}
-
-function renderAll() {
-  document.getElementById("updatedText").textContent = "SYNC: " + state.lastUpdated;
-  activeMarkers.forEach(m => map.removeLayer(m));
-  activeMarkers = [];
-  
-  const feedEl = document.getElementById("feed");
-  feedEl.innerHTML = "";
-  
-  if(state.incidents.length === 0){
-    feedEl.innerHTML = '<div class="feed-empty">NO TELEMETRY RECORDED.</div>';
-    return;
-  }
-
-  state.incidents.forEach(inc => {
-    const coords = CITY[inc.location] || CITY["Eastern Med"];
-    const color = ACTOR_HEX[inc.actor] || "var(--text)";
-    const eventType = inc.type || "diplomatic";
-    
-    const customIcon = L.divIcon({
-      className: 'custom-leaflet-marker',
-      html: `<svg viewBox="-15 -15 30 30" style="width: 32px; height: 32px; overflow: visible;">
-               <circle class="marker-icon-bg" r="12" fill="var(--bg)" stroke="${color}" stroke-width="1.5"></circle>
-               <g style="color: ${color}">${iconMarkup(eventType)}</g>
-             </svg>`,
-      iconSize: [32, 32],
-      iconAnchor: [16, 16]
-    });
-
-    const popupHtml = `
-      <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
-        <div style="color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px;">
-          <span style="display:inline-block; width:6px; height:6px; background:${color}; margin-right:6px;"></span>
-          ${(ACTOR_LABEL[inc.actor]||"") + " // " + (TYPE_LABEL[eventType]||"")}
+    <div id="sidebar">
+        <div class="header">
+            <h1>Conflict Tracker</h1>
+            <div class="theme-controls">
+                <button class="theme-btn" onclick="setTheme('dark')">Dark</button>
+                <button class="theme-btn" onclick="setTheme('light')">Light</button>
+                <button class="theme-btn" onclick="setTheme('camo')">Desert</button>
+            </div>
         </div>
-        <div style="font-weight: 900; font-size: 16px; margin-bottom: 8px; color: var(--text); text-transform: uppercase;">${inc.title}</div>
-        <div style="color: var(--text-dim); margin-bottom: 12px; font-size: 13px;">${inc.blurb || ""}</div>
-        <div style="font-size: 10px; font-weight: 700; color: var(--text-faint); display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 8px;">
-          <span>${inc.time || ""}</span>
-          <span>SRC: ${inc.source || "Feed"}</span>
+        <div class="feed-header">Live Telemetry</div>
+        <div id="incident-feed">
+            <!-- Feed items injected here -->
         </div>
-        ${(inc.url && inc.url !== '#' && inc.url !== '') ? `<a href="${inc.url}" target="_blank" rel="noopener noreferrer" style="color: var(--accent); text-decoration: none; font-size: 10px; font-weight: 900; letter-spacing: 1px; display: inline-block; margin-top: 8px;">OPEN REPORT →</a>` : `<span style="color: var(--text-faint); font-size: 10px; font-weight: 900; letter-spacing: 1px; display: inline-block; margin-top: 8px; cursor: not-allowed; opacity: 0.5;">LINK UNAVAILABLE</span>`}
-      </div>
-    `;
+    </div>
 
-    const marker = L.marker(coords, { icon: customIcon }).bindPopup(popupHtml);
-    marker.addTo(map);
-    activeMarkers.push(marker);
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
-    const row = document.createElement("div");
-    row.className = "feed-item";
-    row.dataset.id = inc.id;
-    row.innerHTML = `
-      <div class="fi-top">
-        <span class="fi-dot" style="background:${color}"></span>
-        <span class="fi-title">${inc.title}</span>
-      </div>
-      <div class="fi-meta">[${inc.location}] ${inc.time||""} ${inc.source? "· "+inc.source : ""}</div>`;
-      
-    row.addEventListener("click", () => {
-      document.querySelectorAll(".feed-item").forEach(n => n.classList.remove("active"));
-      row.classList.add("active");
-      map.flyTo(coords, 7, { duration: 1 });
-      marker.openPopup();
-    });
-    
-    feedEl.appendChild(row);
-  });
-}
+    <script>
+        // 1. Theme Switcher Logic
+        function setTheme(theme) {
+            document.body.setAttribute('data-theme', theme);
+            updateMapStyle(theme);
+        }
 
-const legendIcons = document.getElementById("legendIcons");
-Object.keys(TYPE_LABEL).forEach(t => {
-  const wrap = document.createElement("div");
-  wrap.className = "legend-icon-item";
-  wrap.innerHTML = `<svg viewBox="-9 -9 18 18" style="color:var(--text-dim)">${iconMarkup(t)}</svg><span>${TYPE_LABEL[t]}</span>`;
-  legendIcons.appendChild(wrap);
-});
+        // 2. Initialize Map
+        const map = L.map('map', {
+            zoomControl: false
+        }).setView([33.0, 44.0], 5); // Centered on Middle East
 
-const refreshBtn = document.getElementById("refreshBtn");
-const themeLightBtn = document.getElementById("themeLightBtn");
-const themeDarkBtn = document.getElementById("themeDarkBtn");
-const themeCamoBtn = document.getElementById("themeCamoBtn");
+        L.control.zoom({ position: 'bottomleft' }).addTo(map);
 
-function updateThemeButtons(theme){
-  themeLightBtn.classList.toggle("active-theme", theme === "light");
-  themeDarkBtn.classList.toggle("active-theme", theme === "dark");
-  themeCamoBtn.classList.toggle("active-theme", theme === "desert-camo");
-  
-  // Swap native tiles cleanly without ugly CSS filters
-  map.removeLayer(currentBaseLayer);
-  map.removeLayer(currentLabelsLayer);
-  
-  if (theme === "light") {
-    currentBaseLayer = baseLayerVoyager.addTo(map);
-    currentLabelsLayer = labelsVoyager.addTo(map);
-  } else {
-    // Dark & Desert Camo both utilize the gorgeous Dark Matter base tiles
-    currentBaseLayer = baseLayerDark.addTo(map);
-    currentLabelsLayer = labelsDark.addTo(map);
-  }
-}
+        // Map tile layers
+        const tiles = {
+            dark: L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO'
+            }),
+            light: L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+                attribution: '&copy; OpenStreetMap &copy; CARTO'
+            }),
+            camo: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+                attribution: 'Tiles &copy; Esri'
+            })
+        };
 
-themeLightBtn.addEventListener("click", () => {
-  document.documentElement.removeAttribute("data-theme");
-  document.body.classList.remove("camo-active");
-  updateThemeButtons("light");
-});
-themeDarkBtn.addEventListener("click", () => {
-  document.documentElement.setAttribute("data-theme", "dark");
-  document.body.classList.remove("camo-active");
-  updateThemeButtons("dark");
-});
-themeCamoBtn.addEventListener("click", () => {
-  document.documentElement.setAttribute("data-theme", "desert-camo");
-  document.body.classList.add("camo-active");
-  updateThemeButtons("desert-camo");
-});
+        let currentTileLayer = tiles.dark;
+        currentTileLayer.addTo(map);
 
-refreshBtn.addEventListener("click", () => {
-  refreshBtn.classList.add("loading");
-  refreshBtn.disabled = true;
-  document.getElementById("errorBanner").style.display = "none";
-  fetchTelemetryData().finally(() => {
-    refreshBtn.classList.remove("loading");
-    refreshBtn.disabled = false;
-  });
-});
+        function updateMapStyle(theme) {
+            map.removeLayer(currentTileLayer);
+            currentTileLayer = tiles[theme];
+            currentTileLayer.addTo(map);
+        }
 
-updateThemeButtons("light");
-fetchTelemetryData();
-})();
-</script>
+        // 3. Icon Definitions
+        const getIconColor = (type) => {
+            switch(type) {
+                case 'airstrike': return '#EF4444'; // Red
+                case 'missile': return '#F59E0B'; // Orange
+                case 'naval': return '#3B82F6'; // Blue
+                case 'drone': return '#8B5CF6'; // Purple
+                case 'ground': return '#10B981'; // Green
+                default: return '#9CA3AF'; // Gray
+            }
+        };
+
+        const createCustomIcon = (type) => {
+            const color = getIconColor(type);
+            return L.divIcon({
+                className: 'custom-map-marker',
+                html: `<div style="background-color: ${color}; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 4px rgba(0,0,0,0.5);"></div>`,
+                iconSize: [12, 12],
+                iconAnchor: [6, 6]
+            });
+        };
+
+        // Static coordinate mapping for demo purposes
+        const locationCoords = {
+            "Tehran": [35.6892, 51.3890],
+            "Jerusalem": [31.7683, 35.2137],
+            "Tel Aviv": [32.0853, 34.7818],
+            "Beirut": [33.8938, 35.5018],
+            "Damascus": [33.5138, 36.2765],
+            "Sanaa": [15.3694, 44.1910],
+            "Baghdad": [33.3152, 44.3661],
+            "Gaza City": [31.5017, 34.4668],
+            "Strait of Hormuz": [26.5667, 56.2500],
+            "Eastern Med": [33.0, 33.0]
+        };
+
+        // 4. Fetch Data and Render
+        async function loadData() {
+            try {
+                // Add timestamp to bypass GitHub Pages cache
+                const response = await fetch(`data.json?v=${new Date().getTime()}`);
+                const data = await response.json();
+                
+                const feedContainer = document.getElementById('incident-feed');
+                feedContainer.innerHTML = ''; // Clear feed
+
+                data.incidents.forEach(incident => {
+                    // Coordinates fallback
+                    const coords = locationCoords[incident.location] || [33.0, 44.0];
+
+                    // Map Marker
+                    const marker = L.marker(coords, {
+                        icon: createCustomIcon(incident.type)
+                    }).addTo(map);
+
+                    // Updated Popup Template (No Open Report link, includes full blurb)
+                    const popupHTML = `
+                        <div class="hover-card">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                                <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--accent);">
+                                    ${incident.actor} • ${incident.type}
+                                </span>
+                                <span style="font-size: 0.68rem; color: var(--text-muted);">${incident.time.split(' ')[0]}</span>
+                            </div>
+                            
+                            <div class="hover-card-title">${incident.title}</div>
+                            <div class="hover-card-blurb">${incident.blurb}</div>
+                            
+                            <div style="margin-top: 10px; font-size: 0.65rem; color: var(--text-muted); border-top: 1px solid var(--border-color); padding-top: 6px;">
+                                Location: ${incident.location} | Source: ${incident.source}
+                            </div>
+                        </div>
+                    `;
+                    marker.bindPopup(popupHTML);
+
+                    // Sidebar Feed Item
+                    const feedItem = document.createElement('div');
+                    feedItem.className = 'feed-item';
+                    feedItem.innerHTML = `
+                        <div class="feed-meta">
+                            <span style="color: ${getIconColor(incident.type)}">${incident.type}</span>
+                            <span>${incident.time.split(' ')[0] || 'Recent'}</span>
+                        </div>
+                        <div class="feed-title">${incident.title}</div>
+                        <div class="feed-source">${incident.location} • ${incident.source}</div>
+                    `;
+                    
+                    // Click feed item to open popup on map
+                    feedItem.addEventListener('click', () => {
+                        map.setView(coords, 7);
+                        marker.openPopup();
+                    });
+
+                    feedContainer.appendChild(feedItem);
+                });
+
+            } catch (error) {
+                console.error("Error loading data:", error);
+                document.getElementById('incident-feed').innerHTML = '<div style="padding: 20px; color: #EF4444;">Error loading telemetry data. Please check data.json.</div>';
+            }
+        }
+
+        // Initialize
+        loadData();
+    </script>
 </body>
 </html>
