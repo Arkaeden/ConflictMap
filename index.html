@@ -79,6 +79,11 @@
     --shadow-color: rgba(0,0,0,0.6);
   }
   
+  /* Custom Brown & Tan Tactical Map Styling for Desert Camo via CSS Filters */
+  [data-theme="desert-camo"] .leaflet-tile-pane {
+    filter: sepia(0.85) hue-rotate(310deg) saturate(1.6) brightness(0.8) contrast(1.25);
+  }
+  
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; overflow: hidden; transition: background 0.2s, color 0.2s; }
   body { display: flex; flex-direction: column; min-height: 100vh; }
@@ -562,6 +567,10 @@ function updateThemeButtons(theme){
     currentLabelsLayer = null;
   } else if (theme === "satellite") {
     currentBaseLayer = baseLayerSat.addTo(map);
+    currentLabelsLayer = null;
+  } else if (theme === "desert-camo") {
+    // Uses topographic base with custom brown/tan tactical filter
+    currentBaseLayer = baseLayerTopo.addTo(map);
     currentLabelsLayer = null;
   } else {
     currentBaseLayer = baseLayerDark.addTo(map);
