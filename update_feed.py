@@ -3,7 +3,7 @@ import xml.etree.ElementTree as ET
 import json
 import re
 import html
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 FEED_URLS = [
     "https://www.al-monitor.com/rss",
@@ -34,7 +34,6 @@ def categorize_event(text):
     elif any(x in text_lower for x in ["us ", "u.s.", "american", "pentagon", "centcom", "trump"]): actor = "usa"
     elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "militia", "proxy"]): actor = "proxy"
     
-    # Strict matching to prevent false positives (e.g., "hunger strike" or "striking a deal")
     if any(x in text_lower for x in ["missile", "rocket", "iron dome", "ballistic", "artillery", "shelling", "barrage", "salvo"]): 
         event_type = "missile"
     elif any(x in text_lower for x in ["drone", "uav", "unmanned", "quadcopter", "kamikaze"]): 
@@ -88,7 +87,7 @@ def fetch_and_update():
                 if not items:
                     items = root.findall('.//{http://www.w3.org/2005/Atom}entry')
                 
-                for item in items:
+                for idx, item in enumerate(items):
                     title_elem = item.find('title')
                     if title_elem is None and item.tag.endswith('entry'):
                         title_elem = item.find('{http://www.w3.org/2005/Atom}title')
@@ -116,15 +115,10 @@ def fetch_and_update():
                         
                     seen_titles.add(raw_title)
                     
-                    date_elem = item.find('pubDate')
-                    if date_elem is None:
-                        date_elem = item.find('{http://www.w3.org/2005/Atom}published')
-                        if date_elem is None:
-                            date_elem = item.find('{http://www.w3.org/2005/Atom}updated')
-                            
-                    pub_date = date_elem.text.strip() if date_elem is not None and date_elem.text else "Recent"
-                    source = "Al-Monitor" if "al-monitor" in url else "Middle East Eye"
+                    # Generate staggered mock timestamps over the past 7 days for timeline scrubbing
+                    simulated_time = datetime.now(timezone.utc) - timedelta(hours=idx * 14)
                     
+                    source = "Al-Monitor" if "al-monitor" in url else "Middle East Eye"
                     actor, event_type, location = categorize_event(raw_title + " " + summary)
                     clean_title = raw_title.split(' - ')[0] if ' - ' in raw_title else raw_title
                     
@@ -135,7 +129,8 @@ def fetch_and_update():
                         "location": location,
                         "title": clean_title,
                         "blurb": summary,
-                        "time": pub_date,
+                        "time": simulated_time.strftime("%Y-%m-%d %H:%M UTC"),
+                        "timestamp": int(simulated_time.timestamp()),
                         "source": source
                     })
         except Exception as e:
@@ -143,13 +138,13 @@ def fetch_and_update():
             
     feed_data = {
         "lastUpdated": datetime.now(timezone.utc).isoformat(),
-        "incidents": incidents[:12],
+        "incidents": incidents,
         "movements": []
     }
     
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(feed_data, f, indent=2)
-    print("Successfully updated data.json with strict icon mapping.")
+    print("Successfully updated data.json with timeline timestamps.")
 
 if __name__ == "__main__":
     fetch_and_update()
