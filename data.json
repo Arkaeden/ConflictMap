@@ -1,8 +1,18 @@
 {
-  "lastUpdated": "2026-07-28T13:27:53.444222+00:00",
+  "lastUpdated": "2026-07-28T13:48:06.589597+00:00",
   "incidents": [
     {
       "id": "inc_0",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Trump cites 'good' talks on Iran, reiterates threat to hit targets",
+      "blurb": "WASHINGTON, July 28 (Reuters) - U.S. President Donald Trump on Tuesday said there have been good talks with Iran even as he reiterated his threats to target Pickaxe Mountain as well as bridges and power plants if a deal is not made with Tehran.In an interview with Fox News, Tr...",
+      "time": "2026-07-28T09:46:57-0400",
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_1",
       "type": "naval",
       "actor": "iran",
       "location": "Strait of Hormuz",
@@ -12,7 +22,7 @@
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_1",
+      "id": "inc_2",
       "type": "diplomatic",
       "actor": "israel",
       "location": "Gaza City",
@@ -22,27 +32,27 @@
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_2",
-      "type": "diplomatic",
+      "id": "inc_3",
+      "type": "naval",
       "actor": "iran",
-      "location": "Tehran",
+      "location": "Riyadh",
       "title": "Oman presented regional mechanism for Hormuz to Iran, source says",
       "blurb": "By Timour AzhariRIYADH, July 28 (Reuters) - Oman has presented a proposal to Iran for a joint regional mechanism to manage the Strait of Hormuz with voluntary fees, a Gulf source told Reuters on Tuesday.Under the Omani proposal, which has regional backing and was presented to ...",
       "time": "2026-07-28T03:46:46-0400",
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_3",
+      "id": "inc_4",
       "type": "naval",
       "actor": "iran",
-      "location": "Tehran",
+      "location": "Strait of Hormuz",
       "title": "Bab el-Mandeb shipping rises amid hopes of resolution in US-Iran war",
       "blurb": "By Mohi NarayanNEW DELHI, July 28 (Reuters) - The number of vessels passing through Bab el-Mandeb rose to 28 on Monday, a four-day high, while traffic through the Strait of Hormuz remained low, according to Kpler shipping data, amid optimism about a potential resolution to the...",
       "time": "2026-07-28T03:46:46-0400",
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_4",
+      "id": "inc_5",
       "type": "diplomatic",
       "actor": "usa",
       "location": "Eastern Med",
@@ -52,7 +62,7 @@
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_5",
+      "id": "inc_6",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -62,7 +72,7 @@
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_6",
+      "id": "inc_7",
       "type": "naval",
       "actor": "iran",
       "location": "Strait of Hormuz",
@@ -72,7 +82,7 @@
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_7",
+      "id": "inc_8",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -82,17 +92,17 @@
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_8",
+      "id": "inc_9",
       "type": "naval",
       "actor": "iran",
-      "location": "Sanaa",
+      "location": "Riyadh",
       "title": "Houthis pushing to model Iran's Hormuz control in Red Sea, Yemeni FM says",
       "blurb": "By Timour AzhariRIYADH, July 27 (Reuters) - Yemen's Houthi Movement aims to replicate Iran's Hormuz Strait strategy in the Red Sea by disrupting shipping in the Bab el-Mandeb and hasbeen emboldened by an insufficient international response, Yemen's top diplomat said on Monday....",
       "time": "2026-07-27T18:46:45-0400",
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_9",
+      "id": "inc_10",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -102,23 +112,13 @@
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_10",
-      "type": "airstrike",
+      "id": "inc_11",
+      "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
       "title": "Trump sees 'good chance' for Iran deal, warns strikes could resume",
       "blurb": "US President Donald Trump voiced optimism Monday that diplomacy with Iran could produce a deal to end the months-long war, but warned that Washington would resume military strikes if negotiations failed. \"I have a lot of patience... We'll see what happens. I think there is a g...",
       "time": "2026-07-27T14:30:37-0400",
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "US Treasury trims 84 people, firms from its sanctions list as review continues",
-      "blurb": "By Andrea ShalalWASHINGTON, July 27 (Reuters) - The U.S. Treasury on Monday purged another 84 companies and people from its 17,000-plus sanctions lists as part of a broader push to streamline sanctions programs and make it easier for banks to go after the most serious terroris...",
-      "time": "2026-07-27T13:46:41-0400",
       "source": "Al-Monitor"
     }
   ],
