@@ -93,16 +93,16 @@
   /* Native Tile Rendering */
   .leaflet-container { background: var(--bg); font-family: inherit; }
   
-  /* Popup container with balanced width and strict 24px internal padding */
+  /* Popup container sized perfectly with strict 24px symmetrical padding */
   .leaflet-popup-content-wrapper {
     background: var(--bg-panel); border: 1px solid var(--line-strong); border-radius: 0;
     box-shadow: 0 16px 40px var(--shadow-color); color: var(--text);
-    width: 420px !important;
+    width: 380px !important;
   }
   .leaflet-popup-tip { background: var(--bg-panel); border: 1px solid var(--line-strong); }
   .leaflet-popup-content { margin: 24px !important; line-height: 1.4; }
   
-  /* Reset default Leaflet close button and integrate it into clean flex header */
+  /* Reset default Leaflet close button and integrate it into clean grid header */
   .leaflet-container a.leaflet-popup-close-button {
     position: relative !important;
     top: auto !important;
@@ -119,7 +119,7 @@
     background: var(--bg-panel-2);
     border: 1px solid var(--line-strong);
     transition: all 0.15s ease;
-    flex: none;
+    justify-self: end;
   }
   .leaflet-container a.leaflet-popup-close-button:hover {
     background: var(--text);
@@ -127,10 +127,10 @@
     border-color: var(--text);
   }
   
-  /* Hover Card Structured Layout */
+  /* Hover Card Structured Layout with Symmetrical Grid Alignment */
   .hover-card-header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
     margin-bottom: 14px;
     gap: 16px;
@@ -358,7 +358,7 @@ function iconMarkup(type){
 
 const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
 
-// High-detail multi-theme map layers (Esri Topo for Light, CartoDB Dark Matter for Dark/Camo)
+// High-detail map layers: Esri Topo for Light mode, CartoDB Dark for Dark/Camo modes
 const baseLayerTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', { maxZoom: 13, attribution: 'Esri' });
 const baseLayerDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
 const labelsDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
@@ -487,7 +487,6 @@ function updateThemeButtons(theme){
     currentBaseLayer = baseLayerTopo.addTo(map);
     currentLabelsLayer = null;
   } else {
-    // Dark & Desert Camo utilize crisp dark tactical maps with sharp label layers
     currentBaseLayer = baseLayerDark.addTo(map);
     currentLabelsLayer = labelsDark.addTo(map);
   }
