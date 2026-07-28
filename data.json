@@ -1,27 +1,25 @@
 {
-  "lastUpdated": "2026-07-28T13:13:05.337792+00:00",
+  "lastUpdated": "2026-07-28T13:27:53.444222+00:00",
   "incidents": [
     {
       "id": "inc_0",
       "type": "naval",
       "actor": "iran",
       "location": "Strait of Hormuz",
-      "title": "Oman presents Iran with Gulf-backed plan for voluntary fees to us...",
-      "blurb": "Verified regional telemetry tracking NAVAL indicators.",
+      "title": "Oman presents Iran with Gulf-backed plan for voluntary fees to use Hormuz",
+      "blurb": "By Timour Azhari and Parisa HafeziDUBAI, July 28 (Reuters) - Oman has presented Iran with a plan backed by Gulf states to manage the Strait of Hormuz, including collecting voluntary fees for using it, a Gulf source and a Western diplomat told Reuters on Tuesday.The plan could ...",
       "time": "2026-07-28T07:46:47-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/oman-presents-iran-gulf-backed-plan-voluntary-fees-use-hormuz"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_1",
       "type": "diplomatic",
       "actor": "israel",
       "location": "Gaza City",
-      "title": "Israel's yellow line, a shifting edge of war pushing Gazans from ...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "title": "Israel's yellow line, a shifting edge of war pushing Gazans from home",
+      "blurb": "By Nidal al-Mughrabi and Ebrahim HajjajCAIRO/GAZA, July 28 (Reuters) - On a road in Gaza City's Zeitoun district, Palestinian resident Assem Dawla loaded mattresses and bags onto a truck as concrete yellow blocks marking the edge of Israel's expanding military zone stood amid ...",
       "time": "2026-07-28T05:46:44-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/israels-yellow-line-shifting-edge-war-pushing-gazans-home"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_2",
@@ -29,54 +27,49 @@
       "actor": "iran",
       "location": "Tehran",
       "title": "Oman presented regional mechanism for Hormuz to Iran, source says",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "blurb": "By Timour AzhariRIYADH, July 28 (Reuters) - Oman has presented a proposal to Iran for a joint regional mechanism to manage the Strait of Hormuz with voluntary fees, a Gulf source told Reuters on Tuesday.Under the Omani proposal, which has regional backing and was presented to ...",
       "time": "2026-07-28T03:46:46-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/oman-presented-regional-mechanism-hormuz-iran-source-says"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_3",
       "type": "naval",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Bab el-Mandeb shipping rises amid hopes of resolution in US-Iran ...",
-      "blurb": "Verified regional telemetry tracking NAVAL indicators.",
+      "title": "Bab el-Mandeb shipping rises amid hopes of resolution in US-Iran war",
+      "blurb": "By Mohi NarayanNEW DELHI, July 28 (Reuters) - The number of vessels passing through Bab el-Mandeb rose to 28 on Monday, a four-day high, while traffic through the Strait of Hormuz remained low, according to Kpler shipping data, amid optimism about a potential resolution to the...",
       "time": "2026-07-28T03:46:46-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/bab-el-mandeb-shipping-rises-amid-hopes-resolution-us-iran-war"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_4",
       "type": "diplomatic",
       "actor": "usa",
       "location": "Eastern Med",
-      "title": "UN chief Guterres sounds out Cyprus sides on prospects for peace ...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "title": "UN chief Guterres sounds out Cyprus sides on prospects for peace talks",
+      "blurb": "NICOSIA, July 28 (Reuters) - U.N. Secretary-General Antonio Guterres launched a fresh effort on Tuesday to coax Cyprus' rival sides back into peace talks after nearly a decade of deadlock.His first visit to the island as U.N. chief comes amid signs the sides may be ready to ne...",
       "time": "2026-07-28T02:46:45-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/un-chief-guterres-sounds-out-cyprus-sides-prospects-peace-talks"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_5",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Trump to host Netanyahu, Zelenskiy as Ukraine, Iran wars reach cr...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "title": "Trump to host Netanyahu, Zelenskiy as Ukraine, Iran wars reach critical stages",
+      "blurb": "By Steve HollandWASHINGTON, July 28 (Reuters) - U.S. President Donald Trump hosts Israeli Prime Minister Benjamin Netanyahu and Ukrainian President Volodymyr Zelenskiy on Tuesday, with wars in Iran and Ukraine at critical stages and his ties with both leaders markedly different.",
       "time": "2026-07-28T01:46:46-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/trump-host-netanyahu-zelenskiy-ukraine-iran-wars-reach-critical-stages"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_6",
       "type": "naval",
       "actor": "iran",
       "location": "Strait of Hormuz",
-      "title": "Iran's foreign minister discusses security of Strait of Hormuz wi...",
-      "blurb": "Verified regional telemetry tracking NAVAL indicators.",
+      "title": "Iran's foreign minister discusses security of Strait of Hormuz with Saudi, Omani counterparts",
+      "blurb": "DUBAI, July 28 (Reuters) - Iran's foreign minister discussed issues related to the security of the Strait of Hormuz in separate phone calls with his Saudi and Omani counterparts on Monday evening, according to a statement published on his Telegram channel on Tuesday. The state...",
       "time": "2026-07-28T01:46:46-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/irans-foreign-minister-discusses-security-strait-hormuz-saudi-omani-counterparts"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_7",
@@ -84,54 +77,49 @@
       "actor": "iran",
       "location": "Tehran",
       "title": "Netanyahu to meet Trump for first time since Iran war",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "blurb": "Israeli Prime Minister Benjamin Netanyahu will meet US President Donald Trump at the White House on Tuesday for the first time since the start of the Iran war, over which they have publicly disagreed. Relations between Netanyahu and Trump have occasionally appeared strained in...",
       "time": "2026-07-27T22:30:39-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/netanyahu-meet-trump-first-time-iran-war"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_8",
       "type": "naval",
       "actor": "iran",
       "location": "Sanaa",
-      "title": "Houthis pushing to model Iran's Hormuz control in Red Sea, Yemeni...",
-      "blurb": "Verified regional telemetry tracking NAVAL indicators.",
+      "title": "Houthis pushing to model Iran's Hormuz control in Red Sea, Yemeni FM says",
+      "blurb": "By Timour AzhariRIYADH, July 27 (Reuters) - Yemen's Houthi Movement aims to replicate Iran's Hormuz Strait strategy in the Red Sea by disrupting shipping in the Bab el-Mandeb and hasbeen emboldened by an insufficient international response, Yemen's top diplomat said on Monday....",
       "time": "2026-07-27T18:46:45-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/houthis-pushing-model-irans-hormuz-control-red-sea-yemeni-fm-says"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_9",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Just one in three Americans back Iran war, most unsure of Trump's...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "title": "Just one in three Americans back Iran war, most unsure of Trump's goals, Reuters/Ipsos poll finds",
+      "blurb": "By Bo Erickson and Jason LangeWASHINGTON, July 27 (Reuters) - Just one in three Americans support the waron Iran, the lowest reading in a Reuters/Ipsos poll since the five-month-old conflict's early days, with most respondents saying that President Donald Trump has failed to e...",
       "time": "2026-07-27T16:46:40-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/just-one-three-americans-back-iran-war-most-unsure-trumps-goals-reutersipsos-poll"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_10",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Trump sees 'good chance' for Iran deal, warns strikes could resum...",
-      "blurb": "Verified regional telemetry tracking AIRSTRIKE indicators.",
+      "title": "Trump sees 'good chance' for Iran deal, warns strikes could resume",
+      "blurb": "US President Donald Trump voiced optimism Monday that diplomacy with Iran could produce a deal to end the months-long war, but warned that Washington would resume military strikes if negotiations failed. \"I have a lot of patience... We'll see what happens. I think there is a g...",
       "time": "2026-07-27T14:30:37-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/trump-sees-good-chance-iran-deal-warns-strikes-could-resume"
+      "source": "Al-Monitor"
     },
     {
       "id": "inc_11",
       "type": "diplomatic",
       "actor": "usa",
       "location": "Eastern Med",
-      "title": "US Treasury trims 84 people, firms from its sanctions list as rev...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "title": "US Treasury trims 84 people, firms from its sanctions list as review continues",
+      "blurb": "By Andrea ShalalWASHINGTON, July 27 (Reuters) - The U.S. Treasury on Monday purged another 84 companies and people from its 17,000-plus sanctions lists as part of a broader push to streamline sanctions programs and make it easier for banks to go after the most serious terroris...",
       "time": "2026-07-27T13:46:41-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/us-treasury-trims-84-people-firms-its-sanctions-list-review-continues"
+      "source": "Al-Monitor"
     }
   ],
   "movements": []
