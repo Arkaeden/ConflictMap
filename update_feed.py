@@ -55,6 +55,7 @@ def categorize_event(text):
 def fetch_and_update():
     incidents = []
     seen_titles = set()
+    assigned_links = set() # Tracks used URLs to prevent publisher duplication bugs
     
     for url in FEED_URLS:
         try:
@@ -77,49 +78,70 @@ def fetch_and_update():
                     if title_elem is None and item.tag.endswith('entry'):
                         title_elem = item.find('{http://www.w3.org/2005/Atom}title')
                         
-                    date_elem = item.find('pubDate')
-                    if date_elem is None:
-                        date_elem = item.find('{http://www.w3.org/2005/Atom}published')
-                        if date_elem is None:
-                            date_elem = item.find('{http://www.w3.org/2005/Atom}updated')
-                    
-                    # Bulletproof link extraction for CDATA, text nodes, and attributes
-                    link = "#"
-                    link_elem = item.find('guid') # Often holds the absolute article URL in standard RSS
-                    if link_elem is not None and link_elem.text and link_elem.text.startswith('http'):
-                        link = link_elem.text.strip()
-                    else:
-                        link_elem = item.find('link')
-                        if link_elem is not None:
-                            if link_elem.text and link_elem.text.strip():
-                                link = link_elem.text.strip()
-                            elif link_elem.get('href'):
-                                link = link_elem.get('href').strip()
-                    
-                    if link == "#" and item.tag.endswith('entry'):
-                        for l_node in item.findall('{http://www.w3.org/2005/Atom}link'):
-                            if l_node.get('rel', 'alternate') == 'alternate' and l_node.get('href'):
-                                link = l_node.get('href').strip()
-                                break
-                    
-                    if link.startswith('/'):
-                        link = base_domain + link
-                        
-                    # Absolute fallback: regex search raw XML block for the item's link if parser missed it
-                    if link == "#":
-                        item_str = ET.tostring(item, encoding='unicode')
-                        match = re.search(r'<link[^>]*>(https?://[^<]+)</link>', item_str)
-                        if match:
-                            link = match.group(1).strip()
-                    
                     if title_elem is None or not title_elem.text:
                         continue
                         
                     title = title_elem.text.strip()
                     if title in seen_titles:
                         continue
+                    
+                    link = ""
+                    
+                    # 1. Try GUID first (often the safest permalink)
+                    guid = item.find('guid')
+                    if guid is not None and guid.text and guid.text.strip().startswith('http'):
+                        link = guid.text.strip()
+                        
+                    # 2. Try Standard RSS link
+                    if not link:
+                        link_elem = item.find('link')
+                        if link_elem is not None:
+                            if link_elem.text and link_elem.text.strip():
+                                link = link_elem.text.strip()
+                            elif link_elem.get('href'):
+                                link = link_elem.get('href').strip()
+                                
+                    # 3. Try Atom link
+                    if not link:
+                        for l_node in item.findall('{http://www.w3.org/2005/Atom}link'):
+                            href = l_node.get('href')
+                            if href and href.strip():
+                                link = href.strip()
+                                break
+
+                    # Handle relative domain appending
+                    if link.startswith('/'):
+                        link = base_domain + link
+
+                    # 4. PUBLISHER BUG SAFEGUARD
+                    # If the extracted URL was already assigned to another story, the publisher 
+                    # feed is broken. We must scour the raw XML of this specific item for the unique URL.
+                    if not link or link in assigned_links:
+                        item_str = ET.tostring(item, encoding='unicode')
+                        possible_urls = re.findall(r'(https?://[^\s<"]+)', item_str) + re.findall(r'href="([^"]+)"', item_str)
+                        
+                        for purl in possible_urls:
+                            if purl.startswith('/'):
+                                purl = base_domain + purl
+                                
+                            if purl.startswith('http') and purl not in assigned_links and ('al-monitor' in purl or 'middleeasteye' in purl):
+                                link = purl
+                                break
+
+                    if not link or link in assigned_links:
+                        link = "#" 
+                        
+                    if link != "#":
+                        assigned_links.add(link)
+                        
                     seen_titles.add(title)
                     
+                    date_elem = item.find('pubDate')
+                    if date_elem is None:
+                        date_elem = item.find('{http://www.w3.org/2005/Atom}published')
+                        if date_elem is None:
+                            date_elem = item.find('{http://www.w3.org/2005/Atom}updated')
+                            
                     pub_date = date_elem.text.strip() if date_elem is not None and date_elem.text else "Recent"
                     source = "Al-Monitor" if "al-monitor" in url else "Middle East Eye"
                     
@@ -148,7 +170,7 @@ def fetch_and_update():
     
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(feed_data, f, indent=2)
-    print("Successfully updated data.json with robust absolute URLs.")
+    print("Successfully updated data.json with deduplicated URLs.")
 
 if __name__ == "__main__":
     fetch_and_update()
