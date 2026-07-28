@@ -93,7 +93,7 @@
   /* Native Tile Rendering */
   .leaflet-container { background: var(--bg); font-family: inherit; }
   
-  /* Popup Symmetrical Padding Fix: Remove forced width, use clean inline padding */
+  /* Popup Symmetrical Padding Fix */
   .leaflet-popup-content-wrapper {
     background: var(--bg-panel); border: 1px solid var(--line-strong); border-radius: 0;
     box-shadow: 0 16px 40px var(--shadow-color); color: var(--text);
@@ -283,13 +283,16 @@
     <span class="updated-text" id="updatedText">SYNC: ACTIVE</span>
     <div class="theme-controls">
       <button class="icon-btn" id="themeLightBtn" title="Light Mode">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
       <button class="icon-btn" id="themeDarkBtn" title="Dark Mode">
         <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
       <button class="icon-btn" id="themeCamoBtn" title="Desert Camouflage Theme">
         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+      </button>
+      <button class="icon-btn" id="themeSatBtn" title="Satellite Imagery">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8zm1-13h-2v6h6v-2h-4z"/></svg>
       </button>
     </div>
     <span class="mode-badge" id="modeBadge">Verified Feed</span>
@@ -362,8 +365,9 @@ function iconMarkup(type){
 
 const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
 
-// High-detail map layers: Esri Topo for Light mode, CartoDB Dark for Dark/Camo modes
+// Map layer options
 const baseLayerTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', { maxZoom: 13, attribution: 'Esri' });
+const baseLayerSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 13, attribution: 'Esri' });
 const baseLayerDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
 const labelsDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
 
@@ -478,17 +482,22 @@ const refreshBtn = document.getElementById("refreshBtn");
 const themeLightBtn = document.getElementById("themeLightBtn");
 const themeDarkBtn = document.getElementById("themeDarkBtn");
 const themeCamoBtn = document.getElementById("themeCamoBtn");
+const themeSatBtn = document.getElementById("themeSatBtn");
 
 function updateThemeButtons(theme){
   themeLightBtn.classList.toggle("active-theme", theme === "light");
   themeDarkBtn.classList.toggle("active-theme", theme === "dark");
   themeCamoBtn.classList.toggle("active-theme", theme === "desert-camo");
+  themeSatBtn.classList.toggle("active-theme", theme === "satellite");
   
   if (currentBaseLayer) map.removeLayer(currentBaseLayer);
   if (currentLabelsLayer) map.removeLayer(currentLabelsLayer);
   
   if (theme === "light") {
     currentBaseLayer = baseLayerTopo.addTo(map);
+    currentLabelsLayer = null;
+  } else if (theme === "satellite") {
+    currentBaseLayer = baseLayerSat.addTo(map);
     currentLabelsLayer = null;
   } else {
     currentBaseLayer = baseLayerDark.addTo(map);
@@ -510,6 +519,11 @@ themeCamoBtn.addEventListener("click", () => {
   document.documentElement.setAttribute("data-theme", "desert-camo");
   document.body.classList.add("camo-active");
   updateThemeButtons("desert-camo");
+});
+themeSatBtn.addEventListener("click", () => {
+  document.documentElement.removeAttribute("data-theme");
+  document.body.classList.remove("camo-active");
+  updateThemeButtons("satellite");
 });
 
 refreshBtn.addEventListener("click", () => {
