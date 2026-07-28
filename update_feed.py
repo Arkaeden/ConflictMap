@@ -65,7 +65,8 @@ def fetch_and_update():
             base_domain = "https://www.al-monitor.com" if "al-monitor" in url else "https://www.middleeasteye.net"
             
             with urllib.request.urlopen(req, timeout=10) as response:
-                root = ET.fromstring(response.read())
+                xml_content = response.read()
+                root = ET.fromstring(xml_content)
                 
                 items = root.findall('.//item')
                 if not items:
@@ -82,14 +83,18 @@ def fetch_and_update():
                         if date_elem is None:
                             date_elem = item.find('{http://www.w3.org/2005/Atom}updated')
                     
-                    # Robust link extraction supporting RSS text links and Atom href attributes
+                    # Bulletproof link extraction for CDATA, text nodes, and attributes
                     link = "#"
-                    link_elem = item.find('link')
-                    if link_elem is not None:
-                        if link_elem.text and link_elem.text.strip():
-                            link = link_elem.text.strip()
-                        elif link_elem.get('href'):
-                            link = link_elem.get('href').strip()
+                    link_elem = item.find('guid') # Often holds the absolute article URL in standard RSS
+                    if link_elem is not None and link_elem.text and link_elem.text.startswith('http'):
+                        link = link_elem.text.strip()
+                    else:
+                        link_elem = item.find('link')
+                        if link_elem is not None:
+                            if link_elem.text and link_elem.text.strip():
+                                link = link_elem.text.strip()
+                            elif link_elem.get('href'):
+                                link = link_elem.get('href').strip()
                     
                     if link == "#" and item.tag.endswith('entry'):
                         for l_node in item.findall('{http://www.w3.org/2005/Atom}link'):
@@ -97,9 +102,15 @@ def fetch_and_update():
                                 link = l_node.get('href').strip()
                                 break
                     
-                    # Handle relative URLs if any feed provides them
                     if link.startswith('/'):
                         link = base_domain + link
+                        
+                    # Absolute fallback: regex search raw XML block for the item's link if parser missed it
+                    if link == "#":
+                        item_str = ET.tostring(item, encoding='unicode')
+                        match = re.search(r'<link[^>]*>(https?://[^<]+)</link>', item_str)
+                        if match:
+                            link = match.group(1).strip()
                     
                     if title_elem is None or not title_elem.text:
                         continue
@@ -137,7 +148,7 @@ def fetch_and_update():
     
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(feed_data, f, indent=2)
-    print("Successfully updated data.json with valid absolute URLs.")
+    print("Successfully updated data.json with robust absolute URLs.")
 
 if __name__ == "__main__":
     fetch_and_update()
