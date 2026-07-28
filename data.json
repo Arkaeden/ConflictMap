@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-07-28T08:30:29.835756+00:00",
+  "lastUpdated": "2026-07-28T11:15:24.358268+00:00",
   "incidents": [
     {
       "id": "inc_0",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Israel's yellow line, a shifting edge of war pushing Gazans from ...",
+      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "time": "2026-07-28T05:46:44-0400",
+      "source": "Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/israels-yellow-line-shifting-edge-war-pushing-gazans-home"
+    },
+    {
+      "id": "inc_1",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -13,7 +24,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/oman-presented-regional-mechanism-hormuz-iran-source-says"
     },
     {
-      "id": "inc_1",
+      "id": "inc_2",
       "type": "naval",
       "actor": "iran",
       "location": "Tehran",
@@ -24,7 +35,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/bab-el-mandeb-shipping-rises-amid-hopes-resolution-us-iran-war"
     },
     {
-      "id": "inc_2",
+      "id": "inc_3",
       "type": "diplomatic",
       "actor": "usa",
       "location": "Eastern Med",
@@ -35,7 +46,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/un-chief-guterres-sounds-out-cyprus-sides-prospects-peace-talks"
     },
     {
-      "id": "inc_3",
+      "id": "inc_4",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -46,7 +57,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/trump-host-netanyahu-zelenskiy-ukraine-iran-wars-reach-critical-stages"
     },
     {
-      "id": "inc_4",
+      "id": "inc_5",
       "type": "naval",
       "actor": "iran",
       "location": "Strait of Hormuz",
@@ -57,18 +68,18 @@
       "url": "https://www.al-monitor.com/originals/2026/07/irans-foreign-minister-discusses-security-strait-hormuz-saudi-omani-counterparts"
     },
     {
-      "id": "inc_5",
+      "id": "inc_6",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Netanyahu heads to US for first Trump meeting since Iran war",
+      "title": "Netanyahu to meet Trump for first time since Iran war",
       "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
       "time": "2026-07-27T22:30:39-0400",
       "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/netanyahu-heads-us-first-trump-meeting-iran-war"
+      "url": "https://www.al-monitor.com/originals/2026/07/netanyahu-meet-trump-first-time-iran-war"
     },
     {
-      "id": "inc_6",
+      "id": "inc_7",
       "type": "naval",
       "actor": "iran",
       "location": "Sanaa",
@@ -79,7 +90,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/houthis-pushing-model-irans-hormuz-control-red-sea-yemeni-fm-says"
     },
     {
-      "id": "inc_7",
+      "id": "inc_8",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -90,7 +101,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/just-one-three-americans-back-iran-war-most-unsure-trumps-goals-reutersipsos-poll"
     },
     {
-      "id": "inc_8",
+      "id": "inc_9",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
@@ -101,7 +112,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/trump-sees-good-chance-iran-deal-warns-strikes-could-resume"
     },
     {
-      "id": "inc_9",
+      "id": "inc_10",
       "type": "diplomatic",
       "actor": "usa",
       "location": "Eastern Med",
@@ -112,7 +123,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/us-treasury-trims-84-people-firms-its-sanctions-list-review-continues"
     },
     {
-      "id": "inc_10",
+      "id": "inc_11",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
@@ -121,17 +132,6 @@
       "time": "2026-07-27T13:42:24-0400",
       "source": "Al-Monitor",
       "url": "https://www.al-monitor.com/originals/2026/07/trump-says-iran-seeks-talks-after-strikes-halted"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Trump says US is talking with Iran right now",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
-      "time": "2026-07-27T12:46:45-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/trump-says-us-talking-iran-right-now"
     }
   ],
   "movements": []
