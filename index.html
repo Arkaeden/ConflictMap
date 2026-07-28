@@ -90,19 +90,19 @@
     background-size: 320px 320px, 450px 450px, 80px 80px, 80px 80px; opacity: 0.95;
   }
 
-  /* Native Tile Rendering without Ugly Color Filters */
+  /* Native Tile Rendering */
   .leaflet-container { background: var(--bg); font-family: inherit; }
   
-  /* Properly padded popup container with extended width for clean readability */
+  /* Popup container with balanced width and strict 24px internal padding */
   .leaflet-popup-content-wrapper {
     background: var(--bg-panel); border: 1px solid var(--line-strong); border-radius: 0;
     box-shadow: 0 16px 40px var(--shadow-color); color: var(--text);
-    width: 380px !important;
+    width: 420px !important;
   }
   .leaflet-popup-tip { background: var(--bg-panel); border: 1px solid var(--line-strong); }
-  .leaflet-popup-content { margin: 20px 24px !important; line-height: 1.4; }
+  .leaflet-popup-content { margin: 24px !important; line-height: 1.4; }
   
-  /* Reset default Leaflet close button and integrate it into clean flex layout */
+  /* Reset default Leaflet close button and integrate it into clean flex header */
   .leaflet-container a.leaflet-popup-close-button {
     position: relative !important;
     top: auto !important;
@@ -119,6 +119,7 @@
     background: var(--bg-panel-2);
     border: 1px solid var(--line-strong);
     transition: all 0.15s ease;
+    flex: none;
   }
   .leaflet-container a.leaflet-popup-close-button:hover {
     background: var(--text);
@@ -132,7 +133,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 14px;
-    gap: 12px;
+    gap: 16px;
   }
   .hover-card-tag {
     color: var(--accent);
@@ -168,7 +169,7 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--line);
-    padding-top: 10px;
+    padding-top: 12px;
     text-transform: uppercase;
   }
 
@@ -357,15 +358,13 @@ function iconMarkup(type){
 
 const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
 
-// Base layers for switching themes natively without ugly filters
-const baseLayerVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
+// High-detail multi-theme map layers (Esri Topo for Light, CartoDB Dark Matter for Dark/Camo)
+const baseLayerTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', { maxZoom: 13, attribution: 'Esri' });
 const baseLayerDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
-
-const labelsVoyager = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
 const labelsDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd', pane: 'markerPane' });
 
-let currentBaseLayer = baseLayerVoyager.addTo(map);
-let currentLabelsLayer = labelsVoyager.addTo(map);
+let currentBaseLayer = baseLayerTopo.addTo(map);
+let currentLabelsLayer = null;
 
 let state = { incidents: [], lastUpdated: "" };
 let activeMarkers = [];
@@ -419,7 +418,6 @@ function renderAll() {
             <span style="display:inline-block; width:6px; height:6px; background:${color};"></span>
             ${(ACTOR_LABEL[inc.actor]||"") + " // " + (TYPE_LABEL[eventType]||"")}
           </div>
-          <!-- Leaflet close button injected here via flex header -->
         </div>
         <div class="hover-card-title">${inc.title}</div>
         <div class="hover-card-blurb">${inc.blurb || ""}</div>
@@ -434,7 +432,6 @@ function renderAll() {
     marker.addTo(map);
     activeMarkers.push(marker);
 
-    // After popup binds, relocate Leaflet's close button inside our flex header for pristine spacing
     marker.on('popupopen', function(e) {
       const popupEl = e.popup.getElement();
       const closeBtn = popupEl.querySelector('.leaflet-popup-close-button');
@@ -483,15 +480,14 @@ function updateThemeButtons(theme){
   themeDarkBtn.classList.toggle("active-theme", theme === "dark");
   themeCamoBtn.classList.toggle("active-theme", theme === "desert-camo");
   
-  // Swap native tiles cleanly without ugly CSS filters
-  map.removeLayer(currentBaseLayer);
-  map.removeLayer(currentLabelsLayer);
+  if (currentBaseLayer) map.removeLayer(currentBaseLayer);
+  if (currentLabelsLayer) map.removeLayer(currentLabelsLayer);
   
   if (theme === "light") {
-    currentBaseLayer = baseLayerVoyager.addTo(map);
-    currentLabelsLayer = labelsVoyager.addTo(map);
+    currentBaseLayer = baseLayerTopo.addTo(map);
+    currentLabelsLayer = null;
   } else {
-    // Dark & Desert Camo both utilize the gorgeous Dark Matter base tiles
+    // Dark & Desert Camo utilize crisp dark tactical maps with sharp label layers
     currentBaseLayer = baseLayerDark.addTo(map);
     currentLabelsLayer = labelsDark.addTo(map);
   }
