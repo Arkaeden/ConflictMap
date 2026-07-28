@@ -9,6 +9,7 @@
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 <!-- Leaflet Heatmap Plugin -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
 
 <style>
@@ -116,7 +117,7 @@
   .hover-card-tag { color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
   .hover-card-title { font-weight: 900; font-size: 16px; margin-bottom: 10px; color: var(--text); text-transform: uppercase; white-space: normal !important; overflow: visible !important; line-height: 1.35; }
   .hover-card-blurb { color: var(--text-dim); margin-bottom: 16px; font-size: 13px; line-height: 1.5; white-space: normal !important; }
-  .hover-card-footer { font-size: 10px; font-weight: 700; color: var(--text-faint); display: flex; justify-content: space-between; border-top: 1px solid var(--line); paddingTop: 12px; text-transform: uppercase; }
+  .hover-card-footer { font-size: 10px; font-weight: 700; color: var(--text-faint); display: flex; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 12px; text-transform: uppercase; }
 
   .custom-leaflet-marker { background: transparent; border: none; }
   .marker-icon-bg { transition: transform 0.2s ease; transform-origin: center; }
@@ -322,9 +323,6 @@
   </aside>
 </main>
 
-<!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
 <script>
 (function(){
 const CITY = {
@@ -379,7 +377,6 @@ async function fetchTelemetryData() {
     state.incidents = data.incidents || [];
     state.lastUpdated = new Date(data.lastUpdated).toLocaleTimeString();
     
-    // Setup timeline slider range based on timestamps
     if (state.incidents.length > 0) {
       const timestamps = state.incidents.map(i => i.timestamp || Date.now()/1000);
       const minT = Math.min(...timestamps);
@@ -401,15 +398,17 @@ function renderAll() {
   document.getElementById("updatedText").textContent = "SYNC: " + state.lastUpdated;
   activeMarkers.forEach(m => map.removeLayer(m));
   activeMarkers = [];
-  if (heatLayer) map.removeLayer(heatLayer);
+  
+  if (heatLayer) {
+    map.removeLayer(heatLayer);
+    heatLayer = null;
+  }
   
   const feedEl = document.getElementById("feed");
   feedEl.innerHTML = "";
   
   const sliderVal = parseInt(document.getElementById("timelineSlider").value);
-  document.getElementById("timelineVal.textContent") // handled in input listener
   
-  // Filter incidents based on timeline slider and disabled actors
   const filteredIncidents = state.incidents.filter(inc => {
     const t = inc.timestamp || Date.now()/1000;
     const timeValid = t <= sliderVal;
@@ -423,13 +422,14 @@ function renderAll() {
   }
 
   const heatPoints = [];
+  const isHeatmapActive = document.getElementById("heatmapToggle").checked;
 
   filteredIncidents.forEach(inc => {
     const coords = CITY[inc.location] || CITY["Eastern Med"];
     const color = ACTOR_HEX[inc.actor] || "var(--text)";
     const eventType = inc.type || "diplomatic";
     
-    heatPoints.push([coords[0], coords[1], 0.8]);
+    heatPoints.push([coords[0], coords[1], 0.9]);
 
     const customIcon = L.divIcon({
       className: 'custom-leaflet-marker',
@@ -460,7 +460,7 @@ function renderAll() {
 
     const marker = L.marker(coords, { icon: customIcon }).bindPopup(popupHtml);
     
-    if (!document.getElementById("heatmapToggle").checked) {
+    if (!isHeatmapActive) {
       marker.addTo(map);
     }
     activeMarkers.push(marker);
@@ -494,13 +494,16 @@ function renderAll() {
     feedEl.appendChild(row);
   });
 
-  // Render Heatmap if toggled on
-  if (document.getElementById("heatmapToggle").checked && heatPoints.length > 0) {
-    heatLayer = L.heatLayer(heatPoints, { radius: 28, blur: 18, maxZoom: 10 }).addTo(map);
+  if (isHeatmapActive && heatPoints.length > 0 && typeof L.heatLayer === 'function') {
+    heatLayer = L.heatLayer(heatPoints, { 
+      radius: 35, 
+      blur: 20, 
+      maxZoom: 10,
+      gradient: { 0.4: 'blue', 0.65: 'lime', 1: 'red' }
+    }).addTo(map);
   }
 }
 
-// Quick-Jump Flashpoint Navigation
 window.jumpToSpot = function(cityName, zoomLevel) {
   const coords = CITY[cityName];
   if (coords) {
@@ -508,7 +511,6 @@ window.jumpToSpot = function(cityName, zoomLevel) {
   }
 };
 
-// Actor Filter Matrix Toggles
 document.querySelectorAll(".legend-row").forEach(row => {
   row.addEventListener("click", () => {
     const actor = row.dataset.actor;
@@ -523,10 +525,8 @@ document.querySelectorAll(".legend-row").forEach(row => {
   });
 });
 
-// Heatmap Toggle Listener
 document.getElementById("heatmapToggle").addEventListener("change", renderAll);
 
-// Timeline Slider Listener
 const slider = document.getElementById("timelineSlider");
 slider.addEventListener("input", (e) => {
   const dateStr = new Date(e.target.value * 1000).toUTCString().replace("GMT", "UTC");
