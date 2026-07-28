@@ -1,8 +1,63 @@
 {
-  "lastUpdated": "2026-07-28T05:44:43.091556+00:00",
+  "lastUpdated": "2026-07-28T08:30:29.835756+00:00",
   "incidents": [
     {
       "id": "inc_0",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Oman presented regional mechanism for Hormuz to Iran, source says",
+      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "time": "2026-07-28T03:46:46-0400",
+      "source": "Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/oman-presented-regional-mechanism-hormuz-iran-source-says"
+    },
+    {
+      "id": "inc_1",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Bab el-Mandeb shipping rises amid hopes of resolution in US-Iran ...",
+      "blurb": "Verified regional telemetry tracking NAVAL indicators.",
+      "time": "2026-07-28T03:46:46-0400",
+      "source": "Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/bab-el-mandeb-shipping-rises-amid-hopes-resolution-us-iran-war"
+    },
+    {
+      "id": "inc_2",
+      "type": "diplomatic",
+      "actor": "usa",
+      "location": "Eastern Med",
+      "title": "UN chief Guterres sounds out Cyprus sides on prospects for peace ...",
+      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "time": "2026-07-28T02:46:45-0400",
+      "source": "Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/un-chief-guterres-sounds-out-cyprus-sides-prospects-peace-talks"
+    },
+    {
+      "id": "inc_3",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Trump to host Netanyahu, Zelenskiy as Ukraine, Iran wars reach cr...",
+      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
+      "time": "2026-07-28T01:46:46-0400",
+      "source": "Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/trump-host-netanyahu-zelenskiy-ukraine-iran-wars-reach-critical-stages"
+    },
+    {
+      "id": "inc_4",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "Iran's foreign minister discusses security of Strait of Hormuz wi...",
+      "blurb": "Verified regional telemetry tracking NAVAL indicators.",
+      "time": "2026-07-28T01:46:46-0400",
+      "source": "Al-Monitor",
+      "url": "https://www.al-monitor.com/originals/2026/07/irans-foreign-minister-discusses-security-strait-hormuz-saudi-omani-counterparts"
+    },
+    {
+      "id": "inc_5",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -13,7 +68,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/netanyahu-heads-us-first-trump-meeting-iran-war"
     },
     {
-      "id": "inc_1",
+      "id": "inc_6",
       "type": "naval",
       "actor": "iran",
       "location": "Sanaa",
@@ -24,7 +79,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/houthis-pushing-model-irans-hormuz-control-red-sea-yemeni-fm-says"
     },
     {
-      "id": "inc_2",
+      "id": "inc_7",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -35,7 +90,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/just-one-three-americans-back-iran-war-most-unsure-trumps-goals-reutersipsos-poll"
     },
     {
-      "id": "inc_3",
+      "id": "inc_8",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
@@ -46,7 +101,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/trump-sees-good-chance-iran-deal-warns-strikes-could-resume"
     },
     {
-      "id": "inc_4",
+      "id": "inc_9",
       "type": "diplomatic",
       "actor": "usa",
       "location": "Eastern Med",
@@ -57,7 +112,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/us-treasury-trims-84-people-firms-its-sanctions-list-review-continues"
     },
     {
-      "id": "inc_5",
+      "id": "inc_10",
       "type": "airstrike",
       "actor": "iran",
       "location": "Tehran",
@@ -68,7 +123,7 @@
       "url": "https://www.al-monitor.com/originals/2026/07/trump-says-iran-seeks-talks-after-strikes-halted"
     },
     {
-      "id": "inc_6",
+      "id": "inc_11",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
@@ -77,61 +132,6 @@
       "time": "2026-07-27T12:46:45-0400",
       "source": "Al-Monitor",
       "url": "https://www.al-monitor.com/originals/2026/07/trump-says-us-talking-iran-right-now"
-    },
-    {
-      "id": "inc_7",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Baghdad",
-      "title": "Zaidi to meet Erdogan as Turkey-Iraq ties take off, Kurds feel si...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
-      "time": "2026-07-27T12:32:50-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/zaidi-meet-erdogan-turkey-iraq-ties-take-kurds-feel-sidelined"
-    },
-    {
-      "id": "inc_8",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Chad says will withdraw from the International Criminal Court",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
-      "time": "2026-07-27T12:30:42-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/chad-says-will-withdraw-international-criminal-court"
-    },
-    {
-      "id": "inc_9",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Trump says 'good chance' of progress in Iran talks as foes hold f...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
-      "time": "2026-07-27T12:30:42-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/trump-says-good-chance-progress-iran-talks-foes-hold-fire"
-    },
-    {
-      "id": "inc_10",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Trump says he is ready for military action if Iran talks fail, Ax...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
-      "time": "2026-07-27T11:46:49-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/trump-says-he-ready-military-action-if-iran-talks-fail-axios-reports"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Qatar launches diamond exchange as Hormuz crisis chokes LNG expor...",
-      "blurb": "Verified regional telemetry tracking DIPLOMATIC indicators.",
-      "time": "2026-07-27T11:33:21-0400",
-      "source": "Al-Monitor",
-      "url": "https://www.al-monitor.com/originals/2026/07/qatar-launches-diamond-exchange-hormuz-crisis-chokes-lng-exports"
     }
   ],
   "movements": []
