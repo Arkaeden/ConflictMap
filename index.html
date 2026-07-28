@@ -79,11 +79,6 @@
     --shadow-color: rgba(0,0,0,0.6);
   }
   
-  /* High-Contrast Desert Camo Map Styling: Separates land and water tones and sharpens labels */
-  [data-theme="desert-camo"] .leaflet-tile-pane {
-    filter: sepia(1) hue-rotate(345deg) saturate(2.8) brightness(0.65) contrast(1.8);
-  }
-  
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; height: 100%; overflow: hidden; transition: background 0.2s, color 0.2s; }
   body { display: flex; flex-direction: column; min-height: 100vh; }
@@ -562,14 +557,11 @@ function updateThemeButtons(theme){
   if (currentBaseLayer) map.removeLayer(currentBaseLayer);
   if (currentLabelsLayer) map.removeLayer(currentLabelsLayer);
   
-  if (theme === "light") {
+  if (theme === "light" || theme === "desert-camo") {
     currentBaseLayer = baseLayerTopo.addTo(map);
     currentLabelsLayer = null;
   } else if (theme === "satellite") {
     currentBaseLayer = baseLayerSat.addTo(map);
-    currentLabelsLayer = null;
-  } else if (theme === "desert-camo") {
-    currentBaseLayer = baseLayerTopo.addTo(map);
     currentLabelsLayer = null;
   } else {
     currentBaseLayer = baseLayerDark.addTo(map);
@@ -598,7 +590,7 @@ themeSatBtn.addEventListener("click", () => {
   updateThemeButtons("satellite");
 });
 
-fn = refreshBtn.addEventListener("click", () => {
+refreshBtn.addEventListener("click", () => {
   refreshBtn.classList.add("loading");
   refreshBtn.disabled = true;
   document.getElementById("errorBanner").style.display = "none";
