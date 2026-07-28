@@ -20,11 +20,8 @@ CITIES = [
 def clean_text(raw_text):
     if not raw_text:
         return ""
-    # Strip HTML tags
     clean = re.sub(r'<[^>]+>', '', raw_text)
-    # Unescape HTML entities (&amp;, &nbsp;, etc.)
     clean = html.unescape(clean)
-    # Normalize whitespaces
     clean = re.sub(r'\s+', ' ', clean).strip()
     return clean
 
@@ -32,18 +29,26 @@ def categorize_event(text):
     text_lower = text.lower()
     
     actor = "host"
-    if any(x in text_lower for x in ["iran", "irgc", "tehran"]): actor = "iran"
-    elif any(x in text_lower for x in ["israel", "idf", "tel aviv"]): actor = "israel"
-    elif any(x in text_lower for x in ["us ", "u.s.", "american", "usnt", "pentagon", "centcom"]): actor = "usa"
-    elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "proxy", "militia"]): actor = "proxy"
+    if any(x in text_lower for x in ["iran", "irgc", "tehran", "iranian"]): actor = "iran"
+    elif any(x in text_lower for x in ["israel", "idf", "tel aviv", "netanyahu", "israeli"]): actor = "israel"
+    elif any(x in text_lower for x in ["us ", "u.s.", "american", "pentagon", "centcom", "trump"]): actor = "usa"
+    elif any(x in text_lower for x in ["hezbollah", "houthi", "hamas", "militia", "proxy"]): actor = "proxy"
     
-    if any(x in text_lower for x in ["airstrike", "air strike", "bombed", "bombing", "strike", "jets", "warplane", "fighter jet", "blast"]): event_type = "airstrike"
-    elif any(x in text_lower for x in ["drone", "uav", "unmanned", "quadcopter", "kamikaze"]): event_type = "drone"
-    elif any(x in text_lower for x in ["missile", "rocket", "iron dome", "ballistic", "artillery", "shelling", "barrage"]): event_type = "missile"
-    elif any(x in text_lower for x in ["ship", "naval", "red sea", "gulf", "tanker", "vessel", "maritime", "destroyer", "strait"]): event_type = "naval"
-    elif any(x in text_lower for x in ["troops", "ground", "raid", "soldiers", "infantry", "border clash", "forces", "army"]): event_type = "ground"
-    elif any(x in text_lower for x in ["hack", "cyber", "ddos", "malware", "outage", "network"]): event_type = "cyber"
-    else: event_type = "diplomatic"
+    # Strict matching to prevent false positives (e.g., "hunger strike" or "striking a deal")
+    if any(x in text_lower for x in ["missile", "rocket", "iron dome", "ballistic", "artillery", "shelling", "barrage", "salvo"]): 
+        event_type = "missile"
+    elif any(x in text_lower for x in ["drone", "uav", "unmanned", "quadcopter", "kamikaze"]): 
+        event_type = "drone"
+    elif any(x in text_lower for x in ["airstrike", "air strike", "air-strike", "bombed", "bombing", "warplane", "fighter jet", "jets hit", "airstrikes"]): 
+        event_type = "airstrike"
+    elif any(x in text_lower for x in ["ship", "naval", "red sea", "gulf", "tanker", "vessel", "maritime", "destroyer", "strait", "bab el-mandeb", "seized"]): 
+        event_type = "naval"
+    elif any(x in text_lower for x in ["troops", "ground invasion", "raid", "soldiers", "infantry", "border clash", "army advance"]): 
+        event_type = "ground"
+    elif any(x in text_lower for x in ["hack", "cyber", "ddos", "malware", "outage", "network breach"]): 
+        event_type = "cyber"
+    else: 
+        event_type = "diplomatic"
     
     location = None
     for city in CITIES:
@@ -52,14 +57,14 @@ def categorize_event(text):
             break
             
     if not location:
-        if any(x in text_lower for x in ["lebanon", "hezbollah"]): location = "Beirut"
-        elif any(x in text_lower for x in ["yemen", "houthi"]): location = "Sanaa"
-        elif any(x in text_lower for x in ["syria"]): location = "Damascus"
+        if any(x in text_lower for x in ["lebanon", "hezbollah", "beirut"]): location = "Beirut"
+        elif any(x in text_lower for x in ["yemen", "houthi", "sanaa"]): location = "Sanaa"
+        elif any(x in text_lower for x in ["syria", "damascus"]): location = "Damascus"
         elif any(x in text_lower for x in ["gaza", "hamas"]): location = "Gaza City"
-        elif any(x in text_lower for x in ["iraq"]): location = "Baghdad"
-        elif any(x in text_lower for x in ["red sea", "gulf"]): location = "Strait of Hormuz"
-        elif any(x in text_lower for x in ["iran"]): location = "Tehran"
-        elif any(x in text_lower for x in ["israel", "idf"]): location = "Jerusalem"
+        elif any(x in text_lower for x in ["iraq", "baghdad"]): location = "Baghdad"
+        elif any(x in text_lower for x in ["red sea", "gulf", "hormuz"]): location = "Strait of Hormuz"
+        elif any(x in text_lower for x in ["iran", "tehran"]): location = "Tehran"
+        elif any(x in text_lower for x in ["israel", "idf", "jerusalem", "tel aviv"]): location = "Jerusalem"
         else: location = "Eastern Med"
             
     return actor, event_type, location
@@ -95,7 +100,6 @@ def fetch_and_update():
                     if raw_title in seen_titles:
                         continue
                     
-                    # Extract RSS description / summary subtext
                     desc_elem = item.find('description')
                     if desc_elem is None:
                         desc_elem = item.find('{http://www.w3.org/2005/Atom}summary')
@@ -105,7 +109,6 @@ def fetch_and_update():
                     raw_desc = desc_elem.text if desc_elem is not None and desc_elem.text else ""
                     summary = clean_text(raw_desc)
                     
-                    # Fallback if feed summary is empty
                     if not summary:
                         summary = "Verified tactical intelligence feed update."
                     elif len(summary) > 280:
@@ -122,7 +125,7 @@ def fetch_and_update():
                     pub_date = date_elem.text.strip() if date_elem is not None and date_elem.text else "Recent"
                     source = "Al-Monitor" if "al-monitor" in url else "Middle East Eye"
                     
-                    actor, event_type, location = categorize_event(raw_title)
+                    actor, event_type, location = categorize_event(raw_title + " " + summary)
                     clean_title = raw_title.split(' - ')[0] if ' - ' in raw_title else raw_title
                     
                     incidents.append({
@@ -130,8 +133,8 @@ def fetch_and_update():
                         "type": event_type,
                         "actor": actor,
                         "location": location,
-                        "title": clean_title,  # Full untruncated title
-                        "blurb": summary,       # Real subtext from RSS
+                        "title": clean_title,
+                        "blurb": summary,
                         "time": pub_date,
                         "source": source
                     })
@@ -146,7 +149,7 @@ def fetch_and_update():
     
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(feed_data, f, indent=2)
-    print("Successfully updated data.json with RSS summaries.")
+    print("Successfully updated data.json with strict icon mapping.")
 
 if __name__ == "__main__":
     fetch_and_update()
