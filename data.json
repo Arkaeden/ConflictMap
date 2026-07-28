@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-28T20:15:08.104083+00:00",
+  "lastUpdated": "2026-07-28T22:02:42.109231+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Beirut",
       "title": "In devastated south Lebanon village, residents count on army deployment",
       "blurb": "Verified tactical intelligence feed update.",
-      "time": "2026-07-28 20:15 UTC",
-      "timestamp": 1785269707,
+      "time": "2026-07-28 22:02 UTC",
+      "timestamp": 1785276161,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Eastern Med",
       "title": "US Senate to vote on Russia sanctions bill in tribute to Graham",
       "blurb": "By Patricia Zengerle and Timothy GardnerWASHINGTON, July 28 (Reuters) - The U.S. Senate will begin voting on sweeping Russian energy sanctions legislation on Tuesday as Ukrainian President Volodymyr Zelenskiy visits the Capitol, seeing the vote as a tribute to the bill's autho...",
-      "time": "2026-07-28 06:15 UTC",
-      "timestamp": 1785219307,
+      "time": "2026-07-28 08:02 UTC",
+      "timestamp": 1785225761,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Strait of Hormuz",
       "title": "Iran proposes temporary Hormuz plan giving itself greater control over transit lines",
       "blurb": "DUBAI, July 28 (Reuters) - Iran has proposed to Oman a temporary arrangement to reopen the Strait of Hormuz under which one direction of traffic would pass through Iranian waters and part of the opposite route would also be in Iranian waters, Deputy Foreign Minister Kazem Ghar...",
-      "time": "2026-07-27 16:15 UTC",
-      "timestamp": 1785168907,
+      "time": "2026-07-27 18:02 UTC",
+      "timestamp": 1785175361,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Tehran",
       "title": "Ukrainian foreign minister says he warned Iranian counterpart against escalation, support for Russia",
       "blurb": "July 28 (Reuters) - Ukrainian Foreign Minister Andrii Sybiha said on Tuesday he called his Iranian counterpart, Abbas Araqchi, following Iran's denunciation of a Ukrainian drone attack on one of its ships, warned him against escalation and told him to end all support for Russi...",
-      "time": "2026-07-27 02:15 UTC",
-      "timestamp": 1785118507,
+      "time": "2026-07-27 04:02 UTC",
+      "timestamp": 1785124961,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Baghdad",
       "title": "Erdogan hosts Zaidi, touts \u2018historic step\u2019 in Turkey-Iraq energy ties",
       "blurb": "The Turkish president outlined Ankara\u2019s priorities with the new Iraqi government during the Iraqi leader\u2019s first visit to Turkey: security, energy cooperation and the Development Road.",
-      "time": "2026-07-26 12:15 UTC",
-      "timestamp": 1785068107,
+      "time": "2026-07-26 14:02 UTC",
+      "timestamp": 1785074561,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Tehran",
       "title": "Netanyahu lauds 'excellent' Trump meeting as Israel pushes harder Iran line",
       "blurb": "Hours before the meeting, President Donald Trump signaled impatience with the Israeli leader.",
-      "time": "2026-07-24 04:15 UTC",
-      "timestamp": 1784866507,
+      "time": "2026-07-24 06:02 UTC",
+      "timestamp": 1784872961,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Sanaa",
       "title": "China in touch with Yemen's Houthis to allow ships to sail through Red Sea, sources say",
       "blurb": "By Jonathan Saul, Parisa Hafezi, Timour Azhari and Chen AizhuLONDON/DUBAI, July 28 (Reuters) - China has held direct talks with Yemen's Houthi movement to enable its tankers to sail through the southern Red Sea without being attacked after the Iran-aligned militia pledged to p...",
-      "time": "2026-07-21 20:15 UTC",
-      "timestamp": 1784664907,
+      "time": "2026-07-21 22:02 UTC",
+      "timestamp": 1784671361,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Sanaa",
       "title": "Tankers keep sailing Red Sea despite Houthi threats as Saudi oil lifeline faces strains",
       "blurb": "Roughly a dozen oil tankers were sailing in the vicinity of the Bab el-Mandeb Strait as of Tuesday evening, following an uptick in traffic the day before as shippers bet on new US-Iran diplomacy.",
-      "time": "2026-07-21 06:15 UTC",
-      "timestamp": 1784614507,
+      "time": "2026-07-21 08:02 UTC",
+      "timestamp": 1784620961,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Eastern Med",
       "title": "Three Russian Black Sea terminals restrict grain intake by truck amid shipping risks, sources say",
       "blurb": "July 28 (Reuters) - Three major Russian Black Sea grain export terminals have restricted grain deliveries by truck amid rising shipping risks in the Black Sea and increased flows following restrictions in the Sea of Azov, five industry sources told Reuters.Russia, the world's ...",
-      "time": "2026-07-18 22:15 UTC",
-      "timestamp": 1784412907,
+      "time": "2026-07-19 00:02 UTC",
+      "timestamp": 1784419361,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Eastern Med",
       "title": "Germany deports Afghan without criminal record for first time since Taliban takeover",
       "blurb": "BERLIN, July 28 (Reuters) - Germany has deported an Afghan national without a criminal record for the first time since the Taliban returned to power, Interior Minister Alexander Dobrindt said on Tuesday. \u2022 According to Dobrindt, the man had become liable for deportation after ...",
-      "time": "2026-07-18 08:15 UTC",
-      "timestamp": 1784362507,
+      "time": "2026-07-18 10:02 UTC",
+      "timestamp": 1784368961,
       "source": "Al-Monitor"
     },
     {
@@ -118,229 +118,9 @@
       "location": "Eastern Med",
       "title": "Trump, Zelenskiy discussed Patriot deal and reviving talks with Russia",
       "blurb": "By Gram Slattery and David BrunnstromWASHINGTON, July 28 (Reuters) - U.S. President Donald Trump and Ukrainian leader Volodymyr Zelenskiy on Tuesday discussed efforts to revive peace talks with Russia and a deal to allow Ukraine to make Patriot missile interceptors, ahead of t...",
-      "time": "2026-07-17 18:15 UTC",
-      "timestamp": 1784312107,
+      "time": "2026-07-17 20:02 UTC",
+      "timestamp": 1784318561,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Tyre",
-      "title": "Israeli forces strike towns in southern Lebanon\u2019s Tyre district again",
-      "blurb": "Israeli forces strike towns in southern Lebanon\u2019s Tyre district again The Israeli army has attacked the Lebanese border towns of Majdal Zoun and al-Mansouri again, according to reports from Lebanon\u2019s National News Agency (NNA). This comes just hours after Israeli forces blew u...",
-      "time": "2026-07-28 20:15 UTC",
-      "timestamp": 1785269708,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_12",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Trump hails late US Senator Lindsey Graham as 'true American original'",
-      "blurb": "Trump hails late US Senator Lindsey Graham as 'true American original' World leaders gathered in Washington, DC, on Tuesday for the funeral ceremony for late Republican US Senator Lindsey Graham, who was instrumental in advocating for the war on Iran and a staunch supporter of...",
-      "time": "2026-07-28 06:15 UTC",
-      "timestamp": 1785219308,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_13",
-      "type": "drone",
-      "actor": "host",
-      "location": "Baghdad",
-      "title": "Saudi defence ministry says it intercepted Iraqi drones targeting oil facilities",
-      "blurb": "Saudi defence ministry says it intercepted Iraqi drones targeting oil facilities The Saudi Arabian defence ministry said on Tuesday that its air defences have intecepted and destroyed several drones launched from Iraqi terriroties. The ministry said that the attacks were targe...",
-      "time": "2026-07-27 16:15 UTC",
-      "timestamp": 1785168908,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_14",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "UN: Political process cannot succeed while Gaza remains devastated, violence escalates in West Bank",
-      "blurb": "UN: Political process cannot succeed while Gaza remains devastated, violence escalates in West Bank The United Nations warned on Tuesday that a political process cannot succeed while Israeli forces continue to devastate Gaza and escalate violence in the occupied West Bank. Dep...",
-      "time": "2026-07-27 02:15 UTC",
-      "timestamp": 1785118508,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_15",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran says it seeks 'restitution' for Ukrainian attacks on vessel",
-      "blurb": "Iran says it seeks 'restitution' for Ukrainian attacks on vessel Iranian Foreign Minister Abbas Araghchi said on Tuesday that, he was assured by his Ukrainian counterpart Andrii Sybiha in a call that the attack on an Iranian ship in the Caspian Sea was \"unintentional\" and that...",
-      "time": "2026-07-26 12:15 UTC",
-      "timestamp": 1785068108,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_16",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Netanyahu says in Trump meeting he discussed ensuring Iran 'does not acquire a nuclear weapon'",
-      "blurb": "Netanyahu says in Trump meeting he discussed ensuring Iran 'does not acquire a nuclear weapon' Israeli Prime Minister Benjamin Netanyahu said that his meeting with Trump at the White House was \"excellent\", in video remarks made on Tuesday. The talks \u201creflected a complete partn...",
-      "time": "2026-07-25 22:15 UTC",
-      "timestamp": 1785017708,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_17",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Qatar condemns renewed attacks on Jordan",
-      "blurb": "Qatar condemns renewed attacks on Jordan Qatar's Ministry of Foreign Affairs, after holding a call with Jordan\u2019s Deputy Prime Minister and Foreign Minister Ayman Safadi, issued a condemnation of Iranian attacks on Jordan on Tuesday, warning that they constitute a \"dangerous es...",
-      "time": "2026-07-25 08:15 UTC",
-      "timestamp": 1784967308,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_18",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Anger rises as ICC member states accused of facilitating Netanyahu\u2019s flight to Washington",
-      "blurb": "Anger rises as ICC member states accused of facilitating Netanyahu\u2019s flight to Washington Submitted by MEE staff on Tue, 07/28/2026 - 18:32 The Israeli prime minister flew through several ICC member states before receiving a White House welcome Israeli Prime Minister Benjamin ...",
-      "time": "2026-07-24 18:15 UTC",
-      "timestamp": 1784916908,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_19",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran has \u2018no plans\u2019 to negotiate with US, deputy foreign minister says",
-      "blurb": "Iran has \u2018no plans\u2019 to negotiate with US, deputy foreign minister says Iran\u2019s Deputy Foreign Minister Kazem Gharibabadi says Tehran has \u201cno plans to negotiate with the US\u201d but affirmed talks are proceeding \u201cstep by step\u201d with Oman over reopening the Strait of Hormuz. \u201cWe shoul...",
-      "time": "2026-07-24 04:15 UTC",
-      "timestamp": 1784866508,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran backs Volker Turk reappointment to UN rights chief",
-      "blurb": "Iran backs Volker Turk reappointment to UN rights chief Iran has signalled its support for Volker Turk to be reappointed as the UN human rights chief for a second term despite US, Israeli and Russian opposition. In a post on X, Iran's diplomatic mission to Geneva said that \"we...",
-      "time": "2026-07-23 14:15 UTC",
-      "timestamp": 1784816108,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "Iran proposes temporary Hormuz plan to give itself more control over transit",
-      "blurb": "Iran proposes temporary Hormuz plan to give itself more control over transit Iran has proposed to Oman a temporary arrangement to reopen the Strait of Hormuz, under which one direction of traffic and part of the traffic in the opposite direction would pass through Iranian wate...",
-      "time": "2026-07-23 00:15 UTC",
-      "timestamp": 1784765708,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "missile",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Yemen\u2019s Houthis say they targeted Saudi tanker in Red Sea",
-      "blurb": "Yemen\u2019s Houthis say they targeted Saudi tanker in Red Sea Yemen\u2019s Houthis said on Tuesday that they fired ballistic missiles at a Saudi Arabian oil tanker in the Red Sea for violating their maritime blockade and ignoring warning calls. Houthi military spokesman Yahya Saree sai...",
-      "time": "2026-07-22 10:15 UTC",
-      "timestamp": 1784715308,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "US attacks destroyed key infrastructure, killed over 350 government employees, says Iranian government",
-      "blurb": "US attacks destroyed key infrastructure, killed over 350 government employees, says Iranian government Iranian government spokesperson Fatemeh Mohajerani said that the US had inflicted widespread damage to civilian infrastructure across Iran, killing more than 350 government e...",
-      "time": "2026-07-21 20:15 UTC",
-      "timestamp": 1784664908,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "US Centcom says it redirected 18 commercial vessels in Hormuz",
-      "blurb": "US Centcom says it redirected 18 commercial vessels in Hormuz The US Central Command (Centcom) announced on Tuesday in a post to X that, as of 28 July, it has redirected 18 commercial vessels, disabled two and boarded two in its ongoing naval blockade against Iran. There are m...",
-      "time": "2026-07-21 06:15 UTC",
-      "timestamp": 1784614508,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Ukrainian foreign minister hold calls with Iranian, Israeli counterparts",
-      "blurb": "Ukrainian foreign minister hold calls with Iranian, Israeli counterparts Ukrainian Foreign Minister Andrii Sybiha said on Tuesday that he held a call with his counterpart in Iran in order to have a \u201cdirect conversation\u201d after a sailor was killed in a Ukrainian attack on an Ira...",
-      "time": "2026-07-20 16:15 UTC",
-      "timestamp": 1784564108,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Baghdad",
-      "title": "Erdogan says Turkey aims to sign energy cooperation deal with Iraq",
-      "blurb": "Erdogan says Turkey aims to sign energy cooperation deal with Iraq Turkish President Tayyip Erdogan said on Tuesday that Turkey aims to sign a comprehensive energy cooperation deal with Iraq as soon as possible, adding that Iraq had offered to provide the country with one mill...",
-      "time": "2026-07-20 02:15 UTC",
-      "timestamp": 1784513708,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_27",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "White House calls meetings with Netanyahu and Zelensky \u2018positive\u2019",
-      "blurb": "White House calls meetings with Netanyahu and Zelensky \u2018positive\u2019 White House Press Secretary Karoline Leavitt announced on Tuesday that US President Donald Trump has concluded his meetings with Ukrainian President Volodymyr Zelensky and Israeli Prime Minister Benjamin Netanya...",
-      "time": "2026-07-19 12:15 UTC",
-      "timestamp": 1784463308,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_28",
-      "type": "airstrike",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli strike kills Palestinian man killed in Nuseirat camp",
-      "blurb": "Israeli strike kills Palestinian man killed in Nuseirat camp A Palestinian man died on Tuesday from injuries sustained in an Israeli air strike on the Nuseirat refugee camp in the central Gaza Strip, according to Al-Aqsa Martyrs Hospital. Al-Awda Hospital had earlier reported ...",
-      "time": "2026-07-18 22:15 UTC",
-      "timestamp": 1784412908,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_29",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Gaza City",
-      "title": "UN report: Children in Gaza lack access to functioning schools",
-      "blurb": "UN report: Children in Gaza lack access to functioning schools A new mapping analysis by the United Nations Satellite Centre (Unosat) has found that Gaza\u2019s temporary schools are failing to keep pace with demand, leaving hundreds of thousands of children without access to a fun...",
-      "time": "2026-07-18 08:15 UTC",
-      "timestamp": 1784362508,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_30",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "Exclusive: Does the UK's 'don't talk to the Muslim Council of Britain' policy actually exist?",
-      "blurb": "Exclusive: Does the UK's 'don't talk to the Muslim Council of Britain' policy actually exist? Andy Burnham's government has said it is sticking to a policy of refusing to engage with the Muslim Council of Britain (MCB) that it has inherited from previous governments. But a Mid...",
-      "time": "2026-07-17 18:15 UTC",
-      "timestamp": 1784312108,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
