@@ -2,6 +2,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import json
 import re
+import html
 from datetime import datetime, timezone
 
 FEED_URLS = [
@@ -15,6 +16,17 @@ CITIES = [
     "Golan Heights", "Beirut", "Tyre", "Damascus", "Baghdad", "Erbil", 
     "Amman", "Riyadh", "Sanaa", "Hodeidah", "Aden", "Strait of Hormuz"
 ]
+
+def clean_text(raw_text):
+    if not raw_text:
+        return ""
+    # Strip HTML tags
+    clean = re.sub(r'<[^>]+>', '', raw_text)
+    # Unescape HTML entities (&amp;, &nbsp;, etc.)
+    clean = html.unescape(clean)
+    # Normalize whitespaces
+    clean = re.sub(r'\s+', ' ', clean).strip()
+    return clean
 
 def categorize_event(text):
     text_lower = text.lower()
@@ -55,7 +67,6 @@ def categorize_event(text):
 def fetch_and_update():
     incidents = []
     seen_titles = set()
-    assigned_links = set() # Tracks used URLs to prevent publisher duplication bugs
     
     for url in FEED_URLS:
         try:
@@ -63,7 +74,6 @@ def fetch_and_update():
                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
                 'Accept': 'application/rss+xml, application/xml, text/xml;q=0.9, */*;q=0.8'
             })
-            base_domain = "https://www.al-monitor.com" if "al-monitor" in url else "https://www.middleeasteye.net"
             
             with urllib.request.urlopen(req, timeout=10) as response:
                 xml_content = response.read()
@@ -81,60 +91,27 @@ def fetch_and_update():
                     if title_elem is None or not title_elem.text:
                         continue
                         
-                    title = title_elem.text.strip()
-                    if title in seen_titles:
+                    raw_title = clean_text(title_elem.text)
+                    if raw_title in seen_titles:
                         continue
                     
-                    link = ""
+                    # Extract RSS description / summary subtext
+                    desc_elem = item.find('description')
+                    if desc_elem is None:
+                        desc_elem = item.find('{http://www.w3.org/2005/Atom}summary')
+                    if desc_elem is None:
+                        desc_elem = item.find('{http://www.w3.org/2005/Atom}content')
+                        
+                    raw_desc = desc_elem.text if desc_elem is not None and desc_elem.text else ""
+                    summary = clean_text(raw_desc)
                     
-                    # 1. Try GUID first (often the safest permalink)
-                    guid = item.find('guid')
-                    if guid is not None and guid.text and guid.text.strip().startswith('http'):
-                        link = guid.text.strip()
+                    # Fallback if feed summary is empty
+                    if not summary:
+                        summary = "Verified tactical intelligence feed update."
+                    elif len(summary) > 280:
+                        summary = summary[:277] + "..."
                         
-                    # 2. Try Standard RSS link
-                    if not link:
-                        link_elem = item.find('link')
-                        if link_elem is not None:
-                            if link_elem.text and link_elem.text.strip():
-                                link = link_elem.text.strip()
-                            elif link_elem.get('href'):
-                                link = link_elem.get('href').strip()
-                                
-                    # 3. Try Atom link
-                    if not link:
-                        for l_node in item.findall('{http://www.w3.org/2005/Atom}link'):
-                            href = l_node.get('href')
-                            if href and href.strip():
-                                link = href.strip()
-                                break
-
-                    # Handle relative domain appending
-                    if link.startswith('/'):
-                        link = base_domain + link
-
-                    # 4. PUBLISHER BUG SAFEGUARD
-                    # If the extracted URL was already assigned to another story, the publisher 
-                    # feed is broken. We must scour the raw XML of this specific item for the unique URL.
-                    if not link or link in assigned_links:
-                        item_str = ET.tostring(item, encoding='unicode')
-                        possible_urls = re.findall(r'(https?://[^\s<"]+)', item_str) + re.findall(r'href="([^"]+)"', item_str)
-                        
-                        for purl in possible_urls:
-                            if purl.startswith('/'):
-                                purl = base_domain + purl
-                                
-                            if purl.startswith('http') and purl not in assigned_links and ('al-monitor' in purl or 'middleeasteye' in purl):
-                                link = purl
-                                break
-
-                    if not link or link in assigned_links:
-                        link = "#" 
-                        
-                    if link != "#":
-                        assigned_links.add(link)
-                        
-                    seen_titles.add(title)
+                    seen_titles.add(raw_title)
                     
                     date_elem = item.find('pubDate')
                     if date_elem is None:
@@ -145,19 +122,18 @@ def fetch_and_update():
                     pub_date = date_elem.text.strip() if date_elem is not None and date_elem.text else "Recent"
                     source = "Al-Monitor" if "al-monitor" in url else "Middle East Eye"
                     
-                    actor, event_type, location = categorize_event(title)
-                    clean_title = title.split(' - ')[0] if ' - ' in title else title
+                    actor, event_type, location = categorize_event(raw_title)
+                    clean_title = raw_title.split(' - ')[0] if ' - ' in raw_title else raw_title
                     
                     incidents.append({
                         "id": f"inc_{len(incidents)}",
                         "type": event_type,
                         "actor": actor,
                         "location": location,
-                        "title": clean_title[:65] + "..." if len(clean_title) > 65 else clean_title,
-                        "blurb": f"Verified regional telemetry tracking {event_type.upper()} indicators.",
+                        "title": clean_title,  # Full untruncated title
+                        "blurb": summary,       # Real subtext from RSS
                         "time": pub_date,
-                        "source": source,
-                        "url": link
+                        "source": source
                     })
         except Exception as e:
             print(f"Error reading feed {url}: {e}")
@@ -170,7 +146,7 @@ def fetch_and_update():
     
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(feed_data, f, indent=2)
-    print("Successfully updated data.json with deduplicated URLs.")
+    print("Successfully updated data.json with RSS summaries.")
 
 if __name__ == "__main__":
     fetch_and_update()
