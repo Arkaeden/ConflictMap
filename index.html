@@ -8,6 +8,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<!-- Leaflet Heatmap Plugin -->
+<script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
 
 <style>
   :root {
@@ -90,10 +92,8 @@
     background-size: 320px 320px, 450px 450px, 80px 80px, 80px 80px; opacity: 0.95;
   }
 
-  /* Native Tile Rendering */
   .leaflet-container { background: var(--bg); font-family: inherit; }
   
-  /* Popup Symmetrical Padding Fix */
   .leaflet-popup-content-wrapper {
     background: var(--bg-panel); border: 1px solid var(--line-strong); border-radius: 0;
     box-shadow: 0 16px 40px var(--shadow-color); color: var(--text);
@@ -102,80 +102,21 @@
   .leaflet-popup-tip { background: var(--bg-panel); border: 1px solid var(--line-strong); }
   .leaflet-popup-content { margin: 0 !important; line-height: 1.4; width: 380px !important; }
   
-  .hover-card-inner {
-    padding: 24px;
-  }
+  .hover-card-inner { padding: 24px; }
 
-  /* Reset default Leaflet close button and integrate it into clean grid header */
   .leaflet-container a.leaflet-popup-close-button {
-    position: relative !important;
-    top: auto !important;
-    right: auto !important;
-    padding: 0 !important;
-    color: var(--text-dim);
-    font-weight: 900;
-    font-size: 16px;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg-panel-2);
-    border: 1px solid var(--line-strong);
-    transition: all 0.15s ease;
-    justify-self: end;
+    position: relative !important; top: auto !important; right: auto !important;
+    padding: 0 !important; color: var(--text-dim); font-weight: 900; font-size: 16px;
+    width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;
+    background: var(--bg-panel-2); border: 1px solid var(--line-strong); transition: all 0.15s ease; justify-self: end;
   }
-  .leaflet-container a.leaflet-popup-close-button:hover {
-    background: var(--text);
-    color: var(--bg);
-    border-color: var(--text);
-  }
+  .leaflet-container a.leaflet-popup-close-button:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
   
-  /* Hover Card Structured Layout with Symmetrical Grid Alignment */
-  .hover-card-header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    margin-bottom: 14px;
-    gap: 16px;
-  }
-  .hover-card-tag {
-    color: var(--accent);
-    font-size: 10px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  .hover-card-title {
-    font-weight: 900;
-    font-size: 16px;
-    margin-bottom: 10px;
-    color: var(--text);
-    text-transform: uppercase;
-    white-space: normal !important;
-    overflow: visible !important;
-    line-height: 1.35;
-  }
-  .hover-card-blurb {
-    color: var(--text-dim);
-    margin-bottom: 16px;
-    font-size: 13px;
-    line-height: 1.5;
-    white-space: normal !important;
-  }
-  .hover-card-footer {
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--text-faint);
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid var(--line);
-    padding-top: 12px;
-    text-transform: uppercase;
-  }
+  .hover-card-header { display: grid; grid-template-columns: 1fr auto; align-items: center; margin-bottom: 14px; gap: 16px; }
+  .hover-card-tag { color: var(--accent); font-size: 10px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase; display: flex; align-items: center; gap: 6px; }
+  .hover-card-title { font-weight: 900; font-size: 16px; margin-bottom: 10px; color: var(--text); text-transform: uppercase; white-space: normal !important; overflow: visible !important; line-height: 1.35; }
+  .hover-card-blurb { color: var(--text-dim); margin-bottom: 16px; font-size: 13px; line-height: 1.5; white-space: normal !important; }
+  .hover-card-footer { font-size: 10px; font-weight: 700; color: var(--text-faint); display: flex; justify-content: space-between; border-top: 1px solid var(--line); paddingTop: 12px; text-transform: uppercase; }
 
   .custom-leaflet-marker { background: transparent; border: none; }
   .marker-icon-bg { transition: transform 0.2s ease; transform-origin: center; }
@@ -183,18 +124,18 @@
   
   header.topbar {
     position: relative; z-index: 1000; display: flex; align-items: flex-end; justify-content: space-between;
-    padding: 24px 32px; border-bottom: 1px solid var(--line-strong); background: var(--bg-header); flex-wrap: wrap; gap: 16px;
+    padding: 20px 32px; border-bottom: 1px solid var(--line-strong); background: var(--bg-header); flex-wrap: wrap; gap: 16px;
   }
   .brand-group { display: flex; align-items: center; gap: 20px; }
   .brand-logo {
-    width: 46px; height: 46px; object-fit: contain;
+    width: 42px; height: 42px; object-fit: contain;
     filter: brightness(0) saturate(100%) invert(24%) sepia(93%) saturate(7493%) hue-rotate(3deg) brightness(102%) contrast(105%);
   }
   [data-theme="desert-camo"] .brand-logo {
     filter: brightness(0) saturate(100%) invert(85%) sepia(20%) saturate(600%) hue-rotate(350deg) brightness(95%) contrast(90%);
   }
-  .title-block .eyebrow { font-size: 11px; font-weight: 900; letter-spacing: 4px; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
-  .title-block h1 { font-weight: 900; font-size: 32px; letter-spacing: -1px; margin: 0; color: var(--text); text-transform: uppercase; line-height: 1; }
+  .title-block .eyebrow { font-size: 10px; font-weight: 900; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+  .title-block h1 { font-weight: 900; font-size: 26px; letter-spacing: -0.5px; margin: 0; color: var(--text); text-transform: uppercase; line-height: 1; }
   .status-block { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
   
   .theme-controls { display: flex; gap: 6px; align-items: center; }
@@ -222,25 +163,54 @@
   .refresh-btn.loading .spinner { display: inline-block; }
   @keyframes spin { to { transform: rotate(360deg); } }
   
+  /* Quick-Jump Flashpoint Bar */
+  .flashpoint-bar {
+    background: var(--bg-panel); border-bottom: 1px solid var(--line-strong); padding: 8px 32px;
+    display: flex; gap: 16px; align-items: center; overflow-x: auto; white-space: nowrap; font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 1.5px; z-index: 999;
+  }
+  .flashpoint-bar span { color: var(--text-faint); }
+  .flashpoint-pill {
+    background: var(--bg); border: 1px solid var(--line-strong); padding: 4px 10px; cursor: pointer; color: var(--text-dim); transition: all 0.15s;
+  }
+  .flashpoint-pill:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
+
   main.layout { position: relative; z-index: 1; flex: 1; display: grid; grid-template-columns: 1fr 400px; gap: 0; min-height: 0; }
   .mapwrap { position: relative; overflow: hidden; background: var(--bg); }
   #map { width: 100%; height: 100%; display: block; z-index: 1; }
   
+  /* Timeline Scrubbing Bar over Map */
+  .timeline-overlay {
+    position: absolute; bottom: 24px; left: 24px; right: 24px; z-index: 1000;
+    background: var(--bg-panel); border: 1px solid var(--line-strong); padding: 14px 20px;
+    display: flex; align-items: center; gap: 16px; box-shadow: 0 8px 24px var(--shadow-color);
+  }
+  .timeline-overlay label { font-size: 10px; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); flex: none; }
+  .timeline-overlay input[type=range] { flex: 1; accent-color: var(--accent); cursor: pointer; }
+  .timeline-val { font-size: 11px; font-weight: 900; color: var(--text); min-width: 130px; text-align: right; }
+
   aside.sidebar { background: var(--bg-panel); border-left: 1px solid var(--line-strong); display: flex; flex-direction: column; min-height: 0; z-index: 2; }
-  .sidebar-section { padding: 20px 24px; border-bottom: 1px solid var(--line); }
+  .sidebar-section { padding: 16px 24px; border-bottom: 1px solid var(--line); }
   .sidebar-title {
-    font-weight: 900; font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin: 0 0 14px 0;
+    font-weight: 900; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; color: var(--text-dim); margin: 0 0 12px 0;
     display: flex; justify-content: space-between; align-items: center;
   }
   .sidebar-title::after { content: "—"; color: var(--text-faint); font-weight: 900; }
-  .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); }
-  .legend-row { display: flex; align-items: center; gap: 8px; }
-  .swatch { width: 8px; height: 8px; flex: none; }
-  .legend-icons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--line); }
-  .legend-icon-item { display: flex; align-items: center; gap: 6px; font-size: 10px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; }
-  .legend-icon-item svg { width: 14px; height: 14px; background: transparent !important; }
   
-  .feed { flex: 1; overflow-y: auto; padding: 16px 20px; min-height: 120px; }
+  /* Clickable Actor Filter Pills */
+  .legend-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--text-dim); }
+  .legend-row { display: flex; align-items: center; gap: 8px; cursor: pointer; padding: 3px 6px; border: 1px solid transparent; transition: all 0.15s; }
+  .legend-row:hover { background: var(--bg-panel-2); border-color: var(--line-strong); }
+  .legend-row.inactive { opacity: 0.35; text-decoration: line-through; }
+  .swatch { width: 8px; height: 8px; flex: none; }
+  
+  .legend-icons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+  .legend-icon-item { display: flex; align-items: center; gap: 6px; font-size: 9px; font-weight: 700; color: var(--text-faint); text-transform: uppercase; }
+  .legend-icon-item svg { width: 12px; height: 12px; background: transparent !important; }
+  
+  .heatmap-toggle-wrap { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; font-size: 11px; font-weight: 900; text-transform: uppercase; }
+  .heatmap-toggle-wrap input { accent-color: var(--accent); cursor: pointer; width: 16px; height: 16px; }
+
+  .feed { flex: 1; overflow-y: auto; padding: 14px 20px; min-height: 120px; }
   .feed::-webkit-scrollbar { width: 4px; }
   .feed::-webkit-scrollbar-thumb { background: var(--line-strong); }
   
@@ -253,7 +223,7 @@
   .feed-item .fi-meta { font-size: 10px; font-weight: 700; color: var(--text-faint); margin-left: 14px; text-transform: uppercase; }
   .feed-empty { color: var(--text-faint); font-size: 11px; font-weight: 700; font-style: italic; }
   
-  .disclaimer { padding: 16px 24px; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint); background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px; }
+  .disclaimer { padding: 14px 24px; font-size: 10px; font-weight: 700; line-height: 1.5; color: var(--text-faint); background: var(--bg); border-top: 1px solid var(--line); text-transform: uppercase; letter-spacing: 0.5px; }
   .disclaimer strong { color: var(--text-dim); }
   .error-banner { display: none; margin: 0 32px; padding: 10px 14px; background: rgba(255,51,0,0.1); color: var(--danger); font-size: 11px; font-weight: 900; position: relative; z-index: 2; border: 1px solid var(--danger); border-top: none; }
   
@@ -261,7 +231,7 @@
     html, body { height: auto; overflow: auto; }
     body { display: block; min-height: 100vh; }
     header.topbar { padding: 16px 20px; }
-    .title-block h1 { font-size: 22px; }
+    .title-block h1 { font-size: 20px; }
     .mode-badge { display: none; }
     main.layout { display: flex; flex-direction: column; height: auto; min-height: calc(100vh - 70px); }
     .mapwrap { width: 100%; height: 380px; flex: none; border-bottom: 1px solid var(--line-strong); }
@@ -283,7 +253,7 @@
     <span class="updated-text" id="updatedText">SYNC: ACTIVE</span>
     <div class="theme-controls">
       <button class="icon-btn" id="themeLightBtn" title="Light Mode">
-        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
       <button class="icon-btn" id="themeDarkBtn" title="Dark Mode">
         <svg viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -302,26 +272,49 @@
     </button>
   </div>
 </header>
+
+<!-- Quick-Jump Flashpoint Bar -->
+<div class="flashpoint-bar">
+  <span>Hotspots:</span>
+  <div class="flashpoint-pill" onclick="jumpToSpot('Strait of Hormuz', 7)">Strait of Hormuz</div>
+  <div class="flashpoint-pill" onclick="jumpToSpot('Tehran', 7)">Tehran</div>
+  <div class="flashpoint-pill" onclick="jumpToSpot('Jerusalem', 7)">Jerusalem</div>
+  <div class="flashpoint-pill" onclick="jumpToSpot('Beirut', 7)">Beirut</div>
+  <div class="flashpoint-pill" onclick="jumpToSpot('Gaza City', 7)">Gaza City</div>
+  <div class="flashpoint-pill" onclick="jumpToSpot('Sanaa', 7)">Sanaa</div>
+  <div class="flashpoint-pill" onclick="jumpToSpot('Baghdad', 7)">Baghdad</div>
+</div>
+
 <div class="error-banner" id="errorBanner"></div>
 
 <main class="layout">
   <div class="mapwrap" id="mapwrap">
     <div id="map"></div>
+    <!-- Timeline Playback Scrubber -->
+    <div class="timeline-overlay">
+      <label>Timeline:</label>
+      <input type="range" id="timelineSlider" min="0" max="100" value="100">
+      <span class="timeline-val" id="timelineVal">LIVE FEED (NOW)</span>
+    </div>
   </div>
 
   <aside class="sidebar">
     <div class="sidebar-section">
-      <div class="sidebar-title">Index / Legend</div>
-      <div class="legend-grid">
-        <div class="legend-row"><span class="swatch" style="background:var(--iran)"></span>Iran</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--israel)"></span>Israel</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--usa)"></span>United States</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--proxy)"></span>Proxies</div>
-        <div class="legend-row"><span class="swatch" style="background:var(--host)"></span>States</div>
+      <div class="sidebar-title">Actor Filter Matrix</div>
+      <div class="legend-grid" id="actorFilterGrid">
+        <div class="legend-row" data-actor="iran"><span class="swatch" style="background:var(--iran)"></span>Iran</div>
+        <div class="legend-row" data-actor="israel"><span class="swatch" style="background:var(--israel)"></span>Israel</div>
+        <div class="legend-row" data-actor="usa"><span class="swatch" style="background:var(--usa)"></span>United States</div>
+        <div class="legend-row" data-actor="proxy"><span class="swatch" style="background:var(--proxy)"></span>Proxies</div>
+        <div class="legend-row" data-actor="host"><span class="swatch" style="background:var(--host)"></span>States</div>
+      </div>
+      <div class="heatmap-toggle-wrap">
+        <span>Heatmap Pulse View</span>
+        <input type="checkbox" id="heatmapToggle">
       </div>
       <div class="legend-icons" id="legendIcons"></div>
     </div>
-    <div class="sidebar-title" style="padding:16px 24px 0 24px;">Telemetry Feed</div>
+    <div class="sidebar-title" style="padding:14px 24px 0 24px;">Telemetry Feed</div>
     <div class="feed" id="feed"></div>
     <div class="disclaimer" id="disclaimerText">
       <strong>Operational DB.</strong> Curated telemetry mapping active regional flashpoints and asset vectors via live JSON feed.
@@ -365,7 +358,6 @@ function iconMarkup(type){
 
 const map = L.map('map', { zoomControl: true, attributionControl: false }).setView([31.0, 44.0], 5);
 
-// Map layer options
 const baseLayerTopo = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', { maxZoom: 13, attribution: 'Esri' });
 const baseLayerSat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 13, attribution: 'Esri' });
 const baseLayerDark = L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 12, subdomains: 'abcd' });
@@ -376,6 +368,8 @@ let currentLabelsLayer = null;
 
 let state = { incidents: [], lastUpdated: "" };
 let activeMarkers = [];
+let heatLayer = null;
+let disabledActors = new Set();
 
 async function fetchTelemetryData() {
   try {
@@ -384,6 +378,18 @@ async function fetchTelemetryData() {
     const data = await response.json();
     state.incidents = data.incidents || [];
     state.lastUpdated = new Date(data.lastUpdated).toLocaleTimeString();
+    
+    // Setup timeline slider range based on timestamps
+    if (state.incidents.length > 0) {
+      const timestamps = state.incidents.map(i => i.timestamp || Date.now()/1000);
+      const minT = Math.min(...timestamps);
+      const maxT = Math.max(...timestamps);
+      const slider = document.getElementById("timelineSlider");
+      slider.min = minT;
+      slider.max = maxT;
+      slider.value = maxT;
+    }
+    
     renderAll();
   } catch (err) {
     document.getElementById("errorBanner").style.display = "block";
@@ -395,20 +401,36 @@ function renderAll() {
   document.getElementById("updatedText").textContent = "SYNC: " + state.lastUpdated;
   activeMarkers.forEach(m => map.removeLayer(m));
   activeMarkers = [];
+  if (heatLayer) map.removeLayer(heatLayer);
   
   const feedEl = document.getElementById("feed");
   feedEl.innerHTML = "";
   
-  if(state.incidents.length === 0){
-    feedEl.innerHTML = '<div class="feed-empty">NO TELEMETRY RECORDED.</div>';
+  const sliderVal = parseInt(document.getElementById("timelineSlider").value);
+  document.getElementById("timelineVal.textContent") // handled in input listener
+  
+  // Filter incidents based on timeline slider and disabled actors
+  const filteredIncidents = state.incidents.filter(inc => {
+    const t = inc.timestamp || Date.now()/1000;
+    const timeValid = t <= sliderVal;
+    const actorValid = !disabledActors.has(inc.actor);
+    return timeValid && actorValid;
+  });
+
+  if(filteredIncidents.length === 0){
+    feedEl.innerHTML = '<div class="feed-empty">NO TELEMETRY RECORDED FOR THIS TIMEFRAME.</div>';
     return;
   }
 
-  state.incidents.forEach(inc => {
+  const heatPoints = [];
+
+  filteredIncidents.forEach(inc => {
     const coords = CITY[inc.location] || CITY["Eastern Med"];
     const color = ACTOR_HEX[inc.actor] || "var(--text)";
     const eventType = inc.type || "diplomatic";
     
+    heatPoints.push([coords[0], coords[1], 0.8]);
+
     const customIcon = L.divIcon({
       className: 'custom-leaflet-marker',
       html: `<svg viewBox="-15 -15 30 30" style="width: 32px; height: 32px; overflow: visible;">
@@ -437,7 +459,10 @@ function renderAll() {
     `;
 
     const marker = L.marker(coords, { icon: customIcon }).bindPopup(popupHtml);
-    marker.addTo(map);
+    
+    if (!document.getElementById("heatmapToggle").checked) {
+      marker.addTo(map);
+    }
     activeMarkers.push(marker);
 
     marker.on('popupopen', function(e) {
@@ -468,7 +493,46 @@ function renderAll() {
     
     feedEl.appendChild(row);
   });
+
+  // Render Heatmap if toggled on
+  if (document.getElementById("heatmapToggle").checked && heatPoints.length > 0) {
+    heatLayer = L.heatLayer(heatPoints, { radius: 28, blur: 18, maxZoom: 10 }).addTo(map);
+  }
 }
+
+// Quick-Jump Flashpoint Navigation
+window.jumpToSpot = function(cityName, zoomLevel) {
+  const coords = CITY[cityName];
+  if (coords) {
+    map.flyTo(coords, zoomLevel, { duration: 1.2 });
+  }
+};
+
+// Actor Filter Matrix Toggles
+document.querySelectorAll(".legend-row").forEach(row => {
+  row.addEventListener("click", () => {
+    const actor = row.dataset.actor;
+    if (disabledActors.has(actor)) {
+      disabledActors.delete(actor);
+      row.classList.remove("inactive");
+    } else {
+      disabledActors.add(actor);
+      row.classList.add("inactive");
+    }
+    renderAll();
+  });
+});
+
+// Heatmap Toggle Listener
+document.getElementById("heatmapToggle").addEventListener("change", renderAll);
+
+// Timeline Slider Listener
+const slider = document.getElementById("timelineSlider");
+slider.addEventListener("input", (e) => {
+  const dateStr = new Date(e.target.value * 1000).toUTCString().replace("GMT", "UTC");
+  document.getElementById("timelineVal").textContent = dateStr.slice(5, 22);
+  renderAll();
+});
 
 const legendIcons = document.getElementById("legendIcons");
 Object.keys(TYPE_LABEL).forEach(t => {
