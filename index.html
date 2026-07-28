@@ -93,15 +93,19 @@
   /* Native Tile Rendering */
   .leaflet-container { background: var(--bg); font-family: inherit; }
   
-  /* Popup container sized perfectly with strict 24px symmetrical padding */
+  /* Popup Symmetrical Padding Fix: Remove forced width, use clean inline padding */
   .leaflet-popup-content-wrapper {
     background: var(--bg-panel); border: 1px solid var(--line-strong); border-radius: 0;
     box-shadow: 0 16px 40px var(--shadow-color); color: var(--text);
-    width: 380px !important;
+    padding: 0 !important;
   }
   .leaflet-popup-tip { background: var(--bg-panel); border: 1px solid var(--line-strong); }
-  .leaflet-popup-content { margin: 24px !important; line-height: 1.4; }
+  .leaflet-popup-content { margin: 0 !important; line-height: 1.4; width: 380px !important; }
   
+  .hover-card-inner {
+    padding: 24px;
+  }
+
   /* Reset default Leaflet close button and integrate it into clean grid header */
   .leaflet-container a.leaflet-popup-close-button {
     position: relative !important;
@@ -412,7 +416,7 @@ function renderAll() {
     });
 
     const popupHtml = `
-      <div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;">
+      <div class="hover-card-inner">
         <div class="hover-card-header">
           <div class="hover-card-tag">
             <span style="display:inline-block; width:6px; height:6px; background:${color};"></span>
