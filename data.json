@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-01T13:15:09.827519+00:00",
+  "lastUpdated": "2026-08-01T14:58:33.675298+00:00",
   "incidents": [
     {
       "id": "inc_0",
       "type": "diplomatic",
       "actor": "host",
       "location": "Eastern Med",
-      "title": "Famed climber Nirmal Purja, nine others, die in avalanche in Pakistan, hiking company says",
+      "title": "Famed climber Nirmal Purja, nine others, die in avalanche in Pakistan, expedition company says",
       "blurb": "By Gopal SharmaKATHMANDU, Aug 1 (Reuters) - Celebrated Nepali climber Nirmal Purja, who set a record for the fastest ascent of the world's 14 highest mountains, died in an avalanche during an expedition in Pakistan, his company said on Saturday.\u201cToday it is with profound sadne...",
-      "time": "2026-08-01 13:15 UTC",
-      "timestamp": 1785590109,
+      "time": "2026-08-01 14:58 UTC",
+      "timestamp": 1785596313,
       "source": "Al-Monitor"
     },
     {
@@ -18,9 +18,9 @@
       "actor": "israel",
       "location": "Tel Aviv",
       "title": "Israeli strikes kill two in Gaza, destroy medicine storage warehouses",
-      "blurb": "By Mahmoud Issa and Alexander CornwellDeir al-Balah, GAZA/TEL AVIV, July 28 (Reuters) - Israel's military on Saturday killed two Palestinians in Gaza and destroyed two warehouses near a hospital that stored medicine in separate strikes, amid uncertainty over whether Israel has...",
-      "time": "2026-07-31 23:15 UTC",
-      "timestamp": 1785539709,
+      "blurb": "By Mahmoud Issa and Alexander CornwellDeir al-Balah, GAZA/TEL AVIV, Aug 1 (Reuters) - Israel's military on Saturday killed two Palestinians in Gaza and destroyed two warehouses near a hospital that were said to be storing medicine in separate strikes, amid uncertainty over whe...",
+      "time": "2026-08-01 00:58 UTC",
+      "timestamp": 1785545913,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Eastern Med",
       "title": "Soccer-Infantino's FIFA future in jeopardy after private equity gamble backfires",
       "blurb": "By Ian Ransom and Kokkai NgAug 1 (Reuters) - FIFA president Gianni Infantino, hitherto untouchable at the helm of soccer's global governing body, suffered a crushing blow on Friday when his bold reach for private equity riches was brought to an end in the face of a ferocious b...",
-      "time": "2026-07-31 09:15 UTC",
-      "timestamp": 1785489309,
+      "time": "2026-07-31 10:58 UTC",
+      "timestamp": 1785495513,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Baghdad",
       "title": "Iranian pilgrims flood Iraq for first Arbaeen since war",
       "blurb": "Under a blazing sun, clad in black and clutching portraits of their slain leader Ali Khamenei, Iranian pilgrims streamed across the border into Iraq to observe the Arbaeen, the most revered event in Shia Islam. Some stamped on a portrait of US President Donald Trump, others ra...",
-      "time": "2026-07-30 19:15 UTC",
-      "timestamp": 1785438909,
+      "time": "2026-07-30 20:58 UTC",
+      "timestamp": 1785445113,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Eastern Med",
       "title": "Egypt captains recount scramble to stop disaster after drone strike",
       "blurb": "Marine officers who battled fires aboard two gas vessels struck in a drone attack on Egypt's port of Damietta feared the ships were \"a bomb waiting to explode\" that could have destroyed the entire port and ripped through the city beyond. The US-owned Energos Winter floating st...",
-      "time": "2026-07-30 05:15 UTC",
-      "timestamp": 1785388509,
+      "time": "2026-07-30 06:58 UTC",
+      "timestamp": 1785394713,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Eastern Med",
       "title": "Spain's N. Africa enclave returns to normal as migrants depart",
       "blurb": "Almost all of the tens of thousands of migrants who entered Spain's enclave of Ceuta in North Africa had left by Saturday, officials sa",
-      "time": "2026-07-29 15:15 UTC",
-      "timestamp": 1785338109,
+      "time": "2026-07-29 16:58 UTC",
+      "timestamp": 1785344313,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Eastern Med",
       "title": "Soccer-UEFA says it has lost confidence in Infantino as FIFA faces calls for transparency",
       "blurb": "Aug 1 (Reuters) - UEFA said it had lost confidence in FIFA President Gianni Infantino on Saturday after world soccer's governing body abandoned plans to sell a stake in the commercial rights to the World Cup.FIFA's proposal had triggered a fierce backlash from regional confede...",
-      "time": "2026-07-29 01:15 UTC",
-      "timestamp": 1785287709,
+      "time": "2026-07-29 02:58 UTC",
+      "timestamp": 1785293913,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Eastern Med",
       "title": "FIFA scraps private investment plan after backlash",
       "blurb": "FIFA president Gianni Infantino said on Saturday he has scrapped a plan to allow private investment in the World Cup following fierce backlash from football officials worldwide. \"Our purpose has always been -- and will always be -- to unite and improve,\" Infantino said in a st...",
-      "time": "2026-07-28 11:15 UTC",
-      "timestamp": 1785237309,
+      "time": "2026-07-28 12:58 UTC",
+      "timestamp": 1785243513,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Sanaa",
       "title": "Yemen's Houthis deny plans to impose fees on ships sailing through Red Sea",
       "blurb": "Aug 1 (Reuters) - Yemen's Houthi-run maritime coordination body denied on Saturday that it planned to impose fees on commercial ships transiting the Bab el-Mandeb strait, saying no such decision had been taken and that passage through the strategic waterway remained free. The ...",
-      "time": "2026-07-27 21:15 UTC",
-      "timestamp": 1785186909,
+      "time": "2026-07-27 22:58 UTC",
+      "timestamp": 1785193113,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Eastern Med",
       "title": "Russia pounds Kyiv, kills 10 as Ukraine appeals for Patriot interceptors",
       "blurb": "By Olena Harmash and Yurii KovalenkoKYIV, Aug 1 (Reuters) - Russia pounded Kyiv and the region in a heavy ballistic missile attack early on Saturday, killing 10 people, as President Volodymyr Zelenskiy warned that Ukraine had run out of interceptor missiles for its U.S. Patrio...",
-      "time": "2026-07-27 07:15 UTC",
-      "timestamp": 1785136509,
+      "time": "2026-07-27 08:58 UTC",
+      "timestamp": 1785142713,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Gaza City",
       "title": "Trump's Iran conundrum",
       "blurb": "US President Donald Trump has secured a welcome Middle East diplomatic breakthrough with an agreement for Hamas militants to disarm, but remains mired in the conflict with Iran, searching for an exit strategy that continues to elude him. After five months of war, Trump's room ...",
-      "time": "2026-07-26 17:15 UTC",
-      "timestamp": 1785086109,
+      "time": "2026-07-26 18:58 UTC",
+      "timestamp": 1785092313,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Beirut",
       "title": "Oil spill from shadow fleet tanker spreading off Oman, satellite images show",
       "blurb": "By Catherine Cartier and Jonathan SaulBEIRUT/LONDON, July 31 (Reuters) - A sanctions-hit tanker is leaking oil off the coast of Oman and the spill has spread in recent days, increasing concern about possible environmental damage to coastal areas, according to an analysis of sa...",
-      "time": "2026-07-26 03:15 UTC",
-      "timestamp": 1785035709,
+      "time": "2026-07-26 04:58 UTC",
+      "timestamp": 1785041913,
       "source": "Al-Monitor"
     },
     {
@@ -140,8 +140,8 @@
       "location": "Eastern Med",
       "title": "Trump says US has not agreed to Ukraine building Patriot missiles",
       "blurb": "By Steve Holland and Simon LewisCAMP DAVID, Maryland, July 31 (Reuters) - President Donald Trump said on Friday that the United States has not agreed to Ukraine building Patriot missiles but that talks are ongoing, adding that the U.S. must be \"very careful about letting someb...",
-      "time": "2026-07-25 13:15 UTC",
-      "timestamp": 1784985309,
+      "time": "2026-07-25 14:58 UTC",
+      "timestamp": 1784991513,
       "source": "Al-Monitor"
     },
     {
@@ -151,8 +151,8 @@
       "location": "Gaza City",
       "title": "How Hamas disarmament deal may test Iran's regional strategy",
       "blurb": "A possible Hamas decision to disarm would represent more than a Gaza development, testing Iran's decades-old strategy of projecting power through regional allies.",
-      "time": "2026-07-24 23:15 UTC",
-      "timestamp": 1784934909,
+      "time": "2026-07-25 00:58 UTC",
+      "timestamp": 1784941113,
       "source": "Al-Monitor"
     },
     {
@@ -162,8 +162,8 @@
       "location": "Gaza City",
       "title": "Hamas agrees to disarm under Trump plan",
       "blurb": "Hamas said Friday it had agreed to a deal that includes handing over its weapons to a Palestinian governing committee and the gradual withdrawal of Israeli forces from the Gaza Strip. The deal is aimed at implementing the long-stalled second phase of the Gaza ceasefire plan br...",
-      "time": "2026-07-22 15:15 UTC",
-      "timestamp": 1784733309,
+      "time": "2026-07-22 16:58 UTC",
+      "timestamp": 1784739513,
       "source": "Al-Monitor"
     },
     {
@@ -173,229 +173,9 @@
       "location": "Baghdad",
       "title": "Iran-linked militias seek to draw Iraq into regional war",
       "blurb": "\u201cIran\u2019s logic is the logic of war,\u201d a Gulf regional official tells Al-Monitor.",
-      "time": "2026-07-22 01:15 UTC",
-      "timestamp": 1784682909,
+      "time": "2026-07-22 02:58 UTC",
+      "timestamp": 1784689113,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_16",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Spanish minister clashes with Israeli diplomat over migrants entering Ceuta",
-      "blurb": "Spanish minister clashes with Israeli diplomat over migrants entering Ceuta Submitted by Imran Mulla on Sat, 08/01/2026 - 12:40 Some 60,000 people crossed into Ceuta from Morocco this week, including around 8,000 children A Spanish soldier escorts a group of migrants on their ...",
-      "time": "2026-08-01 13:15 UTC",
-      "timestamp": 1785590109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_17",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli forces kill one and destroy two hospital warehouses in Gaza strike",
-      "blurb": "Israeli forces kill one and destroy two hospital warehouses in Gaza strike Gaza's health ministry has condemned the destruction of two medicine warehouses belonging to Al-Aqsa Martyrs Hospital by Israeli forces in Deir al-Balah on Saturday morning. \"The destructive force of th...",
-      "time": "2026-07-31 23:15 UTC",
-      "timestamp": 1785539709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_18",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Gaza City",
-      "title": "'We cried instead of celebrating': War and loss shadow Gaza's top students",
-      "blurb": "'We cried instead of celebrating': War and loss shadow Gaza's top students Submitted by Ahmed Dremly on Sat, 08/01/2026 - 05:44 Some topped Palestine. Others were killed before their results were announced Palestinian high school student Saba Rabah stands reflected through a b...",
-      "time": "2026-07-31 09:15 UTC",
-      "timestamp": 1785489309,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_19",
-      "type": "drone",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli drone attack kills two Palestinians in Gaza",
-      "blurb": "Israeli drone attack kills two Palestinians in Gaza An Israeli drone attack has killed two Palestinians in Gaza's Sheikh Radwan area, according to the Wafa news agency, which cited al-Shifa Hospital. Seven Palestinians have been killed by Israeli attacks across Gaza over the p...",
-      "time": "2026-07-30 19:15 UTC",
-      "timestamp": 1785438909,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "airstrike",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "After Israel killed her three sons, she found hope in a newborn. Then he was killed too",
-      "blurb": "After Israel killed her three sons, she found hope in a newborn. Then he was killed too Submitted by Nada Nabil on Sat, 08/01/2026 - 06:45 Fatima Nofal gave birth to Zaid after losing three sons in an Israeli air strike in 2023. Fifteen months later, another Israeli strike kil...",
-      "time": "2026-07-30 05:15 UTC",
-      "timestamp": 1785388509,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Baghdad",
-      "title": "Why are Kurdish groups in Iraq being attacked amid the US-Iran flare-up?",
-      "blurb": "Why are Kurdish groups in Iraq being attacked amid the US-Iran flare-up? Submitted by Alex MacDonald on Thu, 07/30/2026 - 13:16 Dozens of Iranian Kurds have been killed following Israeli reports of a planned operation to overthrow the government Female Kurdish Peshmerga fighte...",
-      "time": "2026-07-29 15:15 UTC",
-      "timestamp": 1785338109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "naval",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Houthis deny planning to charge ships passing through Red Sea",
-      "blurb": "Houthis deny planning to charge ships passing through Red Sea The Houthis have denied reports that they plan to impose fees on commercial ships passing through the Bab al-Mandeb strait. A Reuters report earlier this week had said the Houthis were considering imposing fees on c...",
-      "time": "2026-07-29 01:15 UTC",
-      "timestamp": 1785287709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "ground",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli forces arrest seven, including two teens, in West Bank",
-      "blurb": "Israeli forces arrest seven, including two teens, in West Bank Israeli forces have arrested at least seven Palestinians, including two teenagers, in raids in the occupied West Bank. Soldiers arrested a 16-year-old in the town of Tammun, southeast of Tubas city, according to th...",
-      "time": "2026-07-28 11:15 UTC",
-      "timestamp": 1785237309,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "drone",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Kuwaiti army says air defence systems intercepting 'hostile drones'",
-      "blurb": "Kuwaiti army says air defence systems intercepting 'hostile drones' Kuwait's army says the country's air defence systems are intercepting \"hostile drone attacks following the Iranian aggression\". In a statement on X, the army said that any explosions heard are the result of ai...",
-      "time": "2026-07-27 21:15 UTC",
-      "timestamp": 1785186909,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "naval",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "UKMTO says explosion near tanker off Oman reported",
-      "blurb": "UKMTO says explosion near tanker off Oman reported The United Kingdom Maritime Trade Operations (UKMTO) said it received a report of an incident 21 nautical miles northeast of Oman's Khasab, where the master of a tanker saw a large splash and an explosion in close proximity to...",
-      "time": "2026-07-27 07:15 UTC",
-      "timestamp": 1785136509,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "ground",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli forces raid dozens of Palestinian homes in Nablus",
-      "blurb": "Israeli forces raid dozens of Palestinian homes in Nablus Israeli forces raided dozens of Palestinian homes in the town of 'Asira ash Shamaliya, north of Nablus, early Saturday morning, Wafa reported. The forces rounded up scores of residents inside one of the houses, which th...",
-      "time": "2026-07-26 17:15 UTC",
-      "timestamp": 1785086109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_27",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Morning recap",
-      "blurb": "Morning recap Good morning Middle East Eye readers, US president Donald Trump has threatened to hit Iran \"very hard,\" amid US media reports that suggested he was considering heavy attacks targeting Iranian energy infrastructure. Iran, however, said it has prepared a comprehens...",
-      "time": "2026-07-26 03:15 UTC",
-      "timestamp": 1785035709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_28",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli settlers desecrate Palestinian cemetery in West Bank",
-      "blurb": "Israeli settlers desecrate Palestinian cemetery in West Bank Israeli settlers have desecrated graves in a Palestinian cemetery during a march near the village of Tal in the occupied West Bank. Al Jazeera reported that residents said Israeli forces accompanied the march and fir...",
-      "time": "2026-07-25 13:15 UTC",
-      "timestamp": 1784985309,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_29",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Massive Attack members barred from Singapore after displaying Palestinian flag",
-      "blurb": "Massive Attack members barred from Singapore after displaying Palestinian flag Two members of British band Massive Attack were barred from re-entering Singapore after displaying the Palestinian flag during Wednesday's concert, Reuters reported. Singapore police said Friday the...",
-      "time": "2026-07-24 23:15 UTC",
-      "timestamp": 1784934909,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_30",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "'Driver of global instability': UN chief says Middle East fighting must stop",
-      "blurb": "'Driver of global instability': UN chief says Middle East fighting must stop UN secretary-general Antonio Guterres has said that fighting must stop on all fronts in the Middle East as it is increasingly becoming a driver of global instability, according to Reuters. The UN chie...",
-      "time": "2026-07-24 09:15 UTC",
-      "timestamp": 1784884509,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_31",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "HRF says Dutch took no action against Israeli soldier despite criminal complaint",
-      "blurb": "HRF says Dutch took no action against Israeli soldier despite criminal complaint The Hind Rajab Foundation (HRF) has said that Dutch authorities took no action against an Israeli reservist despite an urgent criminal complaint accusing him of war crimes during his visit to the ...",
-      "time": "2026-07-23 19:15 UTC",
-      "timestamp": 1784834109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_32",
-      "type": "naval",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Projectile damages engine room of tanker off Oman, UKMTO says",
-      "blurb": "Projectile damages engine room of tanker off Oman, UKMTO says A tanker has been struck by an unknown projectile 11 nautical miles northeast of Lima, Oman, according to the UK Maritime Trade Operations (UKMTO). UKMTO said the vessel's company security officer reported that the ...",
-      "time": "2026-07-23 05:15 UTC",
-      "timestamp": 1784783709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_33",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran will further tighten Hormuz if US naval blockade continues, top official says",
-      "blurb": "Iran will further tighten Hormuz if US naval blockade continues, top official says A top official of Iran's Supreme National Security Council (SNSC) has warned that if the US continues with its naval blockade on Tehran's ports, it will further seal the Strait of Hormuz and blo...",
-      "time": "2026-07-22 15:15 UTC",
-      "timestamp": 1784733309,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_34",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Trump says Rubio\u2019s anti-ICC campaign intended to shield Netanyahu",
-      "blurb": "Trump says Rubio\u2019s anti-ICC campaign intended to shield Netanyahu US President Donald Trump has said that secretary of state Marco Rubio's campaign against the International Criminal Court (ICC) was intended to defend Israeli Prime Minister Benjamin Netanyahu. \"He's trying to ...",
-      "time": "2026-07-22 01:15 UTC",
-      "timestamp": 1784682909,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_35",
-      "type": "drone",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Two Palestinians killed in Israeli strikes on central Gaza",
-      "blurb": "Two Palestinians killed in Israeli strikes on central Gaza At least two Palestinians were killed in separate Israeli drone strikes in central Gaza, while 13 Palestinians were detained during raids in the occupied West Bank, Palestinian media reports said. Quds News Network sai...",
-      "time": "2026-07-21 11:15 UTC",
-      "timestamp": 1784632509,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
