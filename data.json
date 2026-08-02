@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-02T10:39:12.042045+00:00",
+  "lastUpdated": "2026-08-02T12:01:28.340054+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Tehran",
       "title": "Trump says US, Israel to hold off on Iran strikes",
       "blurb": "President Donald Trump said Saturday that the United States and Israel had agreed to hold off on new strikes on Iran -- provided that a deal to end the months-long conflict is reached rapidly. Fears had been mounting that the fighting could escalate once again after Trump thre...",
-      "time": "2026-08-02 10:39 UTC",
-      "timestamp": 1785667151,
+      "time": "2026-08-02 12:01 UTC",
+      "timestamp": 1785672088,
       "source": "Al-Monitor"
     },
     {
@@ -19,19 +19,19 @@
       "location": "Eastern Med",
       "title": "OPEC+ tipped to raise production again but new quotas loom",
       "blurb": "Saudi Arabia, Russia and five other members of OPEC+ are expected to raise their oil production quotas for September when they meet online Sunday as the Middle East war continues to disrupt global energy supplies. The enlarged Organisation of the Petroleum Exporting Countries ...",
-      "time": "2026-08-01 20:39 UTC",
-      "timestamp": 1785616751,
+      "time": "2026-08-01 22:01 UTC",
+      "timestamp": 1785621688,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_2",
       "type": "airstrike",
       "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli strikes kill at least four in Gaza despite Trump announcing breakthrough",
-      "blurb": "CAIRO, Aug 2 (Reuters) - Israeli airstrikes continued in Gaza for a second straight day on Sunday, killing at least four Palestinians, despite U.S. President Donald Trump's announcement of a breakthrough in efforts to implement last year's Gaza ceasefire agreement.Palestinian ...",
-      "time": "2026-08-01 06:39 UTC",
-      "timestamp": 1785566351,
+      "location": "Jerusalem",
+      "title": "Israeli strikes kill nine in Gaza, Israeli minister says no deal to halt attacks",
+      "blurb": "By Nidal al-Mughrabi and Steven ScheerCAIRO/JERUSALEM, Aug 2 (Reuters) - Israeli airstrikes continued in Gaza for a second straight day on Sunday, killing at least nine Palestinians, despite U.S. President Donald Trump's announcement of a breakthrough in efforts to implement l...",
+      "time": "2026-08-01 08:01 UTC",
+      "timestamp": 1785571288,
       "source": "Al-Monitor"
     },
     {
@@ -40,9 +40,9 @@
       "actor": "iran",
       "location": "Strait of Hormuz",
       "title": "Trump says he will hold off on fresh Iran attack in hope of quick deal",
-      "blurb": "By Yasmine Ghania and Menna AlaaElDinCAIRO, August 2 (Reuters) - President Donald Trump said late on Saturday the U.S. would hold off on a fresh attack on Iran as long as a deal could be reached quickly to halt Iran's nuclear ambitions and reopen the Strait of Hormuz.",
-      "time": "2026-07-31 16:39 UTC",
-      "timestamp": 1785515951,
+      "blurb": "By Yasmine Ghania and Menna AlaaElDinCAIRO, Aug 2 (Reuters) - President Donald Trump has said the U.S. will hold off on a fresh attack on Iran as long as a deal can be reached quickly to halt Iran's nuclear ambitions and reopen the Strait of Hormuz. Trump said late on Saturday...",
+      "time": "2026-07-31 18:01 UTC",
+      "timestamp": 1785520888,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Gaza City",
       "title": "Gaza officials say Israeli strikes kill seven day after deal",
       "blurb": "Gaza authorities said that seven people were killed in Israeli strikes Saturday that also damaged a hospital's medical supplies, a day after Hamas said it agreed to the latest stage of a deal to end the war. The Israeli military for its part said it had struck Hamas weapons de...",
-      "time": "2026-07-31 02:39 UTC",
-      "timestamp": 1785465551,
+      "time": "2026-07-31 04:01 UTC",
+      "timestamp": 1785470488,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Eastern Med",
       "title": "Moroccans ejected from Spain's Ceuta lament 'broken dreams'",
       "blurb": "As thousands of Moroccans who forced their way into the Spanish enclave of Ceuta this week were returning home, many did so with their dreams broken and newly convinced that reaching Spain was not worth the risks. Mohamed Nias, a 23-year-old fruit seller from Tangier, was retu...",
-      "time": "2026-07-30 12:39 UTC",
-      "timestamp": 1785415151,
+      "time": "2026-07-30 14:01 UTC",
+      "timestamp": 1785420088,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Baghdad",
       "title": "US embassies urge citizens to consider departing Middle East",
       "blurb": "US embassies in capitals across the Middle East on Saturday warned their citizens to beware of \"unforeseen escalation\" in the regional conflict and urged them to be ready to leave. The warning, posted online by US embassies in Bahrain, Egypt, Iraq, Israel, Jordan, Kuwait, Leba...",
-      "time": "2026-07-29 22:39 UTC",
-      "timestamp": 1785364751,
+      "time": "2026-07-30 00:01 UTC",
+      "timestamp": 1785369688,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Gaza City",
       "title": "Gaza's civil defence, medical sources say Israeli strikes kill two",
       "blurb": "Gaza's civil defence agency and medical sources said Israeli strikes in the Palestinian territory on Saturday killed two people and significantly damaged a hospital's medical supply warehouses. The Israeli military said, meanwhile, that it had struck five Hamas weapons depots ...",
-      "time": "2026-07-29 08:39 UTC",
-      "timestamp": 1785314351,
+      "time": "2026-07-29 10:01 UTC",
+      "timestamp": 1785319288,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Eastern Med",
       "title": "Noted climber Nirmal Purja among 10 dead in avalanche in Pakistan",
       "blurb": "By Gopal SharmaKATHMANDU, Aug 1 (Reuters) - Celebrated Nepali climber Nirmal Purja, who set a record for the fastest ascent of the world's 14 highest mountains, died in an avalanche during an expedition in Pakistan, his company said on Saturday.\u201cToday it is with profound sadne...",
-      "time": "2026-07-28 18:39 UTC",
-      "timestamp": 1785263951,
+      "time": "2026-07-28 20:01 UTC",
+      "timestamp": 1785268888,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Tel Aviv",
       "title": "Israeli strikes kill two in Gaza, destroy medicine storage warehouses",
       "blurb": "By Mahmoud Issa and Alexander CornwellDeir al-Balah, GAZA/TEL AVIV, Aug 1 (Reuters) - Israel's military on Saturday killed two Palestinians in Gaza and destroyed two warehouses near a hospital that were said to be storing medicine in separate strikes, amid uncertainty over whe...",
-      "time": "2026-07-28 04:39 UTC",
-      "timestamp": 1785213551,
+      "time": "2026-07-28 06:01 UTC",
+      "timestamp": 1785218488,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Eastern Med",
       "title": "Soccer-Infantino's FIFA future in jeopardy after private equity gamble backfires",
       "blurb": "By Ian Ransom and Kokkai NgAug 1 (Reuters) - FIFA president Gianni Infantino, hitherto untouchable at the helm of soccer's global governing body, suffered a crushing blow on Friday when his bold reach for private equity riches was brought to an end in the face of a ferocious b...",
-      "time": "2026-07-27 14:39 UTC",
-      "timestamp": 1785163151,
+      "time": "2026-07-27 16:01 UTC",
+      "timestamp": 1785168088,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Baghdad",
       "title": "Iranian pilgrims flood Iraq for first Arbaeen since war",
       "blurb": "Under a blazing sun, clad in black and clutching portraits of their slain leader Ali Khamenei, Iranian pilgrims streamed across the border into Iraq to observe the Arbaeen, the most revered event in Shia Islam. Some stamped on a portrait of US President Donald Trump, others ra...",
-      "time": "2026-07-27 00:39 UTC",
-      "timestamp": 1785112751,
+      "time": "2026-07-27 02:01 UTC",
+      "timestamp": 1785117688,
       "source": "Al-Monitor"
     },
     {
@@ -140,8 +140,8 @@
       "location": "Eastern Med",
       "title": "Egypt captains recount scramble to stop disaster after drone strike",
       "blurb": "Marine officers who battled fires aboard two gas vessels struck in a drone attack on Egypt's port of Damietta feared the ships were \"a bomb waiting to explode\" that could have destroyed the entire port and ripped through the city beyond. The US-owned Energos Winter floating st...",
-      "time": "2026-07-26 10:39 UTC",
-      "timestamp": 1785062351,
+      "time": "2026-07-26 12:01 UTC",
+      "timestamp": 1785067288,
       "source": "Al-Monitor"
     },
     {
@@ -151,8 +151,8 @@
       "location": "Eastern Med",
       "title": "Spain's N. Africa enclave returns to normal as migrants depart",
       "blurb": "Almost all of the tens of thousands of migrants who entered Spain's enclave of Ceuta in North Africa had left by Saturday, officials sa",
-      "time": "2026-07-25 20:39 UTC",
-      "timestamp": 1785011951,
+      "time": "2026-07-25 22:01 UTC",
+      "timestamp": 1785016888,
       "source": "Al-Monitor"
     },
     {
@@ -162,8 +162,8 @@
       "location": "Eastern Med",
       "title": "Soccer-Infantino faces crisis as UEFA, CONCACAF declare lost confidence over scrapped World Cup deal",
       "blurb": "Aug 1 (Reuters) - FIFA President Gianni Infantino is under unprecedented fire after regional confederations UEFA and CONCACAF said on Saturday they had lost confidence in his leadership following his abandoned plan to sell a stake in World Cup commercial rights.The dramatic fa...",
-      "time": "2026-07-25 06:39 UTC",
-      "timestamp": 1784961551,
+      "time": "2026-07-25 08:01 UTC",
+      "timestamp": 1784966488,
       "source": "Al-Monitor"
     },
     {
@@ -173,8 +173,8 @@
       "location": "Eastern Med",
       "title": "FIFA scraps private investment plan after backlash",
       "blurb": "FIFA president Gianni Infantino said on Saturday he has scrapped a plan to allow private investment in the World Cup following fierce backlash from football officials worldwide. \"Our purpose has always been -- and will always be -- to unite and improve,\" Infantino said in a st...",
-      "time": "2026-07-24 16:39 UTC",
-      "timestamp": 1784911151,
+      "time": "2026-07-24 18:01 UTC",
+      "timestamp": 1784916088,
       "source": "Al-Monitor"
     },
     {
@@ -184,8 +184,8 @@
       "location": "Sanaa",
       "title": "Yemen's Houthis deny plans to impose fees on ships sailing through Red Sea",
       "blurb": "Aug 1 (Reuters) - Yemen's Houthi-run maritime coordination body denied on Saturday that it planned to impose fees on commercial ships transiting the Bab el-Mandeb strait, saying no such decision had been taken and that passage through the strategic waterway remained free. The ...",
-      "time": "2026-07-24 02:39 UTC",
-      "timestamp": 1784860751,
+      "time": "2026-07-24 04:01 UTC",
+      "timestamp": 1784865688,
       "source": "Al-Monitor"
     },
     {
@@ -195,8 +195,8 @@
       "location": "Eastern Med",
       "title": "Russia pounds Kyiv, kills 10 as Ukraine appeals for Patriot interceptors",
       "blurb": "By Olena Harmash and Yurii KovalenkoKYIV, Aug 1 (Reuters) - Russia pounded Kyiv and the region in a heavy ballistic missile attack early on Saturday, killing 10 people, as President Volodymyr Zelenskiy warned that Ukraine had run out of interceptor missiles for its U.S. Patrio...",
-      "time": "2026-07-23 12:39 UTC",
-      "timestamp": 1784810351,
+      "time": "2026-07-23 14:01 UTC",
+      "timestamp": 1784815288,
       "source": "Al-Monitor"
     },
     {
@@ -206,8 +206,8 @@
       "location": "Gaza City",
       "title": "Trump's Iran conundrum",
       "blurb": "US President Donald Trump has secured a welcome Middle East diplomatic breakthrough with an agreement for Hamas militants to disarm, but remains mired in the conflict with Iran, searching for an exit strategy that continues to elude him. After five months of war, Trump's room ...",
-      "time": "2026-07-22 22:39 UTC",
-      "timestamp": 1784759951,
+      "time": "2026-07-23 00:01 UTC",
+      "timestamp": 1784764888,
       "source": "Al-Monitor"
     },
     {
@@ -217,9 +217,229 @@
       "location": "Beirut",
       "title": "Oil spill from shadow fleet tanker spreading off Oman, satellite images show",
       "blurb": "By Catherine Cartier and Jonathan SaulBEIRUT/LONDON, July 31 (Reuters) - A sanctions-hit tanker is leaking oil off the coast of Oman and the spill has spread in recent days, increasing concern about possible environmental damage to coastal areas, according to an analysis of sa...",
-      "time": "2026-07-22 08:39 UTC",
-      "timestamp": 1784709551,
+      "time": "2026-07-22 10:01 UTC",
+      "timestamp": 1784714488,
       "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_20",
+      "type": "ground",
+      "actor": "israel",
+      "location": "Beirut",
+      "title": "Israeli strike on Bint Jbeil injures five Lebanese soldiers",
+      "blurb": "Israeli strike on Bint Jbeil injures five Lebanese soldiers An Israeli attack in southern Lebanon has injured five Lebanese soldiers, according to Lebanon's National News Agency (NNA). The Israeli strike targeted a civilian vehicle escorted by an army vehicle, the NNA reported...",
+      "time": "2026-08-02 12:01 UTC",
+      "timestamp": 1785672088,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_21",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Gaza City",
+      "title": "Trump 'cancels' Iran strikes as Israeli attacks on Gaza continue",
+      "blurb": "Trump 'cancels' Iran strikes as Israeli attacks on Gaza continue Submitted by Imran Mulla on Sun, 08/02/2026 - 11:02 Iran said it would act 'decisively' in the event of any further US 'aggression' US President Donald Trump gestures while stepping off Air Force One upon arrival...",
+      "time": "2026-08-01 22:01 UTC",
+      "timestamp": 1785621688,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_22",
+      "type": "diplomatic",
+      "actor": "usa",
+      "location": "Eastern Med",
+      "title": "MBS and Trump talk over the phone",
+      "blurb": "MBS and Trump talk over the phone Saudi Arabia's crown prince, Mohammed bin Salman, has spoken to US President Donald Trump over the phone on developments in the region. According to Saudi state media, the crown prince stressed \"the necessity of prioritising dialogue to de-esc...",
+      "time": "2026-08-01 08:01 UTC",
+      "timestamp": 1785571288,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_23",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Three children among nine killed since dawn in Gaza",
+      "blurb": "Three children among nine killed since dawn in Gaza Three children are among nine Palestinians killed in Israeli strikes on Gaza since dawn, according to Al Jazeera Arabic. The attacks were in Gaza City, Deir el-Balah and Khan Younis.",
+      "time": "2026-07-31 18:01 UTC",
+      "timestamp": 1785520888,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_24",
+      "type": "airstrike",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Israeli forces claim Hamas commanders killed in Gaza",
+      "blurb": "Israeli forces claim Hamas commanders killed in Gaza The Israeli military said it has killed two Hamas commanders during air strikes on Friday and Saturday in Gaza. The military said Salem Jamal Abd al-Rahman Abu Labad, a cell commander in Hamas\u2019s Nukhba special forces, who wa...",
+      "time": "2026-07-31 04:01 UTC",
+      "timestamp": 1785470488,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_25",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Hamas, PIJ stress full Israeli withdrawal from Gaza",
+      "blurb": "Hamas, PIJ stress full Israeli withdrawal from Gaza A Hamas delegation met officials from Palestinian Islamic Jihad (PIJ) in Cairo, with the two groups stressing the need to force Israel to end its military offensive and fully withdraw from Gaza. Zaher Jabarin, Hamas's leader ...",
+      "time": "2026-07-30 14:01 UTC",
+      "timestamp": 1785420088,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_26",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "Morning recap",
+      "blurb": "Morning recap Good morning Middle East Eye readers, US president Donald Trump said he would hold off on a fresh attack on Iran as long as a deal could be reached quickly to halt Iran's nuclear ambitions and reopen the Strait of Hormuz completely. His statement came after Iran'...",
+      "time": "2026-07-30 00:01 UTC",
+      "timestamp": 1785369688,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_27",
+      "type": "cyber",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Israeli settlers cut electricity poles in Nablus, report says",
+      "blurb": "Israeli settlers cut electricity poles in Nablus, report says Israeli settlers cut and damaged electricity poles during a predawn attack on the village of Madama, south of Nablus, causing a power outage in parts of the community, Wafa reported. During the past two weeks, sever...",
+      "time": "2026-07-29 10:01 UTC",
+      "timestamp": 1785319288,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_28",
+      "type": "ground",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Israeli forces detain three Palestinians during raid in Bethlehem",
+      "blurb": "Israeli forces detain three Palestinians during raid in Bethlehem Israeli forces detained three young Palestinian men during a raid on the Dheisheh refugee camp, south of Bethlehem, according to the Palestinian news agency Wafa. Citing Palestinian security sources, Wafa report...",
+      "time": "2026-07-28 20:01 UTC",
+      "timestamp": 1785268888,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_29",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Report: Saudi crown prince urged Trump to refrain from strikes",
+      "blurb": "Report: Saudi crown prince urged Trump to refrain from strikes Saudi Arabia expressed concern over US President Donald Trump's plans for massive strikes against Iran and sought clarity on the proposed course of action, US outlet Axios reported. Citing US officials, Axios said ...",
+      "time": "2026-07-28 06:01 UTC",
+      "timestamp": 1785218488,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_30",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Former Israeli prime minister vows to declare Qatar \u2018enemy\u2019 if elected",
+      "blurb": "Former Israeli prime minister vows to declare Qatar \u2018enemy\u2019 if elected Former prime minister Naftali Bennett has vowed to declare Qatar as an \u201cenemy\u201d if elected into government later this year, saying \u201cit is unforgivable\u201d that this is not already the case. In an interview with...",
+      "time": "2026-07-27 16:01 UTC",
+      "timestamp": 1785168088,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_31",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Two children among eight Palestinians killed in Israeli strikes on Gaza",
+      "blurb": "Two children among eight Palestinians killed in Israeli strikes on Gaza Overnight Israeli strikes on Gaza killed at least eight people, including two children, despite Hamas saying it agreed to the latest stage of a deal to end the war. Gaza civil defence officials said in one...",
+      "time": "2026-07-27 02:01 UTC",
+      "timestamp": 1785117688,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_32",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "10 more US refuelling planes to join 30 already stationed in Israel",
+      "blurb": "10 more US refuelling planes to join 30 already stationed in Israel The US military is expected to deploy about 10 additional aerial refuelling aircraft to Israel in the coming days, Israeli media has reported. The aircraft will join more than 30 refuelling planes already stat...",
+      "time": "2026-07-26 12:01 UTC",
+      "timestamp": 1785067288,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_33",
+      "type": "drone",
+      "actor": "host",
+      "location": "Baghdad",
+      "title": "Fire breaks out in Iraq\u2019s Kurdish region after drone attack",
+      "blurb": "Fire breaks out in Iraq\u2019s Kurdish region after drone attack A fire has broken out in the Iraqi city of Sulaimaniyah in the northern Kurdish region following a drone attack, Iraq\u2019s Shafaq News reported. Although the drone, targeting the Peshmerga\u2019s 70th Brigade headquarters, wa...",
+      "time": "2026-07-25 22:01 UTC",
+      "timestamp": 1785016888,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_34",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "Trump says cancelled attack on Iran subject to Hormuz opening, end to 'nuclear threat'",
+      "blurb": "Trump says cancelled attack on Iran subject to Hormuz opening, end to 'nuclear threat' US president Donald Trump said he would hold off on a fresh attack on Iran as long as a deal could be reached quickly to halt Iran's nuclear ambitions and reopen the Strait of Hormuz. Iran a...",
+      "time": "2026-07-25 08:01 UTC",
+      "timestamp": 1784966488,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_35",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Gaza City",
+      "title": "Pezeshkian recalls Haniyeh assassination, hails Iranians as 'real heroes'",
+      "blurb": "Pezeshkian recalls Haniyeh assassination, hails Iranians as 'real heroes' Iranian President Masoud Pezeshkian marked two years in office by recalling the killing of Hamas political chief Ismail Haniyeh and praising the Iranian people's resilience through \u201crelentless hostility\u201d...",
+      "time": "2026-07-24 18:01 UTC",
+      "timestamp": 1784916088,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_36",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran vows all means to defend country, continue strikes",
+      "blurb": "Iran vows all means to defend country, continue strikes Iran\u2019s foreign ministry said the country would use all means to \u201clegitimately defend the nation\u2019s rights and security\u201d. In a statement carried by IRNA, the ministry said the defensive strikes by the \u201cbrave Iranian armed f...",
+      "time": "2026-07-24 04:01 UTC",
+      "timestamp": 1784865688,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_37",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Rubio says Iran confronting 'different kind of US president' under Trump",
+      "blurb": "Rubio says Iran confronting 'different kind of US president' under Trump US secretary of state, Marco Rubio, has said Iran was confronting a different kind of US president under Donald Trump, adding Tehran can no longer rely on negotiations without consequences. In an intervie...",
+      "time": "2026-07-23 14:01 UTC",
+      "timestamp": 1784815288,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_38",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Child among four Palestinians killed in Israeli strikes on Gaza",
+      "blurb": "Child among four Palestinians killed in Israeli strikes on Gaza Four Palestinians, including a child, were killed in two Israeli strikes on Sunday despite US president Donald Trump's announcement of a breakthrough in efforts to implement last year's Gaza ceasefire agreement. A...",
+      "time": "2026-07-23 00:01 UTC",
+      "timestamp": 1784764888,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_39",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Mexican activists call for end to water agreements with Israel",
+      "blurb": "Mexican activists call for end to water agreements with Israel Mexican activists have called on the government to end its cooperation agreements with Israel and safeguard the country's water resources. During a demonstration on Saturday, the protesters linked opposition to a w...",
+      "time": "2026-07-22 10:01 UTC",
+      "timestamp": 1784714488,
+      "source": "Middle East Eye"
     }
   ],
   "movements": []
