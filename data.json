@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03T18:49:24.528025+00:00",
+  "lastUpdated": "2026-08-03T20:25:43.097049+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Tehran",
       "title": "Trump says Iran faces 'decapitation' if it doesn't strike deal",
       "blurb": "WASHINGTON, Aug 3 (Reuters) - U.S. President Donald Trump on Monday said Iran faced \"decapitation\" if it did not agree a pact to end the conflict between the two nations, saying Tehran had one last chance to strike a deal.\"I think we're going to maybe get something, but I want...",
-      "time": "2026-08-03 18:49 UTC",
-      "timestamp": 1785782964,
+      "time": "2026-08-03 20:25 UTC",
+      "timestamp": 1785788743,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Strait of Hormuz",
       "title": "Iran-Oman Hormuz route talks near 'completion': What to know",
       "blurb": "The new framework would give Iran a greater role in managing one of the world\u2019s most strategically important maritime choke points.",
-      "time": "2026-08-03 04:49 UTC",
-      "timestamp": 1785732564,
+      "time": "2026-08-03 06:25 UTC",
+      "timestamp": 1785738343,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Tehran",
       "title": "US military options narrow as Trump calls off Iran strikes: What to know",
       "blurb": "Left with few good military options that won't risk triggering major Iranian regional retaliation, American officials aim to return to the negotiating table with arguably fewer cards.",
-      "time": "2026-07-31 20:49 UTC",
-      "timestamp": 1785530964,
+      "time": "2026-07-31 22:25 UTC",
+      "timestamp": 1785536743,
       "source": "Al-Monitor"
     },
     {
@@ -39,54 +39,54 @@
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Iran hangs 2 over alleged Mossad ties as executions mount: What to know",
-      "blurb": "Rights groups have warned that Iran may step up executions with the resumption of the war in the region.",
-      "time": "2026-07-29 12:49 UTC",
-      "timestamp": 1785329364,
+      "title": "Lacking leverage over Trump, Israel stays quiet on US-Iran talks",
+      "blurb": "Realizing it has little to no influence over President Donald Trump\u2019s decision-making, the Israeli government has remained silent on the possibility of the United States and Iran resuming negotiations.",
+      "time": "2026-07-29 14:25 UTC",
+      "timestamp": 1785335143,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_4",
       "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "After deadly day, Gazans say Trump's touting of plan jars with grim reality",
-      "blurb": "By Nidal al-Mughrabi and Dawoud Abu AlkasCAIRO/GAZA, Aug 3 (Reuters) - Palestinians in Gaza said on Monday Donald Trump's touting of a deal aimed at disarming Hamas and ending the war was out of touch with their worsening reality, after Israel killed 18 people in one of the de...",
-      "time": "2026-07-27 04:49 UTC",
-      "timestamp": 1785127764,
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran hangs 2 over alleged Mossad ties as executions mount: What to know",
+      "blurb": "Rights groups have warned that Iran may step up executions with the resumption of the war in the region.",
+      "time": "2026-07-27 06:25 UTC",
+      "timestamp": 1785133543,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_5",
       "type": "diplomatic",
-      "actor": "host",
-      "location": "Beirut",
-      "title": "Lebanon\u2019s Riad Salameh hospitalized as arrest roils Beirut: What to know",
-      "blurb": "Lebanon's former Central Bank governor, Riad Salameh, was taken from prison to a hospital over his deteriorating health.",
-      "time": "2026-07-26 14:49 UTC",
-      "timestamp": 1785077364,
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "After deadly day, Gazans say Trump's touting of plan jars with grim reality",
+      "blurb": "By Nidal al-Mughrabi and Dawoud Abu AlkasCAIRO/GAZA, Aug 3 (Reuters) - Palestinians in Gaza said on Monday Donald Trump's touting of a deal aimed at disarming Hamas and ending the war was out of touch with their worsening reality, after Israel killed 18 people in one of the de...",
+      "time": "2026-07-24 22:25 UTC",
+      "timestamp": 1784931943,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_6",
       "type": "diplomatic",
       "actor": "host",
-      "location": "Damascus",
-      "title": "Iraqi Kurdish president\u2019s meeting with Syria\u2019s Sharaa signals shift in SDF dynamics",
-      "blurb": "KRG President Nechirvan Barzani\u2019s meeting with Syrian President Ahmed al-Sharaa underscored the Kurdistan Region\u2019s growing role in Syria\u2019s Kurdish politics.",
-      "time": "2026-07-26 00:49 UTC",
-      "timestamp": 1785026964,
+      "location": "Beirut",
+      "title": "Lebanon\u2019s Riad Salameh hospitalized as arrest roils Beirut: What to know",
+      "blurb": "Lebanon's former Central Bank governor, Riad Salameh, was taken from prison to a hospital over his deteriorating health.",
+      "time": "2026-07-24 08:25 UTC",
+      "timestamp": 1784881543,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_7",
       "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Oil falls 5% after Trump calls off Iran strikes, says Hormuz deal agreed",
-      "blurb": "Oil prices fell after President Donald Trump said on Sunday that he had suspended planned strikes on Iran following a request from Tehran and other Middle Eastern countries.",
-      "time": "2026-07-23 16:49 UTC",
-      "timestamp": 1784825364,
+      "actor": "host",
+      "location": "Damascus",
+      "title": "Iraqi Kurdish president\u2019s meeting with Syria\u2019s Sharaa signals shift in SDF dynamics",
+      "blurb": "KRG President Nechirvan Barzani\u2019s meeting with Syrian President Ahmed al-Sharaa underscored the Kurdistan Region\u2019s growing role in Syria\u2019s Kurdish politics.",
+      "time": "2026-07-23 18:25 UTC",
+      "timestamp": 1784831143,
       "source": "Al-Monitor"
     }
   ],
