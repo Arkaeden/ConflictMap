@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-10T14:55:42.811292+00:00",
+  "lastUpdated": "2026-08-10T15:58:59.609421+00:00",
   "incidents": [
     {
       "id": "inc_0",
       "type": "naval",
       "actor": "host",
       "location": "Eastern Med",
-      "title": "Oil spill off Oman from tanker under sanctions against Russia spreads over huge area",
-      "blurb": "CAIRO, Aug 10 (Reuters) - An oil slick is covering an areaof around 390 square kilometres (150 square miles) off the coast of Oman, the country's government said on Monday, after a vessel under sanctions and carrying Russian crude sustained damage.The Caroline Bezengi's crew f...",
-      "time": "2026-08-10 14:55 UTC",
-      "timestamp": 1786373742,
+      "title": "Oman says grounded tanker oil spill covers 400 square km",
+      "blurb": "CAIRO, Aug 10 (Reuters) - Leaking crude oil from a tanker grounded off a nature reserve in Oman has created a slick covering almost 400 square kilometres, the country's government said on Monday.The Caroline Bezengi is loaded with close to one million barrels of Russian oil bo...",
+      "time": "2026-08-10 15:58 UTC",
+      "timestamp": 1786377539,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Beirut",
       "title": "Lebanon indicts ex-central bank governor Salameh over new alleged financial crimes",
       "blurb": "BEIRUT, Aug 10 (Reuters) - A Lebanese judge on Monday indicted former central bank governor Riad Salameh and a former commercial banker, accusing them of financial crimes including embezzlement and illicit enrichment, a senior Lebanese judicial source told Reuters.Salameh, who...",
-      "time": "2026-08-10 00:55 UTC",
-      "timestamp": 1786323342,
+      "time": "2026-08-10 01:58 UTC",
+      "timestamp": 1786327139,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Gaza City",
       "title": "German foreign ministry says Gaza plan could lead towards disarmament of Hamas",
       "blurb": "FRANKFURT, Aug 10 (Reuters) - The German government regards U.S. President Donald Trump's latest Gaza plan as an opportunity to make progress towards the disarmament of Hamas, a German foreign ministry spokesperson said on Monday.Asked in a regular news conference about Israel...",
-      "time": "2026-08-09 10:55 UTC",
-      "timestamp": 1786272942,
+      "time": "2026-08-09 11:58 UTC",
+      "timestamp": 1786276739,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Jerusalem",
       "title": "Explainer-Trump's Gaza plan hinges on Hamas disarmament, Israeli withdrawals",
       "blurb": "JERUSALEM, Aug 10 (Reuters) - Donald Trump's latest plan to end the Gaza war calls on Hamas to lay down its arms as Israel withdraws from the territory, terms endorsed by the militants but rejected by Israel, which says it will not pull back until the group's disarmament is co...",
-      "time": "2026-08-08 20:55 UTC",
-      "timestamp": 1786222542,
+      "time": "2026-08-08 21:58 UTC",
+      "timestamp": 1786226339,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Tehran",
       "title": "Factbox-Who is Iran's Mohsen Rezaei, the hardliner appointed to key security role?",
       "blurb": "Aug 10 (Reuters) - Iran has appointed Mohsen Rezaei as secretary of its Supreme National Security Council, promoting a prominent hardliner and close ally of Supreme Leader Ayatollah MojtabaKhamenei to the role more than five months into the conflict with the United States.Reza...",
-      "time": "2026-08-08 06:55 UTC",
-      "timestamp": 1786172142,
+      "time": "2026-08-08 07:58 UTC",
+      "timestamp": 1786175939,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Tehran",
       "title": "Iran says no reason to fear Pakistan-Turkey-Saudi security pact",
       "blurb": "DUBAI, Aug 10 (Reuters) - Iran sees no reason to be concerned that a new security pact between Pakistan, Turkey and Saudi Arabia is directed against Tehran, Foreign Ministry spokesman Esmaeil Baghaei said on Monday.Baghaei said the pact showed a shift in regional countries' ap...",
-      "time": "2026-08-07 16:55 UTC",
-      "timestamp": 1786121742,
+      "time": "2026-08-07 17:58 UTC",
+      "timestamp": 1786125539,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Tehran",
       "title": "Mohsen Rezaei appointed as secretary of Iran's top security body",
       "blurb": "DUBAI, Aug 10 (Reuters) - Iran has changed its secretary of the Supreme National Security Council, appointing former Revolutionary Guards commander Mohsen Rezaei as second-in-command on the body that coordinates the country's security and foreign policy.Rezaei is more of an ou...",
-      "time": "2026-08-07 02:55 UTC",
-      "timestamp": 1786071342,
+      "time": "2026-08-07 03:58 UTC",
+      "timestamp": 1786075139,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Damascus",
       "title": "Syria says reached deal with Moscow on fate of Russian bases",
       "blurb": "Syria said on Sunday that it reached a deal with Russia on the fate of its two bases in the country, which Moscow once used to provide military support to ousted leader Bashar al-Assad during the Syrian civil war. Russia was a key Assad ally during the 13-year conflict, helpin...",
-      "time": "2026-08-06 12:55 UTC",
-      "timestamp": 1786020942,
+      "time": "2026-08-06 13:58 UTC",
+      "timestamp": 1786024739,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Strait of Hormuz",
       "title": "Iran ties Hormuz reopening to US concessions on several demands",
       "blurb": "By Nayera Abdallah, Steve Holland and Enas AlashrayDUBAI/WASHINGTON/CAIRO, Aug 10 (Reuters) - Iran said it was nearing a final pact with Oman defining new shipping lanes between them through the Strait of Hormuz but repeated that the U.S. must meet other conditions, including ...",
-      "time": "2026-08-05 22:55 UTC",
-      "timestamp": 1785970542,
+      "time": "2026-08-05 23:58 UTC",
+      "timestamp": 1785974339,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Jerusalem",
       "title": "Israeli military closes Palestinian Christian village Taybeh, citing settler attacks",
       "blurb": "JERUSALEM, Aug 9 (Reuters) - Israel's military on Sunday closed the West Bank village of Taybeh to non-residents, saying it aimed to prevent growing attacks on Palestinians by Israeli settlers across the West Bank.The order, the military said, only applies to Israelis and not ...",
-      "time": "2026-08-05 08:55 UTC",
-      "timestamp": 1785920142,
+      "time": "2026-08-05 09:58 UTC",
+      "timestamp": 1785923939,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Sanaa",
       "title": "Yemeni military says Houthi attack on Mocha kills 7, wounds 30",
       "blurb": "Aug 10 (Reuters) - The Yemeni military said seven people including military personnel and civilians were killed and 30 others wounded in a Houthi attack on the Red Sea port city of Mocha, civilian infrastructure and armed forces. \"Four members of the armed forces and three civ...",
-      "time": "2026-08-04 18:55 UTC",
-      "timestamp": 1785869742,
+      "time": "2026-08-04 19:58 UTC",
+      "timestamp": 1785873539,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Eastern Med",
       "title": "Alleged Irish crime boss Kinahan charged with directing criminal organisation",
       "blurb": "By Padraic Halpin and Nayera AbdallahDUBLIN, Aug 9 (Reuters) - Alleged Irish crime gang boss Daniel Kinahan was charged with directing a criminal organisation by prosecutors in Dublin on Sunday amid tight security at a special court sitting following his extradition from the U...",
-      "time": "2026-08-04 04:55 UTC",
-      "timestamp": 1785819342,
+      "time": "2026-08-04 05:58 UTC",
+      "timestamp": 1785823139,
       "source": "Al-Monitor"
     },
     {
@@ -140,8 +140,8 @@
       "location": "Tehran",
       "title": "Trump says U.S. is 'low-keying it' with Iran, stresses economic pain, according to Axios interview",
       "blurb": "WASHINGTON, Aug 9 (Reuters) - After months of U.S. military strikes on Iran, sanctions and a blockade, President Donald Trump said on Sunday that his administration is watching economic pressure mount on Iran, according to an interview with Axios.\"We are low keying it,\" Trump ...",
-      "time": "2026-08-03 00:55 UTC",
-      "timestamp": 1785718542,
+      "time": "2026-08-03 01:58 UTC",
+      "timestamp": 1785722339,
       "source": "Al-Monitor"
     },
     {
@@ -151,8 +151,8 @@
       "location": "Damascus",
       "title": "Syria and Russia reach deal on future of Tartous and Hmeimim bases after 18 months of talks",
       "blurb": "Aug 9 (Reuters) - Syria and Russia reached a memorandum of understanding to settle the future of Russian bases at Tartous and Hmeimim following 18 months of intensive negotiations, the Syrian foreign ministry said on Sunday, according to the Syrian state news agency.The minist...",
-      "time": "2026-08-02 10:55 UTC",
-      "timestamp": 1785668142,
+      "time": "2026-08-02 11:58 UTC",
+      "timestamp": 1785671939,
       "source": "Al-Monitor"
     },
     {
@@ -162,8 +162,8 @@
       "location": "Gaza City",
       "title": "Netanyahu rejects Gaza plan in new break from Trump",
       "blurb": "Israeli Prime Minister Benjamin Netanyahu on Sunday rejected a US-led Gaza plan endorsed by Hamas, putting distance between himself and President Donald Trump as he tries to shore up his base ahead of close elections. After more than a week of gradually escalating criticism of...",
-      "time": "2026-08-01 20:55 UTC",
-      "timestamp": 1785617742,
+      "time": "2026-08-01 21:58 UTC",
+      "timestamp": 1785621539,
       "source": "Al-Monitor"
     },
     {
@@ -173,8 +173,8 @@
       "location": "Tehran",
       "title": "Iran's Pezeshkian recently met Supreme Leader Khamenei, state media says",
       "blurb": "DUBAI, Aug 9 (Reuters) - Iranian President Masoud Pezeshkian met Supreme Leader Mojtaba Khamenei around the start of the president's third year in office in late July, state media said on Sunday, and a paramilitary leader promised footage of Khamenei in the future.Pezeshkian h...",
-      "time": "2026-08-01 06:55 UTC",
-      "timestamp": 1785567342,
+      "time": "2026-08-01 07:58 UTC",
+      "timestamp": 1785571139,
       "source": "Al-Monitor"
     },
     {
@@ -184,8 +184,8 @@
       "location": "Jerusalem",
       "title": "Netanyahu says Trump's new Gaza plan is unacceptable",
       "blurb": "By Steven Scheer and Nidal al-MughrabiJERUSALEM/CAIRO, Aug 9 (Reuters) - Israeli Prime Minister Benjamin Netanyahu restated his rejection of Donald Trump's latest Gaza plan in televised remarks to his right-wing government on Sunday, even as Israel's military has effectively h...",
-      "time": "2026-07-31 16:55 UTC",
-      "timestamp": 1785516942,
+      "time": "2026-07-31 17:58 UTC",
+      "timestamp": 1785520739,
       "source": "Al-Monitor"
     },
     {
@@ -195,8 +195,8 @@
       "location": "Eastern Med",
       "title": "Passage of ships to Black Sea continues smoothly, Turkish officials say",
       "blurb": "ANKARA, Aug 9 (Reuters) - Ships are passing smoothly through the Turkish straits to the Black Sea despite heightened concerns about safety, two Turkish government officials told Reuters on Sunday.On Saturday, Bloomberg News reported that Ankara had restricted commercial ship t...",
-      "time": "2026-07-31 02:55 UTC",
-      "timestamp": 1785466542,
+      "time": "2026-07-31 03:58 UTC",
+      "timestamp": 1785470339,
       "source": "Al-Monitor"
     },
     {
@@ -206,218 +206,9 @@
       "location": "Strait of Hormuz",
       "title": "Iran says Oman deal is in 'final stages' but US must act to open Hormuz",
       "blurb": "By Nayera Abdallah, Steve Holland and Enas AlashrayDUBAI/WASHINGTON/CAIRO, Aug 9 (Reuters) - Iran said on Sunday that a deal with Oman defining new shipping lanes in the Strait of Hormuz was in its final stages but reiterated that the waterway would only reopen once the United...",
-      "time": "2026-07-30 12:55 UTC",
-      "timestamp": 1785416142,
+      "time": "2026-07-30 13:58 UTC",
+      "timestamp": 1785419939,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_19",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "The Mecca Agreement represents a welcome show of force by Arab governments",
-      "blurb": "The Mecca Agreement represents a welcome show of force by Arab governments Submitted by David Hearst on Mon, 08/10/2026 - 09:09 American weakness has prompted this necessary reshaping of the Middle East order, with the three biggest regional powers choosing to break the cycle ...",
-      "time": "2026-08-10 14:55 UTC",
-      "timestamp": 1786373742,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "The Caspian gamble: Iran-Ukraine tensions widen the 'geography of instability'",
-      "blurb": "The Caspian gamble: Iran-Ukraine tensions widen the 'geography of instability' Submitted by Amara Sophia Elahi on Mon, 08/10/2026 - 10:29 A deadly Ukrainian strike on an Iranian ship in the Caspian Sea last month risks opening a new front in the war on Iran \u2013 one that could be...",
-      "time": "2026-08-10 00:55 UTC",
-      "timestamp": 1786323342,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "Hormuz traffic declines as Iran says Oman deal in 'final stages'",
-      "blurb": "Hormuz traffic declines as Iran says Oman deal in 'final stages' Ship-tracking firm Marine Traffic has said that traffic through the Strait of Hormuz this weekend has declined, falling to just six crossings on Sunday. Bab al-Mandab remained busier, with close to 40 crossings y...",
-      "time": "2026-08-09 10:55 UTC",
-      "timestamp": 1786272942,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "naval",
-      "actor": "host",
-      "location": "Strait of Hormuz",
-      "title": "UAE oil company announces new investments to bypass Hormuz",
-      "blurb": "UAE oil company announces new investments to bypass Hormuz Abu Dhabi National Oil Co (Adnoc), the Emirate's national oil company, announced plans to construct a new gas export facility to bypass the Strait of Hormuz. The company reported its income for the second quarter of 20...",
-      "time": "2026-08-08 20:55 UTC",
-      "timestamp": 1786222542,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran says its people are \u2018professional chess players\u2019 in dealing with the US",
-      "blurb": "Iran says its people are \u2018professional chess players\u2019 in dealing with the US Tehran has described Iranians as \u201cprofessional chess players\u201d in their dealings with the US, as it insisted that Washington must meet its demands for the re-opening of the Strait of Hormuz. US Preside...",
-      "time": "2026-08-08 06:55 UTC",
-      "timestamp": 1786172142,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli media eye Rebeca Grynspan's Jewish identity as she emerges as UN chief frontrunner",
-      "blurb": "Israeli media eye Rebeca Grynspan's Jewish identity as she emerges as UN chief frontrunner Submitted by Elis Gjevori on Sun, 08/09/2026 - 18:16 The Costa Rican diplomat has emerged as an early favourite, attracting cautious approval from Israeli media Candidate for the selecti...",
-      "time": "2026-08-07 16:55 UTC",
-      "timestamp": 1786121742,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "drone",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Video: Yemen's Houthis attack port in Mocha",
-      "blurb": "Video: Yemen's Houthis attack port in Mocha Smoke billowed from the port city of Mocha, Yemen, after a Houthi attack that killed 11 people on Sunday. It followed an earlier drone attack on a Saudi oil refinery on the coast of the Red Sea Smoke billowed from the port city of Mo...",
-      "time": "2026-08-06 12:55 UTC",
-      "timestamp": 1786020942,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "naval",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "UN expresses 'deep concern' about Houthi attacks",
-      "blurb": "UN expresses 'deep concern' about Houthi attacks Hans Grundberg, the UN special envoy for Yemen, has expressed \"deep concerns\" about Yemen's Houthis' attacks on the Red Sea port of Mocha, which killed at least seven people and wounded 30 others, including some civilians. He ca...",
-      "time": "2026-08-05 22:55 UTC",
-      "timestamp": 1785970542,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_27",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Zionism has warped the lexicon, so words are now convenient weapons",
-      "blurb": "Zionism has warped the lexicon, so words are now convenient weapons Submitted by Marchella Ward on Tue, 08/04/2026 - 16:28 Pro-Israel groups have altered the meanings of 'intifada' and 'Palestine', enabling genocide and criminalising those who oppose it A police officer detain...",
-      "time": "2026-08-05 08:55 UTC",
-      "timestamp": 1785920142,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_28",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Damascus",
-      "title": "Syria reclaims control of key coastal sites in deal with Russia",
-      "blurb": "Syria reclaims control of key coastal sites in deal with Russia Submitted by Reem Aouir on Mon, 08/10/2026 - 04:04 Deal gives Damascus control of civilian facilities at Tartus and Hmeimim, while Russian military sites are converted into joint training centres Syrian Foreign Mi...",
-      "time": "2026-08-04 18:55 UTC",
-      "timestamp": 1785869742,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_29",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "UK couple detained in Iran ends hunger strike",
-      "blurb": "UK couple detained in Iran ends hunger strike A British couple detained in Iran accused of spying have ended their latest months-long hunger strikes protesting their treatment in prison, their family said Monday. Lindsay and Craig Foreman, both aged in their early 50s, were se...",
-      "time": "2026-08-04 04:55 UTC",
-      "timestamp": 1785819342,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_30",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Israeli strike causes 'major explosion' in south Lebanon, state media reports",
-      "blurb": "Israeli strike causes 'major explosion' in south Lebanon, state media reports The Israeli military has caused a \"major explosion\" in the municipality of Zaoutar el-Charkiya in south Lebanon, state media agency NNA reported. It also said Israel had shot machine gun rounds towar...",
-      "time": "2026-08-03 14:55 UTC",
-      "timestamp": 1785768942,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_31",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "US says it has rerouted 55 Iran-linked vessels",
-      "blurb": "US says it has rerouted 55 Iran-linked vessels The US military said on Monday it had rerouted 55 commercial vessels sailing towards Iran as part of its operations to enforce restrictions on Iranian ports. The US Central Command, which coordinates US operations in the Middle Ea...",
-      "time": "2026-08-03 00:55 UTC",
-      "timestamp": 1785718542,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_32",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran says it is not concerned by new 'Mecca Joint Defence Agreement'",
-      "blurb": "Iran says it is not concerned by new 'Mecca Joint Defence Agreement' Esmaeil Baghaei, Iran's foreign ministry spokesperson, said on Monday that Tehran saw no reason to be concerned that a new security pact between Pakistan, Turkey and Saudi Arabia is directed against Iran. Bag...",
-      "time": "2026-08-02 10:55 UTC",
-      "timestamp": 1785668142,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_33",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli general says Gaza should remain \u2018destroyed for generations\u2019",
-      "blurb": "Israeli general says Gaza should remain \u2018destroyed for generations\u2019 A former head of Israel\u2019s National Security Council has called for Gaza to remain devastated for decades, openly presenting Palestinian despair and destruction as desirable outcomes after Israel\u2019s genocide in ...",
-      "time": "2026-08-01 20:55 UTC",
-      "timestamp": 1785617742,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_34",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Morning update",
-      "blurb": "Morning update Good morning Middle East Eye readers, Here are the latest developments from across the region: Israel will not have to withdraw its forces from Gaza until Palestinian groups surrender their weapons under the Board of Peace\u2019s plan, its senior envoy has said contr...",
-      "time": "2026-08-01 06:55 UTC",
-      "timestamp": 1785567342,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_35",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Union documents 108 Israeli attacks against Palestinian journalists in July",
-      "blurb": "Union documents 108 Israeli attacks against Palestinian journalists in July The Palestinian Journalists Syndicate documented 108 attacks by the Israeli occupation against Palestinian journalists and media workers in July. The attacks include detentions, beatings, interrogation...",
-      "time": "2026-07-31 16:55 UTC",
-      "timestamp": 1785516942,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_36",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran, Oman 'very close' to reaching deal, Araghchi says",
-      "blurb": "Iran, Oman 'very close' to reaching deal, Araghchi says During a press conference in Tehran, Iranian foreign minister Abbas Araghchi stated that negotiations with Oman over a \"temporary route\" for the Strait of Hormuz are \"very close to reaching a conclusion\". During the same ...",
-      "time": "2026-07-31 02:55 UTC",
-      "timestamp": 1785466542,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_37",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "US army says 55 commercial vessels redirected amid its blockade against Iran",
-      "blurb": "US army says 55 commercial vessels redirected amid its blockade against Iran The US Central Command said late on Sunday that its forces redirected 55 commercial vessels as part of its \"strict enforcement\" of the blockade against Iran. It also added that two more were disabled ...",
-      "time": "2026-07-30 12:55 UTC",
-      "timestamp": 1785416142,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
