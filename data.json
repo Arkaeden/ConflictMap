@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T01:37:36.456945+00:00",
+  "lastUpdated": "2026-08-10T03:51:50.292441+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Damascus",
       "title": "Syria says reached deal with Moscow on fate of Russian bases",
       "blurb": "Syria said on Sunday that it reached a deal with Russia on the fate of its two bases in the country, which Moscow once used to provide military support to ousted leader Bashar al-Assad during the Syrian civil war. Russia was a key Assad ally during the 13-year conflict, helpin...",
-      "time": "2026-08-10 01:37 UTC",
-      "timestamp": 1786325856,
+      "time": "2026-08-10 03:51 UTC",
+      "timestamp": 1786333910,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Strait of Hormuz",
       "title": "Iran ties Hormuz reopening to US concessions on several demands",
       "blurb": "By Nayera Abdallah, Steve Holland and Enas AlashrayDUBAI/WASHINGTON/CAIRO, Aug 10 (Reuters) - Iran said it was nearing a final pact with Oman defining new shipping lanes between them through the Strait of Hormuz but repeated that the U.S. must meet other conditions, including ...",
-      "time": "2026-08-09 11:37 UTC",
-      "timestamp": 1786275456,
+      "time": "2026-08-09 13:51 UTC",
+      "timestamp": 1786283510,
       "source": "Al-Monitor"
     },
     {
@@ -30,19 +30,19 @@
       "location": "Jerusalem",
       "title": "Israeli military closes Palestinian Christian village Taybeh, citing settler attacks",
       "blurb": "JERUSALEM, Aug 9 (Reuters) - Israel's military on Sunday closed the West Bank village of Taybeh to non-residents, saying it aimed to prevent growing attacks on Palestinians by Israeli settlers across the West Bank.The order, the military said, only applies to Israelis and not ...",
-      "time": "2026-08-08 21:37 UTC",
-      "timestamp": 1786225056,
+      "time": "2026-08-08 23:51 UTC",
+      "timestamp": 1786233110,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_3",
-      "type": "missile",
-      "actor": "iran",
+      "type": "naval",
+      "actor": "proxy",
       "location": "Sanaa",
-      "title": "Houthis resume attacks on Yemen's Mocha port city, Yemeni military spokesperson says",
-      "blurb": "Aug 9 (Reuters) - Yemen's Iran-aligned Houthis have resumed attacks on the Red Sea port city of Mocha, a Yemeni military spokesperson said.Footage shown by Houthi-affiliated Al Masirah TV showed the launch of several ballistic missiles and drones, which Houthi military spokesp...",
-      "time": "2026-08-08 07:37 UTC",
-      "timestamp": 1786174656,
+      "title": "Yemeni military says Houthi attack on Mocha kills 7, wounds 30",
+      "blurb": "Aug 10 (Reuters) - The Yemeni military said seven people including military personnel and civilians were killed and 30 others wounded in a Houthi attack on the Red Sea port city of Mocha, civilian infrastructure and armed forces. \"Four members of the armed forces and three civ...",
+      "time": "2026-08-08 09:51 UTC",
+      "timestamp": 1786182710,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Eastern Med",
       "title": "Alleged Irish crime boss Kinahan charged with directing criminal organisation",
       "blurb": "By Padraic Halpin and Nayera AbdallahDUBLIN, Aug 9 (Reuters) - Alleged Irish crime gang boss Daniel Kinahan was charged with directing a criminal organisation by prosecutors in Dublin on Sunday amid tight security at a special court sitting following his extradition from the U...",
-      "time": "2026-08-07 17:37 UTC",
-      "timestamp": 1786124256,
+      "time": "2026-08-07 19:51 UTC",
+      "timestamp": 1786132310,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Tehran",
       "title": "Trump says U.S. is 'low-keying it' with Iran, stresses economic pain, according to Axios interview",
       "blurb": "WASHINGTON, Aug 9 (Reuters) - After months of U.S. military strikes on Iran, sanctions and a blockade, President Donald Trump said on Sunday that his administration is watching economic pressure mount on Iran, according to an interview with Axios.\"We are low keying it,\" Trump ...",
-      "time": "2026-08-06 13:37 UTC",
-      "timestamp": 1786023456,
+      "time": "2026-08-06 15:51 UTC",
+      "timestamp": 1786031510,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Damascus",
       "title": "Syria and Russia reach deal on future of Tartous and Hmeimim bases after 18 months of talks",
       "blurb": "Aug 9 (Reuters) - Syria and Russia reached a memorandum of understanding to settle the future of Russian bases at Tartous and Hmeimim following 18 months of intensive negotiations, the Syrian foreign ministry said on Sunday, according to the Syrian state news agency.The minist...",
-      "time": "2026-08-05 23:37 UTC",
-      "timestamp": 1785973056,
+      "time": "2026-08-06 01:51 UTC",
+      "timestamp": 1785981110,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Gaza City",
       "title": "Netanyahu rejects Gaza plan in new break from Trump",
       "blurb": "Israeli Prime Minister Benjamin Netanyahu on Sunday rejected a US-led Gaza plan endorsed by Hamas, putting distance between himself and President Donald Trump as he tries to shore up his base ahead of close elections. After more than a week of gradually escalating criticism of...",
-      "time": "2026-08-05 09:37 UTC",
-      "timestamp": 1785922656,
+      "time": "2026-08-05 11:51 UTC",
+      "timestamp": 1785930710,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Tehran",
       "title": "Iran's Pezeshkian recently met Supreme Leader Khamenei, state media says",
       "blurb": "DUBAI, Aug 9 (Reuters) - Iranian President Masoud Pezeshkian met Supreme Leader Mojtaba Khamenei around the start of the president's third year in office in late July, state media said on Sunday, and a paramilitary leader promised footage of Khamenei in the future.Pezeshkian h...",
-      "time": "2026-08-04 19:37 UTC",
-      "timestamp": 1785872256,
+      "time": "2026-08-04 21:51 UTC",
+      "timestamp": 1785880310,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Jerusalem",
       "title": "Netanyahu says Trump's new Gaza plan is unacceptable",
       "blurb": "By Steven Scheer and Nidal al-MughrabiJERUSALEM/CAIRO, Aug 9 (Reuters) - Israeli Prime Minister Benjamin Netanyahu restated his rejection of Donald Trump's latest Gaza plan in televised remarks to his right-wing government on Sunday, even as Israel's military has effectively h...",
-      "time": "2026-08-04 05:37 UTC",
-      "timestamp": 1785821856,
+      "time": "2026-08-04 07:51 UTC",
+      "timestamp": 1785829910,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Eastern Med",
       "title": "Passage of ships to Black Sea continues smoothly, Turkish officials say",
       "blurb": "ANKARA, Aug 9 (Reuters) - Ships are passing smoothly through the Turkish straits to the Black Sea despite heightened concerns about safety, two Turkish government officials told Reuters on Sunday.On Saturday, Bloomberg News reported that Ankara had restricted commercial ship t...",
-      "time": "2026-08-03 15:37 UTC",
-      "timestamp": 1785771456,
+      "time": "2026-08-03 17:51 UTC",
+      "timestamp": 1785779510,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Strait of Hormuz",
       "title": "Iran says Oman deal is in 'final stages' but US must act to open Hormuz",
       "blurb": "By Nayera Abdallah, Steve Holland and Enas AlashrayDUBAI/WASHINGTON/CAIRO, Aug 9 (Reuters) - Iran said on Sunday that a deal with Oman defining new shipping lanes in the Strait of Hormuz was in its final stages but reiterated that the waterway would only reopen once the United...",
-      "time": "2026-08-03 01:37 UTC",
-      "timestamp": 1785721056,
+      "time": "2026-08-03 03:51 UTC",
+      "timestamp": 1785729110,
       "source": "Al-Monitor"
     },
     {
@@ -140,8 +140,8 @@
       "location": "Eastern Med",
       "title": "Ukraine's Odesa port sustains damage from Russian attack, Zelenskiy says",
       "blurb": "KYIV, Aug 9 (Reuters) - Ukraine's Odesa seaport sustained damage from an overnight Russian attack, President Volodymyr Zelenskiy said on Sunday, adding that eight people had been wounded in the city.\"In this way, the Russians are at war with the world's food security,\" he said...",
-      "time": "2026-08-02 11:37 UTC",
-      "timestamp": 1785670656,
+      "time": "2026-08-02 13:51 UTC",
+      "timestamp": 1785678710,
       "source": "Al-Monitor"
     },
     {
@@ -151,8 +151,8 @@
       "location": "Tehran",
       "title": "Iran Guards say won't reopen Hormuz without US meeting Tehran's demands",
       "blurb": "Iran's Revolutionary Guards insisted Sunday that they would not reopen the Strait of Hormuz until the United States complied with a list of demands, including paying compensation for war damage. Iran's effective blockade of the crucial energy conduit has rattled allies, roiled...",
-      "time": "2026-08-01 21:37 UTC",
-      "timestamp": 1785620256,
+      "time": "2026-08-01 23:51 UTC",
+      "timestamp": 1785628310,
       "source": "Al-Monitor"
     },
     {
@@ -162,8 +162,8 @@
       "location": "Sanaa",
       "title": "Yemen's Houthis attack Saudi refinery after kingdom signs defence pact",
       "blurb": "Aug 9 (Reuters) - Yemen's Iran-aligned Houthis have attacked Saudi Aramco's Jazan refinery, they said on Sunday, two days after the kingdom signed a defence pact with Turkey and Pakistan in response to growing regional instability from the U.S.-Israeli war on Iran.The alliance...",
-      "time": "2026-08-01 07:37 UTC",
-      "timestamp": 1785569856,
+      "time": "2026-08-01 09:51 UTC",
+      "timestamp": 1785577910,
       "source": "Al-Monitor"
     },
     {
@@ -173,8 +173,8 @@
       "location": "Tehran",
       "title": "Talks with US won't happen while interim deal is breached, Iranian minister says",
       "blurb": "DUBAI, Aug 9 (Reuters) - Iran and the U.S. are not engaged in talks and Tehran will not start them as long as Washington breaches an interim deal signed in June, Foreign Minister Abbas Araqchi said on Sunday, adding that messages are being exchanged via intermediaries.",
-      "time": "2026-07-31 17:37 UTC",
-      "timestamp": 1785519456,
+      "time": "2026-07-31 19:51 UTC",
+      "timestamp": 1785527510,
       "source": "Al-Monitor"
     },
     {
@@ -184,8 +184,8 @@
       "location": "Tehran",
       "title": "Iran issues demands for reopening of Hormuz",
       "blurb": "Iran set preconditions on Saturday for a reopening of the Strait of Hormuz, including compensation for war damages, complicating a potential deal to open the waterway essential to the world economy. Tehran has imposed an effective blockade of the strait since the United States...",
-      "time": "2026-07-31 03:37 UTC",
-      "timestamp": 1785469056,
+      "time": "2026-07-31 05:51 UTC",
+      "timestamp": 1785477110,
       "source": "Al-Monitor"
     },
     {
@@ -195,8 +195,8 @@
       "location": "Tehran",
       "title": "Turkey, Pakistan, Saudi Arabia defence pact technically same as NATO's Article 5, Turkish minister says",
       "blurb": "ANKARA, Aug 8 (Reuters) - A defence pact signed between Turkey, Pakistan and Saudi Arabia is technically the same as NATO's Article 5 mutual defence agreement, Turkish Foreign Minister Hakan Fidan said on Saturday, adding the accord was not targeting Iran.Fidan also said Turki...",
-      "time": "2026-07-30 13:37 UTC",
-      "timestamp": 1785418656,
+      "time": "2026-07-30 15:51 UTC",
+      "timestamp": 1785426710,
       "source": "Al-Monitor"
     },
     {
@@ -206,52 +206,52 @@
       "location": "Tehran",
       "title": "UAE says Iran attacked ADNOC vessel with missile in Strait of Hormuz",
       "blurb": "Aug 8 (Reuters) - The United Arab Emirates on Saturday condemned what it said was an Iranian attack on a carrier linked to its state oil company as it passed through the Strait of Hormuz, accusing Tehran of \"acts of piracy\". State news agency WAM initially reported ADNOC as sa...",
-      "time": "2026-07-29 23:37 UTC",
-      "timestamp": 1785368256,
+      "time": "2026-07-30 01:51 UTC",
+      "timestamp": 1785376310,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_19",
       "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Watch: Netanyahu says Israel 'rejects' Trump's 15-point plan for Gaza",
-      "blurb": "Watch: Netanyahu says Israel 'rejects' Trump's 15-point plan for Gaza Israeli Prime Minister Benjamin Netanyahu rejected a Gaza plan hailed by US President Donald Trump, vowing no military withdrawal until Hamas \"genuinely\" disarms. \"Israel rejects the 15-point document,\" Neta...",
-      "time": "2026-08-10 01:37 UTC",
-      "timestamp": 1786325856,
+      "actor": "iran",
+      "location": "Beirut",
+      "title": "Report: Tensions deepening between US, Israel",
+      "blurb": "Report: Tensions deepening between US, Israel Tensions between Israel and the US is growing amid Washington's efforts to wind down fighting in Gaza, Lebanon and Iran, according to the Israeli Channel 13 reported. That US Central Command (CENTCOM) chief Brad Cooper conveyed the...",
+      "time": "2026-08-10 03:51 UTC",
+      "timestamp": 1786333910,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_20",
       "type": "diplomatic",
       "actor": "israel",
-      "location": "Beirut",
-      "title": "Lebanon will not take part in next talks with Israel unless demands met: Report",
-      "blurb": "Lebanon will not take part in next talks with Israel unless demands met: Report Lebanon will not take part in the next round of talks with Israel that are scheduled for early September unless its conditions are met, L\u2019Orient-Le Jour reported citing a source close to the Lebane...",
-      "time": "2026-08-09 11:37 UTC",
-      "timestamp": 1786275456,
+      "location": "Gaza City",
+      "title": "Watch: Netanyahu says Israel 'rejects' Trump's 15-point plan for Gaza",
+      "blurb": "Watch: Netanyahu says Israel 'rejects' Trump's 15-point plan for Gaza Israeli Prime Minister Benjamin Netanyahu rejected a Gaza plan hailed by US President Donald Trump, vowing no military withdrawal until Hamas \"genuinely\" disarms. \"Israel rejects the 15-point document,\" Neta...",
+      "time": "2026-08-09 13:51 UTC",
+      "timestamp": 1786283510,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_21",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Beirut",
+      "title": "Lebanon will not take part in next talks with Israel unless demands met: Report",
+      "blurb": "Lebanon will not take part in next talks with Israel unless demands met: Report Lebanon will not take part in the next round of talks with Israel that are scheduled for early September unless its conditions are met, L\u2019Orient-Le Jour reported citing a source close to the Lebane...",
+      "time": "2026-08-08 23:51 UTC",
+      "timestamp": 1786233110,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_22",
       "type": "missile",
       "actor": "israel",
       "location": "Beirut",
       "title": "Israeli attacks in south Lebanon continue, despite truce talks",
       "blurb": "Israeli attacks in south Lebanon continue, despite truce talks The Israeli army has continued to launch attacks in southern Lebanon, the state-run National News Agency (NNA)reported. This includes artillery shelling in the town of Mansouri and Nabatieh al-Fawqa as well as a \"l...",
-      "time": "2026-08-08 21:37 UTC",
-      "timestamp": 1786225056,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israel rejects Trump's 15-point plan for Gaza, says Netanyahu",
-      "blurb": "Israel rejects Trump's 15-point plan for Gaza, says Netanyahu Israel has rejected US President Donald Trump's 15-point plan for Gaza and will not withdraw until Hamas fully disarms, Prime Minister Benjamin Netanyahu said on Sunday. The Board of Peace, spearheaded by Trump, ann...",
-      "time": "2026-08-08 07:37 UTC",
-      "timestamp": 1786174656,
+      "time": "2026-08-08 09:51 UTC",
+      "timestamp": 1786182710,
       "source": "Middle East Eye"
     },
     {
@@ -259,10 +259,10 @@
       "type": "diplomatic",
       "actor": "israel",
       "location": "Gaza City",
-      "title": "Trump shares Clinton defence of Gaza plan after Netanyahu rejects roadmap",
-      "blurb": "Trump shares Clinton defence of Gaza plan after Netanyahu rejects roadmap US President Donald Trump has shared an opinion piece by former Secretary of State Hillary Clinton backing his proposal for Gaza, after Israeli Prime Minister Benjamin Netanyahu rejected the plan. Trump ...",
-      "time": "2026-08-07 17:37 UTC",
-      "timestamp": 1786124256,
+      "title": "Israel rejects Trump's 15-point plan for Gaza, says Netanyahu",
+      "blurb": "Israel rejects Trump's 15-point plan for Gaza, says Netanyahu Israel has rejected US President Donald Trump's 15-point plan for Gaza and will not withdraw until Hamas fully disarms, Prime Minister Benjamin Netanyahu said on Sunday. The Board of Peace, spearheaded by Trump, ann...",
+      "time": "2026-08-07 19:51 UTC",
+      "timestamp": 1786132310,
       "source": "Middle East Eye"
     },
     {
@@ -270,76 +270,76 @@
       "type": "diplomatic",
       "actor": "israel",
       "location": "Gaza City",
-      "title": "Board of Peace envoy says Israel not required to withdraw from Gaza",
-      "blurb": "Board of Peace envoy says Israel not required to withdraw from Gaza Israel will not have to withdraw its forces from Gaza until Palestinian groups surrender their weapons under the Board of Peace\u2019s plan, its senior envoy has said contradicting his earlier position stating that...",
-      "time": "2026-08-07 03:37 UTC",
-      "timestamp": 1786073856,
+      "title": "Trump shares Clinton defence of Gaza plan after Netanyahu rejects roadmap",
+      "blurb": "Trump shares Clinton defence of Gaza plan after Netanyahu rejects roadmap US President Donald Trump has shared an opinion piece by former Secretary of State Hillary Clinton backing his proposal for Gaza, after Israeli Prime Minister Benjamin Netanyahu rejected the plan. Trump ...",
+      "time": "2026-08-07 05:51 UTC",
+      "timestamp": 1786081910,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_25",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Board of Peace envoy says Israel not required to withdraw from Gaza",
+      "blurb": "Board of Peace envoy says Israel not required to withdraw from Gaza Israel will not have to withdraw its forces from Gaza until Palestinian groups surrender their weapons under the Board of Peace\u2019s plan, its senior envoy has said contradicting his earlier position stating that...",
+      "time": "2026-08-06 15:51 UTC",
+      "timestamp": 1786031510,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_26",
       "type": "ground",
       "actor": "israel",
       "location": "Jerusalem",
       "title": "Israeli pilot trainee dies by suicide at military base",
       "blurb": "Israeli pilot trainee dies by suicide at military base An Israeli Air Force pilot trainee died by suicide at a military base in southern Israel on Sunday. At least 18 active-duty Israeli soldiers have died by suicide since the start of 2026, according to data compiled by the I...",
-      "time": "2026-08-06 13:37 UTC",
-      "timestamp": 1786023456,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli general says Gaza should remain \u2018destroyed for generations\u2019",
-      "blurb": "Israeli general says Gaza should remain \u2018destroyed for generations\u2019 Submitted by Elis Gjevori on Sun, 08/09/2026 - 21:14 Giora Eiland says Palestinian despair serves Israel and demands permanent control beyond the Yellow Line Palestinian residential salvage what they can from ...",
-      "time": "2026-08-05 23:37 UTC",
-      "timestamp": 1785973056,
+      "time": "2026-08-06 01:51 UTC",
+      "timestamp": 1785981110,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_27",
       "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran appoints former IRGC chief to top security post",
-      "blurb": "Iran appoints former IRGC chief to top security post Iran\u2019s Supreme Leader Mojtaba Khamenei has named former Islamic Revolutionary Guard Corps commander Mohsen Rezaee as secretary of the Supreme National Security Council. Rezaee will also serve as Khamenei\u2019s representative on ...",
-      "time": "2026-08-05 09:37 UTC",
-      "timestamp": 1785922656,
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Israeli general says Gaza should remain \u2018destroyed for generations\u2019",
+      "blurb": "Israeli general says Gaza should remain \u2018destroyed for generations\u2019 Submitted by Elis Gjevori on Sun, 08/09/2026 - 21:14 Giora Eiland says Palestinian despair serves Israel and demands permanent control beyond the Yellow Line Palestinian residential salvage what they can from ...",
+      "time": "2026-08-05 11:51 UTC",
+      "timestamp": 1785930710,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_28",
       "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Egypt calls for full Israeli withdrawal and unrestricted aid access to Gaza",
-      "blurb": "Egypt calls for full Israeli withdrawal and unrestricted aid access to Gaza Egyptian Foreign Minister Badr Abdelatty has called for Israel to withdraw completely from Gaza and allow the sustained delivery of humanitarian aid under US President Donald Trump\u2019s peace plan. Abdela...",
-      "time": "2026-08-04 19:37 UTC",
-      "timestamp": 1785872256,
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran appoints former IRGC chief to top security post",
+      "blurb": "Iran appoints former IRGC chief to top security post Iran\u2019s Supreme Leader Mojtaba Khamenei has named former Islamic Revolutionary Guard Corps commander Mohsen Rezaee as secretary of the Supreme National Security Council. Rezaee will also serve as Khamenei\u2019s representative on ...",
+      "time": "2026-08-04 21:51 UTC",
+      "timestamp": 1785880310,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_29",
       "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Trump says US is \u2018only semi-negotiating\u2019 with Iran",
-      "blurb": "Trump says US is \u2018only semi-negotiating\u2019 with Iran US President Donald Trump says Washington is \u201conly semi-negotiating\u201d with Iran. Trump speaking to Axios claimed that Iran was in \u201cvery bad shape\u201d, pointing to soaring inflation and \u201cthe fact they have no money\u201d. He said Tehran...",
-      "time": "2026-08-04 05:37 UTC",
-      "timestamp": 1785821856,
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Egypt calls for full Israeli withdrawal and unrestricted aid access to Gaza",
+      "blurb": "Egypt calls for full Israeli withdrawal and unrestricted aid access to Gaza Egyptian Foreign Minister Badr Abdelatty has called for Israel to withdraw completely from Gaza and allow the sustained delivery of humanitarian aid under US President Donald Trump\u2019s peace plan. Abdela...",
+      "time": "2026-08-04 07:51 UTC",
+      "timestamp": 1785829910,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_30",
-      "type": "naval",
+      "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Trump could declare victory if Iran reopens Strait of Hormuz: Report",
-      "blurb": "Trump could declare victory if Iran reopens Strait of Hormuz: Report US President Donald Trump is prepared to declare victory in the war with Iran if Tehran restores shipping through the Strait of Hormuz, according to The Wall Street Journal. US officials told the newspaper th...",
-      "time": "2026-08-03 15:37 UTC",
-      "timestamp": 1785771456,
+      "title": "Trump says US is \u2018only semi-negotiating\u2019 with Iran",
+      "blurb": "Trump says US is \u2018only semi-negotiating\u2019 with Iran US President Donald Trump says Washington is \u201conly semi-negotiating\u201d with Iran. Trump speaking to Axios claimed that Iran was in \u201cvery bad shape\u201d, pointing to soaring inflation and \u201cthe fact they have no money\u201d. He said Tehran...",
+      "time": "2026-08-03 17:51 UTC",
+      "timestamp": 1785779510,
       "source": "Middle East Eye"
     },
     {
@@ -347,65 +347,65 @@
       "type": "naval",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Iran will defend Strait of Hormuz \u2018at any cost\u2019, senior official says",
-      "blurb": "Iran will defend Strait of Hormuz \u2018at any cost\u2019, senior official says Iran will defend its position in the Strait of Hormuz \u201cat any cost\u201d, the head of the country\u2019s Expediency Council has said. Ayatollah Amoli Larijani, a former chief justice, said Tehran holds sovereignty ove...",
-      "time": "2026-08-03 01:37 UTC",
-      "timestamp": 1785721056,
+      "title": "Trump could declare victory if Iran reopens Strait of Hormuz: Report",
+      "blurb": "Trump could declare victory if Iran reopens Strait of Hormuz: Report US President Donald Trump is prepared to declare victory in the war with Iran if Tehran restores shipping through the Strait of Hormuz, according to The Wall Street Journal. US officials told the newspaper th...",
+      "time": "2026-08-03 03:51 UTC",
+      "timestamp": 1785729110,
       "source": "Middle East Eye"
     },
     {
       "id": "inc_32",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran will defend Strait of Hormuz \u2018at any cost\u2019, senior official says",
+      "blurb": "Iran will defend Strait of Hormuz \u2018at any cost\u2019, senior official says Iran will defend its position in the Strait of Hormuz \u201cat any cost\u201d, the head of the country\u2019s Expediency Council has said. Ayatollah Amoli Larijani, a former chief justice, said Tehran holds sovereignty ove...",
+      "time": "2026-08-02 13:51 UTC",
+      "timestamp": 1785678710,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_33",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Jerusalem",
       "title": "India to Israel and back: How a fake IRGC quote on nuclear weapons reached Netanyahu\u2019s speech",
       "blurb": "India to Israel and back: How a fake IRGC quote on nuclear weapons reached Netanyahu\u2019s speech Submitted by Nadav Rapaport on Sun, 08/09/2026 - 13:48 Report finds the alleged quote about nuclear weapons first appeared on an Indian pro-Israel account on X before being amplified ...",
-      "time": "2026-08-02 11:37 UTC",
-      "timestamp": 1785670656,
+      "time": "2026-08-01 23:51 UTC",
+      "timestamp": 1785628310,
       "source": "Middle East Eye"
     },
     {
-      "id": "inc_33",
+      "id": "inc_34",
       "type": "missile",
       "actor": "proxy",
       "location": "Sanaa",
       "title": "Houthi attacks kill 11 in Yemen and target Saudi refinery",
       "blurb": "Houthi attacks kill 11 in Yemen and target Saudi refinery Strikes by Yemen's Houthis on Sunday killed at least 11 people, a medical source in the Yemeni port city of Mokha has told AFP, after an earlier drone salvo targeted a Saudi oil refinery on the Red Sea coast. A years-lo...",
-      "time": "2026-08-01 21:37 UTC",
-      "timestamp": 1785620256,
+      "time": "2026-08-01 09:51 UTC",
+      "timestamp": 1785577910,
       "source": "Middle East Eye"
     },
     {
-      "id": "inc_34",
+      "id": "inc_35",
       "type": "ground",
       "actor": "proxy",
       "location": "Sanaa",
       "title": "Houthi attacks in Yemen kill four government troops, say sources",
       "blurb": "Houthi attacks in Yemen kill four government troops, say sources Attacks by the Houthis in Yemen on Sunday killed at least four troops from the internationally-recognised government forces and wounded 20 more personnel, two military sources told AFP. The initial toll came from...",
-      "time": "2026-07-31 03:37 UTC",
-      "timestamp": 1785469056,
+      "time": "2026-07-30 15:51 UTC",
+      "timestamp": 1785426710,
       "source": "Middle East Eye"
     },
     {
-      "id": "inc_35",
+      "id": "inc_36",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
       "title": "Pezeshkian recently met Supreme Leader Khamenei, state media reports",
       "blurb": "Pezeshkian recently met Supreme Leader Khamenei, state media reports Iranian President Masoud Pezeshkian met Supreme Leader Mojtaba Khamenei around the start of the president's third year in office in late July, state media said on Sunday. On 21 July, the president said intera...",
-      "time": "2026-07-30 13:37 UTC",
-      "timestamp": 1785418656,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_36",
-      "type": "drone",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Saudi Aramco refinery erupts in flames in Jizan as Houthis claim drone attack",
-      "blurb": "Saudi Aramco refinery erupts in flames in Jizan as Houthis claim drone attack Submitted by MEE staff on Sun, 08/09/2026 - 11:27 The Saudi energy ministry did not give a cause for the fire, while Yemen\u2019s Houthis claimed they had targeted the site Wreckage of what Yemen\u2019s Houthi...",
-      "time": "2026-07-29 23:37 UTC",
-      "timestamp": 1785368256,
+      "time": "2026-07-30 01:51 UTC",
+      "timestamp": 1785376310,
       "source": "Middle East Eye"
     }
   ],
