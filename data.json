@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13T19:13:58.483841+00:00",
+  "lastUpdated": "2026-08-13T20:39:08.083966+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Sanaa",
       "title": "Yemen at highest risk of major conflict since 2022 truce, UN warns",
       "blurb": "Aug 13 (Reuters) - Yemen faces its most serious threat of a return to large-scale war since a U.N.-brokered truce in 2022, U.N. envoy Hans Grundberg warned on Thursday, as the world body said more than half the country's population was experiencing acute food insecurity.The wa...",
-      "time": "2026-08-13 19:13 UTC",
-      "timestamp": 1786648438,
+      "time": "2026-08-13 20:39 UTC",
+      "timestamp": 1786653547,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Jerusalem",
       "title": "Israel reopens once-closed West Bank settlement",
       "blurb": "Israel officially reopened the West Bank settlement of Ganim on Thursday, more than 20 years after it withdrew from the community, in a move emblematic of the current government's policy of rapid settlement expansion. The smell of freshly-poured asphalt hung in the air above G...",
-      "time": "2026-08-13 05:13 UTC",
-      "timestamp": 1786598038,
+      "time": "2026-08-13 06:39 UTC",
+      "timestamp": 1786603147,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Tehran",
       "title": "US can keep naval blockade on Iranian ports \"indefinitely,\" Pentagon chief says",
       "blurb": "By Phil StewartPANAMA CITY, Aug 13 (Reuters) - The U.S. military has enough assets to maintain a naval blockade of Iran indefinitely, Defense Secretary Pete Hegseth said on Thursday, adding ships could be rotated in and out of the region as needed.Hegseth's comments suggest he...",
-      "time": "2026-08-12 15:13 UTC",
-      "timestamp": 1786547638,
+      "time": "2026-08-12 16:39 UTC",
+      "timestamp": 1786552747,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Tehran",
       "title": "What would BRICS Bank membership mean for Iran's reeling economy?",
       "blurb": "Iran\u2019s Central Bank governor said the country will soon join the New Development Bank as he traveled to India this week for a meeting of the group\u2019s finance leaders.",
-      "time": "2026-08-12 01:13 UTC",
-      "timestamp": 1786497238,
+      "time": "2026-08-12 02:39 UTC",
+      "timestamp": 1786502347,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Strait of Hormuz",
       "title": "Turkey set to sign charter for Saudi-led Red Sea coalition on Friday",
       "blurb": "Ankara pledged support for the proposed multinational alliance last month, but Friday\u2019s expected signing will mark its formal entry into the Saudi-led grouping.",
-      "time": "2026-08-09 17:13 UTC",
-      "timestamp": 1786295638,
+      "time": "2026-08-09 18:39 UTC",
+      "timestamp": 1786300747,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Strait of Hormuz",
       "title": "Blaze forces families to abandon Turkish tour boat",
       "blurb": "More than 100 people had to abandon ship after a fire engulfed a children's entertainment tour boat off southwestern Turkey on Thursday, officials said. Families were on board for the outing near the coastal resort of Fethiye, which is particularly popular with British tourist...",
-      "time": "2026-08-09 03:13 UTC",
-      "timestamp": 1786245238,
+      "time": "2026-08-09 04:39 UTC",
+      "timestamp": 1786250347,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Baghdad",
       "title": "Iraq intel and security officials visit Saudi Arabia after drone attacks",
       "blurb": "Iraqi authorities are cracking down on drone attacks after US and Saudi airstrikes targeted Iran-backed militias in the country.",
-      "time": "2026-08-08 13:13 UTC",
-      "timestamp": 1786194838,
+      "time": "2026-08-08 14:39 UTC",
+      "timestamp": 1786199947,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Eastern Med",
       "title": "Sudan\u2019s RSF attacks Khartoum, seizes border town: What to know",
       "blurb": "Sudan\u2019s paramilitary Rapid Support Forces have escalated attacks after suffering setbacks more than three years into the civil war.",
-      "time": "2026-08-07 09:13 UTC",
-      "timestamp": 1786094038,
+      "time": "2026-08-07 10:39 UTC",
+      "timestamp": 1786099147,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Gaza City",
       "title": "Israeli strikes in Gaza kill two people, first fatalities in more than a week, medics say",
       "blurb": "(Refiles to say two airstrikes in paragraph 1)By Nidal al-MughrabiCAIRO, Aug 13 (Reuters) - Israeli airstrikes killed two Palestinians, including a senior police official, in the Gaza Strip on Thursday, in the first reported fatalities in more than a week as the Israeli milita...",
-      "time": "2026-08-05 01:13 UTC",
-      "timestamp": 1785892438,
+      "time": "2026-08-05 02:39 UTC",
+      "timestamp": 1785897547,
       "source": "Al-Monitor"
     },
     {
@@ -107,196 +107,9 @@
       "location": "Strait of Hormuz",
       "title": "Three ways China benefits from Saudi-Turkey-Pakistan pact: What to know",
       "blurb": "The pact points to a more multipolar Middle Eastern security order, one in which Washington is no longer the unquestioned center of Gulf security.",
-      "time": "2026-08-04 11:13 UTC",
-      "timestamp": 1785842038,
+      "time": "2026-08-04 12:39 UTC",
+      "timestamp": 1785847147,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_10",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Riyadh",
-      "title": "Saudi defence minister calls Iraq 'cherished neighbour' after strikes",
-      "blurb": "Saudi defence minister calls Iraq 'cherished neighbour' after strikes Saudi Arabia's defence minister called Iraq a \"cherished neighbour\" in talks with a senior Iraqi army official on Thursday, despite last month's deadly US-Saudi strikes on targets in the country. The Riyadh ...",
-      "time": "2026-08-13 19:13 UTC",
-      "timestamp": 1786648438,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Hamas denounces Israel's killing of top Gaza police official",
-      "blurb": "Hamas denounces Israel's killing of top Gaza police official Hamas condemned Israel\u2019s killing of Colonel Jamal Abu Kamil, director of the civil police force in the Gaza governorate, calling it \u201ca continuation of the brutal crimes committed by the occupation against our Palesti...",
-      "time": "2026-08-13 05:13 UTC",
-      "timestamp": 1786598038,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_12",
-      "type": "drone",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israel killed head of police force, Gaza\u2019s ministry of interior says",
-      "blurb": "Israel killed head of police force, Gaza\u2019s ministry of interior says An Israeli drone strike on a vehicle in western Gaza City killed Gaza City police chief Colonel Jamal Abu Kamil, 43, and critically wounded two others on Thursday, Al Jazeera reported, citing Gaza\u2019s interior ...",
-      "time": "2026-08-12 15:13 UTC",
-      "timestamp": 1786547638,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_13",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Exclusive: UK Charity Commission criticises synagogue for hosting Great Israeli Real Estate Event",
-      "blurb": "Exclusive: UK Charity Commission criticises synagogue for hosting Great Israeli Real Estate Event The UK's Charity Commission has criticised trustees of the Edgware United Synagogue in London for hosting a real estate event that promoted properties in illegal Israeli settlemen...",
-      "time": "2026-08-12 01:13 UTC",
-      "timestamp": 1786497238,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_14",
-      "type": "naval",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli forces detain three Palestinians as settlers seize tractor near Ramallah",
-      "blurb": "Israeli forces detain three Palestinians as settlers seize tractor near Ramallah Israeli forces detained three Palestinians during a raid on the village of Burqa, east of Ramallah in the occupied West Bank, while Israeli settlers seized a tractor owned by the village council, ...",
-      "time": "2026-08-11 11:13 UTC",
-      "timestamp": 1786446838,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_15",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "Balochistan\u2019s dangerous fuel trade is a lifeline. The Iran war is choking it",
-      "blurb": "Balochistan\u2019s dangerous fuel trade is a lifeline. The Iran war is choking it Submitted by Hazaran on Tue, 08/11/2026 - 18:13 The war is wreaking havoc on the illicit, yet vital, trade of importing fuel from Iran into Pakistan's Balochistan province A fuel fire engulfs boats at...",
-      "time": "2026-08-10 21:13 UTC",
-      "timestamp": 1786396438,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_16",
-      "type": "drone",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Houthis claim drone strike on Saudi refinery",
-      "blurb": "Houthis claim drone strike on Saudi refinery Yemen's Houthis on Thursday claimed a drone attack on an Aramco refinery in southern Saudi Arabia, the group's affiliated news agency Saba reported. \"A military source confirmed that the Yemeni Armed Forces targeted an Aramco refine...",
-      "time": "2026-08-10 07:13 UTC",
-      "timestamp": 1786346038,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_17",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Hegseth says US can keep naval blockade on Iranian ports \u2018indefinitely\u2019",
-      "blurb": "Hegseth says US can keep naval blockade on Iranian ports \u2018indefinitely\u2019 US Secretary of War Pete Hegseth says that the US military can maintain a blockade on Iranian ports for as long as needed. \u201cIndefinitely, the United States Navy can maintain a blockade like that because we...",
-      "time": "2026-08-09 17:13 UTC",
-      "timestamp": 1786295638,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_18",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Palestinians reject Hamas disarmament before full Israeli withdrawal, poll finds",
-      "blurb": "Palestinians reject Hamas disarmament before full Israeli withdrawal, poll finds More than 70 percent of Palestinians oppose Hamas disarming before Israel completely withdraws from the Gaza Strip, according to a new survey. The poll found that 72 percent believe Israel would r...",
-      "time": "2026-08-09 03:13 UTC",
-      "timestamp": 1786245238,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_19",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Rafah",
-      "title": "EU welcomes Israeli green light to extend Gaza border mission",
-      "blurb": "EU welcomes Israeli green light to extend Gaza border mission EU top diplomat Kaja Kallas on Thursday welcomed an Israeli decision to extend the mandate of the bloc's border assistance mission at the Rafah crossing between the Gaza Strip and Egypt and the occupied West Bank un...",
-      "time": "2026-08-07 23:13 UTC",
-      "timestamp": 1786144438,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "Iranian military rejects US claims that vessels are transiting the Strait of Hormuz",
-      "blurb": "Iranian military rejects US claims that vessels are transiting the Strait of Hormuz The Iranian military has rejected the US claims that vessels are transiting the Strait of Hormuz normally, saying that no ship can pass through without its permission. \u201cThe Strait of Hormuz rem...",
-      "time": "2026-08-07 09:13 UTC",
-      "timestamp": 1786094038,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Video: How settler attacks and water diversion erased a Palestinian community",
-      "blurb": "Video: How settler attacks and water diversion erased a Palestinian community Haitham Rashaidh was among the last to leave his home near Ein al-Auja, a natural spring and waterfall north of Jericho in the occupied West Bank. His family packed up their tents and heaped all thei...",
-      "time": "2026-08-06 19:13 UTC",
-      "timestamp": 1786043638,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iranian press review: Tehran says it will no longer wait to be attacked",
-      "blurb": "Iranian press review: Tehran says it will no longer wait to be attacked Iranian military commanders and politicians have recently underlined a shift in Iran's military doctrine, moving from a defensive to an offensive strategy against US forces in the Middle East. The shift ca...",
-      "time": "2026-08-06 05:13 UTC",
-      "timestamp": 1785993238,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "UK withholds information on Israeli firm accused of targeting Scottish first minister in elections",
-      "blurb": "UK withholds information on Israeli firm accused of targeting Scottish first minister in elections Submitted by Imran Mulla on Thu, 08/13/2026 - 11:59 The British government refused an FOI request, saying releasing documents may 'prejudice relations between the United Kingdom ...",
-      "time": "2026-08-05 15:13 UTC",
-      "timestamp": 1785942838,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "German court ruling on Israel-Nazi comparison is a step in the right direction",
-      "blurb": "German court ruling on Israel-Nazi comparison is a step in the right direction Submitted by Marla Karnabach on Tue, 08/11/2026 - 20:53 Decision underscores the fact that political commitments - however deeply rooted - must not override fundamental rights A demonstrator holds a...",
-      "time": "2026-08-04 11:13 UTC",
-      "timestamp": 1785842038,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Ein al-Auja: How settler attacks and water diversion erased a Palestinian community",
-      "blurb": "Ein al-Auja: How settler attacks and water diversion erased a Palestinian community Submitted by Majd Jawad on Fri, 06/12/2026 - 18:36 The spring that once sustained life here has run dry, as Bedouin families flee Israeli violence and resource theft Off Haitham Rashaidh was am...",
-      "time": "2026-08-03 21:13 UTC",
-      "timestamp": 1785791638,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "ground",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "In Christian village of Taybeh, Israeli military order fails to stop settler violence",
-      "blurb": "In Christian village of Taybeh, Israeli military order fails to stop settler violence Submitted by Fayha Shalash on Thu, 08/13/2026 - 10:08 Palestinian residents and rights activists describe near-daily raids on homes and olive groves, with some saying they've been blocked fro...",
-      "time": "2026-08-03 07:13 UTC",
-      "timestamp": 1785741238,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
