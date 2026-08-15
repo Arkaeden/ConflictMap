@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-15T11:17:35.729063+00:00",
+  "lastUpdated": "2026-08-15T12:32:17.453365+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Beirut",
       "title": "Lebanon says 9 dead in strikes as Israel says targeted Hezbollah",
       "blurb": "Lebanon said Israeli strikes on the south killed nine people including three children on Saturday, the deadliest raids since deals in June eased hostilities between Israel and Hezbollah. Israel said it carried out retaliatory strikes against the Iran-backed militant group but ...",
-      "time": "2026-08-15 11:17 UTC",
-      "timestamp": 1786792655,
+      "time": "2026-08-15 12:32 UTC",
+      "timestamp": 1786797137,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Eastern Med",
       "title": "Taliban mark five years in power as aid groups warn of crisis",
       "blurb": "By Mohammad Yunus Yawar and Rick NoackKABUL/ISLAMABAD, Aug 15 (Reuters) - The Taliban marked five years in power on Saturday, seeking to portray their government as in control even as aid and rights groups warned of escalating crises.Outside the former U.S. embassy in Kabul, a...",
-      "time": "2026-08-14 21:17 UTC",
-      "timestamp": 1786742255,
+      "time": "2026-08-14 22:32 UTC",
+      "timestamp": 1786746737,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Tehran",
       "title": "Iran fires back at Trump's threat to declare Hormuz a US territory",
       "blurb": "Iran on Saturday fired back at US President Donald Trump's claim that he would soon declare the Strait of Hormuz part of US territory, saying the crucial energy waterway it has blockaded \"will remain Iranian\". Trump has repeatedly said the strait, which Tehran effectively clos...",
-      "time": "2026-08-14 07:17 UTC",
-      "timestamp": 1786691855,
+      "time": "2026-08-14 08:32 UTC",
+      "timestamp": 1786696337,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Tehran",
       "title": "Iran defiant on strait as Trump tells Americans to accept high gas prices",
       "blurb": "By Eman Abouhassira, Enas Alashray and Humeyra PamukDUBAI/CAIRO/GARDEN CITY, New York, Aug 15 (Reuters) - Iran called on the U.S. to accept defeat while President Donald Trump blasted Tehran as \"very evil\" and told Americans to brace for continued high fuel prices as a result ...",
-      "time": "2026-08-13 17:17 UTC",
-      "timestamp": 1786641455,
+      "time": "2026-08-13 18:32 UTC",
+      "timestamp": 1786645937,
       "source": "Al-Monitor"
     },
     {
@@ -52,19 +52,19 @@
       "location": "Eastern Med",
       "title": "A $50 million hostage ransom funded al Qaeda's Mali offensive, UN says",
       "blurb": "By David LewisLONDON, Aug 15 (Reuters) - An estimated $50 million ransom paid to free a hostage seized by al Qaeda-linked militants in Mali in late 2025 has helped to fund their advances across West Africa and the group's global network, U.N. experts said.A new U.N. report det...",
-      "time": "2026-08-13 03:17 UTC",
-      "timestamp": 1786591055,
+      "time": "2026-08-13 04:32 UTC",
+      "timestamp": 1786595537,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_5",
       "type": "naval",
-      "actor": "host",
+      "actor": "iran",
       "location": "Strait of Hormuz",
-      "title": "UAE says ADNOC vessel attacked in Hormuz, vows to defend navigation rights",
-      "blurb": "CAIRO, Aug 15 (Reuters) - UAE's Abu Dhabi National Oil Company said on Saturday that one of its vessels came under attack while transiting the Strait of Hormuz a day earlier, the Emirati state news agency WAM reported.The state oil company said no injuries were reported, with ...",
-      "time": "2026-08-12 13:17 UTC",
-      "timestamp": 1786540655,
+      "title": "UAE says Iran attacked ADNOC vessel in Hormuz, urges waterway's reopening",
+      "blurb": "CAIRO, Aug 15 (Reuters) - The United Arab Emirates said on Saturday Iran had attacked an Abu Dhabi National Oil Company vessel while it was transiting the Strait of Hormuz a day earlier, the Emirati state news agency WAM reported.ADNOC said no injuries were reported and that t...",
+      "time": "2026-08-12 14:32 UTC",
+      "timestamp": 1786545137,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Eastern Med",
       "title": "UN urges support for Afghan women amid tightening Taliban curbs",
       "blurb": "By David BrunnstromAug 14 (Reuters) - The United Nations appealed to donors on Friday not to cut funding for women's programs in Taliban-ruled Afghanistan, saying this would add to suffering in a country where conditions for women are already the worst in the world.",
-      "time": "2026-08-11 23:17 UTC",
-      "timestamp": 1786490255,
+      "time": "2026-08-12 00:32 UTC",
+      "timestamp": 1786494737,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Sanaa",
       "title": "As Saudi Arabia rallies against Yemen's Houthis, US stays focused on Iran",
       "blurb": "WASHINGTON \u2013 As Saudi Arabia gears up to head off any attempt by Yemen\u2019s Houthi rebels to close the Bab al-Mandeb Strait through further attacks on commercial shipping, the Trump administration remains focused on maintaining the blockade of Iran, officials said Friday.",
-      "time": "2026-08-11 09:17 UTC",
-      "timestamp": 1786439855,
+      "time": "2026-08-11 10:32 UTC",
+      "timestamp": 1786444337,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Tehran",
       "title": "Trump dismisses concerns over conditions on US aircraft carrier",
       "blurb": "President Donald Trump dismissed concerns Friday over living conditions and the mental health of service members on a US aircraft carrier deployed against Iran, while confirming the ship would soon rotate out. Asked by reporters whether family members were worried about the si...",
-      "time": "2026-08-09 01:17 UTC",
-      "timestamp": 1786238255,
+      "time": "2026-08-09 02:32 UTC",
+      "timestamp": 1786242737,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Tehran",
       "title": "Why Iran is intensifying wartime crackdown in restive Baluchistan",
       "blurb": "A string of security operations in Iran's southeast has underscored Tehran's enduring fears that wartime instability could aggravate longstanding ethnic, sectarian and economic grievances.",
-      "time": "2026-08-08 11:17 UTC",
-      "timestamp": 1786187855,
+      "time": "2026-08-08 12:32 UTC",
+      "timestamp": 1786192337,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Jerusalem",
       "title": "'Surrounded': Israel's new West Bank settlements bring chaos to Palestinians",
       "blurb": "Verified tactical intelligence feed update.",
-      "time": "2026-08-06 03:17 UTC",
-      "timestamp": 1785986255,
+      "time": "2026-08-06 04:32 UTC",
+      "timestamp": 1785990737,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Damascus",
       "title": "Beyond bases: Russia\u2019s foothold in Syria shrinks even as ties endure",
       "blurb": "Syria's relations with Russia have entered a new phase with a deal reorganizing Moscow\u2019s military presence, and leaving the door open to continued economic relations and influence.",
-      "time": "2026-08-05 13:17 UTC",
-      "timestamp": 1785935855,
+      "time": "2026-08-05 14:32 UTC",
+      "timestamp": 1785940337,
       "source": "Al-Monitor"
     }
   ],
