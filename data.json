@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-08-15T14:19:36.929981+00:00",
+  "lastUpdated": "2026-08-15T15:17:35.156715+00:00",
   "incidents": [
     {
       "id": "inc_0",
       "type": "ground",
-      "actor": "iran",
+      "actor": "israel",
       "location": "Beirut",
-      "title": "Lebanon says 9 dead in strikes as Israel says targeted Hezbollah",
-      "blurb": "Lebanon said Israeli strikes on the south killed nine people including three children on Saturday, the deadliest raids since deals in June eased hostilities between Israel and Hezbollah. Israel said it carried out retaliatory strikes against the Iran-backed militant group but ...",
-      "time": "2026-08-15 14:19 UTC",
-      "timestamp": 1786803576,
+      "title": "Lebanon reports 11 dead in strikes that Israel says targeted Hezbollah",
+      "blurb": "Lebanon said Israeli strikes on the south killed 11 people including three children on Saturday, the deadliest raids since deals in June eased hostilities between Israel and Hezbollah. Israel's military said the strikes in the early morning were in retaliation for an attack by...",
+      "time": "2026-08-15 15:17 UTC",
+      "timestamp": 1786807055,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Eastern Med",
       "title": "Taliban mark five years in power as aid groups warn of crisis",
       "blurb": "By Mohammad Yunus Yawar and Rick NoackKABUL/ISLAMABAD, Aug 15 (Reuters) - The Taliban marked five years in power on Saturday, seeking to portray their government as in control even as aid and rights groups warned of escalating crises.Outside the former U.S. embassy in Kabul, a...",
-      "time": "2026-08-15 00:19 UTC",
-      "timestamp": 1786753176,
+      "time": "2026-08-15 01:17 UTC",
+      "timestamp": 1786756655,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Tehran",
       "title": "Iran fires back at Trump's threat to declare Hormuz a US territory",
       "blurb": "Iran on Saturday fired back at US President Donald Trump's claim that he would soon declare the Strait of Hormuz part of US territory, saying the crucial energy waterway it has blockaded \"will remain Iranian\". Trump has repeatedly said the strait, which Tehran effectively clos...",
-      "time": "2026-08-14 10:19 UTC",
-      "timestamp": 1786702776,
+      "time": "2026-08-14 11:17 UTC",
+      "timestamp": 1786706255,
       "source": "Al-Monitor"
     },
     {
@@ -39,10 +39,10 @@
       "type": "naval",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Iran defiant on strait as Trump tells Americans to accept high gas prices",
-      "blurb": "By Eman Abouhassira, Enas Alashray and Humeyra PamukDUBAI/CAIRO/GARDEN CITY, New York, Aug 15 (Reuters) - Iran called on the U.S. to accept defeat while President Donald Trump blasted Tehran as \"very evil\" and told Americans to brace for continued high fuel prices as a result ...",
-      "time": "2026-08-13 20:19 UTC",
-      "timestamp": 1786652376,
+      "title": "Iran defiant on strait as Trump tells Americans to accept high gasoline prices",
+      "blurb": "By Eman Abouhassira, Enas Alashray and Humeyra PamukDUBAI/CAIRO/GARDEN CITY, New York, Aug 15 (Reuters) - Iran called on the U.S. to accept defeat on Saturday, while President Donald Trump blasted Tehran as \"very evil\" and told Americans to prepare for continued high fuel pric...",
+      "time": "2026-08-13 21:17 UTC",
+      "timestamp": 1786655855,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Eastern Med",
       "title": "A $50 million hostage ransom funded al Qaeda's Mali offensive, UN says",
       "blurb": "By David LewisLONDON, Aug 15 (Reuters) - An estimated $50 million ransom paid to free a hostage seized by al Qaeda-linked militants in Mali in late 2025 has helped to fund their advances across West Africa and the group's global network, U.N. experts said.A new U.N. report det...",
-      "time": "2026-08-13 06:19 UTC",
-      "timestamp": 1786601976,
+      "time": "2026-08-13 07:17 UTC",
+      "timestamp": 1786605455,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Strait of Hormuz",
       "title": "UAE says Iran attacked ADNOC vessel in Hormuz, urges waterway's reopening",
       "blurb": "CAIRO, Aug 15 (Reuters) - The United Arab Emirates said on Saturday Iran had attacked an Abu Dhabi National Oil Company vessel while it was transiting the Strait of Hormuz a day earlier, the Emirati state news agency WAM reported.ADNOC said no injuries were reported and that t...",
-      "time": "2026-08-12 16:19 UTC",
-      "timestamp": 1786551576,
+      "time": "2026-08-12 17:17 UTC",
+      "timestamp": 1786555055,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Eastern Med",
       "title": "UN urges support for Afghan women amid tightening Taliban curbs",
       "blurb": "By David BrunnstromAug 14 (Reuters) - The United Nations appealed to donors on Friday not to cut funding for women's programs in Taliban-ruled Afghanistan, saying this would add to suffering in a country where conditions for women are already the worst in the world.",
-      "time": "2026-08-12 02:19 UTC",
-      "timestamp": 1786501176,
+      "time": "2026-08-12 03:17 UTC",
+      "timestamp": 1786504655,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Sanaa",
       "title": "As Saudi Arabia rallies against Yemen's Houthis, US stays focused on Iran",
       "blurb": "WASHINGTON \u2013 As Saudi Arabia gears up to head off any attempt by Yemen\u2019s Houthi rebels to close the Bab al-Mandeb Strait through further attacks on commercial shipping, the Trump administration remains focused on maintaining the blockade of Iran, officials said Friday.",
-      "time": "2026-08-11 12:19 UTC",
-      "timestamp": 1786450776,
+      "time": "2026-08-11 13:17 UTC",
+      "timestamp": 1786454255,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Tehran",
       "title": "Trump dismisses concerns over conditions on US aircraft carrier",
       "blurb": "President Donald Trump dismissed concerns Friday over living conditions and the mental health of service members on a US aircraft carrier deployed against Iran, while confirming the ship would soon rotate out. Asked by reporters whether family members were worried about the si...",
-      "time": "2026-08-09 04:19 UTC",
-      "timestamp": 1786249176,
+      "time": "2026-08-09 05:17 UTC",
+      "timestamp": 1786252655,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Tehran",
       "title": "Why Iran is intensifying wartime crackdown in restive Baluchistan",
       "blurb": "A string of security operations in Iran's southeast has underscored Tehran's enduring fears that wartime instability could aggravate longstanding ethnic, sectarian and economic grievances.",
-      "time": "2026-08-08 14:19 UTC",
-      "timestamp": 1786198776,
+      "time": "2026-08-08 15:17 UTC",
+      "timestamp": 1786202255,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Jerusalem",
       "title": "'Surrounded': Israel's new West Bank settlements bring chaos to Palestinians",
       "blurb": "Verified tactical intelligence feed update.",
-      "time": "2026-08-06 06:19 UTC",
-      "timestamp": 1785997176,
+      "time": "2026-08-06 07:17 UTC",
+      "timestamp": 1786000655,
       "source": "Al-Monitor"
     },
     {
@@ -129,229 +129,9 @@
       "location": "Damascus",
       "title": "Beyond bases: Russia\u2019s foothold in Syria shrinks even as ties endure",
       "blurb": "Syria's relations with Russia have entered a new phase with a deal reorganizing Moscow\u2019s military presence, and leaving the door open to continued economic relations and influence.",
-      "time": "2026-08-05 16:19 UTC",
-      "timestamp": 1785946776,
+      "time": "2026-08-05 17:17 UTC",
+      "timestamp": 1785950255,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_12",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Lebanese parliament speaker condemns Israeli 'massacre'",
-      "blurb": "Lebanese parliament speaker condemns Israeli 'massacre' The death toll from the Israeli attacks in southern Lebanon has risen to 11, with 19 wounded, the Lebanese health ministry has said. The speaker of the Lebanese parliament, Nabih Berri, called Israel's attacks a \"massacre...",
-      "time": "2026-08-15 14:19 UTC",
-      "timestamp": 1786803576,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_13",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate",
-      "blurb": "Deadly Israeli strikes kill nine in southern Lebanon as tensions escalate Submitted by MEE staff on Sat, 08/15/2026 - 13:49 Prime Minister Nawaf Salam says civilians killed in the town of Ansar were 'not military infrastructure' A man watches as heavy machinery, first responde...",
-      "time": "2026-08-15 00:19 UTC",
-      "timestamp": 1786753176,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_14",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran accuses French diplomats of 'infiltration'",
-      "blurb": "Iran accuses French diplomats of 'infiltration' The Iranian government has accused two French diplomats of conducting an \"infiltration and interference\" operation inside Iran. Iran's intelligence ministry alleged in a statement that the diplomats were discovered at a secret me...",
-      "time": "2026-08-14 10:19 UTC",
-      "timestamp": 1786702776,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_15",
-      "type": "drone",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli drone strike injures three in central Gaza",
-      "blurb": "Israeli drone strike injures three in central Gaza An Israeli drone strike on Deir al-Balah in central Gaza has injured three Palestinians, one of whom is in critical condition, according to the Wafa news agency. All three were taken to al-Aqsa hospital.",
-      "time": "2026-08-13 20:19 UTC",
-      "timestamp": 1786652376,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_16",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Thirteen years after Rabaa massacre, families urge Egypt to free political prisoners",
-      "blurb": "Thirteen years after Rabaa massacre, families urge Egypt to free political prisoners Submitted by MEE staff on Sat, 08/15/2026 - 11:05 On 14 August 2013, Egyptian forces under Abdel Fattah el-Sisi killed at least 900 pro-democracy protesters Egyptian President Abdel Fattah el-...",
-      "time": "2026-08-13 06:19 UTC",
-      "timestamp": 1786601976,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_17",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Oxygen stations operating beyond capacity in Gaza",
-      "blurb": "Oxygen stations operating beyond capacity in Gaza Gaza's health ministry has announced that the enclave's oxygen stations are operating beyond maximum capacity because Israel is preventing essential supplies from entering. The ministry said only 12 of 34 oxygen stations remain...",
-      "time": "2026-08-12 16:19 UTC",
-      "timestamp": 1786551576,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_18",
-      "type": "airstrike",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Israeli attacks kill nine people in southern Lebanon",
-      "blurb": "Israeli attacks kill nine people in southern Lebanon The Israeli military has killed two people and injured nine in an attack on Deir ez-Zahrani, a village in southern Lebanon, according to the Lebanese health ministry. Earlier, Israeli warplanes killed seven people in a strik...",
-      "time": "2026-08-12 02:19 UTC",
-      "timestamp": 1786501176,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_19",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "How a pragmatic axis could reshape the Middle East",
-      "blurb": "How a pragmatic axis could reshape the Middle East Submitted by Marco Carnelos on Tue, 08/11/2026 - 16:51 The Mecca agreement could do more to determine the region's trajectory than anything decided in Washington, Tel Aviv or Tehran Saudi Crown Prince Mohammed bin Salman welco...",
-      "time": "2026-08-11 12:19 UTC",
-      "timestamp": 1786450776,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Five years of Taliban rule: A state has survived, but at what cost?",
-      "blurb": "Five years of Taliban rule: A state has survived, but at what cost? Submitted by Zia Ur Rehman on Thu, 08/13/2026 - 18:03 Economic despair, social repression and regional friction have preserved Afghanistan as an enduring catalyst for crises A security personnel stands guard n...",
-      "time": "2026-08-10 22:19 UTC",
-      "timestamp": 1786400376,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli forces fire tear gas canisters at Palestinian homes in Ramallah",
-      "blurb": "Israeli forces fire tear gas canisters at Palestinian homes in Ramallah Israeli forces fire tear gas canisters towards Palestinian homes in the village of Al-Mughayir, northeast of Ramallah, after locals tried to fend off an attack by Israeli settlers, according to Quds News N...",
-      "time": "2026-08-10 08:19 UTC",
-      "timestamp": 1786349976,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "UN says 900 \u2018physical obstacles\u2019 delay, limit aid to West Bank",
-      "blurb": "UN says 900 \u2018physical obstacles\u2019 delay, limit aid to West Bank More than 900 physical obstacles, including Israeli checkpoints, gates, roadblocks and other restrictions, are delaying and limiting aid to the West Bank, the UN has said. The UN Office for the Coordination of Huma...",
-      "time": "2026-08-09 18:19 UTC",
-      "timestamp": 1786299576,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Morning recap",
-      "blurb": "Morning recap Good morning Middle East Eye readers, President Donald Trump said he would \"soon\" declare the Strait of Hormuz part of US territory after defeating Iran. Iran's Deputy Foreign Minister Kazem Gharibabadi retorted that Tehran would not be intimidated by threats or ...",
-      "time": "2026-08-09 04:19 UTC",
-      "timestamp": 1786249176,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "naval",
-      "actor": "host",
-      "location": "Strait of Hormuz",
-      "title": "UKMTO says bulk carrier struck in Hormuz",
-      "blurb": "UKMTO says bulk carrier struck in Hormuz A bulk carrier has been struck by an unknown projectile in the Strait of Hormuz, the UK Maritime Trade Operations (UKMTO) said. UKMTO said it received a verified report that the projectile hit the vessel\u2019s hull. \"The crew is reported sa...",
-      "time": "2026-08-08 14:19 UTC",
-      "timestamp": 1786198776,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "airstrike",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Seven people killed in Israeli air attacks on southern Lebanon",
-      "blurb": "Seven people killed in Israeli air attacks on southern Lebanon Seven people were killed following an Israeli air strike on the town of Ansar in southern Lebanon early Saturday morning, according to the country\u2019s civil defence. Israeli jets struck the outskirts of Ansar in the ...",
-      "time": "2026-08-08 00:19 UTC",
-      "timestamp": 1786148376,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "Libya's Haftar played role in securing US hostage's release, report says",
-      "blurb": "Libya's Haftar played role in securing US hostage's release, report says Authorities in eastern Libya under military commander Khalifa Haftar helped secure the release of an American missionary held hostage held by an Islamic State affiliate in West Africa's Sahel region, esco...",
-      "time": "2026-08-07 10:19 UTC",
-      "timestamp": 1786097976,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_27",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Siege of West Bank families 'state-backed settler terror', Amnesty official says",
-      "blurb": "Siege of West Bank families 'state-backed settler terror', Amnesty official says The ongoing siege of a several Palestinian families in the West Bank \u201cis not an isolated incident\u201d, but \u201cpart of an accelerating pattern of state-backed settler terror and forced displacement acro...",
-      "time": "2026-08-06 20:19 UTC",
-      "timestamp": 1786047576,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_28",
-      "type": "missile",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Yemeni government says Houthi attack on al-Mokha killed four civilians",
-      "blurb": "Yemeni government says Houthi attack on al-Mokha killed four civilians At least four civilians were killed when Houthis fired six ballistic missiles at the Red Sea port of al-Mokha on Friday, Yemen's internationally recognised government said. The Yemeni armed forces aligned w...",
-      "time": "2026-08-06 06:19 UTC",
-      "timestamp": 1785997176,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_29",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Rashida Tlaib rally cancelled after Florida lawmaker calls its 'anti-jew'",
-      "blurb": "Rashida Tlaib rally cancelled after Florida lawmaker calls its 'anti-jew' A South Florida site backed out of hosting a rally with Democratic US Representative Rashida Tlaib, a vocal critic of Israel's government, after complaints by a Democratic state lawmaker in the party's l...",
-      "time": "2026-08-05 16:19 UTC",
-      "timestamp": 1785946776,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_30",
-      "type": "diplomatic",
-      "actor": "proxy",
-      "location": "Gaza City",
-      "title": "Hamas likely to elect Gaza political bureau head next week, report says",
-      "blurb": "Hamas likely to elect Gaza political bureau head next week, report says Hamas is expected to hold internal elections in the Gaza Strip next week to choose the head of its political bureau for the territory, Arab48 reported. Ali Al-Amoudi is the most likely candidate to succeed...",
-      "time": "2026-08-05 02:19 UTC",
-      "timestamp": 1785896376,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_31",
-      "type": "naval",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Houthi spokesman says 'Saudi warships and mercenaries' targeted",
-      "blurb": "Houthi spokesman says 'Saudi warships and mercenaries' targeted Houthi military spokesperson Yahya Saree has said the rebels \u201ctargeted concentrations and weapons belonging to the Saudi enemy\u201d. In a statement carried by Press TV, Saree said the \u201cservicemen targeted warships bel...",
-      "time": "2026-08-04 12:19 UTC",
-      "timestamp": 1785845976,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
