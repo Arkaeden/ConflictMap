@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-18T21:21:04.807596+00:00",
+  "lastUpdated": "2026-08-18T22:20:12.996178+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Tehran",
       "title": "DOJ unseals new charges against 17 hackers in Iran-backed campaign",
       "blurb": "By AJ VicensAug 18 (Reuters) - The U.S. Department of Justice on Tuesday unsealed new and updated charges against 17 individuals working withan Iranian company that it alleges carried out hacks and data theft against U.S. universities, companies and government agencies.The DOJ...",
-      "time": "2026-08-18 21:21 UTC",
-      "timestamp": 1787088064,
+      "time": "2026-08-18 22:20 UTC",
+      "timestamp": 1787091612,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Tehran",
       "title": "France to expel two Iranian diplomats in coming days, foreign minister says",
       "blurb": "PARIS, Aug 18 (Reuters) - France will expel two Iranian diplomats in the coming days in response to an incident in July involving two staff of the French embassy in Tehran.\"I had announced that this intolerable act would have consequences. And so it has. Two Iranian diplomats ...",
-      "time": "2026-08-18 07:21 UTC",
-      "timestamp": 1787037664,
+      "time": "2026-08-18 08:20 UTC",
+      "timestamp": 1787041212,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Damascus",
       "title": "UN atomic watchdog says found tons of nuclear material at Syria site",
       "blurb": "The head of the UN's nuclear watchdog said Tuesday its inspectors had found several tons of nuclear material in Syria, at a site Damascus reported to the agency last month. The inspectors visited two sites, one in Deir Ezzor and \"a second location related to the nuclear materi...",
-      "time": "2026-08-17 17:21 UTC",
-      "timestamp": 1786987264,
+      "time": "2026-08-17 18:20 UTC",
+      "timestamp": 1786990812,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Damascus",
       "title": "US working on deconfliction mechanism among Turkey, Israel and Syria, US envoy says",
       "blurb": "By Timour AzhariGENEVA, Aug 18 (Reuters) - The United States is working to establish a deconfliction mechanism among Israel, Turkey and Syria, U.S. special envoy for Syria Tom Barrack said on Tuesday after Israel struck a Syrian airbase near the Turkish border. Barrack, who is...",
-      "time": "2026-08-17 03:21 UTC",
-      "timestamp": 1786936864,
+      "time": "2026-08-17 04:20 UTC",
+      "timestamp": 1786940412,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Tehran",
       "title": "France to expel two Iranian diplomats: foreign minister",
       "blurb": "Paris will expel two Iranian diplomats posted in France in retaliation for Iran banning two French diplomats in the embassy in Tehran, the French foreign minister said on Tuesday. \"Two Iranian diplomats in France will be expelled in the coming days,\" Jean-Noel Barrot said on X...",
-      "time": "2026-08-16 13:21 UTC",
-      "timestamp": 1786886464,
+      "time": "2026-08-16 14:20 UTC",
+      "timestamp": 1786890012,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Strait of Hormuz",
       "title": "How failing US-Iran diplomacy is giving way to fresh confrontation",
       "blurb": "Iran's dismissal of secret talks with Washington comes as diplomacy is in impasse, the Strait of Hormuz remains contested and Iranian commanders signal a potentially more aggressive military posture.",
-      "time": "2026-08-15 23:21 UTC",
-      "timestamp": 1786836064,
+      "time": "2026-08-16 00:20 UTC",
+      "timestamp": 1786839612,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Eastern Med",
       "title": "US sanctions ICC chief Tomoko Akane of Japan",
       "blurb": "The United States on Tuesday imposed sanctions against International Criminal Court President Tomoko Akane of Japan as part of its campaign against the body that it accuses of being \"politicized.\" Washington also slapped sanctions on ICC Senior Trial Lawyer Abdoulaye Seye of S...",
-      "time": "2026-08-13 15:21 UTC",
-      "timestamp": 1786634464,
+      "time": "2026-08-13 16:20 UTC",
+      "timestamp": 1786638012,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Strait of Hormuz",
       "title": "UAE halts all trade ties with Iran after missile attack",
       "blurb": "The incident follows the UAE blaming Iran for strikes on ADNOC vessels in the Strait of Hormuz.",
-      "time": "2026-08-13 01:21 UTC",
-      "timestamp": 1786584064,
+      "time": "2026-08-13 02:20 UTC",
+      "timestamp": 1786587612,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Gaza City",
       "title": "Israel kills six in Gaza on day after Kushner meeting with Netanyahu, medics say",
       "blurb": "By Nidal al-MughrabiCAIRO, Aug 18 (Reuters) - An Israeli airstrike killed at least six Palestinians in the Gaza Strip on Tuesday, health officials said, a day after Donald Trump's envoy Jared Kushner ended a trip to the region that failed to push forward the U.S. president's p...",
-      "time": "2026-08-10 17:21 UTC",
-      "timestamp": 1786382464,
+      "time": "2026-08-10 18:20 UTC",
+      "timestamp": 1786386012,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Tehran",
       "title": "Oil nears $92 on UAE missile alert as Trump claims Iran talks stuck",
       "blurb": "Brent crude climbed near $92 a barrel on Tuesday, reaching its highest level this month amid new escalatory developments.",
-      "time": "2026-08-10 03:21 UTC",
-      "timestamp": 1786332064,
+      "time": "2026-08-10 04:20 UTC",
+      "timestamp": 1786335612,
       "source": "Al-Monitor"
     },
     {
@@ -118,207 +118,9 @@
       "location": "Eastern Med",
       "title": "US sanctions International Criminal Court president, top lawyer",
       "blurb": "The sanctions come a month after Secretary of State Marco Rubio vowed to dismantle the court \"brick by brick.\"",
-      "time": "2026-08-07 19:21 UTC",
-      "timestamp": 1786130464,
+      "time": "2026-08-07 20:20 UTC",
+      "timestamp": 1786134012,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_11",
-      "type": "airstrike",
-      "actor": "israel",
-      "location": "Damascus",
-      "title": "Israel says Syria acceptance of Turkish troops posed 'threat'",
-      "blurb": "Israel says Syria acceptance of Turkish troops posed 'threat' Israel's prime minister's office said in a statement to X on Tuesday that Syria's acceptance of Turkish troops at its air base posed a \"threat\" to its security after Israeli air strikes on the Abu al-Duhur air base ...",
-      "time": "2026-08-18 21:21 UTC",
-      "timestamp": 1787088064,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_12",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Gaza City",
-      "title": "UN says only 3 percent of Gaza\u2019s cropland remains accessible and undamaged",
-      "blurb": "UN says only 3 percent of Gaza\u2019s cropland remains accessible and undamaged Only 3 percent of the Gaza Strip\u2019s cropland remains both accessible and undamaged, according to the Food and Agriculture Organization of the United Nations (FAO) and the United Nations Satellite Centre ...",
-      "time": "2026-08-18 07:21 UTC",
-      "timestamp": 1787037664,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_13",
-      "type": "missile",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "Iran rejects UAE statement on missile launches originating from Iran",
-      "blurb": "Iran rejects UAE statement on missile launches originating from Iran Iran's foreign ministry spokesperson Esmaeil Baghaei rejected a statement by the UAE on Tuesday that said Iran was behind missiles launched against the Gulf country a day earlier, saying the \"accusations\" wer...",
-      "time": "2026-08-17 17:21 UTC",
-      "timestamp": 1786987264,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_14",
-      "type": "cyber",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "US Justice Department targets Iranian institute for activity linked to IRGC",
-      "blurb": "US Justice Department targets Iranian institute for activity linked to IRGC The US Department of Justice (DoJ) announced charges on Tuesday against 17 members of Iran\u2019s Mabna Institute for cyber activity and hacking \u201ccarried out on behalf of the Iranian Revolutionary Guard Cor...",
-      "time": "2026-08-17 03:21 UTC",
-      "timestamp": 1786936864,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_15",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israel issues tender for 1,234 settlement units in occupied Jerusalem",
-      "blurb": "Israel issues tender for 1,234 settlement units in occupied Jerusalem Israel issued a tender on Tuesday for the construction of 1,234 settlement units in the southern part of the E1 plan east of occupied Jerusalem, moving one of the most controversial settlement schemes from t...",
-      "time": "2026-08-16 13:21 UTC",
-      "timestamp": 1786886464,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_16",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "UAE cuts off trade with Iran until further notice",
-      "blurb": "UAE cuts off trade with Iran until further notice The UAE said on Tuesday that all trade, commercial exchanges and financial transations with Iran have been halted until further notice, according to a statement from the country's foreign ministry. The statement added that the ...",
-      "time": "2026-08-15 23:21 UTC",
-      "timestamp": 1786836064,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_17",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "US sanctions International Criminal Court president, trial lawyer in bid to dismantle body",
-      "blurb": "US sanctions International Criminal Court president, trial lawyer in bid to dismantle body Submitted by MEE staff on Tue, 08/18/2026 - 20:29 Secretary of State Marco Rubio has previously made it clear he intends to take the court apart 'brick by brick' Japanese Judge Tomoko Ak...",
-      "time": "2026-08-15 09:21 UTC",
-      "timestamp": 1786785664,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_18",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Damascus",
-      "title": "Syrian petroleum company says explosion of gas pipeline 'deliberate act of sabotage'",
-      "blurb": "Syrian petroleum company says explosion of gas pipeline 'deliberate act of sabotage' Syria's petroleum company said on Tuesday that an explosion occurred at a gas export pipeline at the Al-Jabsah gas plant, halting oil flow through the pipeline. In a statement to Syria's state...",
-      "time": "2026-08-14 19:21 UTC",
-      "timestamp": 1786735264,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_19",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "US mulls shrinking military footprint in Gulf as a result of war on Iran: Report",
-      "blurb": "US mulls shrinking military footprint in Gulf as a result of war on Iran: Report The Trump administration is examining whether to pull troops out of the Gulf as a result of the US-Israeli war on Iran, with the Pentagon weighing the risks facing large US bases in the region tha...",
-      "time": "2026-08-14 05:21 UTC",
-      "timestamp": 1786684864,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iranian-American comedian Max Amini sparks backlash over 'species' remarks on Iranian people",
-      "blurb": "Iranian-American comedian Max Amini sparks backlash over 'species' remarks on Iranian people Submitted by MEE staff on Tue, 08/18/2026 - 19:33 Amini told Bill Maher that those fighting the US and Israel are a 'species with no morals', prompting accusations of dehumanisation Ma...",
-      "time": "2026-08-13 01:21 UTC",
-      "timestamp": 1786584064,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "US envoy calls out Israeli settler 'terrorism' in interview",
-      "blurb": "US envoy calls out Israeli settler 'terrorism' in interview US ambassador to Israel Mike Huckabee said on Tuesday that \u201cterrorism\u201d is the most accurate term to describe the actions of Israeli settlers in the occupied West Bank. He said in an interview to Israeli public broadca...",
-      "time": "2026-08-12 11:21 UTC",
-      "timestamp": 1786533664,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Damascus",
-      "title": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base",
-      "blurb": "Trump envoy 'deeply concerned' by Israeli strikes on Syrian air base Submitted by MEE staff on Tue, 08/18/2026 - 18:11 In rare pushback against Israel, Tom Barrack said Syria did nothing to provoke the attack US special envoy for Syria and US ambassador to Turkey Tom Barrack s...",
-      "time": "2026-08-11 21:21 UTC",
-      "timestamp": 1786483264,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "ICC says US sanctions 'undermine the rule of law'",
-      "blurb": "ICC says US sanctions 'undermine the rule of law' The International Criminal Court (ICC) said in a statement on Tuesday that US sanctions on its top members \"undermine the rule of law\" after Washington imposed measures on the ICC president and its senior lawyer. \"When judicial...",
-      "time": "2026-08-11 07:21 UTC",
-      "timestamp": 1786432864,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "missile",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Houthi ballistic missile hits house near Yemen\u2019s Taiz",
-      "blurb": "Houthi ballistic missile hits house near Yemen\u2019s Taiz A ballistic missile launched by Yemen\u2019s Houthis hit a house in al-Akmah village in the Maqbanah district, west of Taiz, according to the media centre connected to the country\u2019s Saudi-backed government. The media centre said...",
-      "time": "2026-08-10 17:21 UTC",
-      "timestamp": 1786382464,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "US announces sanctions on ICC president and senior lawyer",
-      "blurb": "US announces sanctions on ICC president and senior lawyer US Secretary of State Marco Rubio has announced sanctions against the president and a senior lawyer of the International Criminal Court (ICC). The US imposed sanctions on Tuesday on Tomoko Akane, a Japanese judge who is...",
-      "time": "2026-08-09 13:21 UTC",
-      "timestamp": 1786281664,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli minister shows construction of 'death row and hanging' facility for Palestinians",
-      "blurb": "Israeli minister shows construction of 'death row and hanging' facility for Palestinians Israeli National Security Minister Itamar Ben-Gvir shared a video on Telegram on Tuesday showing the construction of a dedicated execution facility for Palestinians, after the death penalt...",
-      "time": "2026-08-08 23:21 UTC",
-      "timestamp": 1786231264,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_27",
-      "type": "airstrike",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli strike on Gaza port kills at least seven, including a child",
-      "blurb": "Israeli strike on Gaza port kills at least seven, including a child Submitted by MEE staff on Tue, 08/18/2026 - 18:42 At least six people were killed, including a child, and dozens injured in an Israeli bombing of a port west of Gaza City A boy walks carrying a table on his ba...",
-      "time": "2026-08-08 09:21 UTC",
-      "timestamp": 1786180864,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_28",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Ghalibaf slams US attempts at \u2018squeezing Iran harder\u2019",
-      "blurb": "Ghalibaf slams US attempts at \u2018squeezing Iran harder\u2019 Iran\u2019s parliamentary speaker and chief negotiator, Mohammad Bagher Ghalibaf, said in a post on X on Tuesday that the US is mistaken in believing that \u201csqueezing Iran harder\u201d will win it concessions in negotiations. \u201cAmerica...",
-      "time": "2026-08-07 19:21 UTC",
-      "timestamp": 1786130464,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
