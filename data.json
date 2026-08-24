@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T18:36:35.659735+00:00",
+  "lastUpdated": "2026-08-24T19:27:14.256971+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Eastern Med",
       "title": "Saudi Arabia to invest $7 bn in theme parks near Paris: French presidency",
       "blurb": "France and Saudi Arabia on Monday signed a memorandum of understanding for a six-billion-euro ($7 billion) Saudi investment to create three theme parks near Paris, including one likely to be manga-themed, the office of the French president said. The French presidency's Elysee ...",
-      "time": "2026-08-24 18:36 UTC",
-      "timestamp": 1787596595,
+      "time": "2026-08-24 19:27 UTC",
+      "timestamp": 1787599633,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Eastern Med",
       "title": "France, Saudi Arabia agree on \u20ac6 billion Dragon Ball Z theme park project near Paris",
       "blurb": "PARIS, Aug 24 (Reuters) - France and Saudi Arabia have agreed to build a \u20ac6 billion ($7 billion) manga-themed amusement park near Paris, the Elysee Palace said on Monday during a visit by Saudi Crown Prince Mohammed bin Salman to the French capital.The project, inspired by the...",
-      "time": "2026-08-24 04:36 UTC",
-      "timestamp": 1787546195,
+      "time": "2026-08-24 05:27 UTC",
+      "timestamp": 1787549233,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Gaza City",
       "title": "Israeli fire kills two young children in Gaza, medics say",
       "blurb": "CAIRO, Aug 24 (Reuters) - Israeli airstrikes and gunfire killed two young children and at least two other Palestinians in the Gaza Strip on Monday, health officials in the territory said.Medics and relatives said 10-year-old Amal Abu Khater was hit by a bullet in her back whil...",
-      "time": "2026-08-23 14:36 UTC",
-      "timestamp": 1787495795,
+      "time": "2026-08-23 15:27 UTC",
+      "timestamp": 1787498833,
       "source": "Al-Monitor"
     },
     {
@@ -39,10 +39,10 @@
       "type": "diplomatic",
       "actor": "usa",
       "location": "Damascus",
-      "title": "US removes Syria's designation as State Sponsor of Terrorism",
-      "blurb": "Aug 24 (Reuters) - The U.S. State Department on Monday removed Syria from its list of State Sponsors of Terrorism, according to a notification from the Treasury, in a move that was first announced earlier this year pending a review by Congress. (Reporting by Katharine Jackson ...",
-      "time": "2026-08-23 00:36 UTC",
-      "timestamp": 1787445395,
+      "title": "US removes Syria's designation as State Sponsor of Terrorism list",
+      "blurb": "Aug 24 (Reuters) - The State Department on Monday removed Syria from its list of State Sponsors of Terrorism, according to a notification from the U.S. Treasury, in a move that was first announced earlier this year pending a review by Congress. The designation as a state spons...",
+      "time": "2026-08-23 01:27 UTC",
+      "timestamp": 1787448433,
       "source": "Al-Monitor"
     },
     {
@@ -50,10 +50,10 @@
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "US threatens sanctions on Iran\u2019s trading partners",
+      "title": "In 'warning shot,' US threatens sanctions on Iran\u2019s trading partners",
       "blurb": "Treasury Secretary Scott Bessent said countries were given \"defined timelines\" to halt business with Iran or face US sanctions.",
-      "time": "2026-08-22 10:36 UTC",
-      "timestamp": 1787394995,
+      "time": "2026-08-22 11:27 UTC",
+      "timestamp": 1787398033,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Tehran",
       "title": "Stocks, oil slip ahead of US threat of economic war against Iran",
       "blurb": "Oil prices eased after strong gains last week while stock markets mostly faltered on Monday as investors awaited details of a US plan to impose massive economic pressure on Iran to end the Middle East war. Wednesday's earnings report from chip giant Nvidia and Thursday's openi...",
-      "time": "2026-08-21 20:36 UTC",
-      "timestamp": 1787344595,
+      "time": "2026-08-21 21:27 UTC",
+      "timestamp": 1787347633,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Damascus",
       "title": "US lifts Syria's terror designation after 47 years",
       "blurb": "The Trump administration also took Hayat Tahrir al-Sham off its blacklist of Specially Designated Global Terrorist organizations.",
-      "time": "2026-08-21 06:36 UTC",
-      "timestamp": 1787294195,
+      "time": "2026-08-21 07:27 UTC",
+      "timestamp": 1787297233,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Strait of Hormuz",
       "title": "Explainer-What are Iran's options to escalate further in face of US economic threats?",
       "blurb": "LONDON, Aug 24 - U.S. threats to impose \"the toughest sanctions in history\" to force Iran to buckle to its demands after nearly six months of war have raised the prospect of a new round of escalation in the Gulf.How could Iran respond to the economic pressure?CAN IRAN STOP MOR...",
-      "time": "2026-08-18 22:36 UTC",
-      "timestamp": 1787092595,
+      "time": "2026-08-18 23:27 UTC",
+      "timestamp": 1787095633,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Sanaa",
       "title": "Houthis claim strike on Saudi oil tanker off Yanbu: What to know",
       "blurb": "The incident is the latest in a string of Houthi attacks targeting Saudi oil and military assets.",
-      "time": "2026-08-18 08:36 UTC",
-      "timestamp": 1787042195,
+      "time": "2026-08-18 09:27 UTC",
+      "timestamp": 1787045233,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Gaza City",
       "title": "Ex-defense minister: Israel in \u2018worst possible\u2019 Gaza situation as Hamas gains strength",
       "blurb": "Former Israeli Defense Minister Yoav Gallant criticized the Israeli government for allowing Hamas to retain control over half of the Gaza Strip.",
-      "time": "2026-08-16 00:36 UTC",
-      "timestamp": 1786840595,
+      "time": "2026-08-16 01:27 UTC",
+      "timestamp": 1786843633,
       "source": "Al-Monitor"
     },
     {
@@ -116,10 +116,10 @@
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "US announces expansion of sanctions in 'economic onslaught' on Iran",
-      "blurb": "By David Lawder and Humeyra PamukWASHINGTON, Aug 24 (Reuters) - President Donald Trump's administration on Monday announced an expansion of secondary sanctions it can impose on entities and countries that maintain business ties with Iran around the world as Washington signific...",
-      "time": "2026-08-13 16:36 UTC",
-      "timestamp": 1786638995,
+      "title": "US threatens countries doing business with Iran, but holds off on penalties for now",
+      "blurb": "By David Lawder and Humeyra PamukWASHINGTON, Aug 24 (Reuters) - President Donald Trump's administration on Monday announced a possible expansion of sanctions on countries doing business with Iran as part of what it billed as an \"economic D-Day,\" but stopped short of actually i...",
+      "time": "2026-08-13 17:27 UTC",
+      "timestamp": 1786642033,
       "source": "Al-Monitor"
     }
   ],
