@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T21:25:10.489003+00:00",
+  "lastUpdated": "2026-08-25T22:24:01.067836+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Tehran",
       "title": "U.S. Secret Service aware of Iranian video threat against Barron Trump",
       "blurb": "WASHINGTON, Aug 25 (Reuters) - The U.S. Secret Service is aware of a video broadcast by Iranian state television discussing a potential plot to assassinate U.S. President Donald Trump's youngest son, a spokesperson said on Tuesday.\"The U.S. Secret Service is aware of the video...",
-      "time": "2026-08-25 21:25 UTC",
-      "timestamp": 1787693110,
+      "time": "2026-08-25 22:24 UTC",
+      "timestamp": 1787696641,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Damascus",
       "title": "The Syrian Democratic Forces, tip of the spear in anti-jihadist fight",
       "blurb": "The Kurdish-led Syrian Democratic Forces, whose dissolution was announced by their leader Mazloum Abdi on Tuesday, were the Washington-backed de facto army of the Kurds' autonomous administration in Syria and spearheaded the battle against jihadists. The force was Syria's most...",
-      "time": "2026-08-25 07:25 UTC",
-      "timestamp": 1787642710,
+      "time": "2026-08-25 08:24 UTC",
+      "timestamp": 1787646241,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Damascus",
       "title": "Syria's Kurdish-led SDF dissolves as part of integration with Damascus",
       "blurb": "DAMASCUS, Aug 25 (Reuters) - The Kurdish-led Syrian Democratic Forces has been dissolved, the armed militant group's leader said on Tuesday, a major step in the integration plan agreed on earlier this year with the Islamist-led government in Damascus.\"We announce today the end...",
-      "time": "2026-08-24 17:25 UTC",
-      "timestamp": 1787592310,
+      "time": "2026-08-24 18:24 UTC",
+      "timestamp": 1787595841,
       "source": "Al-Monitor"
     },
     {
@@ -40,9 +40,9 @@
       "actor": "host",
       "location": "Damascus",
       "title": "Syrian Kurdish leader dissolves force that spearheaded jihadist fight",
-      "blurb": "The leader of the Kurdish-led Syrian Democratic Forces, the Washington-backed group at the forefront of the battle against the Islamic State jihadist group, announced their dissolution on Tuesday under a deal with the government. After being Syria's most highly-trained and org...",
-      "time": "2026-08-24 03:25 UTC",
-      "timestamp": 1787541910,
+      "blurb": "The leader of the Kurdish-led Syrian Democratic Forces, the Washington-backed group at the forefront of the battle against the Islamic State jihadist group, announced their dissolution on Tuesday under a deal with the government. After being Syria's most highly trained and org...",
+      "time": "2026-08-24 04:24 UTC",
+      "timestamp": 1787545441,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Tehran",
       "title": "How Iran is readying for economic protests as Trump escalates pressure",
       "blurb": "Iranian authorities are bracing for unrest as US pressure collides with a battered economy, fuel price indecision and fresh memories of bloodshed.",
-      "time": "2026-08-23 13:25 UTC",
-      "timestamp": 1787491510,
+      "time": "2026-08-23 14:24 UTC",
+      "timestamp": 1787495041,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Eastern Med",
       "title": "Eni presses ahead with Egypt gas projects as war raises investment risks",
       "blurb": "Egyptian President Abdel Fattah el-Sisi met with Eni CEO Claudio Descalzi on Tuesday, with the Italian energy giant revealing it could make a crucial investment decision in coming months.",
-      "time": "2026-08-21 05:25 UTC",
-      "timestamp": 1787289910,
+      "time": "2026-08-21 06:24 UTC",
+      "timestamp": 1787293441,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Eastern Med",
       "title": "Top EU court says Kavala case exposes erosion of judicial independence in Turkey",
       "blurb": "Europe's top human rights court has renewed its call for Turkey to immediately release jailed philanthropist Osman Kavala, saying his imprisonment reflects a broader \u201csystemic problem\u201d over independence and impartiality of the judiciary.",
-      "time": "2026-08-18 21:25 UTC",
-      "timestamp": 1787088310,
+      "time": "2026-08-18 22:24 UTC",
+      "timestamp": 1787091841,
       "source": "Al-Monitor"
     },
     {
@@ -85,9 +85,218 @@
       "location": "Baghdad",
       "title": "Iraq's Zaidi set to make European debut with Macron in France",
       "blurb": "The Iraqi prime minister is expected to sign several memorandums of understanding with France during his Sept. 14 meeting with Macron as Baghdad seeks to diversify its diplomatic and security ties.",
-      "time": "2026-08-16 13:25 UTC",
-      "timestamp": 1786886710,
+      "time": "2026-08-16 14:24 UTC",
+      "timestamp": 1786890241,
       "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_8",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Beirut",
+      "title": "Israeli army conducts major blast in south Lebanon town",
+      "blurb": "Israeli army conducts major blast in south Lebanon town Lebanon's National News Agency (NNA) has reported that the Israeli military carried out a large-scale detonation in the southern Lebanese town of Khiam. This comes after earlier Israeli strikes targeted al-Mansouri and th...",
+      "time": "2026-08-25 22:24 UTC",
+      "timestamp": 1787696641,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_9",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Rubio says US not expected to launch new strikes on Iran",
+      "blurb": "Rubio says US not expected to launch new strikes on Iran US Secretary of State Marco Rubio has told several foreign ministers from allied countries in recent days that \"for time being\" the United States is not expected to launch new strikes against Iran, and will instead focus...",
+      "time": "2026-08-25 08:24 UTC",
+      "timestamp": 1787646241,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_10",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Baghdad",
+      "title": "Iran's Ghalibaf tells Iraqi official 'new regional order' being created",
+      "blurb": "Iran's Ghalibaf tells Iraqi official 'new regional order' being created Iranian Parliament Speaker Mohammad Bagher Ghalibaf reportedly told Iraq\u2019s chief justice Faiq Zaidan that Iraq can play a decisive role in shaping a new regional order, especially in the Gulf. \u201cA new regio...",
+      "time": "2026-08-24 18:24 UTC",
+      "timestamp": 1787595841,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_11",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Israel destroys Gaza warehouse supplies for malnourished children and pregnant women",
+      "blurb": "Israel destroys Gaza warehouse supplies for malnourished children and pregnant women An Israeli military strike targeting a nearby building destroyed a warehouse storing nutritional supplies for malnourished children, pregnant women and breastfeeding mothers in central Gaza\u2019s ...",
+      "time": "2026-08-24 04:24 UTC",
+      "timestamp": 1787545441,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_12",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Trump's 'Board of Peace' warns Hamas against flying kites",
+      "blurb": "Trump's 'Board of Peace' warns Hamas against flying kites The US-led board supervising a Gaza peace plan on Tuesday warned Hamas against flying kites, after Israel threatened retaliatory strikes. \"All militant activity in Gaza must stop, including the flying of kites. We have ...",
+      "time": "2026-08-23 14:24 UTC",
+      "timestamp": 1787495041,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_13",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "Iran\u2019s deputy foreign minister says Hormuz to remain closed despite temporary Oman deal",
+      "blurb": "Iran\u2019s deputy foreign minister says Hormuz to remain closed despite temporary Oman deal Iranian Deputy Foreign Minister Kazem Gharibabadi said in a televised interview on Tuesday that the Strait of Hormuz remains closed despite a temporary transit agreement with Oman. \u201cAmerica...",
+      "time": "2026-08-23 00:24 UTC",
+      "timestamp": 1787444641,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_14",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Top Iranian officials mock US 'economic D-Day' on social media",
+      "blurb": "Top Iranian officials mock US 'economic D-Day' on social media Several top Iranian officials have taken to social media to mock US Treasury Secretary Scott Bessent's \"economic D-Day\" of sanctions on Iran, including parliamentary speaker and chief negotiator Mohammad Bagher Gha...",
+      "time": "2026-08-22 10:24 UTC",
+      "timestamp": 1787394241,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_15",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Eastern Med",
+      "title": "Bangladesh could join Mecca pact, official suggests",
+      "blurb": "Bangladesh could join Mecca pact, official suggests Submitted by MEE staff on Tue, 08/25/2026 - 17:03 According to Reuters, the consideration follows an invitation from Saudi Arabia The military gathers as part of preparations for the election, at the National Stadium in Dhaka...",
+      "time": "2026-08-21 20:24 UTC",
+      "timestamp": 1787343841,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_16",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Damascus",
+      "title": "Turkey won\u2019t abandon Syria or let Israel draw \u2018red lines\u2019, Erdogan says",
+      "blurb": "Turkey won\u2019t abandon Syria or let Israel draw \u2018red lines\u2019, Erdogan says Turkish President Recep Tayyip Erdogan responded on Monday to Israeli strikes on a Syrian military base last week, saying Ankara would not abandon its friends in the region and that no outside power could ...",
+      "time": "2026-08-21 06:24 UTC",
+      "timestamp": 1787293441,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_17",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Eastern Med",
+      "title": "Arms trade watchdog says countries are failing in their obligations to report weapons trade",
+      "blurb": "Arms trade watchdog says countries are failing in their obligations to report weapons trade ATT Monitor team, the body charged with overseeing the global Arms Trade Treaty, condemned on Tuesday a lack of transparency around states reporting the weapons they are buying and sell...",
+      "time": "2026-08-20 16:24 UTC",
+      "timestamp": 1787243041,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_18",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran foreign minister holds talks with Pakistani, Qatari officials",
+      "blurb": "Iran foreign minister holds talks with Pakistani, Qatari officials Iran\u2019s Foreign Minister Abbas Araghchi has held separate phone conversations with Pakistan army chief Asim Munir and Qatari Prime Minister and Minister of Foreign Affairs Mohammed bin Abdulrahman Al Thani. A st...",
+      "time": "2026-08-20 02:24 UTC",
+      "timestamp": 1787192641,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_19",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Damascus",
+      "title": "Head of Kurdish forces in Syria announces their dissolution",
+      "blurb": "Head of Kurdish forces in Syria announces their dissolution The head of the US-backed Kurdish-led Syrian Democratic Forces (SDF), Mazloum Abdi, announced on Tuesday the group's dissolution, as part of a deal struck with the new authorities in Damascus. \"We announce today the e...",
+      "time": "2026-08-19 12:24 UTC",
+      "timestamp": 1787142241,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_20",
+      "type": "ground",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "OIC condemns Israeli raid of Unrwa headquarters",
+      "blurb": "OIC condemns Israeli raid of Unrwa headquarters Secretary-General of the Organisation of Islamic Cooperation (OIC) Hissein Brahim Taha strongly condemned the Israeli raid and evacuation of the headquarters of the United Nations Relief and Works Agency for Palestine Refugees (U...",
+      "time": "2026-08-18 22:24 UTC",
+      "timestamp": 1787091841,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_21",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Ending the war and preserving unity is our priority, says Iranian president",
+      "blurb": "Ending the war and preserving unity is our priority, says Iranian president Iranian President Masoud Pezeshkian said on Tuesday that ending the war is the government's priority and the US-Iran memorandum of understanding (MoU) was not signed out of submission, but \"out of logi...",
+      "time": "2026-08-17 18:24 UTC",
+      "timestamp": 1786991041,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_22",
+      "type": "ground",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "UN chief 'greatly alarmed' as Israeli forces raid Unwra",
+      "blurb": "UN chief 'greatly alarmed' as Israeli forces raid Unwra United Nations chief Antonio Guterres on Tuesday condemned an incursion by Israeli forces on a training centre run by the UN agency for Palestinian refugees (Unrwa) in an East Jerusalem suburb. \"The secretary-general is g...",
+      "time": "2026-08-17 04:24 UTC",
+      "timestamp": 1786940641,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_23",
+      "type": "ground",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Netanyahu says Unrwa raid carried out in accordance with law, Ben Gvir says UN agency 'in our hands'",
+      "blurb": "Netanyahu says Unrwa raid carried out in accordance with law, Ben Gvir says UN agency 'in our hands' Israeli Prime Minister Benjamin Netanyahu said that the \"evacuation\" of a United Nations Relief and Works Agency for Palestine Refugees (Unrwa) facility in the occupied West Ba...",
+      "time": "2026-08-16 14:24 UTC",
+      "timestamp": 1786890241,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_24",
+      "type": "drone",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Three killed in Israeli bombing near Unrwa school in Jabalia camp",
+      "blurb": "Three killed in Israeli bombing near Unrwa school in Jabalia camp Three Palestinians were killed and others injured on Tuesday after an Israeli drone attack in the vicinity of a United Nations Relief and Works Agency for Palestine Refugees (Unrwa) school sheltering displaced p...",
+      "time": "2026-08-16 00:24 UTC",
+      "timestamp": 1786839841,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_25",
+      "type": "missile",
+      "actor": "israel",
+      "location": "Beirut",
+      "title": "Israeli air strikes target towns in southern Lebanon",
+      "blurb": "Israeli air strikes target towns in southern Lebanon Israeli air strikes have targeted al-Mansouri and the town of Sarbin in southern Lebanon, Lebanon's National News Agency (NNA) reported on Tuesday. The NNA added that continuous artillery shelling by Israeli forces have caus...",
+      "time": "2026-08-15 10:24 UTC",
+      "timestamp": 1786789441,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_26",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "Oman and Iran propose temporary shipping lane through Strait of Hormuz",
+      "blurb": "Oman and Iran propose temporary shipping lane through Strait of Hormuz Oman and Iran have agreed on a proposed framework to resume safe navigation through the Strait of Hormuz that includes establishing a joint temporary shipping lane and a mine-clearing project in the waterwa...",
+      "time": "2026-08-14 20:24 UTC",
+      "timestamp": 1786739041,
+      "source": "Middle East Eye"
     }
   ],
   "movements": []
