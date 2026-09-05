@@ -1,5 +1,127 @@
 {
-  "lastUpdated": "2026-09-05T05:15:00.277462+00:00",
-  "incidents": [],
+  "lastUpdated": "2026-09-05T09:57:03.550874+00:00",
+  "incidents": [
+    {
+      "id": "inc_0",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "US ambassador visits Palestinian town amid rise in West Bank settler violence",
+      "blurb": "TURMUS AYYA, Ramallah, Sept 5 (Reuters) - U.S. Ambassador to Israel Mike Huckabee met on Saturday with Palestinians, including the families of U.S. citizens killed by Israeli settlers, in a Palestinian town in the occupied West Bank that has been the target of repeated settler...",
+      "time": "2026-09-05 09:57 UTC",
+      "timestamp": 1788602223,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_1",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "Iranian tanker hit by US attack near Iran's Kharg Island, Tasnim says",
+      "blurb": "DUBAI, Sept 5 (Reuters) - An Iranian tanker was hit by U.S. forces on Saturday near Iran's key oil export hub, Kharg Island, in the Gulf, the semi-official Iranian news agency Tasnim reported.According to a Tasnim correspondent from Kharg, the tanker was hit by four U.S. missi...",
+      "time": "2026-09-04 19:57 UTC",
+      "timestamp": 1788551823,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_2",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Trump says Iran war is 'small potatoes' for US",
+      "blurb": "President Donald Trump said Friday that the Iran war was \"small potatoes\" for the United States, in his administration's latest bid to play down the conflict ahead of crucial midterm elections. Trump's comments came a day after Vice President JD Vance said that \"I wouldn't cal...",
+      "time": "2026-09-04 05:57 UTC",
+      "timestamp": 1788501423,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_3",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Natanz",
+      "title": "Trump says US may hit Iran's Pickaxe Mountain soon",
+      "blurb": "WASHINGTON, Sept 4 (Reuters) - U.S. President Donald Trump told reporters on Friday that the United States may hit Iran's Pickaxe Mountain very soon.Pickaxe Mountain, located \u200bnear Iran's heavily damaged Natanz uranium enrichment facility, is \u200ba heavily fortified site that hos...",
+      "time": "2026-09-03 15:57 UTC",
+      "timestamp": 1788451023,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_4",
+      "type": "diplomatic",
+      "actor": "usa",
+      "location": "Eastern Med",
+      "title": "U.S. approves potential sale of Joint Direct Attack Munitions-Extend Range to Saudi Arabia for $5 billion",
+      "blurb": "Sept 4 (Reuters) - The U.S. State Department said on Friday it had approved the potential sale of Joint Direct Attack Munitions-Extend Range to Saudi Arabia for an estimated $5 billion.The principal contractor is Boeing, the state department said.The State Department also said...",
+      "time": "2026-09-03 01:57 UTC",
+      "timestamp": 1788400623,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_5",
+      "type": "diplomatic",
+      "actor": "usa",
+      "location": "Eastern Med",
+      "title": "Costa Rica president says US ground forces would help national security",
+      "blurb": "By Alvaro MurilloSAN JOSE, Sept 4 (Reuters) - Costa Rican President Laura Fernandez said on Friday that U.S. ground operations could strengthen national security in the Central American nation, while emphasizing that nothing concrete was in the works with Washington and any su...",
+      "time": "2026-09-02 11:57 UTC",
+      "timestamp": 1788350223,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_6",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "How Iran's campaign against US bases is forging a new Gulf defense network",
+      "blurb": "Iran's targeting of Gulf states is fueling a regional security architecture designed to counter the Islamic Republic.",
+      "time": "2026-09-01 21:57 UTC",
+      "timestamp": 1788299823,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_7",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Sanaa",
+      "title": "More than 120 killed in Yemen's worst clashes in years: sources",
+      "blurb": "A major offensive by Yemen's Houthis to seize control of the gateway to the Red Sea has left more than 120 people dead, sources told AFP Friday, the country's deadliest clashes in years. Fighting erupted on Thursday, after the Iran-backed Houthis launched a ground assault alon...",
+      "time": "2026-08-30 13:57 UTC",
+      "timestamp": 1788098223,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_8",
+      "type": "cyber",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Who is Amir Yaryab, IRGC\u2019s cyber commander in US crosshairs?",
+      "blurb": "The US State Department has offered up to $10 million for information on Amir Yaryab, who oversees a key part of Iran\u2019s cyber operations.",
+      "time": "2026-08-29 23:57 UTC",
+      "timestamp": 1788047823,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_9",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Israel emptying West Bank refugee camps could be crime against humanity: UN",
+      "blurb": "The United Nations warned Friday that Israel's forced displacement of the entire Palestinian populations of three West Bank refugee camps last year could amount to crimes against humanity. In a report slammed by Israel, the UN rights office described how a military operation l...",
+      "time": "2026-08-27 15:57 UTC",
+      "timestamp": 1787846223,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_10",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "US sanctions Turkey-based bank over Iran ties",
+      "blurb": "The Treasury Department said Golden Global Bank was facilitating transactions for Iran's Islamic Revolutionary Guard Corps.",
+      "time": "2026-08-27 01:57 UTC",
+      "timestamp": 1787795823,
+      "source": "Al-Monitor"
+    }
+  ],
   "movements": []
 }
