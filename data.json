@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-09-06T21:01:49.870717+00:00",
+  "lastUpdated": "2026-09-06T23:28:41.439534+00:00",
   "incidents": [
     {
       "id": "inc_0",
-      "type": "diplomatic",
+      "type": "airstrike",
       "actor": "israel",
       "location": "Gaza City",
       "title": "Israeli strike kills a man and his daughter in Gaza, medics say",
-      "blurb": "(Corrects first paragraph to show the daughter is 8 years old, not a teenager)CAIRO, Sept 6 (Reuters) - An Israeli strike killed a man and his 8-year-old daughter in the Gaza Strip on Sunday, health officials said.Mohamed Abu Selmia, head of Al Shifa Hospital, the enclave's la...",
-      "time": "2026-09-06 21:01 UTC",
-      "timestamp": 1788728509,
+      "blurb": "CAIRO, Sept 6 (Reuters) - An Israeli strike killed a man and his 8-year-old daughter in the Gaza Strip on Sunday, health officials said.Mohamed Abu Selmia, head of Al Shifa Hospital, the enclave's largest medical facility, said the airstrikehit a vehicle in western Gaza City, ...",
+      "time": "2026-09-06 23:28 UTC",
+      "timestamp": 1788737321,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Beirut",
       "title": "Lebanon president calls for US help as Israeli strikes kill 7",
       "blurb": "Lebanese President Joseph Aoun urged Washington and the international community to help stop Israeli attacks, which killed at least seven people on Sunday despite a truce and a framework deal aimed at halting the violence. Israel said it had targeted Hezbollah operatives and s...",
-      "time": "2026-09-06 07:01 UTC",
-      "timestamp": 1788678109,
+      "time": "2026-09-06 09:28 UTC",
+      "timestamp": 1788686921,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Sanaa",
       "title": "Toll from Yemen clashes passes 300 as civilians flee homes",
       "blurb": "The toll from days of fighting between government forces and Iran-backed Houthi rebels in southwest Yemen climbed past 300 on Sunday, as hundreds of families fled their homes to escape the violence. Two military officials with the Saudi-backed government forces told AFP that 8...",
-      "time": "2026-09-05 17:01 UTC",
-      "timestamp": 1788627709,
+      "time": "2026-09-05 19:28 UTC",
+      "timestamp": 1788636521,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Tel Aviv",
       "title": "Israel's Netanyahu orders West Bank settler outposts to be removed, sources say",
       "blurb": "By Alexander CornwellTEL AVIV, Sept 6 (Reuters) - Israeli Prime Minister Benjamin Netanyahu has ordered unauthorized settler outposts in the West Bank to be dismantled, two people familiar with the matter said on Sunday, amid pressure from the U.S. to crack down on settler att...",
-      "time": "2026-09-05 03:01 UTC",
-      "timestamp": 1788577309,
+      "time": "2026-09-05 05:28 UTC",
+      "timestamp": 1788586121,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Strait of Hormuz",
       "title": "Analysis-Iran's Hormuz leverage wanes as US economic squeeze bites",
       "blurb": "By Samia NakhoulISTANBUL, Sept 6 (Reuters) - Six months after a conflict that rattled markets and pushed the Gulf to the brink of a wider war, the tide may be turning against Iran as Washington unleashes an unprecedented economic offensive to achieve what military force could ...",
-      "time": "2026-09-04 13:01 UTC",
-      "timestamp": 1788526909,
+      "time": "2026-09-04 15:28 UTC",
+      "timestamp": 1788535721,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Gaza City",
       "title": "With joy and grief, Palestinian football marks return",
       "blurb": "Palestinian sports commentator Khalil Jadallah has spent the past three years mourning the athletes killed in the Gaza war. As Palestinian football officially resumed this week, his return to the stadium proved bittersweet. Palestinian professional sports were brought to a hal...",
-      "time": "2026-09-03 23:01 UTC",
-      "timestamp": 1788476509,
+      "time": "2026-09-04 01:28 UTC",
+      "timestamp": 1788485321,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Eastern Med",
       "title": "German director Wenders clarifies views on film and politics",
       "blurb": "German director Wim Wenders clarified his views about the relationship between filmmakers and politics on Sunday after he caused an outcry at the Berlin film festival earlier this year. Speaking in Venice, where he is presenting a new film about Swiss architect Peter Zumthor, ...",
-      "time": "2026-09-03 09:01 UTC",
-      "timestamp": 1788426109,
+      "time": "2026-09-03 11:28 UTC",
+      "timestamp": 1788434921,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Tehran",
       "title": "Iran threatens greater force if US launches more attacks",
       "blurb": "Iran's top negotiator on Sunday threatened a more forceful response to any furt",
-      "time": "2026-09-02 19:01 UTC",
-      "timestamp": 1788375709,
+      "time": "2026-09-02 21:28 UTC",
+      "timestamp": 1788384521,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Tehran",
       "title": "Iran to tackle economic issues, says further attacks will be 'more painful'",
       "blurb": "DUBAI, Sept 6 (Reuters) - Iran said it will step up efforts to tackle problems created by U.S. sanctions that are crippling its economy, while a senior Iranian official warned of a \"painful response\" if it comes under further attack.Six months after U.S.-Israeli strikes on Ira...",
-      "time": "2026-09-02 05:01 UTC",
-      "timestamp": 1788325309,
+      "time": "2026-09-02 07:28 UTC",
+      "timestamp": 1788334121,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Beirut",
       "title": "Israeli strikes kill seven in southern Lebanon",
       "blurb": "Sept 6 (Reuters) - Israeli strikes killed seven people, including two women, in southern Lebanon on Sunday, the Lebanese health ministry said, as Israel retaliated for what it said were Hezbollah drone attacks within areas occupied by its troops.Despite a U.S.-brokered ceasefi...",
-      "time": "2026-09-01 15:01 UTC",
-      "timestamp": 1788274909,
+      "time": "2026-09-01 17:28 UTC",
+      "timestamp": 1788283721,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Eastern Med",
       "title": "US carrier Abraham Lincoln departs Thailand after respite visit",
       "blurb": "Sept 6 (Reuters) - The U.S. aircraft carrier Abraham Lincoln left Thailand on Sunday after a five-day port visit, ending a respite from an extended deployment that included operations in the Middle East, the U.S. Navy said.\u201cWe would like to thank the people of Thailand for the...",
-      "time": "2026-09-01 01:01 UTC",
-      "timestamp": 1788224509,
+      "time": "2026-09-01 03:28 UTC",
+      "timestamp": 1788233321,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Damascus",
       "title": "Sobering reality: Curbs on alcohol in northeast Syria cause discontent",
       "blurb": "At his shop in northeast Syria, Ayaz Ibrahim wiped the dust off bottles of alcohol he said had become too pricey for customers following new regulations from the Islamist authorities. Residents of the region, which is home to many Kurds, have been feeling the pinch since Damas...",
-      "time": "2026-08-31 11:01 UTC",
-      "timestamp": 1788174109,
+      "time": "2026-08-31 13:28 UTC",
+      "timestamp": 1788182921,
       "source": "Al-Monitor"
     },
     {
@@ -140,8 +140,8 @@
       "location": "Eastern Med",
       "title": "Milei finds unity in pushback against Falkland Islands oil project",
       "blurb": "By Leila MillerBUENOS AIRES, Sept 5 (Reuters) - Argentineshave broadly backed President Javier Milei\u2019s forceful push against oil drilling near the Falkland Islands, underscoring the enduring resonance of Argentina's sovereignty claim over the British-controlled archipelago.In ...",
-      "time": "2026-08-30 21:01 UTC",
-      "timestamp": 1788123709,
+      "time": "2026-08-30 23:28 UTC",
+      "timestamp": 1788132521,
       "source": "Al-Monitor"
     },
     {
@@ -151,8 +151,8 @@
       "location": "Tehran",
       "title": "US military strikes oil tankers as Iran vows tougher reprisals",
       "blurb": "The United States said it destroyed three Iranian oil tankers on Saturday in response to attempted missile attacks on naval vessels, with Iran's Revolutionary Guards saying they targeted US-linked ships in response. The latest round of clashes, which began with US raids last w...",
-      "time": "2026-08-30 07:01 UTC",
-      "timestamp": 1788073309,
+      "time": "2026-08-30 09:28 UTC",
+      "timestamp": 1788082121,
       "source": "Al-Monitor"
     },
     {
@@ -162,8 +162,8 @@
       "location": "Jerusalem",
       "title": "US envoy on West Bank visit says Israel has responsibility for Palestinians",
       "blurb": "The US ambassador to Israel said Saturday that the Israeli government bore responsibility for West Bank Palestinians' safety and should impose \"severe consequences\" over violence, as he visited families after a surge in settler attacks. Mike Huckabee, long known as a staunch s...",
-      "time": "2026-08-29 17:01 UTC",
-      "timestamp": 1788022909,
+      "time": "2026-08-29 19:28 UTC",
+      "timestamp": 1788031721,
       "source": "Al-Monitor"
     },
     {
@@ -173,8 +173,8 @@
       "location": "Gaza City",
       "title": "US ambassador to Israel says there is no plan to force Palestinians out of Gaza",
       "blurb": "TURMUS AYYA, West Bank, Sept 4 (Reuters) - U.S. Ambassador to Israel Mike Huckabee on Saturday said there was no plan to force Palestinians to leave Gaza after two Israeli ministers this week floated proposals for the mass removal of Palestinians from the coastal territory.\u2022 \"...",
-      "time": "2026-08-29 03:01 UTC",
-      "timestamp": 1787972509,
+      "time": "2026-08-29 05:28 UTC",
+      "timestamp": 1787981321,
       "source": "Al-Monitor"
     },
     {
@@ -184,8 +184,8 @@
       "location": "Jerusalem",
       "title": "US ambassador visits Palestinian town amid rise in West Bank settler violence",
       "blurb": "By Ali Sawafta and Alexander CornwellTURMUS AYYA, West Bank, Sept 5 (Reuters) - U.S. Ambassador to Israel Mike Huckabee on Saturday met with Palestinian Americans, including relatives of U.S. citizens killed by Israeli settlers, in a Palestinian town in the occupied West Bank ...",
-      "time": "2026-08-28 13:01 UTC",
-      "timestamp": 1787922109,
+      "time": "2026-08-28 15:28 UTC",
+      "timestamp": 1787930921,
       "source": "Al-Monitor"
     },
     {
@@ -195,8 +195,8 @@
       "location": "Strait of Hormuz",
       "title": "US, Iranian forces fire at vessels in waters near Iran",
       "blurb": "DUBAI, Sept 5 (Reuters) - U.S. and Iranian forces fired at vessels in waters around Iran on Saturday, including three Iranian oil carriers struck by the Americans and three tankers that Iran said it targeted while on unauthorized routes in the Strait of Hormuz.U.S. Central Com...",
-      "time": "2026-08-27 23:01 UTC",
-      "timestamp": 1787871709,
+      "time": "2026-08-28 01:28 UTC",
+      "timestamp": 1787880521,
       "source": "Al-Monitor"
     },
     {
@@ -206,8 +206,8 @@
       "location": "Tehran",
       "title": "Trump says Iran war is 'small potatoes' for US",
       "blurb": "President Donald Trump said Friday that the Iran war was \"small potatoes\" for the United States, in his administration's latest bid to play down the conflict ahead of crucial midterm elections. Trump's comments came a day after Vice President JD Vance said that \"I wouldn't cal...",
-      "time": "2026-08-27 09:01 UTC",
-      "timestamp": 1787821309,
+      "time": "2026-08-27 11:28 UTC",
+      "timestamp": 1787830121,
       "source": "Al-Monitor"
     },
     {
@@ -217,196 +217,9 @@
       "location": "Natanz",
       "title": "Trump says US may hit Iran's Pickaxe Mountain soon",
       "blurb": "WASHINGTON, Sept 4 (Reuters) - U.S. President Donald Trump told reporters on Friday that the United States may hit Iran's Pickaxe Mountain very soon.Pickaxe Mountain, located \u200bnear Iran's heavily damaged Natanz uranium enrichment facility, is \u200ba heavily fortified site that hos...",
-      "time": "2026-08-26 19:01 UTC",
-      "timestamp": 1787770909,
+      "time": "2026-08-26 21:28 UTC",
+      "timestamp": 1787779721,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_20",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran turns to land trade routes to counter maritime blockade",
-      "blurb": "Iran turns to land trade routes to counter maritime blockade We have more from Iran\u2019s top security official, Mohsen Rezaei. Rezaei says Tehran has started activating overland trade corridors to reduce its dependence on shipping and counter the maritime blockade. He pointed to ...",
-      "time": "2026-09-06 21:01 UTC",
-      "timestamp": 1788728509,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "Iran to impose restricted shipping zone near Strait of Hormuz",
-      "blurb": "Iran to impose restricted shipping zone near Strait of Hormuz Iran plans to establish a restricted maritime zone near the Strait of Hormuz within days, state media has quoted the country\u2019s top security official as saying. The designated area will stretch from the boundary of t...",
-      "time": "2026-09-06 07:01 UTC",
-      "timestamp": 1788678109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Germany's far-right, pro-Israel AfD sweeps Saxony-Anhalt in historic electoral breakthrough",
-      "blurb": "Germany's far-right, pro-Israel AfD sweeps Saxony-Anhalt in historic electoral breakthrough Submitted by MEE staff on Sun, 09/06/2026 - 19:40 The AfD's historic breakthrough in the Germany state cements a party that courts Israel while building its platform on anti-Muslim and ...",
-      "time": "2026-09-05 17:01 UTC",
-      "timestamp": 1788627709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "naval",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Balkans: Israel deepens ties with Bosnian Serb separatists through Banja Luka trade office",
-      "blurb": "Balkans: Israel deepens ties with Bosnian Serb separatists through Banja Luka trade office Israeli officials opened an Israeli Chamber of Commerce office on Thursday in Banja Luka, the seat of Republika Srpska. The nationalist leadership of the Serb-dominated entity has pursue...",
-      "time": "2026-09-05 03:01 UTC",
-      "timestamp": 1788577309,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "drone",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Death toll from Israeli drone attack in southern Lebanon rises to three",
-      "blurb": "Death toll from Israeli drone attack in southern Lebanon rises to three An Israeli drone strike on a vehicle near the Fakhr al-Din car park in the Nabatieh area has killed three people, Lebanon\u2019s Health Ministry says.",
-      "time": "2026-09-04 13:01 UTC",
-      "timestamp": 1788526909,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "airstrike",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Death toll from Israeli attacks on Lebanon climbs to 4,362 despite ceasefire",
-      "blurb": "Death toll from Israeli attacks on Lebanon climbs to 4,362 despite ceasefire Lebanon\u2019s Health Ministry says Israel has killed 4,362 people and wounded 12,378 in attacks across the country since 2 March. Israel has continued bombing Lebanon and occupying parts of its territory ...",
-      "time": "2026-09-03 23:01 UTC",
-      "timestamp": 1788476509,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "The world is finally watching Palestine. But who gets to narrate its story?",
-      "blurb": "The world is finally watching Palestine. But who gets to narrate its story? Submitted by Nour A Munawar on Sun, 09/06/2026 - 12:56 As courts and sports stadiums turn towards Palestine, a quieter struggle runs beneath the headlines over memory, heritage and the right of Palesti...",
-      "time": "2026-09-03 09:01 UTC",
-      "timestamp": 1788426109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_27",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Gaza buries the remains of 100 Palestinians, including 62 children",
-      "blurb": "Gaza buries the remains of 100 Palestinians, including 62 children Palestinians on Sunday held a mass funeral for 100 people, including 62 children, whose remains were recovered from the rubble of buildings destroyed in Israeli strikes in Gaza City. The bodies, recovered from ...",
-      "time": "2026-09-02 19:01 UTC",
-      "timestamp": 1788375709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_28",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Mike Huckabee criticised for accusing Jewish UK foreign secretary of 'Jew hate'",
-      "blurb": "Mike Huckabee criticised for accusing Jewish UK foreign secretary of 'Jew hate' Submitted by Imran Mulla on Sun, 09/06/2026 - 13:37 US ambassador to Israel's comments mark latest rhetorical attack on UK over its plans to ban Israeli settlement goods British foreign secretary E...",
-      "time": "2026-09-01 15:01 UTC",
-      "timestamp": 1788274909,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_29",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "The Falklands dispute: What\u2019s it got to do with Israel and the US?",
-      "blurb": "The Falklands dispute: What\u2019s it got to do with Israel and the US? Argentina has restated its claim to sovereignty over the Falkland Islands, a small rocky archipelago in the South Atlantic that is owned by the UK. Javier Milei, the far-right president of Argentina, said in a ...",
-      "time": "2026-09-01 01:01 UTC",
-      "timestamp": 1788224509,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_30",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "US forces redirected 92 commercial vessels during Iran blockade: Centcom",
-      "blurb": "US forces redirected 92 commercial vessels during Iran blockade: Centcom US forces have redirected 92 commercial vessels, disabled three and boarded two during their maritime blockade of Iran, US Central Command said. In a post on X, the US military command said the actions we...",
-      "time": "2026-08-31 11:01 UTC",
-      "timestamp": 1788174109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_31",
-      "type": "naval",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Turkish spy chief makes secretive visit to Greece amid rising tensions with Israel, report says",
-      "blurb": "Turkish spy chief makes secretive visit to Greece amid rising tensions with Israel, report says Submitted by MEE staff on Sun, 09/06/2026 - 12:39 The development comes amid strained relations over the Aegean Sea as Greece deepens its defence partnership with Israel Turkish pre...",
-      "time": "2026-08-30 21:01 UTC",
-      "timestamp": 1788123709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_32",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Beirut",
-      "title": "Lebanon president calls on US to stop Israel's 'dangerous escalation'",
-      "blurb": "Lebanon president calls on US to stop Israel's 'dangerous escalation' Lebanese President Joseph Aoun urged the US and the international community to help stop Israeli attacks after strikes on Sunday killed at least four people. The strikes, which also damaged government premis...",
-      "time": "2026-08-30 07:01 UTC",
-      "timestamp": 1788073309,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_33",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Gaza death toll rises to 73,651 since October 2023",
-      "blurb": "Gaza death toll rises to 73,651 since October 2023 The death toll from Israel's genocide in Gaza has risen to 73,651, while the number of wounded has reached 174,592 since 7 October 2023, according to Palestinian health authorities. Hospitals across Gaza reported that the numb...",
-      "time": "2026-08-29 03:01 UTC",
-      "timestamp": 1787972509,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_34",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran threatens South Korean assets if Seoul joins Hormuz mission",
-      "blurb": "Iran threatens South Korean assets if Seoul joins Hormuz mission Iranian academic Mohammad Marandi has warned that Tehran would consider South Korea an enemy and could strike its economic and military interests across the Persian Gulf if Seoul joins the US-led war on Iran. Spe...",
-      "time": "2026-08-28 13:01 UTC",
-      "timestamp": 1787922109,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_35",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Eight foreign ministers condemn Katz and Ben Gvir\u2019s Gaza displacement plan",
-      "blurb": "Eight foreign ministers condemn Katz and Ben Gvir\u2019s Gaza displacement plan The foreign ministers of eight countries have condemned statements and plans by Israeli Defence Minister Israel Katz and National Security Minister Itamar Ben Gvir for the mass expulsion of Palestinians...",
-      "time": "2026-08-27 23:01 UTC",
-      "timestamp": 1787871709,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_36",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran's response to US attacks will be 'faster, more painful', Ghalibaf says",
-      "blurb": "Iran's response to US attacks will be 'faster, more painful', Ghalibaf says The US should understand that the rules of the game in the war with Iran have changed \"before it is too late\", Iranian parliament speaker, Mohammad Bagher Ghalibaf, has said. \"From now on, any attack a...",
-      "time": "2026-08-26 19:01 UTC",
-      "timestamp": 1787770909,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
