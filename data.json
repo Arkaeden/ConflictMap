@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T21:23:26.073812+00:00",
+  "lastUpdated": "2026-09-10T23:42:48.012808+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -7,9 +7,9 @@
       "actor": "iran",
       "location": "Beirut",
       "title": "Tremor recorded as Israel says Hezbollah tunnels destroyed in south Lebanon",
-      "blurb": "Israel said Thursday it demolished key tunnels built by the Iran-backed Hezbollah group beneath the strategic Ali al-Taher ridge in southern Lebanon, with a 4.1 magnitude tremor recorded in the area. \"This is strategic terrorist infrastructure that was built over two decades, ...",
-      "time": "2026-09-10 21:23 UTC",
-      "timestamp": 1789075405,
+      "blurb": "Israel said Thursday it demolished key tunnels built by the Iran-backed Hezbollah group beneath the strategic Ali al-Taher ridge in southern Lebanon, triggering a 4.1 magnitude tremor. AFP journalists in the area heard several explosions. In a video shared by Israeli Defence M...",
+      "time": "2026-09-10 23:42 UTC",
+      "timestamp": 1789083767,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Eastern Med",
       "title": "Morocco says not involved in Ceuta migrant influx",
       "blurb": "Morocco said on Thursday there were \"no facts\" establishing its involvement in the massive migrant rush into Spain's North African exclave of Ceuta in July. More than 70,000 migrants entered Ceuta from Morocco on July 30 and 31 in an unprecedented, chaotic surge that left scor...",
-      "time": "2026-09-10 07:23 UTC",
-      "timestamp": 1789025005,
+      "time": "2026-09-10 09:42 UTC",
+      "timestamp": 1789033367,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Beirut",
       "title": "Israel says it destroyed Hezbollah tunnels in Ali al-Taher ridge: What to know",
       "blurb": "The ridge has become a flashpoint in the Israel-Hezbollah conflict in Lebanon due to its extensive tunnel network Israel says is utilized by the Iran-backed group.",
-      "time": "2026-09-09 17:23 UTC",
-      "timestamp": 1788974605,
+      "time": "2026-09-09 19:42 UTC",
+      "timestamp": 1788982967,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Gaza City",
       "title": "Israeli-made film about Gaza gets 25-minute ovation at Venice premiere",
       "blurb": "A chilling new documentary about Israel's AI-powered mass killing of civilians in Gaza from two Oscar-winning Israeli filmmakers received a 25-minute ovation at its premiere at the Venice Film Festival on Thursday. The audience clapped continuously for Yuval Abraham and Rachel...",
-      "time": "2026-09-09 03:23 UTC",
-      "timestamp": 1788924205,
+      "time": "2026-09-09 05:42 UTC",
+      "timestamp": 1788932567,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Strait of Hormuz",
       "title": "Likely oil slicks in Strait of Hormuz after US tanker strikes: experts",
       "blurb": "Recent satellite images analysed on Thursday appear to show oil slicks near the Strait of Hormuz, after US strikes on tankers suspected of links to Iran's Revolutionary Guard. An image from the European Copernicus programme taken on Wednesday shows brownish streaks on the surf...",
-      "time": "2026-09-08 13:23 UTC",
-      "timestamp": 1788873805,
+      "time": "2026-09-08 15:42 UTC",
+      "timestamp": 1788882167,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Eastern Med",
       "title": "UAE to invest 40 billion euros in Germany, including for data centres: Berlin",
       "blurb": "The leader of the United Arab Emirates was on a state visit to Germany on Thursday that resulted in a promise to invest 40 billion euros ($46.5 billion) into Europe's top economy. The money would partly pay for data centres with a capacity of up to one gigawatt, Berlin said, a...",
-      "time": "2026-09-07 23:23 UTC",
-      "timestamp": 1788823405,
+      "time": "2026-09-08 01:42 UTC",
+      "timestamp": 1788831767,
       "source": "Al-Monitor"
     },
     {
@@ -74,53 +74,229 @@
       "location": "Tehran",
       "title": "Iran\u2019s Pickaxe mountain tests limits of Trump\u2019s military options",
       "blurb": "A secretive Pentagon innovation agency has hastened to test munitions that may penetrate deeper than the GBU-57 bombs dropped on Iran\u2019s two main enrichment facilities.",
-      "time": "2026-09-07 09:23 UTC",
-      "timestamp": 1788773005,
+      "time": "2026-09-07 11:42 UTC",
+      "timestamp": 1788781367,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_7",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Could Iran\u2019s nuclear ambitions harden as war escalates?",
+      "blurb": "A new report has raised alarm about the Pickaxe Mountain nuclear site that President Donald Trump has repeatedly threatened to strike.",
+      "time": "2026-09-05 03:42 UTC",
+      "timestamp": 1788579767,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_8",
       "type": "naval",
       "actor": "host",
       "location": "Strait of Hormuz",
       "title": "UAE announces plans to invest $46B in Germany during MBZ visit",
       "blurb": "The UAE is Germany\u2019s largest trading partner in the Gulf, with bilateral trade surpassing 13 million euros ($15 billion) last year.",
-      "time": "2026-09-06 19:23 UTC",
-      "timestamp": 1788722605,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_8",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Fueled by regional rivalries, Algeria severs diplomatic ties with UAE",
-      "blurb": "Algiers accused Abu Dhabi of increasingly \u201cprovocative and hostile actions\u201d after years of friction over Morocco, Western Sahara and competing regional interests.",
-      "time": "2026-09-04 11:23 UTC",
-      "timestamp": 1788521005,
+      "time": "2026-09-02 19:42 UTC",
+      "timestamp": 1788378167,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_9",
       "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Defiant Iran seeks to bruise Trump ahead of midterms",
-      "blurb": "Iran is intensifying confrontational actions against the United States in the hope of further raising the cost of the conflict for President Donald Trump less than two months ahead of the US midterm elections, analysts say. Over half a year after the war erupted on February 28...",
-      "time": "2026-09-02 03:23 UTC",
-      "timestamp": 1788319405,
+      "actor": "host",
+      "location": "Eastern Med",
+      "title": "Fueled by regional rivalries, Algeria severs diplomatic ties with UAE",
+      "blurb": "Algiers accused Abu Dhabi of increasingly \u201cprovocative and hostile actions\u201d after years of friction over Morocco, Western Sahara and competing regional interests.",
+      "time": "2026-08-31 11:42 UTC",
+      "timestamp": 1788176567,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_10",
-      "type": "naval",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Gaza City",
+      "title": "Oil shortage shuts main generator at Gaza\u2019s Al-Ahli Arab Hospital",
+      "blurb": "Oil shortage shuts main generator at Gaza\u2019s Al-Ahli Arab Hospital The main generator at Gaza City\u2019s Al-Ahli Arab Hospital has stopped operating due to a shortage of oil and spare parts, Wafa news agency reported. Citing sources, Wafa said the shutdown forced the suspension of ...",
+      "time": "2026-09-10 23:42 UTC",
+      "timestamp": 1789083768,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_11",
+      "type": "missile",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Palestinian engineer killed in Israeli attack in Gaza's Khan Younis",
+      "blurb": "Palestinian engineer killed in Israeli attack in Gaza's Khan Younis A Palestinian engineer, Hudaifa Hamdi Mamar, has been killed in Israeli shelling on residential areas in the Al Mawasi district, west of Khan Younis in Gaza, the Palestinian Dialogue Forum (PALDF) said, accord...",
+      "time": "2026-09-10 09:42 UTC",
+      "timestamp": 1789033368,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_12",
+      "type": "airstrike",
+      "actor": "israel",
+      "location": "Tyre",
+      "title": "Israeli strike destroys family home in southern Lebanon",
+      "blurb": "Israeli strike destroys family home in southern Lebanon An Israeli air strike has conpletely destroyed a house in the area between the villages of Haris and Hadatha, in the Tyre district in Lebanon, according to National News Agency. It\u2019s unclear if there were casualties.",
+      "time": "2026-09-09 19:42 UTC",
+      "timestamp": 1788982968,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_13",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Pro-Palestine activist wins mayoral Democratic primary in Rhode Island",
+      "blurb": "Pro-Palestine activist wins mayoral Democratic primary in Rhode Island A vocal Israel critic and supporter of Palestinianrights has won the Democratic mayoral primary in America's smallest state. Rhode Island State Representative David Morales, 27, unseated the incumbent mayor...",
+      "time": "2026-09-09 05:42 UTC",
+      "timestamp": 1788932568,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_14",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Israeli strike in Gaza kills family of four, including children",
+      "blurb": "Israeli strike in Gaza kills family of four, including children An Israeli strike in Gaza on Thursday killed a family of four, including two children, Palestinian hospital and security sources said. \"The bodies of four members of the Ahmad family were recovered in pieces after...",
+      "time": "2026-09-08 15:42 UTC",
+      "timestamp": 1788882168,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_15",
+      "type": "diplomatic",
       "actor": "proxy",
+      "location": "Riyadh",
+      "title": "Saudi Arabia says it will take \u2018all measures to deter Houthi attacks\u2019",
+      "blurb": "Saudi Arabia says it will take \u2018all measures to deter Houthi attacks\u2019 Saudi Arabia\u2019s UN representative Abdulaziz al-Wasil said that Riyadh will take \u201call necessary measures to deter Houthi attacks and protect our security, sovereignty, and territorial integrity\". The Saudi rep...",
+      "time": "2026-09-08 01:42 UTC",
+      "timestamp": 1788831768,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_16",
+      "type": "naval",
+      "actor": "iran",
       "location": "Sanaa",
-      "title": "Houthis seize Red Sea city, tighten grip near strategic Bab al-Mandeb: What to know",
-      "blurb": "Taking control of the towns bordering the Bab al-Mandeb Strait deals a significant blow to Saudi Arabia, which has relied heavily on the key waterway to keep its exports afloat.",
-      "time": "2026-09-01 13:23 UTC",
-      "timestamp": 1788269005,
-      "source": "Al-Monitor"
+      "title": "Houthis eye 'full control' of Bab el-Mandeb, as Saudi-backed forces reel from offensive",
+      "blurb": "Houthis eye 'full control' of Bab el-Mandeb, as Saudi-backed forces reel from offensive Yemen's Houthi fighters' rapid advance along the Red Sea coast has put them in a prime position to control shipping in the Bab el-Mandeb choke point, while bolstering Iran\u2019s leverage agains...",
+      "time": "2026-09-06 21:42 UTC",
+      "timestamp": 1788730968,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_17",
+      "type": "naval",
+      "actor": "usa",
+      "location": "Eastern Med",
+      "title": "UKMTO reports projectiles hit two vessels near Oman's Khasab",
+      "blurb": "UKMTO reports projectiles hit two vessels near Oman's Khasab Four unknown projectiles hit two vessels four nautical miles west of Oman's Khasab, setting one vessel on fire and leaving the status of the second unknown, the United Kingdom Maritime Trade Operations said on Thursd...",
+      "time": "2026-09-06 07:42 UTC",
+      "timestamp": 1788680568,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_18",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Beirut",
+      "title": "Earthquake recorded after Israeli demolition of Lebanon's infrastructure",
+      "blurb": "Earthquake recorded after Israeli demolition of Lebanon's infrastructure A 4.1-magnitude earthquake was registered in southern Lebanon, the United States Geological Survey said, after massive explosions were reported in southern Lebanon amid Israeli attacks. Israel said it was...",
+      "time": "2026-09-05 03:42 UTC",
+      "timestamp": 1788579768,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_19",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "NAZA: Film exposing systematic killing in Gaza gets record 24-minute standing ovation at Venice",
+      "blurb": "NAZA: Film exposing systematic killing in Gaza gets record 24-minute standing ovation at Venice A documentary examining the Israeli military systems behind the mass killing of Palestiniancivilians in Gaza received a record-breaking standing ovation at the Venice Film Festival ...",
+      "time": "2026-09-04 13:42 UTC",
+      "timestamp": 1788529368,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_20",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Beirut",
+      "title": "Huge explosions heard in south Lebanon, report says",
+      "blurb": "Huge explosions heard in south Lebanon, report says Huge explosions were heard in southern Lebanon on Thursday, AFP journalists reported, after Israel said it had destroyed underground infrastructure beneath a strategic ridge. Lebanon's National News Agency reported that Israe...",
+      "time": "2026-09-03 23:42 UTC",
+      "timestamp": 1788478968,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_21",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Jerusalem",
+      "title": "Opinion: UK settlement trade ban offers a lifeline to Palestine, and to an Israel on the brink",
+      "blurb": "Opinion: UK settlement trade ban offers a lifeline to Palestine, and to an Israel on the brink The British government\u2019s decision to ban tradewith Israeli settlements in the occupied Palestinianterritories should not be controversial. It is an acceptance of facts, including the...",
+      "time": "2026-09-02 19:42 UTC",
+      "timestamp": 1788378168,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_22",
+      "type": "diplomatic",
+      "actor": "usa",
+      "location": "Eastern Med",
+      "title": "Former New York Mayor Giuliani designated 'anti-Muslim extremist' by Muslim advocacy group",
+      "blurb": "Former New York Mayor Giuliani designated 'anti-Muslim extremist' by Muslim advocacy group Submitted by MEE staff on Thu, 09/10/2026 - 18:47 Giuliani said Muslims wanted to 'dominate' Americans and are taught 'extremist religious education' Former New York City Mayor Rudy Giul...",
+      "time": "2026-09-02 05:42 UTC",
+      "timestamp": 1788327768,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_23",
+      "type": "drone",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "IRGC says it targeted unmanned US sea drone in Hormuz",
+      "blurb": "IRGC says it targeted unmanned US sea drone in Hormuz Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) said on Thursday its navy targeted a US unmanned surface vessel in the Strait of Hormuz. \"The Navy of the Islamic Revolutionary Guard Corps targeted a Saildrone Explorer-type ...",
+      "time": "2026-09-01 15:42 UTC",
+      "timestamp": 1788277368,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_24",
+      "type": "drone",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Israeli air strikes injure several people in Gaza",
+      "blurb": "Israeli air strikes injure several people in Gaza Several Palestinians were injured on Thursday after an Israeli drone targeted al-Haq Mosque, west of the Nuseirat refugee camp in the central Gaza Strip, Wafa news agency reported, citing local sources. Israeli aircraft also ta...",
+      "time": "2026-09-01 01:42 UTC",
+      "timestamp": 1788226968,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_25",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Eastern Med",
+      "title": "London university lifts suspension of pro-Palestine student Usama Ghanem",
+      "blurb": "London university lifts suspension of pro-Palestine student Usama Ghanem King\u2019s College London (KCL) has lifted the suspension of student activist Usama Ghanem, who was disciplined by the university over his pro-Palestine activism. It comes after a year-long legal and public c...",
+      "time": "2026-08-31 11:42 UTC",
+      "timestamp": 1788176568,
+      "source": "Middle East Eye"
+    },
+    {
+      "id": "inc_26",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Beirut",
+      "title": "Lebanon death toll rises",
+      "blurb": "Lebanon death toll rises Israeli attacks have killed 4,383 people in Lebanon since 2 March, according to Lebanon\u2019s National News Agency, citing the Lebanese Ministry of Health. The updated toll also includes 12,406 people who have been wounded in the Israeli attacks, the agenc...",
+      "time": "2026-08-30 21:42 UTC",
+      "timestamp": 1788126168,
+      "source": "Middle East Eye"
     }
   ],
   "movements": []
