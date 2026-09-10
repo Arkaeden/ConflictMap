@@ -1,5 +1,127 @@
 {
-  "lastUpdated": "2026-09-10T18:05:06.315677+00:00",
-  "incidents": [],
+  "lastUpdated": "2026-09-10T21:23:26.073812+00:00",
+  "incidents": [
+    {
+      "id": "inc_0",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Beirut",
+      "title": "Tremor recorded as Israel says Hezbollah tunnels destroyed in south Lebanon",
+      "blurb": "Israel said Thursday it demolished key tunnels built by the Iran-backed Hezbollah group beneath the strategic Ali al-Taher ridge in southern Lebanon, with a 4.1 magnitude tremor recorded in the area. \"This is strategic terrorist infrastructure that was built over two decades, ...",
+      "time": "2026-09-10 21:23 UTC",
+      "timestamp": 1789075405,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_1",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Eastern Med",
+      "title": "Morocco says not involved in Ceuta migrant influx",
+      "blurb": "Morocco said on Thursday there were \"no facts\" establishing its involvement in the massive migrant rush into Spain's North African exclave of Ceuta in July. More than 70,000 migrants entered Ceuta from Morocco on July 30 and 31 in an unprecedented, chaotic surge that left scor...",
+      "time": "2026-09-10 07:23 UTC",
+      "timestamp": 1789025005,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_2",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Beirut",
+      "title": "Israel says it destroyed Hezbollah tunnels in Ali al-Taher ridge: What to know",
+      "blurb": "The ridge has become a flashpoint in the Israel-Hezbollah conflict in Lebanon due to its extensive tunnel network Israel says is utilized by the Iran-backed group.",
+      "time": "2026-09-09 17:23 UTC",
+      "timestamp": 1788974605,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_3",
+      "type": "diplomatic",
+      "actor": "israel",
+      "location": "Gaza City",
+      "title": "Israeli-made film about Gaza gets 25-minute ovation at Venice premiere",
+      "blurb": "A chilling new documentary about Israel's AI-powered mass killing of civilians in Gaza from two Oscar-winning Israeli filmmakers received a 25-minute ovation at its premiere at the Venice Film Festival on Thursday. The audience clapped continuously for Yuval Abraham and Rachel...",
+      "time": "2026-09-09 03:23 UTC",
+      "timestamp": 1788924205,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_4",
+      "type": "naval",
+      "actor": "iran",
+      "location": "Strait of Hormuz",
+      "title": "Likely oil slicks in Strait of Hormuz after US tanker strikes: experts",
+      "blurb": "Recent satellite images analysed on Thursday appear to show oil slicks near the Strait of Hormuz, after US strikes on tankers suspected of links to Iran's Revolutionary Guard. An image from the European Copernicus programme taken on Wednesday shows brownish streaks on the surf...",
+      "time": "2026-09-08 13:23 UTC",
+      "timestamp": 1788873805,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_5",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Eastern Med",
+      "title": "UAE to invest 40 billion euros in Germany, including for data centres: Berlin",
+      "blurb": "The leader of the United Arab Emirates was on a state visit to Germany on Thursday that resulted in a promise to invest 40 billion euros ($46.5 billion) into Europe's top economy. The money would partly pay for data centres with a capacity of up to one gigawatt, Berlin said, a...",
+      "time": "2026-09-07 23:23 UTC",
+      "timestamp": 1788823405,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_6",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Iran\u2019s Pickaxe mountain tests limits of Trump\u2019s military options",
+      "blurb": "A secretive Pentagon innovation agency has hastened to test munitions that may penetrate deeper than the GBU-57 bombs dropped on Iran\u2019s two main enrichment facilities.",
+      "time": "2026-09-07 09:23 UTC",
+      "timestamp": 1788773005,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_7",
+      "type": "naval",
+      "actor": "host",
+      "location": "Strait of Hormuz",
+      "title": "UAE announces plans to invest $46B in Germany during MBZ visit",
+      "blurb": "The UAE is Germany\u2019s largest trading partner in the Gulf, with bilateral trade surpassing 13 million euros ($15 billion) last year.",
+      "time": "2026-09-06 19:23 UTC",
+      "timestamp": 1788722605,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_8",
+      "type": "diplomatic",
+      "actor": "host",
+      "location": "Eastern Med",
+      "title": "Fueled by regional rivalries, Algeria severs diplomatic ties with UAE",
+      "blurb": "Algiers accused Abu Dhabi of increasingly \u201cprovocative and hostile actions\u201d after years of friction over Morocco, Western Sahara and competing regional interests.",
+      "time": "2026-09-04 11:23 UTC",
+      "timestamp": 1788521005,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_9",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Defiant Iran seeks to bruise Trump ahead of midterms",
+      "blurb": "Iran is intensifying confrontational actions against the United States in the hope of further raising the cost of the conflict for President Donald Trump less than two months ahead of the US midterm elections, analysts say. Over half a year after the war erupted on February 28...",
+      "time": "2026-09-02 03:23 UTC",
+      "timestamp": 1788319405,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_10",
+      "type": "naval",
+      "actor": "proxy",
+      "location": "Sanaa",
+      "title": "Houthis seize Red Sea city, tighten grip near strategic Bab al-Mandeb: What to know",
+      "blurb": "Taking control of the towns bordering the Bab al-Mandeb Strait deals a significant blow to Saudi Arabia, which has relied heavily on the key waterway to keep its exports afloat.",
+      "time": "2026-09-01 13:23 UTC",
+      "timestamp": 1788269005,
+      "source": "Al-Monitor"
+    }
+  ],
   "movements": []
 }
