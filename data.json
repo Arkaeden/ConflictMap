@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-09-13T13:39:57.143729+00:00",
+  "lastUpdated": "2026-09-13T17:15:08.132282+00:00",
   "incidents": [
     {
       "id": "inc_0",
       "type": "ground",
       "actor": "host",
       "location": "Eastern Med",
-      "title": "Turkey detains 26 people after raids targeting LGBTQ+ groups",
-      "blurb": "ISTANBUL, Sept 13 (Reuters) - Turkish authorities have detained 26 people and searched the offices of six LGBTQ+ associations in a series of raids that followed allegations of prostitution and obscenity, prosecutors said.The crackdown is part of a campaign that the government ...",
-      "time": "2026-09-13 13:39 UTC",
-      "timestamp": 1789306797,
+      "title": "Turkey detains dozens after sweeping raids targeting LGBTQ+ groups",
+      "blurb": "ISTANBUL, Sept 13 (Reuters) - Turkish authorities have detained at least 47 peoplefollowing a series of raids on the offices of LGBTQ+ associations in a probe into prostitution and obscenity, prosecutors said.The crackdown is part of a campaign that the government says is aime...",
+      "time": "2026-09-13 17:15 UTC",
+      "timestamp": 1789319708,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Tehran",
       "title": "Iran's economic ties to Dubai hard to break despite war",
       "blurb": "Verified tactical intelligence feed update.",
-      "time": "2026-09-12 23:39 UTC",
-      "timestamp": 1789256397,
+      "time": "2026-09-13 03:15 UTC",
+      "timestamp": 1789269308,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Eastern Med",
       "title": "Xi pushes 'Greater BRICS' economic ties to give bloc larger global role",
       "blurb": "(Corrects spelling of headline tag)NEW DELHI, Sept 13 (Reuters) - Chinese President Xi Jinping unveiled on Sunday initiatives in areas ranging from AI to trade to deepen cooperation among the \"Greater BRICS\" emerging economies, as Beijing seeks to weld the grouping into a prac...",
-      "time": "2026-09-12 09:39 UTC",
-      "timestamp": 1789205997,
+      "time": "2026-09-12 13:15 UTC",
+      "timestamp": 1789218908,
       "source": "Al-Monitor"
     },
     {
@@ -41,19 +41,19 @@
       "location": "Eastern Med",
       "title": "China, Russia, India seek economic cooperation at BRICS",
       "blurb": "BRICS leaders including China, Russia and India concluded a second and final day of talks in New Delhi on Sunday, discussing \"inclusive global growth\", after reaching a rare agreement calling for calm in the Middle East. Indian Prime Minister Narendra Modi called for \"cooperat...",
-      "time": "2026-09-11 19:39 UTC",
-      "timestamp": 1789155597,
+      "time": "2026-09-11 23:15 UTC",
+      "timestamp": 1789168508,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_4",
       "type": "naval",
-      "actor": "iran",
+      "actor": "proxy",
       "location": "Aden",
-      "title": "New report of attack on Strait of Hormuz shipping fans fears of threats to oil supplies",
-      "blurb": "By Mohammed Ghobari and Menna AlaaElDinADEN/DUBAI, Sept 13 (Reuters) - Maritime trackers received new reports of an attack on a ship in the Strait of Hormuz on Sunday, adding to concerns about Iran-related threats to global energy supplies after Saudi Arabia shut down a vital ...",
-      "time": "2026-09-11 05:39 UTC",
-      "timestamp": 1789105197,
+      "title": "New attacks in Hormuz and Saudi test nerves as war's spread worsens oil disruption",
+      "blurb": "By Mohammed Ghobari and Nayera AbdallahADEN/DUBAI, Sept 13 (Reuters) - New strikes on Saudi Arabia and on ships in the Gulf tested nerves in the Middle East on Sunday, after an attack on a Saudi oil pipeline and an advance by Yemen's Houthis threatened to worsen the wartime di...",
+      "time": "2026-09-11 09:15 UTC",
+      "timestamp": 1789118108,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Gaza City",
       "title": "Israeli-made Gaza documentary wins Venice special jury prize",
       "blurb": "A chilling new documentary about Israel's AI-assisted killing of civilians in Gaza by two Israeli directors won a special jury prize at the Venice Film Festival on Saturday. \"NAZA\", by Oscar-winning Israeli directors Yuval Abraham and Rachel Szor, had been tipped by some criti...",
-      "time": "2026-09-10 15:39 UTC",
-      "timestamp": 1789054797,
+      "time": "2026-09-10 19:15 UTC",
+      "timestamp": 1789067708,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Sanaa",
       "title": "Houthis say hit Saudi base after renewed fighting with Yemeni govt forces",
       "blurb": "Houthi fighters on Sunday said they used drones and missiles to attack a military base in southern Saudi Arabia as renewed fighting with Yemen's government forces forced growing numbers of civilians to flee. The attack at the southern Sharurah base targeted \"weapons depots and...",
-      "time": "2026-09-10 01:39 UTC",
-      "timestamp": 1789004397,
+      "time": "2026-09-10 05:15 UTC",
+      "timestamp": 1789017308,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Strait of Hormuz",
       "title": "Iran-Oman understanding does not provide for immediate reopening of Strait of Hormuz, Tasnim reports",
       "blurb": "Sept 12 (Reuters) - An understanding between Iran and Oman does not provide for the immediate reopening of the Strait of Hormuz but establishes the basis on which it could reopen, an Iranian source told the semi-official Tasnim news agency on Saturday.The source said the arran...",
-      "time": "2026-09-09 11:39 UTC",
-      "timestamp": 1788953997,
+      "time": "2026-09-09 15:15 UTC",
+      "timestamp": 1788966908,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Sanaa",
       "title": "Analysis-Houthi advance in Yemen puts U.S. in a new bind",
       "blurb": "By Humeyra Pamuk, Simon Lewis and Matt SpetalnickWASHINGTON, Sept 12 (Reuters) - A lightning offensive by the Iran-aligned Houthis has put the militants in a position to control a crucial Middle East waterway, creating a major new problem for U.S. President Donald Trump as his...",
-      "time": "2026-09-08 21:39 UTC",
-      "timestamp": 1788903597,
+      "time": "2026-09-09 01:15 UTC",
+      "timestamp": 1788916508,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Strait of Hormuz",
       "title": "No signed Hormuz deal expected yet from Oman meeting on Monday, Iranian official says",
       "blurb": "Sept 12 (Reuters) - A meeting between Iran and Gulf states planned for Monday in Oman will be a chance to discuss issues including the Strait of Hormuz, but is not expected to yield a signed agreement over the blockaded waterway, a senior Iranian official said on Saturday.Iran...",
-      "time": "2026-09-08 07:39 UTC",
-      "timestamp": 1788853197,
+      "time": "2026-09-08 11:15 UTC",
+      "timestamp": 1788866108,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Eastern Med",
       "title": "BRICS adopts joint declaration, urges 'maximum restraint' in Mideast",
       "blurb": "By Sarita Chaganti SinghNEW DELHI, Sept 12 (Reuters) - The BRICS group of nations unanimously adopted a joint declaration on Saturday, expressing \"deep concern\" over the war in the Middle East and urged maximum restraint, advocating for a \"multilateral approach\" that respects ...",
-      "time": "2026-09-07 17:39 UTC",
-      "timestamp": 1788802797,
+      "time": "2026-09-07 21:15 UTC",
+      "timestamp": 1788815708,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Eastern Med",
       "title": "Xi urges BRICS peace role in Middle East, courts Modi on India visit",
       "blurb": "BEIJING, Sept 12 (Reuters) - Chinese President Xi Jinping urged the BRICS bloc to be a peacemaker in the Middle East conflict, in an address to a summit of member countries in New Delhi on Saturday.China will work with other BRICS members in that role, as the war \"does not ser...",
-      "time": "2026-09-07 03:39 UTC",
-      "timestamp": 1788752397,
+      "time": "2026-09-07 07:15 UTC",
+      "timestamp": 1788765308,
       "source": "Al-Monitor"
     },
     {
@@ -140,8 +140,8 @@
       "location": "Strait of Hormuz",
       "title": "Trump says Iran probably responsible for attack on Saudi pipeline",
       "blurb": "DUBLIN, Sept 12 (Reuters) - U.S. President Donald Trump said on Saturday that Iran was probably responsible for an aerial attack on Saudi Arabia \u200bthat shut down its East-West pipeline, one of the kingdom's main routes for exporting crude while bypassing the Strait of Hormuz.\"I...",
-      "time": "2026-09-06 13:39 UTC",
-      "timestamp": 1788701997,
+      "time": "2026-09-06 17:15 UTC",
+      "timestamp": 1788714908,
       "source": "Al-Monitor"
     },
     {
@@ -151,8 +151,8 @@
       "location": "Tehran",
       "title": "Iran and UAE back joint BRICS statement urging restraint in war",
       "blurb": "By Sarita Chaganti Singh, Shivangi Acharya and Saurabh SharmaNEW DELHI, Sept 12 (Reuters) - Iran and the United Arab Emirates signed up to a joint statement from the BRICS group of nations that called for restraint in the Middle East war on Saturday, in what was seen as a sign...",
-      "time": "2026-09-05 23:39 UTC",
-      "timestamp": 1788651597,
+      "time": "2026-09-06 03:15 UTC",
+      "timestamp": 1788664508,
       "source": "Al-Monitor"
     },
     {
@@ -162,8 +162,8 @@
       "location": "Eastern Med",
       "title": "BRICS bloc agrees on joint declaration, sources say",
       "blurb": "NEW DELHI, Sept 12 (Reuters) - The BRICS group of countries has agreed on a joint declaration, which is unlikely to name any country but will condemn unilateral war by any country, four sources told Reuters on Saturday. The bloc, which includes Brazil, Russia, India, China, So...",
-      "time": "2026-09-05 09:39 UTC",
-      "timestamp": 1788601197,
+      "time": "2026-09-05 13:15 UTC",
+      "timestamp": 1788614108,
       "source": "Al-Monitor"
     },
     {
@@ -173,8 +173,8 @@
       "location": "Tehran",
       "title": "BRICS nations call for 'maximum restraint' in Middle East war",
       "blurb": "Members of the 11-nation BRICS group including China, Russia, Iran and India called for calm in the Middle East at a summit in New Delhi on Saturday, overcoming earlier divisions to issue a joint statement. Chinese President Xi Jinping, who joined Russian, Iranian, Indian and ...",
-      "time": "2026-09-04 19:39 UTC",
-      "timestamp": 1788550797,
+      "time": "2026-09-04 23:15 UTC",
+      "timestamp": 1788563708,
       "source": "Al-Monitor"
     },
     {
@@ -184,8 +184,8 @@
       "location": "Damascus",
       "title": "Syrian private airport plans spark outcry over mass graves, land rights",
       "blurb": "By Feras DalateyDAMASCUS, Sept 12 (Reuters) - Syrian government plans to turn a former military airport in Damascus into a hub for private jets are raising alarm among rights groups and residents who say redevelopment could disturb suspected mass graves and override private la...",
-      "time": "2026-09-04 05:39 UTC",
-      "timestamp": 1788500397,
+      "time": "2026-09-04 09:15 UTC",
+      "timestamp": 1788513308,
       "source": "Al-Monitor"
     },
     {
@@ -195,8 +195,8 @@
       "location": "Eastern Med",
       "title": "Factbox-The evolution of BRICS and its challenges today",
       "blurb": "NEW DELHI, Sept 12 (Reuters) - Leaders of the BRICS group of nations will meet on Saturday in the Indian capital of New Delhi for their annual summit, amid mounting geopolitical tension, disruptions in energy markets, shipping, and global trade.Here is a look at the bloc's his...",
-      "time": "2026-09-03 15:39 UTC",
-      "timestamp": 1788449997,
+      "time": "2026-09-03 19:15 UTC",
+      "timestamp": 1788462908,
       "source": "Al-Monitor"
     },
     {
@@ -206,8 +206,8 @@
       "location": "Eastern Med",
       "title": "Egyptians budget for bread after mass food aid cuts",
       "blurb": "Standing outside a bakery in Cairo's working-class El-Marg district, Eman Abdel Fattah thumbed a handful of crumpled banknotes, calculating how much bread she could afford after her family's food subsidy card was suspended. \"We used to worry about having enough money for meat,...",
-      "time": "2026-09-03 01:39 UTC",
-      "timestamp": 1788399597,
+      "time": "2026-09-03 05:15 UTC",
+      "timestamp": 1788412508,
       "source": "Al-Monitor"
     },
     {
@@ -217,8 +217,8 @@
       "location": "Aden",
       "title": "Saudis shut down oil pipeline as Houthis tighten grip on Red Sea shipping",
       "blurb": "By Mohammed Ghobari, Eman Abouhassira and Yasmine GhaniaADEN/DUBAI, Sept 12 (Reuters) - Saudi Arabia has shut down its East-West pipeline, after the vital oil conduit came under aerial attack in the widening Middle East war, threatening to send energy prices even higher. The w...",
-      "time": "2026-09-02 11:39 UTC",
-      "timestamp": 1788349197,
+      "time": "2026-09-02 15:15 UTC",
+      "timestamp": 1788362108,
       "source": "Al-Monitor"
     }
   ],
