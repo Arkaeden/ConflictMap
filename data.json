@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-09-20T14:28:49.771679+00:00",
+  "lastUpdated": "2026-09-20T17:56:10.995469+00:00",
   "incidents": [
     {
       "id": "inc_0",
-      "type": "missile",
+      "type": "naval",
       "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran warns against new escalation by US and allies",
-      "blurb": "By Jana ChoukeirDUBAI, Sept 20 (Reuters) - Iran warned on Sunday against any big new attack by the United States and its allies, saying it had information such a move was being prepared, adding to the anxiety in a region already on edge after drone and missile strikes on Saudi...",
-      "time": "2026-09-20 14:28 UTC",
-      "timestamp": 1789914529,
+      "location": "Sanaa",
+      "title": "Iran and US trade threats after Houthi attacks escalate regional conflict",
+      "blurb": "By Jana Choukeir and Doina ChiacuDUBAI/WASHINGTON, Sept 20 (Reuters) - Iran and the United States exchanged new threats on Sunday, with President Donald Trump warning Iran would fail economically or face its leadership being wiped out if it didn't make a deal, and the Iranian ...",
+      "time": "2026-09-20 17:56 UTC",
+      "timestamp": 1789926970,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Gaza City",
       "title": "European Commissioner discussed EU-Israel relationship, Gaza with Israeli minister",
       "blurb": "BRUSSELS, Sept 20 (Reuters) - The European Commissioner for the Mediterranean said on Sunday that she discussed the European Union's relationship with Israel, regional stability and Gaza recovery efforts with Israeli Foreign Minister Gideon Saar.Dubravka Suica said in a post o...",
-      "time": "2026-09-20 00:28 UTC",
-      "timestamp": 1789864129,
+      "time": "2026-09-20 03:56 UTC",
+      "timestamp": 1789876570,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Jerusalem",
       "title": "Palestinian gunman shoots dead Israeli in the West Bank, soldiers kill motorist",
       "blurb": "NEAR RAMALLAH, West Bank, Sept 20 (Reuters) - Violence flared in the occupied West Bank on Sunday when a suspected Palestinian gunman shot dead an Israeli man, police said, and Israeli soldiers killed a Palestinian motorist who the military said was attempting to run them over...",
-      "time": "2026-09-19 10:28 UTC",
-      "timestamp": 1789813729,
+      "time": "2026-09-19 13:56 UTC",
+      "timestamp": 1789826170,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Riyadh",
       "title": "US warns of rapid escalation in Mideast war",
       "blurb": "The United States warned that fighting between Saudi Arabia and Iran-backed Houthis could \"escalate rapidly\" after a missile attack targeted Riyadh for the first time since the Yemen conflict resumed. US President Donald Trump cut short a weekend at Camp David, a secluded pres...",
-      "time": "2026-09-18 20:28 UTC",
-      "timestamp": 1789763329,
+      "time": "2026-09-18 23:56 UTC",
+      "timestamp": 1789775770,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Damascus",
       "title": "In Syria, a library of Islamist texts sees light of day a decade on",
       "blurb": "Verified tactical intelligence feed update.",
-      "time": "2026-09-18 06:28 UTC",
-      "timestamp": 1789712929,
+      "time": "2026-09-18 09:56 UTC",
+      "timestamp": 1789725370,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Eastern Med",
       "title": "Games-From dressing as a man to competing with the elite, no backpedalling for Afghan Hashimi",
       "blurb": "By Amlan ChakrabortyNAGOYA, Japan, Sept 20 (Reuters) - For someone who had to disguise herself as a man, dodge thrown stones and eventually flee her homeland to pursue cycling, Fariba Hashimi's seventh-place finish in the women's individual time trial at the Asian Games carrie...",
-      "time": "2026-09-17 16:28 UTC",
-      "timestamp": 1789662529,
+      "time": "2026-09-17 19:56 UTC",
+      "timestamp": 1789674970,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Eastern Med",
       "title": "World leaders return to UN amid wars in Middle East and Ukraine",
       "blurb": "By Antoni SlodkowskiUNITED NATIONS, Sept 20 (Reuters) - World leaders gather in New York this week for the UN General Assembly, bracing for President Donald Trump's return to the rostrum for a second year running, with talks centering on the widening conflicts in the Middle Ea...",
-      "time": "2026-09-17 02:28 UTC",
-      "timestamp": 1789612129,
+      "time": "2026-09-17 05:56 UTC",
+      "timestamp": 1789624570,
       "source": "Al-Monitor"
     },
     {
@@ -85,8 +85,8 @@
       "location": "Gaza City",
       "title": "Singer Ed Sheeran says Gaza situation 'unjustifiable' following controversy",
       "blurb": "Pop star Ed Sheeran said Saturday the situation in Gaza is \"unjustifiable,\" following a wave of criticism that he had failed to back his opening act who was booted from the tour after making pro-Palestinian comments. The singer, who had previously maintained an apolitical stan...",
-      "time": "2026-09-16 12:28 UTC",
-      "timestamp": 1789561729,
+      "time": "2026-09-16 15:56 UTC",
+      "timestamp": 1789574170,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Sanaa",
       "title": "Turkey says it could help meet Saudi military needs under defence pact",
       "blurb": "ANKARA, Sept 19 (Reuters) - Turkish Foreign Minister Hakan Fidan said on Saturday that Saudi Arabia may have military needs due to theongoing attacks by Yemen's Houthis and that Turkey was ready to help under a trilateraldefence pact that also includes Pakistan.\"We see there a...",
-      "time": "2026-09-15 22:28 UTC",
-      "timestamp": 1789511329,
+      "time": "2026-09-16 01:56 UTC",
+      "timestamp": 1789523770,
       "source": "Al-Monitor"
     },
     {
@@ -107,8 +107,8 @@
       "location": "Beirut",
       "title": "UN peacekeeping chief in Lebanon says smooth transition is critical before pull-out",
       "blurb": "By Maya GebeilyNEAR MANSOURI, Lebanon, Sept 19 (Reuters) - The head of United Nations peacekeepers in Lebanon said on Saturday it was critical to ensure otherUN agencies and Lebanese troops could assume the tasks carried out by the force before it begins withdrawing at the end...",
-      "time": "2026-09-15 08:28 UTC",
-      "timestamp": 1789460929,
+      "time": "2026-09-15 11:56 UTC",
+      "timestamp": 1789473370,
       "source": "Al-Monitor"
     },
     {
@@ -118,8 +118,8 @@
       "location": "Gaza City",
       "title": "Israeli strikes kill three people in Gaza, medics say",
       "blurb": "By Nidal al-MughrabiCAIRO, Sept 19 (Reuters) - Israeli airstrikes killed at least three Palestinians in the Gaza Strip on Saturday, health officials said.One strike near Jabalia refugee camp in northern Gaza killed Basir Al-Bursh, the son of Munir Al-Bursh, the territory's hea...",
-      "time": "2026-09-14 18:28 UTC",
-      "timestamp": 1789410529,
+      "time": "2026-09-14 21:56 UTC",
+      "timestamp": 1789422970,
       "source": "Al-Monitor"
     },
     {
@@ -129,8 +129,8 @@
       "location": "Riyadh",
       "title": "Flames, smoke seen near Riyadh airport; Houthis claim attacks on Saudi capital",
       "blurb": "RIYADH, Sept 19 (Reuters) - Yemen's Houthis said they attacked \"sensitive\" sites in the Saudi capital Riyadh on Saturday with missiles and drones, hours after flames and a large plume of smoke were seen near the city's main airport.Saudi Arabia had sent alerts overnight warnin...",
-      "time": "2026-09-14 04:28 UTC",
-      "timestamp": 1789360129,
+      "time": "2026-09-14 07:56 UTC",
+      "timestamp": 1789372570,
       "source": "Al-Monitor"
     },
     {
@@ -140,8 +140,8 @@
       "location": "Riyadh",
       "title": "US fears rapid escalation in Mideast after Houthis attack Riyadh",
       "blurb": "The United States warned Saturday that hostilities between Saudi Arabia and Iran-backed Houthis could \"escalate rapidly\" after a missile attack targeted Riyadh for the first time since the Yemen conflict resumed. US President Donald Trump cut short a weekend at Camp David, a s...",
-      "time": "2026-09-13 14:28 UTC",
-      "timestamp": 1789309729,
+      "time": "2026-09-13 17:56 UTC",
+      "timestamp": 1789322170,
       "source": "Al-Monitor"
     },
     {
@@ -151,8 +151,8 @@
       "location": "Damascus",
       "title": "AfD surge in eastern Germany makes some immigrants question whether they still belong",
       "blurb": "By Amina Ismail and James MackenzieROSTOCK, Germany, Sept 19 (Reuters) - Shahd Najeeb still remembers the trauma of fleeing Islamic State fighters during Syria's civil war. More than a decade after finding refuge in Germany, she now fears she may no longer be welcome there.\"Wh...",
-      "time": "2026-09-13 00:28 UTC",
-      "timestamp": 1789259329,
+      "time": "2026-09-13 03:56 UTC",
+      "timestamp": 1789271770,
       "source": "Al-Monitor"
     },
     {
@@ -162,8 +162,8 @@
       "location": "Aden",
       "title": "Death toll at 31 in Pakistan police compound attack, AFP reports",
       "blurb": "Sept 19 (Reuters) - The death toll in a suicide attack at a police compound in northwest Pakistan has reached 31, AFP reported onSaturday, citing a police official.The attacker rammed an explosives-laden car into the police facility on Friday as officers and their families wer...",
-      "time": "2026-09-12 10:28 UTC",
-      "timestamp": 1789208929,
+      "time": "2026-09-12 13:56 UTC",
+      "timestamp": 1789221370,
       "source": "Al-Monitor"
     },
     {
@@ -173,8 +173,8 @@
       "location": "Eastern Med",
       "title": "UN chief 'deeply regrets' US visa refusal to Abbas for annual meeting",
       "blurb": "UN Secretary-General Antonio Guterres \"deeply regrets\" Washington's decision to deny a visa for the second year running to Palestinian leader Mahmoud Abbas, a UN spokesman said Friday, preventing him from attending the UN General Assembly. The US State Department said Thursday...",
-      "time": "2026-09-11 20:28 UTC",
-      "timestamp": 1789158529,
+      "time": "2026-09-11 23:56 UTC",
+      "timestamp": 1789170970,
       "source": "Al-Monitor"
     },
     {
@@ -184,8 +184,8 @@
       "location": "Tehran",
       "title": "US troop deaths during Iran war exceed Pentagon count by at least four, Washington Post reports",
       "blurb": "Sept 18 (Reuters) - More US troops have died during the US-Israeli war with Iran than the Pentagon has publicly disclosed, the Washington Post reported on Friday.Defense Secretary PeteHegseth denied the report.The Post, citing five unidentified officials, reported that there h...",
-      "time": "2026-09-11 06:28 UTC",
-      "timestamp": 1789108129,
+      "time": "2026-09-11 09:56 UTC",
+      "timestamp": 1789120570,
       "source": "Al-Monitor"
     },
     {
@@ -195,8 +195,8 @@
       "location": "Tehran",
       "title": "As Iran regime marks 200 days of war, is it also preparing for dissent?",
       "blurb": "Seven months into the war with the US, Iranian authorities staged a pro-government mobilization in Tehran, combining patriotic spectacle with a carefully calibrated demonstration aimed for domestic internal security capacity.",
-      "time": "2026-09-10 16:28 UTC",
-      "timestamp": 1789057729,
+      "time": "2026-09-10 19:56 UTC",
+      "timestamp": 1789070170,
       "source": "Al-Monitor"
     },
     {
@@ -206,8 +206,8 @@
       "location": "Damascus",
       "title": "Syria\u2019s Shibani visits Latakia airport to review Russia deal progress: What to know",
       "blurb": "Syria is seeking to ensure that the August deal to turn Russian facilities in the country into joint training centers is implemented.",
-      "time": "2026-09-10 02:28 UTC",
-      "timestamp": 1789007329,
+      "time": "2026-09-10 05:56 UTC",
+      "timestamp": 1789019770,
       "source": "Al-Monitor"
     },
     {
@@ -217,8 +217,8 @@
       "location": "Tehran",
       "title": "What to expect as UN General Assembly convenes amid Iran war",
       "blurb": "The US State Department denied visas to Palestinian officials seeking to attend the UN summit, yet authorized the Iranian delegation's travel to New York.",
-      "time": "2026-09-09 12:28 UTC",
-      "timestamp": 1788956929,
+      "time": "2026-09-09 15:56 UTC",
+      "timestamp": 1788969370,
       "source": "Al-Monitor"
     }
   ],
