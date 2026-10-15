@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-14T23:40:31.554725+00:00",
+  "lastUpdated": "2026-10-15T03:11:54.722566+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Tehran",
       "title": "Russia's Lavrov, China's Wang discuss cooperation, Ukraine, Iran at Asia security meeting",
       "blurb": "Oct 14 (Reuters) - The Russian and Chinese foreign ministers discussed the state of bilateral cooperation as well as the crises in Ukraine and Iran during an Asia security meeting, the Russian Foreign Ministry said on Wednesday.Russian President Vladimir Putin and his Chinese ...",
-      "time": "2026-10-14 23:40 UTC",
-      "timestamp": 1792021231,
+      "time": "2026-10-15 03:11 UTC",
+      "timestamp": 1792033914,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Sanaa",
       "title": "Yemen forces clash with Houthis around Taiz as humanitarian situation worsens",
       "blurb": "The Houthis are laying siege to the strategic city of Taiz as the government works to advance along the coast.",
-      "time": "2026-10-14 09:40 UTC",
-      "timestamp": 1791970831,
+      "time": "2026-10-14 13:11 UTC",
+      "timestamp": 1791983514,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Jerusalem",
       "title": "Colombia opens embassy to Israel in Jerusalem",
       "blurb": "Verified tactical intelligence feed update.",
-      "time": "2026-10-12 01:40 UTC",
-      "timestamp": 1791769231,
+      "time": "2026-10-12 05:11 UTC",
+      "timestamp": 1791781914,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Jerusalem",
       "title": "Israel\u2019s Herzog holds rare meeting with Bahraini FM in Azerbaijan",
       "blurb": "In the framework of an international summit, Israeli President Isaac Herzog met with the Foreign minister of Bahrain Abdullatif bin Rashid Al-Zayani.",
-      "time": "2026-10-11 11:40 UTC",
-      "timestamp": 1791718831,
+      "time": "2026-10-11 15:11 UTC",
+      "timestamp": 1791731514,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Beirut",
       "title": "UN peacekeeping chief says talks on future of Lebanon mission must begin soon",
       "blurb": "By Maya GebeilyBEIRUT, Oct 14 (Reuters) - UN peacekeeping chief Jean-Pierre Lacroix on Wednesday urged the UN Security Council to begin negotiations on the future of peacekeepers deployed in Lebanon, as Beirut campaigns for an extension to the mandate set to expire at the end ...",
-      "time": "2026-10-09 03:40 UTC",
-      "timestamp": 1791517231,
+      "time": "2026-10-09 07:11 UTC",
+      "timestamp": 1791529914,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Strait of Hormuz",
       "title": "Two ships sink near Hormuz after being hit by projectiles amid surge in attacks",
       "blurb": "By Jonathan Saul and Renee MaltezouLONDON, Oct 14 (Reuters) - A container ship and a dry bulk carrier have both sunk near the Strait of Hormuz in the past 24 hours after being hit by projectiles in separate incidents, maritime officials said on Wednesday. Attacks around the wa...",
-      "time": "2026-10-08 13:40 UTC",
-      "timestamp": 1791466831,
+      "time": "2026-10-08 17:11 UTC",
+      "timestamp": 1791479514,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Jerusalem",
       "title": "Why Israel, Armenia don't benefit from hijab spat between Turkey, Azerbaijan",
       "blurb": "Israel and Armenia have reasons to worry about the escalating dispute between Turkey and Azerbaijan, despite their own tensions with Ankara and Baku.",
-      "time": "2026-10-07 23:40 UTC",
-      "timestamp": 1791416431,
+      "time": "2026-10-08 03:11 UTC",
+      "timestamp": 1791429114,
       "source": "Al-Monitor"
     },
     {
@@ -85,207 +85,9 @@
       "location": "Sanaa",
       "title": "Aramco HQ attack exposes Saudi defense gaps, infrastructure vulnerabilities",
       "blurb": "The Iran-linked Yemeni militants struck at the heart of Saudi Arabia\u2019s oil industry this week amid an expanding campaign against key infrastructure.",
-      "time": "2026-10-05 15:40 UTC",
-      "timestamp": 1791214831,
+      "time": "2026-10-05 19:11 UTC",
+      "timestamp": 1791227514,
       "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_8",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Overthrowing Iran's government 'essential for Israel's security', Netanyahu says",
-      "blurb": "Overthrowing Iran's government 'essential for Israel's security', Netanyahu says Israeli Prime Minister Benjamin Netanyahu says that although overthrowing Iran\u2019s government \"remains essential for Israel's security\", it is unlikely to happen before Israel\u2019s elections on 27 Octo...",
-      "time": "2026-10-14 23:40 UTC",
-      "timestamp": 1792021231,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_9",
-      "type": "missile",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Houthis claim Saudi military aircraft 'struck directly' over Yemen airspace",
-      "blurb": "Houthis claim Saudi military aircraft 'struck directly' over Yemen airspace The Houthis have claimed they targeted a Saudi military aircraft, a Eurofighter Typhoon, with an air-to-air missile in the airspace over Yemen\u2019s Saada governorate. Houthi military spokesman Yahya Saree...",
-      "time": "2026-10-14 09:40 UTC",
-      "timestamp": 1791970831,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_10",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Sanaa",
-      "title": "EU calls on Houthis to lift siege on Yemen\u2019s Taiz",
-      "blurb": "EU calls on Houthis to lift siege on Yemen\u2019s Taiz The European Union called on Iran-aligned Houthi forces to lift their siege on Yemen\u2019s southwestern city of Taiz to allow the entry of humanitarian aid. In a post on X, it said civilians and civilian infrastructure must be prot...",
-      "time": "2026-10-13 19:40 UTC",
-      "timestamp": 1791920431,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Sanaa",
-      "title": "Houthi strikes mark the end of Saudi Arabia's Yemen 'containment strategy'",
-      "blurb": "Houthi strikes mark the end of Saudi Arabia's Yemen 'containment strategy' Saudi Arabia\u2019s bid to \u201ccontain\u201d the Houthis in Yemen while doubling down on economic growth at home is collapsing, posing one of the most serious tests for Crown Prince Mohammed bin Salman since he rose...",
-      "time": "2026-10-13 05:40 UTC",
-      "timestamp": 1791870031,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_12",
-      "type": "diplomatic",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Yemeni army says 200 Houthis killed, wounded in clashes in Taiz",
-      "blurb": "Yemeni army says 200 Houthis killed, wounded in clashes in Taiz The Yemeni army says more than 200 Houthi fighters were killed or injured during fighting in the southwestern province of Taiz. In a statement on Facebook, the Taiz Military Axis said that fierce fighting continue...",
-      "time": "2026-10-12 15:40 UTC",
-      "timestamp": 1791819631,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_13",
-      "type": "diplomatic",
-      "actor": "usa",
-      "location": "Eastern Med",
-      "title": "US elections: Races to watch in the 2026 midterms",
-      "blurb": "US elections: Races to watch in the 2026 midterms Submitted by Yasmine El-Sabawi on Tue, 10/13/2026 - 17:15 A counter-Trump blue wave is likely, as well as the first-ever Muslim in the US Senate The US Capitol Building is seen on Capitol Hill in Washington, DC, on 28 September...",
-      "time": "2026-10-12 01:40 UTC",
-      "timestamp": 1791769231,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_14",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Why some pro-Palestine activists have turned their backs on Mamdani",
-      "blurb": "Why some pro-Palestine activists have turned their backs on Mamdani New York City Mayor Zohran Mamdani is arguably the most pro-Palestinian mayor in New York City's history. He campaigned heavily on the issue of Palestine, repeatedly condemning Israel and labelling its war on ...",
-      "time": "2026-10-10 21:40 UTC",
-      "timestamp": 1791668431,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_15",
-      "type": "diplomatic",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Yemeni government urges UN to act against Houthis in Taiz",
-      "blurb": "Yemeni government urges UN to act against Houthis in Taiz The Yemeni government has called on the UN Security Council to take \u201curgent\u201d measures to lift the Houthis\u2019 siege on the city of Taiz. Foreign Minister Afrah Abdulaziz al-Zouba warned the United Nations in a letter that ...",
-      "time": "2026-10-10 07:40 UTC",
-      "timestamp": 1791618031,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_16",
-      "type": "naval",
-      "actor": "iran",
-      "location": "Strait of Hormuz",
-      "title": "US says it destroyed Iranian-affiliated vessel last week",
-      "blurb": "US says it destroyed Iranian-affiliated vessel last week The US military said on Wednesday it destroyed an Iranian-affiliated vessel last week that it alleged was conducting surveillance and targeting US Navy ships in the Gulf of Oman. \"Crew members were safely removed prior t...",
-      "time": "2026-10-09 03:40 UTC",
-      "timestamp": 1791517231,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_17",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Gaza officials say Israeli strikes kill four",
-      "blurb": "Gaza officials say Israeli strikes kill four Palestinian officials said Israeli strikes killed four people in Gaza on Wednesday, days after the anniversary of the declaration of a US-mediated ceasefire. Two young men died when Israeli forces struck a vehicle near Khan Younis i...",
-      "time": "2026-10-08 13:40 UTC",
-      "timestamp": 1791466831,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_18",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Azerbaijan's hijab ban sparks outrage in Turkey as women recall past restrictions",
-      "blurb": "Azerbaijan's hijab ban sparks outrage in Turkey as women recall past restrictions Submitted by MEE staff on Wed, 10/14/2026 - 19:03 The exclusion of headscarf-wearing students and teachers from Azerbaijani schools has stirred a wave of solidarity in Turkey People wave the Turk...",
-      "time": "2026-10-07 23:40 UTC",
-      "timestamp": 1791416431,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_19",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Sally Rooney books cannot be sold in UK amid Palestine Action ban, says publisher",
-      "blurb": "Sally Rooney books cannot be sold in UK amid Palestine Action ban, says publisher Irish author Sally Rooney can no longer sell her books in the UK because of her support for the activist group Palestine Action, her publisher Faber said Wednesday. Rooney has previously expresse...",
-      "time": "2026-10-07 09:40 UTC",
-      "timestamp": 1791366031,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "missile",
-      "actor": "iran",
-      "location": "Riyadh",
-      "title": "Yemen's Houthis say they targeted Riyadh airport with ballistic missile",
-      "blurb": "Yemen's Houthis say they targeted Riyadh airport with ballistic missile Yemen's Iran-aligned Houthis said on Wednesday that they targeted Riyadh's international airport with a ballistic missile, hours after the Saudi-led coalition reported an interception of one fired towards ...",
-      "time": "2026-10-06 19:40 UTC",
-      "timestamp": 1791315631,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "France's Macron to visit Kuwait, UAE, Bahrain, and Qatar in October",
-      "blurb": "France's Macron to visit Kuwait, UAE, Bahrain, and Qatar in October French President Emmanuel Macron will travel to Kuwait, the United Arab Emirates, Bahrain, and Qatar to meet their leaders from 19 October to 21 October, his office said Wednesday. He plans to discuss the situ...",
-      "time": "2026-10-06 05:40 UTC",
-      "timestamp": 1791265231,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "FBI arrests Saudi OpenAI engineer over hidden recording device",
-      "blurb": "FBI arrests Saudi OpenAI engineer over hidden recording device Submitted by MEE staff on Wed, 10/14/2026 - 17:19 OpenAI discovered the thumb-sized device connected to a USB port behind a TV in its San Francisco executive meeting room A man described as Abdulrahman Alfozan, a S...",
-      "time": "2026-10-05 15:40 UTC",
-      "timestamp": 1791214831,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "diplomatic",
-      "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Yemen government says it raised Houthis' alleged use of Chinese tech with Beijing",
-      "blurb": "Yemen government says it raised Houthis' alleged use of Chinese tech with Beijing The Yemeni government has spoken with Beijing about the Houthis' alleged attempts to utilise Chinese-made technology for weapons, a Yemeni minister said on Wednesday, as the two sides' long-runni...",
-      "time": "2026-10-05 01:40 UTC",
-      "timestamp": 1791164431,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "naval",
-      "actor": "host",
-      "location": "Strait of Hormuz",
-      "title": "Dry bulk vessel sinks near Hormuz, second ship loss reported in 24 hours, data shows",
-      "blurb": "Dry bulk vessel sinks near Hormuz, second ship loss reported in 24 hours, data shows The Antigua and Barbuda-flagged Cape Dao sank near the Strait of Hormuz after a projectile struck it on 23 September, data from the United Nations shipping agency, the International Maritime O...",
-      "time": "2026-10-04 11:40 UTC",
-      "timestamp": 1791114031,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "HSBC \u2018sharia\u2011compliant\u2019 fund spent over $100m on five Israeli military\u2011linked firms",
-      "blurb": "HSBC \u2018sharia\u2011compliant\u2019 fund spent over $100m on five Israeli military\u2011linked firms The UK\u2019s largest \u201csharia-compliant\u201d fund has purchased more than $100m worth of shares in companies linked to the Israeli military in the first half of this year, a Middle East Eye analysis can...",
-      "time": "2026-10-03 21:40 UTC",
-      "timestamp": 1791063631,
-      "source": "Middle East Eye"
     }
   ],
   "movements": []
