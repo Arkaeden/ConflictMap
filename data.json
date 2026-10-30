@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-29T20:51:44.448575+00:00",
+  "lastUpdated": "2026-10-30T00:36:18.909577+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Eastern Med",
       "title": "Exclusive-Greek PM calls Turkey-Libya maritime deal 'void;' calls for global truce after Black Sea attacks",
       "blurb": "By Antoni SlodkowskiUNITED NATIONS, Oct 29 (Reuters) - Greek Prime Minister Kyriakos Mitsotakis said on Thursday that the recently signed maritime deal between Libya's eastern \u200cparliament and Turkey was \"blatantly illegal, null and void,\" adding that it \"completely disregards ...",
-      "time": "2026-10-29 20:51 UTC",
-      "timestamp": 1793307104,
+      "time": "2026-10-30 00:36 UTC",
+      "timestamp": 1793320578,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Tehran",
       "title": "CENTCOM chief briefs Trump on Iran strike options",
       "blurb": "It was not immediately clear following Trump\u2019s meeting with top defense officials whether he had decided to restart the war.",
-      "time": "2026-10-29 06:51 UTC",
-      "timestamp": 1793256704,
+      "time": "2026-10-29 10:36 UTC",
+      "timestamp": 1793270178,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Jerusalem",
       "title": "Egyptian man who fire-bombed pro-Israel rally in Colorado pleads guilty to federal hate crimes",
       "blurb": "By Keith Coffman and Steve GormanDENVER, Oct 29 (Reuters) - The man who lobbed gasoline bombs at a pro-Israel rally in Colorado last year, injuring several people including a woman who later died, pleaded guilty on Thursday to federal hate-crime charges, theUS Department of Ju...",
-      "time": "2026-10-28 16:51 UTC",
-      "timestamp": 1793206304,
+      "time": "2026-10-28 20:36 UTC",
+      "timestamp": 1793219778,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Eastern Med",
       "title": "Senior US general fired, accused of leaking classified information",
       "blurb": "By Phil StewartWASHINGTON, Oct 29 (Reuters) - Defense Secretary Pete Hegseth has fired US Army Lieutenant General Brett Sylvia, a senior military planner on the Pentagon's Joint Staff, over accusations he leaked classified information to the public, officials said on Thursday....",
-      "time": "2026-10-28 02:51 UTC",
-      "timestamp": 1793155904,
+      "time": "2026-10-28 06:36 UTC",
+      "timestamp": 1793169378,
       "source": "Al-Monitor"
     },
     {
@@ -52,8 +52,8 @@
       "location": "Sanaa",
       "title": "Yemen's hospitals buckle as fighting escalates",
       "blurb": "TAIZ, Oct 29 (Reuters) - In a hospital in Yemen's Taiz, a 25-year-old pregnant mother of two lay immobilised after a bullet lodged in her spine while she was trapped inside her home without food or water for two days.The UN and aid agencies say health needs in the besieged cit...",
-      "time": "2026-10-27 12:51 UTC",
-      "timestamp": 1793105504,
+      "time": "2026-10-27 16:36 UTC",
+      "timestamp": 1793118978,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Eastern Med",
       "title": "Greek PM calls for global maritime truce after Greek ship sunk in drone attack",
       "blurb": "Oct 29 (Reuters) - Greek Prime Minister Kyriakos Mitsotakis called on Wednesday for a global maritime truce aftera drone attack sank a Greek container ship off Bulgaria, the latest of a series of strikeson ships in the western Black Sea this month.Speaking at a high-level deba...",
-      "time": "2026-10-26 22:51 UTC",
-      "timestamp": 1793055104,
+      "time": "2026-10-27 02:36 UTC",
+      "timestamp": 1793068578,
       "source": "Al-Monitor"
     },
     {
@@ -73,285 +73,54 @@
       "actor": "iran",
       "location": "Tehran",
       "title": "Vance outreach to Iran related to medical supplies, says Trump",
-      "blurb": "By Bo EricksonOct 29 (Reuters) - US President Donald Trump said that Vice President JD Vance's outreach to Iran was about helping the country get medical supplies, after US media reported Vance had written toTehran's top security official to revive peace talks.Tehran has recei...",
-      "time": "2026-10-26 08:51 UTC",
-      "timestamp": 1793004704,
+      "blurb": "By Bo EricksonOct 29 (Reuters) - US President Donald Trump said that Vice President JD Vance's outreach to Iran was about helping the country get medical supplies, after US media reported Vance had written toTehran's top security official to revive peace talks.Iran has receive...",
+      "time": "2026-10-26 12:36 UTC",
+      "timestamp": 1793018178,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_7",
       "type": "diplomatic",
       "actor": "iran",
-      "location": "Baghdad",
-      "title": "IMF says engaging with Iraq on preparing new bailout program",
-      "blurb": "The International Monetary Fund on Thursday said it was engaging with Iraqi authorities as it prepares a new bailout program for the country, whose economy has been battered by the war on Iran. The US-Israel war on Iran, launched in late February, plunged the region into confl...",
-      "time": "2026-10-25 18:51 UTC",
-      "timestamp": 1792954304,
+      "location": "Tehran",
+      "title": "Mediators scramble to avert US-Iran fighting after Trump's midterm restraint fades",
+      "blurb": "Tehran has little incentive to make concessions that the Trump administration could tout as a win before next week\u2019s election.",
+      "time": "2026-10-25 22:36 UTC",
+      "timestamp": 1792967778,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_8",
       "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran arrests 16 in connection with alleged US-Israel-linked cells: What to know",
-      "blurb": "Iran claimed that some of the 16 people it had arrested had entered Iran from abroad.",
-      "time": "2026-10-25 04:51 UTC",
-      "timestamp": 1792903904,
+      "actor": "usa",
+      "location": "Damascus",
+      "title": "US oil firm HKN aims to double Syria's output as it takes over Kurdish-run fields",
+      "blurb": "HKN Vice President Matthew Zais tells Al-Monitor the company plans to double production at Syria\u2019s northeastern oil fields while tackling pollution, as questions remain over the future of the Kurdish-run Jazira Oil Company.",
+      "time": "2026-10-23 14:36 UTC",
+      "timestamp": 1792766178,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_9",
       "type": "diplomatic",
       "actor": "iran",
-      "location": "Tehran",
-      "title": "Hegseth fires Pentagon\u2019s top strategist accused of leaks amid Iran war",
-      "blurb": "Lt. Gen. Brett Sylvia, the Joint Staff\u2019s top planner, has become the latest casualty in Secretary of Defense Pete Hegseth\u2019s serial firings of senior officers.",
-      "time": "2026-10-22 20:51 UTC",
-      "timestamp": 1792702304,
+      "location": "Baghdad",
+      "title": "IMF says engaging with Iraq on preparing new bailout program",
+      "blurb": "The International Monetary Fund on Thursday said it was engaging with Iraqi authorities as it prepares a new bailout program for the country, whose economy has been battered by the war on Iran. The US-Israel war on Iran, launched in late February, plunged the region into confl...",
+      "time": "2026-10-21 06:36 UTC",
+      "timestamp": 1792564578,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_10",
       "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Netanyahu, at risk of losing power, steps up attacks on Israel's Arab parties",
-      "blurb": "By Maayan LubellJERUSALEM, Oct 29 (Reuters) - Israeli Prime Minister Benjamin Netanyahu alleged on Thursday, without providing evidence, that Arab parties' record gains in anelection this week were driven in part by voter fraud, a charge rejected by Arab leaders who accused th...",
-      "time": "2026-10-20 12:51 UTC",
-      "timestamp": 1792500704,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Fairy chimney rockfall kills two at Turkey's Cappadocia tourist attraction after heavy rain",
-      "blurb": "ANKARA, Oct 29 (Reuters) - Two people were killed and one other injured when rocks from a fairy chimney, a volcanic geological formation, fell after heavy rainfall in the popular Turkish resort ofCappadocia on Thursday, the local governor said.A landslide occurred due to heavy...",
-      "time": "2026-10-19 22:51 UTC",
-      "timestamp": 1792450304,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_12",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Rock collapse near UNESCO-listed site in Turkey\u2019s Cappadocia kills three",
-      "blurb": "Heavy rain triggered a landslide that sent rocks falling in Turkey\u2019s Cappadocia region, killing at least two people and injuring five others.",
-      "time": "2026-10-19 08:51 UTC",
-      "timestamp": 1792399904,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_13",
-      "type": "missile",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Missile shrapnel injures Saudi citizen, says news agency",
-      "blurb": "Missile shrapnel injures Saudi citizen, says news agency Saudi\u2019s Civil Defence Authority says shrapnel falling after the interception of two missiles has wounded one Saudi citizen. The interception also resulted in damage to a house and a vehicle, the authority\u2019s spokesperson ...",
-      "time": "2026-10-29 20:51 UTC",
-      "timestamp": 1793307104,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_14",
-      "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "US senator briefed on Trump's plans to restart Iran war says proposal is 'insane'",
-      "blurb": "US senator briefed on Trump's plans to restart Iran war says proposal is 'insane' Senator Chris Murphy says he has been briefed on the US's plan to restart the war on Iran, calling it \"insane\" and saying it would lead to a \"devastating escalation\". \"You've heard a preview that...",
-      "time": "2026-10-29 06:51 UTC",
-      "timestamp": 1793256704,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_15",
-      "type": "missile",
-      "actor": "proxy",
-      "location": "Riyadh",
-      "title": "Coalition says it shot down two missiles fired at Riyadh",
-      "blurb": "Coalition says it shot down two missiles fired at Riyadh The Saudi-led coalition says its air defences intercepted and destroyed two ballistic missiles fired by the Houthis towards the capital, Riyadh, according to the Saudi Press Agency.",
-      "time": "2026-10-28 02:51 UTC",
-      "timestamp": 1793155904,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_16",
-      "type": "ground",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli gunfire injures two Palestinian children in Qalandia camp",
-      "blurb": "Israeli gunfire injures two Palestinian children in Qalandia camp Israeli gunfire wounded two Palestinian children during a raid on the Qalandia refugee camp, north of occupied East Jerusalem, Wafa news agency reported. The Palestine Red Crescent Society said its crews treated...",
-      "time": "2026-10-27 12:51 UTC",
-      "timestamp": 1793105504,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_17",
-      "type": "naval",
-      "actor": "host",
-      "location": "Strait of Hormuz",
-      "title": "Tanker struck by projectile in Strait of Hormuz",
-      "blurb": "Tanker struck by projectile in Strait of Hormuz The United Kingdom Maritime Trade Operations (UKMTO) said on Thursday it had received a report from a company security officer that a tanker was struck by an unknown projectile while transiting outbound through the Strait of Horm...",
-      "time": "2026-10-26 22:51 UTC",
-      "timestamp": 1793055104,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_18",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Gaza City",
-      "title": "In South Africa, municipal elections collide with solidarity for Gaza",
-      "blurb": "In South Africa, municipal elections collide with solidarity for Gaza Submitted by Azad Essa on Mon, 10/26/2026 - 08:36 Ahead of local elections, South Africans say there are 'tangible connections' between domestic policy and developments in occupied Palestine A resident appro...",
-      "time": "2026-10-26 08:51 UTC",
-      "timestamp": 1793004704,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_19",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Israeli strike kills one Palestinian in Gaza",
-      "blurb": "Israeli strike kills one Palestinian in Gaza An Israeli strike killed a Palestinian at Halawa camp, one of northern Gaza\u2019s largest displacement camps, medical staff said, according to Al Jazeera. The network reported escalating attacks on the camp, east of Jabalia, with Israel...",
-      "time": "2026-10-25 18:51 UTC",
-      "timestamp": 1792954304,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_20",
-      "type": "naval",
-      "actor": "host",
-      "location": "Strait of Hormuz",
-      "title": "Crew of vessel that sustained fire in Hormuz evacuated",
-      "blurb": "Crew of vessel that sustained fire in Hormuz evacuated Local authorities have confirmed that the crew of a vessel that sustained fire off the Omani coast after an attack has been evacuated, \u2060accoridng to the \u2060\u2060UK Maritime Trade Operations (UKMTO). \u201cRegional authorities have id...",
-      "time": "2026-10-25 04:51 UTC",
-      "timestamp": 1792903904,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_21",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Biden officials who resigned over Gaza call on US presidential candidates not to hire Israel enablers",
-      "blurb": "Biden officials who resigned over Gaza call on US presidential candidates not to hire Israel enablers Submitted by Yasmine El-Sabawi on Thu, 10/29/2026 - 14:37 Letter follows former senior Biden adviser admitting US was wrong not to rein in Israel, which the UN says has commit...",
-      "time": "2026-10-24 14:51 UTC",
-      "timestamp": 1792853504,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_22",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Eisenkot warns Netanyahu is working to 'delegitimise' Israel's election results",
-      "blurb": "Eisenkot warns Netanyahu is working to 'delegitimise' Israel's election results Israel's chief opposition candidate Gadi Eisenkot warned on Thursday that Prime Minister Benjamin Netanyahu was working to delegitimise election results with his allegations of malfeasance by Pales...",
-      "time": "2026-10-24 00:51 UTC",
-      "timestamp": 1792803104,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_23",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Sanaa",
-      "title": "Yemeni tribal leaders present set of principles to ease war's humanitarian impact",
-      "blurb": "Yemeni tribal leaders present set of principles to ease war's humanitarian impact Yemeni tribal leaders gathered at the United Nations on Thursday to launch an agreed set of principles aimed at protecting civilians and improving aid access in the war-ravaged country. They hope...",
-      "time": "2026-10-23 10:51 UTC",
-      "timestamp": 1792752704,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_24",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Tel Aviv",
-      "title": "Tel Aviv court extends Al Jazeera ban by 90 days",
-      "blurb": "Tel Aviv court extends Al Jazeera ban by 90 days A Tel Aviv court has approved a further 90-day extension of Israel\u2019s closure of Al Jazeera\u2019s office and ban on its operations in the country. Israel first banned the network in May 2024 under a law targeting foreign broadcasters...",
-      "time": "2026-10-22 20:51 UTC",
-      "timestamp": 1792702304,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_25",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Joint List chairman accuses Netanyahu of 'racist blood libel'",
-      "blurb": "Joint List chairman accuses Netanyahu of 'racist blood libel' Joint List chairman Yousef Jabareen has hit back at Israeli Prime Minister Benjamin Netanyahu's allegations that Palestinians \"stole\" the elections, accusing him of \"racist blood libel\" and incitement intended to un...",
-      "time": "2026-10-22 06:51 UTC",
-      "timestamp": 1792651904,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_26",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "How the UK's new antisemitism guidelines for schools will stigmatise Muslim pupils",
-      "blurb": "How the UK's new antisemitism guidelines for schools will stigmatise Muslim pupils Submitted by Fatima Rajina on Wed, 10/28/2026 - 12:09 By framing discussion of Palestine in the language of safeguarding and Prevent, the government signals that this topic carries a risk that o...",
-      "time": "2026-10-21 16:51 UTC",
-      "timestamp": 1792601504,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_27",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Palestinian president says he hopes for peace talks with new Israeli government",
-      "blurb": "Palestinian president says he hopes for peace talks with new Israeli government Palestinian President Mahmoud Abbas said he hoped the election of a new Israeli government would allow for the resumption of peace talks. \"For many years now, we have been extending a hand to the I...",
-      "time": "2026-10-21 02:51 UTC",
-      "timestamp": 1792551104,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_28",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Israeli press review: Netanyahu moved to undermine Palestinian vote on election day",
-      "blurb": "Israeli press review: Netanyahu moved to undermine Palestinian vote on election day Submitted by Nadav Rapaport on Thu, 10/29/2026 - 14:15 Meanwhile, Trump wants a unity government in Israel, hundreds of Israeli artists call for a government that includes Palestinians, and Her...",
-      "time": "2026-10-20 12:51 UTC",
-      "timestamp": 1792500704,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_29",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Netanyahu\u2019s Likud claims Palestinians \u2018stole\u2019 elections as Qatar denies meddling",
-      "blurb": "Netanyahu\u2019s Likud claims Palestinians \u2018stole\u2019 elections as Qatar denies meddling Prime Minister Benjamin Netanyahu\u2019s Likud party has claimed Israel\u2019s election was \u201cstolen\u201d by Palestinian citizens after their record turnout and electoral gains. In a statement on Thursday, Likud...",
-      "time": "2026-10-19 22:51 UTC",
-      "timestamp": 1792450304,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_30",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Jerusalem",
-      "title": "Far-right Zehut party leader calls for Israel to annul election results",
-      "blurb": "Far-right Zehut party leader calls for Israel to annul election results Moshe Feiglin, the leader of the far right Zehut party, has called for Israel to annul the election results and hold snap elections, with border police stationed outside polling stations where Palestinians...",
-      "time": "2026-10-19 08:51 UTC",
-      "timestamp": 1792399904,
-      "source": "Middle East Eye"
-    },
-    {
-      "id": "inc_31",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Damascus",
-      "title": "'No going back': World Jewish Congress chief Ronald Lauder abandons Netanyahu's Israel",
-      "blurb": "'No going back': World Jewish Congress chief Ronald Lauder abandons Netanyahu's Israel Submitted by MEE staff on Thu, 10/29/2026 - 11:31 Billionaire former US ambassador accuses Israeli leader of derailing a Syria peace deal in 1990s and warns far-right ministers are damaging ...",
-      "time": "2026-10-18 18:51 UTC",
-      "timestamp": 1792349504,
-      "source": "Middle East Eye"
+      "title": "Iran arrests 16 in connection with alleged US-Israel-linked cells: What to know",
+      "blurb": "Iran claimed that some of the 16 people it had arrested had entered Iran from abroad.",
+      "time": "2026-10-20 16:36 UTC",
+      "timestamp": 1792514178,
+      "source": "Al-Monitor"
     }
   ],
   "movements": []
