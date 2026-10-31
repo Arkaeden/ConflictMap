@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T02:00:07.952252+00:00",
+  "lastUpdated": "2026-10-31T08:19:57.873634+00:00",
   "incidents": [
     {
       "id": "inc_0",
@@ -8,8 +8,8 @@
       "location": "Eastern Med",
       "title": "Trump administration plans to deport some Afghan immigrants to Afghanistan",
       "blurb": "By Kanishka SinghWASHINGTON, Oct 30 (Reuters) - President Donald Trump's administration plans to deport some Afghan immigrants to Afghanistan, a US official and a coalition of veterans and advocacy groups said on Friday.\u2022 Many facing removal fled Afghanistan after the 2021 Tal...",
-      "time": "2026-10-31 02:00 UTC",
-      "timestamp": 1793412007,
+      "time": "2026-10-31 08:19 UTC",
+      "timestamp": 1793434797,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Eastern Med",
       "title": "Zelenskiy says he will head to Turkey for talks",
       "blurb": "Oct 30 (Reuters) - Ukrainian President Volodymyr Zelenskiy said on Friday he would be holding \"important\" talks in Turkey as part of diplomatic efforts after more than 4-1/2 years of war with Russia.The Ukrainian president, speaking in his nightly video address, indicated disc...",
-      "time": "2026-10-30 12:00 UTC",
-      "timestamp": 1793361607,
+      "time": "2026-10-30 18:19 UTC",
+      "timestamp": 1793384397,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Eastern Med",
       "title": "Costa Rica's Grynspan extends lead in informal UN chief poll, sources say",
       "blurb": "By Antoni SlodkowskiUNITED NATIONS, Oct 30 (Reuters) - An informal poll by the United Nations Security Council on Friday showed former Costa Rican Vice President Rebeca Grynspan extended her lead as frontrunner in the race to become the 10th UN secretary-general, two people cl...",
-      "time": "2026-10-29 22:00 UTC",
-      "timestamp": 1793311207,
+      "time": "2026-10-30 04:19 UTC",
+      "timestamp": 1793333997,
       "source": "Al-Monitor"
     },
     {
@@ -41,8 +41,8 @@
       "location": "Damascus",
       "title": "Five children among seven dead in eastern Syria floods",
       "blurb": "Oct 30 (Reuters) - Seven people, including five children, have died and seven others were injured after torrential rains triggered flash floods in eastern Syria, authorities said on Friday.Four people remain missing and rescue teams are continuing to search flooded areas, Emer...",
-      "time": "2026-10-29 08:00 UTC",
-      "timestamp": 1793260807,
+      "time": "2026-10-29 14:19 UTC",
+      "timestamp": 1793283597,
       "source": "Al-Monitor"
     },
     {
@@ -50,10 +50,10 @@
       "type": "drone",
       "actor": "iran",
       "location": "Sanaa",
-      "title": "Saudi-led coalition says it downs Houthi drone over Medina; Houthis deny attack",
-      "blurb": "CAIRO, Oct 30 (Reuters) - The Saudi-led coalition fighting in Yemen said on Friday it had intercepted and destroyed a drone launched by Yemen's Houthis over Saudi Arabia's Medina region, but the Iran-aligned group denied carrying out any attack towards the kingdom.Medina is ho...",
-      "time": "2026-10-28 18:00 UTC",
-      "timestamp": 1793210407,
+      "title": "Saudi-led coalition says it downs drone over oil-rich Eastern Region",
+      "blurb": "CAIRO, Oct 30 (Reuters) - The Saudi-led coalition fighting in Yemen said early on Saturday that it intercepted and destroyed a drone over Saudi Arabia's oil-rich Eastern Region as attacks by Yemen's Iran-aligned Houthis group continue. Cross-border fighting involving the Saudi...",
+      "time": "2026-10-29 00:19 UTC",
+      "timestamp": 1793233197,
       "source": "Al-Monitor"
     },
     {
@@ -63,8 +63,8 @@
       "location": "Jerusalem",
       "title": "What Israel\u2019s election means for its China ties",
       "blurb": "Israeli-Chinese ties face constraints that a change of government in Israel alone would not resolve.",
-      "time": "2026-10-28 04:00 UTC",
-      "timestamp": 1793160007,
+      "time": "2026-10-28 10:19 UTC",
+      "timestamp": 1793182797,
       "source": "Al-Monitor"
     },
     {
@@ -74,8 +74,8 @@
       "location": "Riyadh",
       "title": "US orders non-emergency staff to leave Saudi Arabia over security risks",
       "blurb": "Oct 30 (Reuters) - The United States ordered non-emergency government employees and their family members to leave Saudi Arabia effective October 23 due to safety risks, the US embassy in Riyadh said on Friday, citing Houthi attacks on civilian airports and other critical infra...",
-      "time": "2026-10-25 20:00 UTC",
-      "timestamp": 1792958407,
+      "time": "2026-10-26 02:19 UTC",
+      "timestamp": 1792981197,
       "source": "Al-Monitor"
     },
     {
@@ -83,10 +83,10 @@
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Exclusive-Pakistan military 'cautiously optimistic' on Iran-US mediation",
+      "title": "Pakistan military 'cautiously optimistic' on Iran-US mediation",
       "blurb": "By Rick NoackRAWALPINDI, Pakistan, Oct 30 (Reuters) - Pakistan\u2019s military is \u201ccautiously optimistic\u201d about its mediation between Iran and the United States, its spokesman said on Friday in his first interview since a high-level delegation visited Tehran this week.Army chief Fi...",
-      "time": "2026-10-25 06:00 UTC",
-      "timestamp": 1792908007,
+      "time": "2026-10-25 12:19 UTC",
+      "timestamp": 1792930797,
       "source": "Al-Monitor"
     },
     {
@@ -96,8 +96,8 @@
       "location": "Eastern Med",
       "title": "UAE's Nusseibeh comes in fourth in latest UNSG straw poll: What to know",
       "blurb": "The latest straw poll puts Costa Rica's Rebeca Grynspan in first place, Argentina's Rafael Grossi in second, Guyana's Carolyn Rodrigues-Birkett in third and the UAE's Lana Nusseibeh in fourth place.",
-      "time": "2026-10-24 16:00 UTC",
-      "timestamp": 1792857607,
+      "time": "2026-10-24 22:19 UTC",
+      "timestamp": 1792880397,
       "source": "Al-Monitor"
     },
     {
@@ -107,19 +107,19 @@
       "location": "Strait of Hormuz",
       "title": "Limpet mine attack in Hormuz suggests Iran may be shifting tactics",
       "blurb": "UKMTO report of the first successful limpet mine attack on a commercial vessel in the Middle East since 2019 appeared to undermine the Pentagon's claims to have fully cleared and opened the Strait of Hormuz.",
-      "time": "2026-10-22 08:00 UTC",
-      "timestamp": 1792656007,
+      "time": "2026-10-22 14:19 UTC",
+      "timestamp": 1792678797,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_10",
       "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Brazil's Lula to attend UN COP31 climate summit in Turkey",
-      "blurb": "BRASILIA, Oct 30 (Reuters) - Brazilian President Luiz Inacio Lula da Silva will attend the COP31 climate summit in Antalya, Turkey, the Brazilian presidency said on Friday.The confirmation came shortly after Lula was re-elected president of Brazil, last Sunday.Lula is schedule...",
-      "time": "2026-10-20 00:00 UTC",
-      "timestamp": 1792454407,
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "Who will blink first in latest US-Iran diplomacy efforts?",
+      "blurb": "The prospects for a US-Iran deal may depend less on the scope for compromise than on whether either side can afford to make the first concession.",
+      "time": "2026-10-20 06:19 UTC",
+      "timestamp": 1792477197,
       "source": "Al-Monitor"
     }
   ],
