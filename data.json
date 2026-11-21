@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-11-21T00:36:04.079337+00:00",
+  "lastUpdated": "2026-11-21T07:58:17.280554+00:00",
   "incidents": [
     {
       "id": "inc_0",
       "type": "diplomatic",
       "actor": "iran",
       "location": "Tehran",
-      "title": "Araqchi says Iran wants diplomacy to end war; Trump says terms unacceptable",
-      "blurb": "Nov 20 (Reuters) - Iran's Foreign Minister Abbas Araqchi said Tehran still hoped diplomacy could end its war with the United States, while US President Donald Trump said Iran wanted a deal but one that wasnot acceptable to him.Araqchi told the state-owned Iran newspaper that T...",
-      "time": "2026-11-21 00:36 UTC",
-      "timestamp": 1795221363,
+      "title": "Araqchi says Iran wants diplomacy to end war, Trump says terms unacceptable",
+      "blurb": "Nov 20 (Reuters) - Iran's Foreign Minister Abbas Araqchi said Tehran still hoped diplomacy could end its war with the United States, while US President Donald Trump said Iran wanted a deal but one that wasnot acceptable to him.Araqchi told the state-owned Iran newspaper that m...",
+      "time": "2026-11-21 07:58 UTC",
+      "timestamp": 1795247897,
       "source": "Al-Monitor"
     },
     {
@@ -19,8 +19,8 @@
       "location": "Tehran",
       "title": "US Vice President Vance declines to say he would have ordered Iran strikes",
       "blurb": "By Bo Erickson and Jacob BogageWASHINGTON, Nov 20 (Reuters) - US Vice President JD Vance on Friday declined to say whether he would have authorized strikes on Iran to prevent the country from developing a nuclear weapon, sidestepping President Donald Trump's calls for him to s...",
-      "time": "2026-11-20 10:36 UTC",
-      "timestamp": 1795170963,
+      "time": "2026-11-20 17:58 UTC",
+      "timestamp": 1795197497,
       "source": "Al-Monitor"
     },
     {
@@ -30,8 +30,8 @@
       "location": "Eastern Med",
       "title": "European emissions proposal faces Middle East pushback at UN aviation agency",
       "blurb": "By Allison LampertMONTREAL, Nov 20 (Reuters) - Plans to change the European Union's Emissions Trading System faced pushback at a global aviation gathering that wraps up on Friday, as Middle East countries challenged fresh efforts to curb pollution from airlines outside an exis...",
-      "time": "2026-11-19 20:36 UTC",
-      "timestamp": 1795120563,
+      "time": "2026-11-20 03:58 UTC",
+      "timestamp": 1795147097,
       "source": "Al-Monitor"
     },
     {
@@ -41,19 +41,19 @@
       "location": "Eastern Med",
       "title": "Trump cites good talks with Putin on Ukraine, holds back on security guarantees",
       "blurb": "By Bo Erickson and Doina ChiacuWASHINGTON, Nov 20 (Reuters) - US President Donald Trump said on Friday that he and Russian leader Vladimir Putin held very good talks on Ukraine during their meeting in China, but added he didn't want to discuss security guarantees for Ukraine w...",
-      "time": "2026-11-19 06:36 UTC",
-      "timestamp": 1795070163,
+      "time": "2026-11-19 13:58 UTC",
+      "timestamp": 1795096697,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_4",
-      "type": "naval",
+      "type": "diplomatic",
       "actor": "proxy",
-      "location": "Sanaa",
-      "title": "Saudi coalition launches 'special operation', Yemen's Houthis vow reprisals",
-      "blurb": "The Saudi-led coalition fighting Yemen's Houthis attacked the Red Sea port city of Hodeida and other targets in a \"special operation\" on Friday, as the group threatened reprisals. The coalition said it hit smuggling and weapons-transporting operations in Hodeida while also car...",
-      "time": "2026-11-18 16:36 UTC",
-      "timestamp": 1795019763,
+      "location": "Riyadh",
+      "title": "Yemen's Houthis launch strikes after Saudi coalition's 'special operation'",
+      "blurb": "Yemen's Houthis launched strikes on the Saudi capital Riyadh on Saturday, after vowing reprisals for a \"special operation\" by the Saudi-led coalition fighting them. Saudi Arabia has been battling a surge in attacks since fighting reignited in neighbouring Yemen's civil war thi...",
+      "time": "2026-11-18 23:58 UTC",
+      "timestamp": 1795046297,
       "source": "Al-Monitor"
     },
     {
@@ -63,96 +63,63 @@
       "location": "Eastern Med",
       "title": "US seeks UN leader from Western Hemisphere, says Waltz amid gridlock",
       "blurb": "Former UAE ambassador to the United Nations Lana Nusseibeh jumped to third in Friday\u2019s straw poll while still receiving three \"discourage\" votes from permanent security council members.",
-      "time": "2026-11-18 02:36 UTC",
-      "timestamp": 1794969363,
+      "time": "2026-11-18 09:58 UTC",
+      "timestamp": 1794995897,
       "source": "Al-Monitor"
     },
     {
       "id": "inc_6",
+      "type": "missile",
+      "actor": "iran",
+      "location": "Tehran",
+      "title": "How war has shifted Iran's missile ambitions beyond the Middle East",
+      "blurb": "The conflict has battered Iran's military capabilities, but the leadership appears to have drawn the lesson that deterrence must reach further and inflict greater costs.",
+      "time": "2026-11-16 01:58 UTC",
+      "timestamp": 1794794297,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_7",
       "type": "diplomatic",
       "actor": "usa",
       "location": "Sanaa",
       "title": "Houthi attacks add to worries over Trump Saudi nuclear power pact",
       "blurb": "By Patricia Zengerle and Timothy GardnerNov 20 (Reuters) - Houthi attacks on Saudi infrastructure are adding to concerns about US President Donald Trump's proposed nuclear power pact with the kingdom, weeks before US senators are due to vote on whether to block the agreement.Y...",
-      "time": "2026-11-15 18:36 UTC",
-      "timestamp": 1794767763,
+      "time": "2026-11-13 17:58 UTC",
+      "timestamp": 1794592697,
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_7",
+      "id": "inc_8",
+      "type": "diplomatic",
+      "actor": "iran",
+      "location": "Beirut",
+      "title": "Will Iraq\u2019s return to Jurf al-Sakhar weaken Iran-backed Kataib Hezbollah",
+      "blurb": "The town and surrounding agricultural area had been under the control of Iran-backed armed factions since 2014.",
+      "time": "2026-11-13 03:58 UTC",
+      "timestamp": 1794542297,
+      "source": "Al-Monitor"
+    },
+    {
+      "id": "inc_9",
       "type": "missile",
       "actor": "iran",
       "location": "Tehran",
       "title": "Explosion on Iran's Qeshm Island linked to disposal of unexploded munitions, Tasnim reports",
       "blurb": "Nov 20 (Reuters) - An explosion and smoke seen on Iran's Qeshm Island were caused by disposal of unexploded munitions, Iran's semi-official Tasnim news agency reported on Friday, citing an official, after having earlier reported a missile strike there. (Reporting by Enas Alash...",
-      "time": "2026-11-15 04:36 UTC",
-      "timestamp": 1794717363,
+      "time": "2026-11-10 19:58 UTC",
+      "timestamp": 1794340697,
       "source": "Al-Monitor"
     },
     {
-      "id": "inc_8",
+      "id": "inc_10",
       "type": "naval",
       "actor": "iran",
       "location": "Hodeidah",
       "title": "Saudi-led forces strike Yemen port as Houthis warn airlines off the kingdom",
       "blurb": "By Yasmine Ghania and Muhammad Al GebalyNov 20 (Reuters) - The Saudi-led coalition fighting Yemen's Iran-aligned Houthis said it had struck the Red Sea port of Hodeidah to destroy Houthi capabilities on Friday, as the militants warned airlines to avoid Saudi airspace, pledging...",
-      "time": "2026-11-14 14:36 UTC",
-      "timestamp": 1794666963,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_9",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Oil heads for third weekly loss as Iran tests US blockade with crude transfer",
-      "blurb": "Brent fell below $91 per barrel Friday, extending November\u2019s retreat even as the US and Iran exchange strikes.",
-      "time": "2026-11-14 00:36 UTC",
-      "timestamp": 1794616563,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_10",
-      "type": "diplomatic",
-      "actor": "proxy",
-      "location": "Aden",
-      "title": "In Yemen's Aden, divided government forces prepare for a Houthi assault",
-      "blurb": "ADEN, Nov 20 (Reuters) - As Yemen's Houthis push closer towards the temporary capital Aden against fragmented government forces, the city's inhabitants face a bleak choice: stay under fire or leave for an impoverished countryside. Aden has had no major warfare since bitter str...",
-      "time": "2026-11-11 16:36 UTC",
-      "timestamp": 1794414963,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_11",
-      "type": "diplomatic",
-      "actor": "israel",
-      "location": "Gaza City",
-      "title": "Myanmar genocide judgment may bolster Gaza case against Israel",
-      "blurb": "By Anthony Deutsch and Stephanie van den BergTHE HAGUE, Nov 20 (Reuters) - The International Court of Justice's landmark ruling that Myanmar committed genocide against the Rohingya will strengthen South Africa's genocide case against Israel over the war in Gaza, legal experts ...",
-      "time": "2026-11-11 02:36 UTC",
-      "timestamp": 1794364563,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_12",
-      "type": "diplomatic",
-      "actor": "iran",
-      "location": "Tehran",
-      "title": "Iran\u2019s IRGC threatens infrastructure attacks beyond Middle East amid US-Israel escalation",
-      "blurb": "Iranian military officials have stepped up threats to expand and deliver a more forceful response in case of renewed US-Israeli strikes.",
-      "time": "2026-11-10 12:36 UTC",
-      "timestamp": 1794314163,
-      "source": "Al-Monitor"
-    },
-    {
-      "id": "inc_13",
-      "type": "diplomatic",
-      "actor": "host",
-      "location": "Eastern Med",
-      "title": "Former French PM de Villepin launches 2027 presidential bid",
-      "blurb": "By Michel Rose and Elizabeth PineauPARIS, Nov 20 (Reuters) - Former French prime minister Dominique de Villepin announced on Friday that he would run for president in the 2027 election, joining an increasingly crowded field of centrist and centre-right candidates seeking to su...",
-      "time": "2026-11-09 22:36 UTC",
-      "timestamp": 1794263763,
+      "time": "2026-11-10 05:58 UTC",
+      "timestamp": 1794290297,
       "source": "Al-Monitor"
     }
   ],
